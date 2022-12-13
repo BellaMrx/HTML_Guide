@@ -113,3 +113,31 @@
   * **Server-side scripting languages and databases**
 	  - common languages for dynamic websites are Python, PHP, Ruby etc., and for databases e.g. MySQL or PostgreSQL
 	  - Knowledge in PHP and MySQL can be an advantage for e.g. formmails, guestbooks or surveys
+
+
+### 1.4. Software for the creation and presentation of web pages
+  * Basically, on every operating system there is a text editor for creating web pages and a browser for displaying the web page.
+	  - Windows: Notepad
+	  - Linux: e.g. gEdit
+	  - Mac: TextEdit 
+
+  * Most web developers use special editors, the advantage is on the one hand the syntax highlighting and many other helpful functions for the creation of web pages
+  	- Visual Studio Code --> [VSCode](https://code.visualstudio.com/) (My choice)
+	  - Adobe Brackets --> [Adobe Brackets](https://brackets.io/) 
+	  - Atom --> [Atom](https://atom.io/) 
+	  - Sublime Text --> [Sublime Text](https://www.sublimetext.com/) 
+	  - Notepad++ - for beginners 
+
+  * For the display of the HTML document you need a web browser. For testing it is best to use several web browsers, because there are small differences. You should also test the web pages on different devices, such as desktop computer, laptop, tablet and smartphone. In the best case, the display of the website adapts to the devices. This adaptability is called responsive web design. This adaptation does not happen automatically.
+	  - the main web browsers currently are (largest mart share): Google Chrome, Mozilla Firefox, Safari (Apple) and Edge (Microsoft).
+	  - Other web browsers (smaller market share): Vivaldi, Opera, Brave 
+
+  * The HTML renderer (browser engine) converts the source code into a visible web page.
+    
+    | Renderer  | Browser                                                     |
+    | --------- | ----------------------------------------------------------- |
+    | Quantum   | Firefox                                                     |
+    | Webkit    | Safari and all web browsers on iOS                          |
+    | Blink     | Chrome, Edge, Samsung Internet, Vivaldi, Opera, Brave etc.  |
+
+  * Create a web page and display it in the web browser 
