@@ -121,12 +121,12 @@
 	  - Linux: e.g. gEdit
 	  - Mac: TextEdit 
 
-  * Most web developers use special editors, the advantage is on the one hand the syntax highlighting and many other helpful functions for the creation of web pages
-  	- Visual Studio Code --> [VSCode](https://code.visualstudio.com/) (My choice)
-	  - Adobe Brackets --> [Adobe Brackets](https://brackets.io/) 
-	  - Atom --> [Atom](https://atom.io/) 
-	  - Sublime Text --> [Sublime Text](https://www.sublimetext.com/) 
-	  - Notepad++ - for beginners 
+  * Most web developers use special editors, the advantage is on the one hand the syntax highlighting and many other helpful functions for the creation of web pages.
+    - Visual Studio Code --> [VSCode](https://code.visualstudio.com/) (My choice)
+    - Adobe Brackets --> [Adobe Brackets](https://brackets.io/) 
+    - Atom --> [Atom](https://atom.io/) 
+    - Sublime Text --> [Sublime Text](https://www.sublimetext.com/) 
+    - Notepad++ - for beginners 
 
   * For the display of the HTML document you need a web browser. For testing it is best to use several web browsers, because there are small differences. You should also test the web pages on different devices, such as desktop computer, laptop, tablet and smartphone. In the best case, the display of the website adapts to the devices. This adaptability is called responsive web design. This adaptation does not happen automatically.
 	  - the main web browsers currently are (largest mart share): Google Chrome, Mozilla Firefox, Safari (Apple) and Edge (Microsoft).
