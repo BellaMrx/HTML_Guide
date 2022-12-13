@@ -13,11 +13,7 @@
 
 ## 1. Introduction to HTML
 
-### 1.1. HTML
-  - HTML (Hypertext Markup Language) is a text-based markup language for structuring electronic documents such as text with hyperlinks, images and other content. HTML documents are the basis of the World Wide Web and are displayed by web browsers. In addition to the content displayed by the browser, HTML files can contain additional details in the form of meta information, e.g. about the languages used in the text, the author or the summarized content of the text --> [W3C](https://www.w3.org/)
-
-
-### 1.2. Different types of websites
+### 1.1. Different types of websites
   * **Web presence (Homepage / Corporate Website)**
     - can be a private homepage or a web presence of companies, associations, authorities or business persons
     - for companies, municipalities and non-profit organizations it is often called a corporate website
@@ -55,7 +51,7 @@
     - Advantages can be an improved use and also a faster Perfomance
 
 
-### 1.3. Dynamic and static websites
+### 1.2. Dynamic and static websites
 
   * **Static websites**
     - the complete content such as texts, image data is stored unchanged in individual files on the web server
@@ -99,3 +95,21 @@
  ![Preview](Images/dynWebsite.PNG)
 
  This is a simplified representation of how a dynamic web page is created. A web browser makes a request for a web page to a web server. The web server finds the page and passes it to the application server. The application server searches the page for commands and completes the web page. Additionally, instructions for database queries may be included. The database driver then returns the requested record to the application server, where the data is inserted into the web page. The web page is then sent as a response to the web browser.
+
+
+### 1.3. Programming languages for web development
+  * This is an overview of the programming language that a web developer must know.
+
+  * **HTML** (Hypertext Markup Language)
+    - is a text-based markup language for structuring electronic documents such as text with hyperlinks, images and other content. HTML documents are the basis of the World Wide Web and are displayed by web browsers. In addition to the content displayed by the browser, HTML files can contain additional details in the form of meta information, e.g. about the languages used in the text, the author or the summarized content of the text --> [W3C](https://www.w3.org/)
+
+  
+  * **CSS** (Cascading Style Sheets)
+    - It is a design and formatting language used to determine the appearance of HTML documents. So it's about design or style, not the content of a web page. In practice, HTML is used only for structuring the web page, and CSS for formatting and styling. It is possible to include CSS directly in HTML. For large or more web pages it is advantageous to save this in a CSS file, then all web pages can be changed with once.
+
+  * **JavaScript**
+    - is the most important client-side scripting language, allowing to extend the limited possibilities of HTML with user interactions
+
+  * **Server-side scripting languages and databases**
+	  - common languages for dynamic websites are Python, PHP, Ruby etc., and for databases e.g. MySQL or PostgreSQL
+	  - Knowledge in PHP and MySQL can be an advantage for e.g. formmails, guestbooks or surveys
