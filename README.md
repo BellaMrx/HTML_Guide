@@ -21,7 +21,7 @@
   * **Web presence (Homepage / Corporate Website)**
     - can be a private homepage or a web presence of companies, associations, authorities or business persons
     - for companies, municipalities and non-profit organizations it is often called a corporate website
-    - many small companies and private persons use ready-made systems such as *WordPress* (content management system)
+    - many small companies and private persons use ready-made systems such as *WordPress* (Content-Management-System)
 
   * **Blog / online magazine / portfolio**
     - a website with usually chronologically sorted entries, which are separated from each other
@@ -80,3 +80,22 @@
 
 
   * **Dynamic websites**
+    - usually a CMS (Content-Management-System) generates the web pages.
+    - content like text and images are usually kept separate from the technical elements like layout or scripting
+    - a CMS must be installed in a web server environment to be able to use previously installed script languages like PHP or Python and usually databases like MySQL or PostgreSQL
+
+  * Advantages:
+    - updating content and adding new content can be done much more quickly via a web-based user interface.
+    - design changes can be made in one central place, usually many templates are available for this purpose, the changes affect all existing web pages at the same time
+    - can be maintained without HTML and other programming skills
+    - can be managed by several people
+    - new functionalities can be added at any time with modules/plug-ins
+
+  * Disadvantages:
+    - there are higher costs, because special features like script languages and databases are needed, but not as expensive as a few years ago
+    - for creating own modules and plug-ins programming skills are necessary
+
+
+ ![Preview](Images/dynWebsite.PNG)
+
+ This is a simplified representation of how a dynamic web page is created. A web browser makes a request for a web page to a web server. The web server finds the page and passes it to the application server. The application server searches the page for commands and completes the web page. Additionally, instructions for database queries may be included. The database driver then returns the requested record to the application server, where the data is inserted into the web page. The web page is then sent as a response to the web browser.
