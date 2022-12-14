@@ -1,11 +1,16 @@
-# HTML-and-CSS_Tutorial
+# HTML_Tutorial
 
- detailed tutorial about HTML and CSS + templates (all basics for HTML and CSS)
+ detailed tutorial about HTML + templates (all basics for HTML)
 
 ---------------------------------------------------------------------------------------------------------------
 
 ## Contents
 1. Introduction to HTML
+  - 1.1. Different types of websites
+  - 1.2. Dynamic and static websites
+  - 1.3. Programming languages for web development 
+  - 1.4. Software for the creation and presentation of web pages
+  - 1.5. Create and view a simple web page
 2. Structure of a HTML document
 
 
@@ -157,4 +162,8 @@
    - Accessible websites, incorrect text or structure can cause assistive tools such as read aloud software to not work properly.
    - helpful for beginners to recognize errors quickly and prevents writing unclean code --> a clean code shows quality
 
-#### The 1st chapter shows a small introduction to HTML and web development, in the next chapters the topics HTML and CSS are explained extensively.   
+-----------------------------------------------------------------------------------------------------------------
+
+## 2. Structure of a HTML document
+
+### 2.1. 
