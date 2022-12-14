@@ -138,8 +138,6 @@
     | Webkit    | Safari and all web browsers on iOS                          |
     | Blink     | Chrome, Edge, Samsung Internet, Vivaldi, Opera, Brave etc.  |
 
-  * Create a web page and display it in the web browser 
-
 
 ### 1.5. Create and view a simple web page
   1. open an editor (for the beginning a simple editor is enough), and create a new empty document.
@@ -148,7 +146,7 @@
   4. The HTML file can now be opened with a browser, usually it is enough to double-click the file and the standard browser opens and displays the file.
 
  * **Check HTML-Code**.
-   - Whether the HTML code or the web page is correct, you can check it, with the online tool  at W3C[Validator](http://validator.w3.org) you can validate the code (in many editors such a function is available or can be integrated later)
+   - Whether the HTML code or the web page is correct, you can check it, with the online tool  at W3C [Validator](http://validator.w3.org) you can validate the code (in many editors such a function is available or can be integrated later)
    - if the code is error free a green bar is displayed (W3C)
    - If the validation is invalid, the error is listed with a message. An error output does not mean that the web page cannot be displayed, because the web browsers are relatively error tolerant, but it can lead to errors.
    - Many large websites have errors, hardly any site is 100% error free.
@@ -159,3 +157,4 @@
    - Accessible websites, incorrect text or structure can cause assistive tools such as read aloud software to not work properly.
    - helpful for beginners to recognize errors quickly and prevents writing unclean code --> a clean code shows quality
 
+#### The 1st chapter shows a small introduction to HTML and web development, in the next chapters the topics HTML and CSS are explained extensively.   
