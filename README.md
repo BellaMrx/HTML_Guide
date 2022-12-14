@@ -52,7 +52,6 @@
 
 
 ### 1.2. Dynamic and static websites
-
   * **Static websites**
     - the complete content such as texts, image data is stored unchanged in individual files on the web server
     - the content of such a file is created with HTML
@@ -72,7 +71,6 @@
  ![Preview](Images/staticWebsite.PNG)
 
  This is a simplified representation of how a static web page is returned. The web browser first sends a request for a web page to the web server that hosts the web page. The web server finds the page and sends it back to the web server as a response. If it is not found, an error message is returned (status code 404).
-
 
 
   * **Dynamic websites**
@@ -126,7 +124,7 @@
     - Adobe Brackets --> [Adobe Brackets](https://brackets.io/) 
     - Atom --> [Atom](https://atom.io/) 
     - Sublime Text --> [Sublime Text](https://www.sublimetext.com/) 
-    - Notepad++ - for beginners 
+    - Notepad++ --> for beginners 
 
   * For the display of the HTML document you need a web browser. For testing it is best to use several web browsers, because there are small differences. You should also test the web pages on different devices, such as desktop computer, laptop, tablet and smartphone. In the best case, the display of the website adapts to the devices. This adaptability is called responsive web design. This adaptation does not happen automatically.
 	  - the main web browsers currently are (largest mart share): Google Chrome, Mozilla Firefox, Safari (Apple) and Edge (Microsoft).
@@ -141,3 +139,23 @@
     | Blink     | Chrome, Edge, Samsung Internet, Vivaldi, Opera, Brave etc.  |
 
   * Create a web page and display it in the web browser 
+
+
+### 1.5. Create and view a simple web page
+  1. open an editor (for the beginning a simple editor is enough), and create a new empty document.
+  2. enter HTML code into the editor, see folder --> *1_IntroductionToHTML/Part_A/index.html*
+  3. save HTML code, it is recommended to create a new directory for it. When saving the file, make sure that the file is saved with the file extension *.html*. As encoding *UTF-8* is always good, you can also use *ANSI* for the time being.
+  4. The HTML file can now be opened with a browser, usually it is enough to double-click the file and the standard browser opens and displays the file.
+
+ * **Check HTML-Code**.
+   - Whether the HTML code or the web page is correct, you can check it, with the online tool  at W3C[Validator](http://validator.w3.org) you can validate the code (in many editors such a function is available or can be integrated later)
+   - if the code is error free a green bar is displayed (W3C)
+   - If the validation is invalid, the error is listed with a message. An error output does not mean that the web page cannot be displayed, because the web browsers are relatively error tolerant, but it can lead to errors.
+   - Many large websites have errors, hardly any site is 100% error free.
+
+ * Advantages to validate the HTML code:
+   - the correct display in all browsers, the browsers are relatively error-tolerant but there are differences, especially with mobile devices you should pay attention to it
+   - Search engines look for texts and keywords, so that it can be found more easily
+   - Accessible websites, incorrect text or structure can cause assistive tools such as read aloud software to not work properly.
+   - helpful for beginners to recognize errors quickly and prevents writing unclean code --> a clean code shows quality
+
