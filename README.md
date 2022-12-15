@@ -196,7 +196,7 @@
  * HTML elements can contain additional attributes (properties). These can be used to specify additional information about an element. Attributes can be used only with start tags.
    - see example folders --> *2_StructureOfaHTMLdocument/Part_3/index.html*
    - with the attribute **lang="en"** you specify the language that will be used
-   - the **a** element defines a hyperlink to another page, at **href** you specify the URL to navigate to 
+   - the **\<a></a>** element defines a hyperlink to another page, at **href** you specify the URL to navigate to 
 	 - the standalone tag **\<img>** can be used to display images, **src** specifies the location of the image, alt specifies the alternative text if the image cannot be displayed
 
   * There is the possibility to leave comments within the HTML document, these are helpful to understand the code later, if you forget something. Comments are not visible on the web page in the browser but in the source code, which everyone can see.
