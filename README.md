@@ -185,11 +185,11 @@
 
 
 
- * Most HTML elements can be nested and contain other HTML elements, creating a hierarchical structure.
- * see example folders --> *2_StructureOfaHTMLdocument/Part_2/index.html*
-   - Here, within the paragraph, the b element has been nested (b = bold). **b** is the child element of **p** and **p** is the child element of **body**. **html** is the parent element of **body**. In this example, **b** is the child-child-child element of **html**.
-   - Complex HTML documents contain a lot of nesting.
-   - It is important to avoid incorrect nesting, otherwise the web page can be displayed incorrectly and it becomes very confusing.
+* Most HTML elements can be nested and contain other HTML elements, creating a hierarchical structure.
+* see example folders --> *2_StructureOfaHTMLdocument/Part_2/index.html*
+  - Here, within the paragraph, the b element has been nested (b = bold). **b** is the child element of **p** and **p** is the child element of **body**. **html** is the parent element of **body**. In this example, **b** is the child-child-child element of **html**.
+  - Complex HTML documents contain a lot of nesting.
+  - It is important to avoid incorrect nesting, otherwise the web page can be displayed incorrectly and it becomes very confusing.
 
    ```
     <!doctype html>
@@ -206,13 +206,13 @@
    ```
 
 
- * Some HTML elements are standalone tags (void tags) that have no content e.g. **\<br>** (which creates a line break), but this should not be abused, to increase the spacing between lines use CSS.
+* Some HTML elements are standalone tags (void tags) that have no content e.g. **\<br>** (which creates a line break), but this should not be abused, to increase the spacing between lines use CSS.
 
- * HTML elements can contain additional attributes (properties). These can be used to specify additional information about an element. Attributes can be used only with start tags.
-   - see example folders --> *2_StructureOfaHTMLdocument/Part_3/index.html*
-   - with the attribute **lang="en"** you specify the language that will be used
-   - the **\<a></a>** element defines a hyperlink to another page, at **href** you specify the URL to navigate to 
-   - the standalone tag **\<img>** can be used to display images, **src** specifies the location of the image, alt specifies the alternative text if the image cannot be displayed
+* HTML elements can contain additional attributes (properties). These can be used to specify additional information about an element. Attributes can be used only with start tags.
+  - see example folders --> *2_StructureOfaHTMLdocument/Part_3/index.html*
+  - with the attribute **lang="en"** you specify the language that will be used
+  - the **\<a></a>** element defines a hyperlink to another page, at **href** you specify the URL to navigate to 
+  - the standalone tag **\<img>** can be used to display images, **src** specifies the location of the image, alt specifies the alternative text if the image cannot be displayed
 
    ```
     <!doctype html>
@@ -234,8 +234,8 @@
    ```
 
 
-  * There is the possibility to leave comments within the HTML document, these are helpful to understand the code later, if you forget something. Comments are not visible on the web page in the browser but in the source code, which everyone can see.
-	 - this is how a comment is created, everything between the characters is the comment and is not visible on the web page:
+* There is the possibility to leave comments within the HTML document, these are helpful to understand the code later, if you forget something. Comments are not visible on the web page in the browser but in the source code, which everyone can see.
+  - this is how a comment is created, everything between the characters is the comment and is not visible on the web page:
    ```
     <!-- comment --> 
    ```
@@ -257,20 +257,21 @@
 
    ```
 
- * \<!doctype html>
-   - is the first specification in an HTML document, and not an HTML tag but an instruction
-   - it is an instruction for the web browser, in which HTML version the web page was created 
 
- * \<html> \</html>
-   - informs the web browser that there is HTML code present
-   - it encloses all other elements in the HTML code (except \<!doctype html>)
-   - there you can also specify the language **lang="en "** (very helpful for accessibility)
+* \<!doctype html>
+  - is the first specification in an HTML document, and not an HTML tag but an instruction
+  - it is an instruction for the web browser, in which HTML version the web page was created 
 
- * \<head> \</head>
-   - 
+* \<html> \</html>
+  - informs the web browser that there is HTML code present
+  - it encloses all other elements in the HTML code (except \<!doctype html>)
+  - there you can also specify the language **lang="en "** (very helpful for accessibility)
 
- * \<body> \</body>
-   - 
+* \<head> \</head>
+  - 
+
+* \<body> \</body>
+  - 
 
 
 -----------------------------------------------------------------------------------------------------------------
