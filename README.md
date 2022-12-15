@@ -167,12 +167,23 @@
 ## 2. Structure of a HTML document
 
 ### 2.1. Syntax and structure of HTML documents
- * The HTML document is very structured. A complete *HTML element* usually consists of an opening HTML tag (\<html>), a closing HTML tag (\</html>) and everything in between. As *HTML- element* is usually called everything that stands between the tags. So the *HTML elements* ("headline") are marked by *HTML tags* (\<h1> and \</h1>).
+* The HTML document is very structured. A complete *HTML element* usually consists of an opening HTML tag (\<html>), a closing HTML tag (\</html>) and everything in between. As *HTML- element* is usually called everything that stands between the tags. So the *HTML elements* ("headline") are marked by *HTML tags* (\<h1> and \</h1>).
 
- * see example folders --> 2_StructureOfaHTMLdocument/Part_A/index.html
+* see example folders --> *2_StructureOfaHTMLdocument/Part_1/index.html*
   - everything between \<html> and \</html> (root element) is the HTML code for the HTML document
-	- between \<head> and \</head> the header data of the HTML document is summarized
-	- the part visible in the web browser is between \<body> and \</body>
-	- between \<h1> and \</h1> is a 1st order heading
+  - between \<head> and \</head> the header data of the HTML document is summarized
+  - the part visible in the web browser is between \<body> and \</body>
+  - between \<h1> and \</h1> is a 1st order heading
   - between \<h2> and \</h2> there is a 2nd order heading
   - between \<p> and \</p> there is a normal paragraph
+
+* The HTML code of an HTML document consists of pure text. A web browser creates a model from this in the form of a tree structure of objects such as HTML elements, attributes, and texts. This is called a **Document Object Model (DOM)**. Each object in it is called a **node** and can be manipulated via a public interface using JavaScript. This DOM tree can be viewed in the browser, using developer tools provided by the browser.
+
+
+![Preview](Images/DOM_Inspector.PNG)
+
+ * Most HTML elements can be nested and contain other HTML elements, creating a hierarchical structure.
+ * see example folders --> *2_StructureOfaHTMLdocument/Part_2/index.html*
+     - Here, within the paragraph, the b element has been nested (b = bold). **b** is the child element of **p** and **p** is the child element of **body**. **html** is the parent element of **body**. In this example, **b** is the child-child-child element of **html**.
+   - Complex HTML documents contain a lot of nesting.
+   - It is important to avoid incorrect nesting, otherwise the web page can be displayed incorrectly and it becomes very confusing.
