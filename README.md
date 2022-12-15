@@ -171,11 +171,11 @@
 
 * see example folders --> *2_StructureOfaHTMLdocument/Part_1/index.html*
   - everything between **\<html>** and **\</html>** (root element) is the HTML code for the HTML document
-  - between \<head> and \</head> the header data of the HTML document is summarized
-  - the part visible in the web browser is between \<body> and \</body>
-  - between \<h1> and \</h1> is a 1st order heading
-  - between \<h2> and \</h2> there is a 2nd order heading
-  - between \<p> and \</p> there is a normal paragraph
+  - between **\<head>** and **\</head>** the header data of the HTML document is summarized
+  - the part visible in the web browser is between **\<body>** and **\</body>**
+  - between **\<h1>** and **\</h1>** is a 1st order heading
+  - between **\<h2>** and **\</h2>** there is a 2nd order heading
+  - between **\<p>** and **\</p>** there is a normal paragraph
 
 * The HTML code of an HTML document consists of pure text. A web browser creates a model from this in the form of a tree structure of objects such as HTML elements, attributes, and texts. This is called a **Document Object Model (DOM)**. Each object in it is called a **node** and can be manipulated via a public interface using JavaScript. This DOM tree can be viewed in the browser, using developer tools provided by the browser.
 
@@ -190,10 +190,14 @@
    - Complex HTML documents contain a lot of nesting.
    - It is important to avoid incorrect nesting, otherwise the web page can be displayed incorrectly and it becomes very confusing.
 
- * Some HTML elements are standalone tags (void tags) that have no content e.g. \<br> (which creates a line break), but this should not be abused, to increase the spacing between lines use CSS.
+ * Some HTML elements are standalone tags (void tags) that have no content e.g. **\<br>** (which creates a line break), but this should not be abused, to increase the spacing between lines use CSS.
 
  * HTML elements can contain additional attributes (properties). These can be used to specify additional information about an element. Attributes can be used only with start tags.
    - see example folders --> *2_StructureOfaHTMLdocument/Part_3/index.html*
    - with the attribute **lang="en"** you specify the language that will be used
    - the **a** element defines a hyperlink to another page, at **href** you specify the URL to navigate to 
 	 - the standalone tag **\<img>** can be used to display images, **src** specifies the location of the image, alt specifies the alternative text if the image cannot be displayed
+
+  * There is the possibility to leave comments within the HTML document, these are helpful to understand the code later, if you forget something. Comments are not visible on the web page in the browser but in the source code, which everyone can see.
+	 - this is how a comment is created, everything between the characters is the comment and is not visible on the web page:
+   > \<!-- "Kommentar" --> 
