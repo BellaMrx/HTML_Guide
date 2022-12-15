@@ -191,6 +191,21 @@
    - Complex HTML documents contain a lot of nesting.
    - It is important to avoid incorrect nesting, otherwise the web page can be displayed incorrectly and it becomes very confusing.
 
+   ```
+    <!doctype html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+      </head>
+      <body>
+        <p>Here is an <b>usual</b> paragraph text.</p>
+    </body>
+  </html>
+
+   ```
+
+
  * Some HTML elements are standalone tags (void tags) that have no content e.g. **\<br>** (which creates a line break), but this should not be abused, to increase the spacing between lines use CSS.
 
  * HTML elements can contain additional attributes (properties). These can be used to specify additional information about an element. Attributes can be used only with start tags.
@@ -199,6 +214,26 @@
    - the **\<a></a>** element defines a hyperlink to another page, at **href** you specify the URL to navigate to 
    - the standalone tag **\<img>** can be used to display images, **src** specifies the location of the image, alt specifies the alternative text if the image cannot be displayed
 
+   ```
+    <!doctype html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+      </head>
+      <body>
+        <p lang="en">   <!-- lang = language -->
+          Please <a href="https://www.google.com/">click</a> here
+        </p>
+        <p>
+          <img src="GoogleCover.png" alt="Google-Cover" />
+        </p>
+      </body>
+    </html>
+  
+   ```
+
+
   * There is the possibility to leave comments within the HTML document, these are helpful to understand the code later, if you forget something. Comments are not visible on the web page in the browser but in the source code, which everyone can see.
 	 - this is how a comment is created, everything between the characters is the comment and is not visible on the web page:
    ```
@@ -206,4 +241,40 @@
    ```
 
 
-### 2.2. 
+### 2.2. Basic structure of a simple HTML document
+
+   ```
+    <!doctype html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+      </head>
+      <body>
+        <!-- Visible area of the web page in the browser -->
+    </body>
+  </html>
+
+   ```
+
+ * \<!doctype html>
+   - is the first specification in an HTML document, and not an HTML tag but an instruction
+   - it is an instruction for the web browser, in which HTML version the web page was created 
+
+ * \<html> \</html>
+   - informs the web browser that there is HTML code present
+   - it encloses all other elements in the HTML code (except \<!doctype html>)
+   - there you can also specify the language **lang="en "** (very helpful for accessibility)
+
+ * \<head> \</head>
+   - 
+
+ * \<body> \</body>
+   - 
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+
+
