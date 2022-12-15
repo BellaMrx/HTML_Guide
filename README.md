@@ -167,10 +167,10 @@
 ## 2. Structure of a HTML document
 
 ### 2.1. Syntax and structure of HTML documents
-* The HTML document is very structured. A complete *HTML element* usually consists of an opening HTML tag (\<html>), a closing HTML tag (\</html>) and everything in between. As *HTML- element* is usually called everything that stands between the tags. So the *HTML elements* ("headline") are marked by *HTML tags* (\<h1> and \</h1>).
+* The HTML document is very structured. A complete *HTML element* usually consists of an opening HTML tag (**\<html>**), a closing HTML tag (**\</html>**) and everything in between. As *HTML- element* is usually called everything that stands between the tags. So the *HTML elements* ("headline") are marked by *HTML tags* (**\<h1>** and **\</h1>**).
 
 * see example folders --> *2_StructureOfaHTMLdocument/Part_1/index.html*
-  - everything between \<html> and \</html> (root element) is the HTML code for the HTML document
+  - everything between **\<html>** and **\</html>** (root element) is the HTML code for the HTML document
   - between \<head> and \</head> the header data of the HTML document is summarized
   - the part visible in the web browser is between \<body> and \</body>
   - between \<h1> and \</h1> is a 1st order heading
@@ -182,8 +182,18 @@
 
 ![Preview](Images/DOM_Inspector.PNG)
 
+
+
  * Most HTML elements can be nested and contain other HTML elements, creating a hierarchical structure.
  * see example folders --> *2_StructureOfaHTMLdocument/Part_2/index.html*
-     - Here, within the paragraph, the b element has been nested (b = bold). **b** is the child element of **p** and **p** is the child element of **body**. **html** is the parent element of **body**. In this example, **b** is the child-child-child element of **html**.
+   - Here, within the paragraph, the b element has been nested (b = bold). **b** is the child element of **p** and **p** is the child element of **body**. **html** is the parent element of **body**. In this example, **b** is the child-child-child element of **html**.
    - Complex HTML documents contain a lot of nesting.
    - It is important to avoid incorrect nesting, otherwise the web page can be displayed incorrectly and it becomes very confusing.
+
+ * Some HTML elements are standalone tags (void tags) that have no content e.g. \<br> (which creates a line break), but this should not be abused, to increase the spacing between lines use CSS.
+
+ * HTML elements can contain additional attributes (properties). These can be used to specify additional information about an element. Attributes can be used only with start tags.
+   - see example folders --> *2_StructureOfaHTMLdocument/Part_3/index.html*
+   - with the attribute **lang="en"** you specify the language that will be used
+   - the **a** element defines a hyperlink to another page, at **href** you specify the URL to navigate to 
+	 - the standalone tag **\<img>** can be used to display images, **src** specifies the location of the image, alt specifies the alternative text if the image cannot be displayed
