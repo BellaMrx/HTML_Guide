@@ -13,6 +13,7 @@
   - 1.5. Create and view a simple web page
 2. Structure of a HTML document
   - 2.1. Syntax and structure of HTML documents
+3. 
 
 
 ---------------------------------------------------------------------------------------------------------------
@@ -202,7 +203,6 @@
         <p>Here is an <b>usual</b> paragraph text.</p>
     </body>
   </html>
-
    ```
 
 
@@ -230,7 +230,6 @@
         </p>
       </body>
     </html>
-  
    ```
 
 
@@ -254,7 +253,6 @@
         <!-- Visible area of the web page in the browser -->
     </body>
   </html>
-
    ```
 
 
@@ -268,14 +266,18 @@
   - there you can also specify the language **lang="en "** (very helpful for accessibility)
 
 * \<head> \</head>
-  - 
+  - here information is given which is evaluated by the web browser and search engines e.g. scripts, stylesheets, meta information with information about the HTML document.  
+  - the **\<title> \</title>** specifies only the title of the web page that can be seen in the browser
 
 * \<body> \</body>
-  - 
+  - the body element is the displayable area of an HTML document
+  - everything contained in it, such as texts, images, hyperlinks or tables is displayed in the browser
 
 
 -----------------------------------------------------------------------------------------------------------------
 
+
+## 3. 
 
 
 
