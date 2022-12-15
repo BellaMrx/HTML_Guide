@@ -167,12 +167,12 @@
 ## 2. Structure of a HTML document
 
 ### 2.1. Syntax and structure of HTML documents
- * The HTML document is very structured. A complete *HTML element* usually consists of an opening HTML tag (\<html\>), a closing HTML tag (\</html>\) and everything in between. As *HTML- element* is usually called everything that stands between the tags. So the *HTML elements* ("headline") are marked by *HTML tags* (<h1> and </h1>).
+ * The HTML document is very structured. A complete *HTML element* usually consists of an opening HTML tag (\<html>\), a closing HTML tag (\</html>\) and everything in between. As *HTML- element* is usually called everything that stands between the tags. So the *HTML elements* ("headline") are marked by *HTML tags* (\<h1>\ and \</h1>\).
 
  * see example folders --> 2_StructureOfaHTMLdocument/Part_A/index.html
-  - everything between <html> and </html> (root element) is the HTML code for the HTML document
-	- between <head> and </head> the header data of the HTML document is summarized
-	- the part visible in the web browser is between <body> and </body>
-	- between <h1> and </h1> is a 1st order heading
-	- between <h2> and </h2> there is a 2nd order heading
-	- between <p> and </p> there is a normal paragraph
+  - everything between \<html>\ and \</html>\ (root element) is the HTML code for the HTML document
+	- between \<head>\ and \</head>\ the header data of the HTML document is summarized
+	- the part visible in the web browser is between \<body>\ and \</body>\
+	- between \<h1>\ and \</h1>\ is a 1st order heading
+  - between \<h2>\ and \</h2>\ there is a 2nd order heading
+  - between \<p>\ and \</p>\ there is a normal paragraph
