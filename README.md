@@ -200,4 +200,4 @@
 
   * There is the possibility to leave comments within the HTML document, these are helpful to understand the code later, if you forget something. Comments are not visible on the web page in the browser but in the source code, which everyone can see.
 	 - this is how a comment is created, everything between the characters is the comment and is not visible on the web page:
-   > \<!-- "Kommentar" --> 
+   > \<!-- "comment" --> 
