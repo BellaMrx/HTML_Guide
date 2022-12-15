@@ -12,6 +12,7 @@
   - 1.4. Software for the creation and presentation of web pages
   - 1.5. Create and view a simple web page
 2. Structure of a HTML document
+  - 2.1. Syntax and structure of HTML documents
 
 
 ---------------------------------------------------------------------------------------------------------------
@@ -200,4 +201,9 @@
 
   * There is the possibility to leave comments within the HTML document, these are helpful to understand the code later, if you forget something. Comments are not visible on the web page in the browser but in the source code, which everyone can see.
 	 - this is how a comment is created, everything between the characters is the comment and is not visible on the web page:
-   > \<!-- "comment" --> 
+   ```
+    <!-- comment --> 
+   ```
+
+
+### 2.2. 
