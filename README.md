@@ -277,7 +277,40 @@
 -----------------------------------------------------------------------------------------------------------------
 
 
-## 3. 
+## 3. The header data of an HTML document
+* Between <head> and </head> different HTML elements can be inserted, with which the contents and the representation can be steered. Relationships between the web browser and other pages or documents can also be established there. The content in the header (except **title**) is not displayed in the browser. The **head** element must follow directly after the open *html* element. The only specification in the **head** area that should always be made is the **title** element.. 
 
 
+| HTML element         | Explanation                                                                     |
+|--------------------- | ------------------------------------------------------------------------------- |
+| \<title>...</title>  | the title of the HTML document (visible in the browser)                         |
+| \<base>              | sets base URLs / targets for all relative URLs in a web page                    |
+| \<link>              | sets logical links of the HTML document to other files to be included           |
+| \<style>...\</style> | sets the local stylesheet rules for the HTML document                           |
+| \<script>...\<script>| includes the client-side scripts, may also be used outside the **head** element |
+| \<meta>              | sets the metadata like keywords, descriptions or the character set for the HTML document     |
 
+
+     ```
+      <!doctype html>
+      <html>
+        <head>
+          <base href="https://www.website.com/" target="_blank">
+          <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <style>
+            body {background-color: green;}
+          </style>
+          <script src="ajax_libs_jquery_3.5.js"></script>
+          <meta name="keywords" content="HTML, CSS">
+          <meta name="description" content="Free Web tutorials for HTML">
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Website title</title>
+        </head>
+        <body>
+          <!-- Visible area of the web page in the browser -->
+        </body>
+      </html>
+     ```
