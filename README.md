@@ -13,8 +13,9 @@
   - 1.5. Create and view a simple web page
 2. Structure of a HTML document
   - 2.1. Syntax and structure of HTML documents
-3. 
-
+3. The header data of an HTML document
+  - 3.1. The HTML elements for the header
+  - 3.2 The title element
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -279,7 +280,7 @@
 
 ## 3. The header data of an HTML document
 ### 3.1. The HTML elements for the header
-* Between \<head> and \</head> different HTML elements can be inserted, with which the contents and the representation can be steered. Relationships between the web browser and other pages or documents can also be established there. The content in the header (except **title**) is not displayed in the browser. The **head** element must follow directly after the open *html* element. The only specification in the **head** area that should always be made is the **title** element.. 
+* Between \<head> and \</head> different HTML elements can be inserted, with which the contents and the representation can be controlled. Relationships between the web browser and other pages or documents can also be established there. The content in the header (except **title**) is not displayed in the browser. The **head** element must follow directly after the open **html** element. The only specification in the **head** area that should always be made is the **title** element.. 
 
 
 | HTML element           | Explanation                                                                     |
@@ -315,3 +316,5 @@
         </body>
       </html>
      ```
+
+### 3.2 The title element 
