@@ -316,5 +316,7 @@
         </body>
       </html>
      ```
+##### The complete explanations for the individual tags will be given in the next chapters, these are only examples.
+
 
 ### 3.2 The title element 
