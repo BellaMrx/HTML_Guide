@@ -278,17 +278,18 @@
 
 
 ## 3. The header data of an HTML document
+### 3.1. The HTML elements for the header
 * Between <head> and </head> different HTML elements can be inserted, with which the contents and the representation can be steered. Relationships between the web browser and other pages or documents can also be established there. The content in the header (except **title**) is not displayed in the browser. The **head** element must follow directly after the open *html* element. The only specification in the **head** area that should always be made is the **title** element.. 
 
 
-| HTML element         | Explanation                                                                     |
-|--------------------- | ------------------------------------------------------------------------------- |
-| \<title>...</title>  | the title of the HTML document (visible in the browser)                         |
-| \<base>              | sets base URLs / targets for all relative URLs in a web page                    |
-| \<link>              | sets logical links of the HTML document to other files to be included           |
-| \<style>...\</style> | sets the local stylesheet rules for the HTML document                           |
-| \<script>...\<script>| includes the client-side scripts, may also be used outside the **head** element |
-| \<meta>              | sets the metadata like keywords, descriptions or the character set for the HTML document     |
+| HTML element           | Explanation                                                                     |
+|----------------------- | ------------------------------------------------------------------------------- |
+| \<title>...</title>    | the title of the HTML document (visible in the browser)                         |
+| \<base>                | sets base URLs / targets for all relative URLs in a web page                    |
+| \<link>                | sets logical links of the HTML document to other files to be included           |
+| \<style>...\</style>   | sets the local stylesheet rules for the HTML document                           |
+| \<script>...\<script>  | includes the client-side scripts, may also be used outside the **head** element |
+| \<meta>                | sets the metadata like keywords, descriptions or the character set for the HTML document     |
 
 
      ```
