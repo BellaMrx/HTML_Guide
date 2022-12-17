@@ -16,8 +16,9 @@
     - 2.2. Basic structure of a simple HTML document
 3. The header data of an HTML document
     - 3.1. The HTML elements for the header
-    - 3.2 The title element
+    - 3.2. The title element
     - 3.3. The base element
+    - 3.4. The link element
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -336,3 +337,24 @@ The complete explanations for each tag will be given in the next chapters, these
 
 
 ### 3.3. The base element
+ * The base-element specifies a base URL or base target for all relative URLs in an HTML document. By defining such a base URL, a relative or absolute address to the file can be used in the document as if it were located directly on the same host or computer. Can be used only once in the HTML document.
+   - see example folders --> *3_TheHeader/Part_2/index.html*
+
+    ```
+    <head>
+      <base href="https://www.w3schools.com/" target="_blank">
+    </head>
+   ```
+   source [w3school](https://www.w3schools.com/tags/tag_base.asp)
+
+| Attribute | Explanation                                                                                     |
+| --------- | ----------------------------------------------------------------------------------------------- |
+| href      | The base URL is defined in the process. This URL is used by the web browser as the base address for relative and absolute path specifications in the document and is supplemented with this base URL.         |
+| target    | This attribute is used to specify the target window in which the link target should be displayed. Possible values and their meaning are:                                                                        |
+            | _self  | opens the link in the current window, is the default setting when *target* is not used |
+            | _blank | opens the link in a new window or tab                                                  |
+            | _parent| opens the reference in the parent window: is the window from which the current window was opened                                                                                            |
+            | _top     | loads the reference of the file in the highest hierarchy in the window			          |
+
+
+### 3.4. The link element
