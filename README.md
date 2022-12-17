@@ -369,14 +369,14 @@ The complete explanations for each tag will be given in the next chapters, these
     </head>
    ```
 
-| Attributes | Explanation                                                                                     |
-| ---------- | ----------------------------------------------------------------------------------------------- |
-| href       | Here the URL to the resource to be linked is specified, this attribute must be used.     	   	 |
-| hreflang   | Defines the language of the resource to be linked                                               |
-| media      | Here you specify for which medium/device the target resource is optimized in *href*.            |
-| size       | Specifies the size for the resource to be linked, e.g. *rel="icon" size="any "*.                |
-| type       | This specifies the *MIME type* for the document to be linked e.g. *type="text/css "*.    	     |
-| rel        | This sets the relationship between the current document and the external resource in *href*. Possible values are: |
+| Attributes  | Explanation                                                                                     |
+| ----------- | ----------------------------------------------------------------------------------------------- |
+| **href**    | Here the URL to the resource to be linked is specified, this attribute must be used.     	      |
+| **hreflang**| Defines the language of the resource to be linked                                               |
+| **media**   | Here you specify for which medium/device the target resource is optimized in *href*.            |
+| **size**    | Specifies the size for the resource to be linked, e.g. *rel="icon" size="any "*.                |
+| **type**    | This specifies the *MIME type* for the document to be linked e.g. *type="text/css "*.    	     |
+| **rel**     | This sets the relationship between the current document and the external resource in *href*. Possible values are: |
 | alternate | links to an alternative presentation form of the current page 		       				       |
 | author    | links to another page with information about the author    		      				           |
 | mailto    | link to an e-mail address of the author                               	 	       			 |
