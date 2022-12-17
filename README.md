@@ -6,16 +6,18 @@
 
 ## Contents
 1. Introduction to HTML
-  - 1.1. Different types of websites
-  - 1.2. Dynamic and static websites
-  - 1.3. Programming languages for web development 
-  - 1.4. Software for the creation and presentation of web pages
-  - 1.5. Create and view a simple web page
+    - 1.1. Different types of websites
+    - 1.2. Dynamic and static websites
+    - 1.3. Programming languages for web development 
+    - 1.4. Software for the creation and presentation of web pages
+    - 1.5. Create and view a simple web page
 2. Structure of a HTML document
-  - 2.1. Syntax and structure of HTML documents
+    - 2.1. Syntax and structure of HTML documents
+    - 2.2. Basic structure of a simple HTML document
 3. The header data of an HTML document
-  - 3.1. The HTML elements for the header
-  - 3.2 The title element
+    - 3.1. The HTML elements for the header
+    - 3.2 The title element
+    - 3.3. The base element
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -128,7 +130,7 @@
 	  - Mac: TextEdit 
 
   * Most web developers use special editors, the advantage is on the one hand the syntax highlighting and many other helpful functions for the creation of web pages.
-    - Visual Studio Code --> [VSCode](https://code.visualstudio.com/) (My choice)
+    - Visual Studio Code --> [VSCode](https://code.visualstudio.com/) (my favorite)
     - Adobe Brackets --> [Adobe Brackets](https://brackets.io/) 
     - Atom --> [Atom](https://atom.io/) 
     - Sublime Text --> [Sublime Text](https://www.sublimetext.com/) 
@@ -316,7 +318,21 @@
         </body>
       </html>
      ```
-##### The complete explanations for the individual tags will be given in the next chapters, these are only examples.
+The complete explanations for each tag will be given in the next chapters, these are just examples, at this point you don't need to understand it all.
 
 
-### 3.2 The title element 
+### 3.2. The title element 
+ * A title should be used in each HTML document, which is displayed in the browser header. Only one title element can be used per HTML document. The title element can be skipped, but the web page will not be considered valid. The title element serves the user e.g. if the page is saved as a bookmark, then the title is displayed as a name suggestion. And most importantly, the title has a high importance in search engines, because it is what the user sees first in the search engine when the pages are listed. 
+
+    ```
+    <head>
+      <meta charset="UTF-8">
+      <title>The heading of the HTML page</title>
+    </head>
+   ```
+- see example folders --> *3_TheHeader/Part_1/index.html*
+
+![Preview](Images/BrowserTitle.PNG)
+
+
+### 3.3. The base element
