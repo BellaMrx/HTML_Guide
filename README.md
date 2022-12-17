@@ -19,6 +19,7 @@
     - 3.2. The title element
     - 3.3. The base element
     - 3.4. The link element
+    - 3.5. The style element
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -375,7 +376,7 @@ The complete explanations for each tag will be given in the next chapters, these
 | **hreflang**| Defines the language of the resource to be linked                                               |
 | **media**   | Here you specify for which medium/device the target resource is optimized in *href*.            |
 | **size**    | Specifies the size for the resource to be linked, e.g. *rel="icon" size="any "*.                |
-| **type**    | This specifies the *MIME type* for the document to be linked e.g. *type="text/css "*.    	     |
+| **type**    | This specifies the *MIME type* for the document to be linked e.g. *type="text/css "*.    	      |
 | **rel**     | This sets the relationship between the current document and the external resource in *href*. Possible values are: |
 | alternate | links to an alternative presentation form of the current page 		       				       |
 | author    | links to another page with information about the author    		      				           |
@@ -390,3 +391,28 @@ The complete explanations for each tag will be given in the next chapters, these
 | search    | links the current document to another document where the search is possible through the whole web page 	|
 | stylesheet| links an external CSS file to the current HTML document							                   |
 | tag       | a simple tag as a linked resource that applies to the current document					       |
+
+
+### 3.5. The style element
+* This element can be used to include style information (CSS) within the HTML document.
+   - see example folders --> *3_TheHeader/Part_4/index.html*
+
+   ```
+    <head>
+      <style type="text/css">
+       p { 
+          width: 200px;
+          padding: 10px;
+          border: 5px solid green;
+          background-color :greenyellow;
+          text-align: center;
+        }
+      </style>
+      <title>The style element in action</title>
+      <meta charset="UTF-8">
+    </head>
+   ```
+| Attributes  | Explanation                                                                                    |
+| ----------- | -----------------------------------------------------------------------------------------------|
+| **media**   | Here you specify for which medium/device the target resource is optimized in *href*.           |
+| **type**    | This specifies the *MIME type* for the document to be linked e.g. *type="text/css "*.    	     |
