@@ -347,10 +347,11 @@ The complete explanations for each tag will be given in the next chapters, these
     ```
    source [w3school](https://www.w3schools.com/tags/tag_base.asp)
 
-| Attribute | Explanation                                                                                     |
-| --------- | ----------------------------------------------------------------------------------------------- |
-| **href**  | The base URL is defined in the process. This URL is used by the web browser as the base address for relative and absolute path specifications in the document and is supplemented with this base URL.         |
-| **target**| This attribute is used to specify the target window in which the link target should be displayed. Possible values and their meaning are:                                                                        |
+| Attributes | Explanation                                                                                     |
+| ---------- | ----------------------------------------------------------------------------------------------- |
+| **href**   | The base URL is defined in the process. This URL is used by the web browser as the base address for relative and absolute path specifications in the document and is supplemented with this base URL.         |
+| **target** | This attribute is used to specify the target window in which the link target should be displayed. Possible values and their meaning are:                                                                        |
+
 | _self  | opens the link in the current window, is the default setting when *target* is not used             |
 | _blank | opens the link in a new window or tab                                                              |
 | _parent| opens the reference in the parent window: is the window from which the current window was opened   |
@@ -369,3 +370,25 @@ The complete explanations for each tag will be given in the next chapters, these
     </head>
    ```
 
+| Attributes | Explanation                                                                                     |
+| ---------- | ----------------------------------------------------------------------------------------------- |
+| href       | Here the URL to the resource to be linked is specified, this attribute must be used.     	   	 |
+| hreflang   | Defines the language of the resource to be linked                                               |
+| media      | Here you specify for which medium/device the target resource is optimized in *href*.            |
+| size       | Specifies the size for the resource to be linked, e.g. *rel="icon" size="any "*.                |
+| type       | This specifies the *MIME type* for the document to be linked e.g. *type="text/css "*.    	     |
+| rel        | This sets the relationship between the current document and the external resource in *href*. Possible values are: |
+
+| alternate | links to an alternative presentation form of the current page 		       				       |
+| author    | links to another page with information about the author    		      				           |
+| mailto    | link to an e-mail address of the author                               	 	       			 |
+| archives  | links to a previous version of certain documents           		       				           |
+| help      | links to a help document                                      		       				       |
+| icon      | this assigns a favicon to the web page                                                 |
+| license   | links the current page, with the page of the rights of use for the contents of the page|
+| next,pref | is used to create a link from the current or previous page      	                     |
+| prefetch  | links to an external web page that the user is likely to visit next       				     |
+| pingback  | the website of a pingback server is specified here							                       |
+| search    | links the current document to another document where the search is possible through the whole web page 	|
+| stylesheet| links an external CSS file to the current HTML document							                   |
+| tag       | a simple tag as a linked resource that applies to the current document					       |
