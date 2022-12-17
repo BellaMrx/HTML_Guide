@@ -351,7 +351,6 @@ The complete explanations for each tag will be given in the next chapters, these
 | ---------- | ----------------------------------------------------------------------------------------------- |
 | **href**   | The base URL is defined in the process. This URL is used by the web browser as the base address for relative and absolute path specifications in the document and is supplemented with this base URL.         |
 | **target** | This attribute is used to specify the target window in which the link target should be displayed. Possible values and their meaning are:                                                                        |
-
 | _self  | opens the link in the current window, is the default setting when *target* is not used             |
 | _blank | opens the link in a new window or tab                                                              |
 | _parent| opens the reference in the parent window: is the window from which the current window was opened   |
@@ -378,7 +377,6 @@ The complete explanations for each tag will be given in the next chapters, these
 | size       | Specifies the size for the resource to be linked, e.g. *rel="icon" size="any "*.                |
 | type       | This specifies the *MIME type* for the document to be linked e.g. *type="text/css "*.    	     |
 | rel        | This sets the relationship between the current document and the external resource in *href*. Possible values are: |
-
 | alternate | links to an alternative presentation form of the current page 		       				       |
 | author    | links to another page with information about the author    		      				           |
 | mailto    | link to an e-mail address of the author                               	 	       			 |
