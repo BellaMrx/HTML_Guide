@@ -20,6 +20,8 @@
     - 3.3. The base element
     - 3.4. The link element
     - 3.5. The style element
+    - 3.6. The script element
+    - 3.t. The meta element
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -416,3 +418,42 @@ The complete explanations for each tag will be given in the next chapters, these
 | ----------- | -----------------------------------------------------------------------------------------------|
 | **media**   | Here you specify for which medium/device the target resource is optimized in *href*.           |
 | **type**    | This specifies the *MIME type* for the document to be linked e.g. *type="text/css "*.    	     |
+
+
+### 3.6. The script element
+* This element is used to include scripts in a document. The script can either be included directly in the HTML document between /<script>.../</script>, or an external script with the src attribute.
+   - see example folders --> *3_TheHeader/Part_5/indexA.html* 
+
+   ```
+    <head>
+      <title>Use the script element</title>
+      <script type="text/javascript">
+ 
+         window.onload=alert("JavaScript!")
+
+      </script>
+      <meta charset="UTF-8">
+    </head>
+   ```
+
+   - see example folders --> *3_TheHeader/Part_5/indexB.html* --> external script
+
+   ```
+    <head>
+      <title>Use the script element</title>
+      <script type="text/javascript" src="script.js"></script>
+      <meta charset="UTF-8">
+    </head>
+   ```
+
+
+| Attributes  | Explanation                                                                                    |
+| ----------- | -----------------------------------------------------------------------------------------------|
+| async       | the script is executed asynchronously with the HTML document, can only be used for external scripts |
+| charset     | lsets the character encoding for the external script			 				|
+| defer       | the web page is parsed first and then the script is executed, can only be used for external scripts |
+| src         | this specifies the URL to the external script								|
+| type        | this specifies the *MIME type* for the document to be linked e.g. *type="text/javascript"*.   |
+
+
+### 3.7. The meta element
