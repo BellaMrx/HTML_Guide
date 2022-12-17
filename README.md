@@ -351,10 +351,10 @@ The complete explanations for each tag will be given in the next chapters, these
 | --------- | ----------------------------------------------------------------------------------------------- |
 | href      | The base URL is defined in the process. This URL is used by the web browser as the base address for relative and absolute path specifications in the document and is supplemented with this base URL.         |
 | target    | This attribute is used to specify the target window in which the link target should be displayed. Possible values and their meaning are:                                                                        |
-|           | _self  | opens the link in the current window, is the default setting when *target* is not used |
-|           | _blank | opens the link in a new window or tab                                                  |
-|           | _parent| opens the reference in the parent window: is the window from which the current window was opened  |
-|           | _top   | loads the reference of the file in the highest hierarchy in the window			            |
+| _self  | opens the link in the current window, is the default setting when *target* is not used             |
+| _blank | opens the link in a new window or tab                                                              |
+| _parent| opens the reference in the parent window: is the window from which the current window was opened   |
+| _top   | loads the reference of the file in the highest hierarchy in the window			                        |
 
 
 ### 3.4. The link element
