@@ -325,7 +325,7 @@ The complete explanations for each tag will be given in the next chapters, these
 ### 3.2. The title element 
  * A title should be used in each HTML document, which is displayed in the browser header. Only one title element can be used per HTML document. The title element can be skipped, but the web page will not be considered valid. The title element serves the user e.g. if the page is saved as a bookmark, then the title is displayed as a name suggestion. And most importantly, the title has a high importance in search engines, because it is what the user sees first in the search engine when the pages are listed. 
 
-    ```
+   ```
     <head>
       <meta charset="UTF-8">
       <title>The heading of the HTML page</title>
@@ -341,16 +341,16 @@ The complete explanations for each tag will be given in the next chapters, these
    - see example folders --> *3_TheHeader/Part_2/index.html*
 
     ```
-    <head>
-      <base href="https://www.w3schools.com/" target="_blank">
-    </head>
-   ```
+     <head>
+       <base href="https://www.w3schools.com/" target="_blank">
+     </head>
+    ```
    source [w3school](https://www.w3schools.com/tags/tag_base.asp)
 
 | Attribute | Explanation                                                                                     |
 | --------- | ----------------------------------------------------------------------------------------------- |
-| href      | The base URL is defined in the process. This URL is used by the web browser as the base address for relative and absolute path specifications in the document and is supplemented with this base URL.         |
-| target    | This attribute is used to specify the target window in which the link target should be displayed. Possible values and their meaning are:                                                                        |
+| **href**  | The base URL is defined in the process. This URL is used by the web browser as the base address for relative and absolute path specifications in the document and is supplemented with this base URL.         |
+| **target**| This attribute is used to specify the target window in which the link target should be displayed. Possible values and their meaning are:                                                                        |
 | _self  | opens the link in the current window, is the default setting when *target* is not used             |
 | _blank | opens the link in a new window or tab                                                              |
 | _parent| opens the reference in the parent window: is the window from which the current window was opened   |
@@ -358,3 +358,14 @@ The complete explanations for each tag will be given in the next chapters, these
 
 
 ### 3.4. The link element
+* The link element is a stand-alone tag that may be used multiple times in the HTML document. In practice, it is often used to include an external CSS file, and other files. The relationship between the HTML document and the external document is specified with the HTML attribute *rel*.
+   - see example folders --> *3_TheHeader/Part_3/index.html*
+
+   ```
+    <head>
+      <title>Logical linking with link</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <meta charset="UTF-8">
+    </head>
+   ```
+
