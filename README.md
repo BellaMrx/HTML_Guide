@@ -21,7 +21,7 @@
     - 3.4. The link element
     - 3.5. The style element
     - 3.6. The script element
-    - 3.t. The meta element
+    - 3.7. The meta element
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -528,3 +528,12 @@ The complete explanations for each tag will be given in the next chapters, these
         <meta name="viewport" content="width-device-width" initial-scale=1.0 >       
       </head>
      ``` 
+
+* The HTML attributes for the HTML element /<meta>
+
+| Attributes | Explanation                                                                                    |
+| ---------- | -----------------------------------------------------------------------------------------------|
+| content    | passes the value associated with the attribute of *http-equiv* or *name*					              |
+| charset    | sets the character encoding for the HTML document				 						                          |
+| http-equiv | is used for the HTTP response header. Some possible values are: content-language, content-type, default-style, refresh	|
+| name       | defines a name for the metadata. Some default values are: application-name, author, description, generator, keywords	|
