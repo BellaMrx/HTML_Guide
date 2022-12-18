@@ -457,3 +457,74 @@ The complete explanations for each tag will be given in the next chapters, these
 
 
 ### 3.7. The meta element
+* This can be used to record additional information or data about the HTML document. This can be instructions for the web browser, the web server or a web crawler. This information is optional but often included. There are many such attributes, and many of these are not uniformly standardized. A meta element usually consists of two attributes (*http-equiv, name/content*).
+   ```
+    <meta http-equiv="refresh" content="5">
+   ```
+
+* The most used meta tags
+  - The HTML attribute *name* can contain any amount of information in the *content*. But some default metadata for *name* has been defined. The *name/content* combination is not meant for personal information, but about the HTML document. The *keyword* is important for search engines. 
+     ```
+      <head>
+        <meta name="author" content="John Doe">
+        <meta name="keywords" content="HTML, meta data">
+      </head>
+     ```
+ 
+  - The *http-equiv* specification is for the web browser to communicate with, but web servers don't actually parse HTML documents, so it's up to the browser who processes the specification.
+  - see example folders --> *3_TheHeader/Part_6/indexA.html* 
+     ```
+      <head>
+        <meta http-equiv="refresh" content="5">
+      </head>
+     ```
+  - This specification should be used if the web page was not created in English to be able to display special characters.
+  - see example folders --> *3_TheHeader/Part_6/indexB.html* 
+     ```
+      <head>
+        <meta charset="UTF-8">
+      </head>
+     ```
+
+* The viewport
+  - is the area of the browser window in which the webinahlte are displayed. In order for the web page to be displayed properly on a mobile device, we need this specification (responsive web design)
+	- initial-scale=1.0* ensures that the browser displays the page with the normal zoom level.
+     ```
+      <head>
+        <meta name="viewport" content="width-device-width" initial-scale=1.0 >
+      </head>
+     ```
+
+* Webcrawler
+  - This allows the search robot to include the web page in the search engine index and follow the hyperlink. However, it can be omitted because that is the usual behavior of a web crawler. 
+     ```
+      <head>
+        <meta name="robots" content="index,follow">
+      </head>
+     ```
+
+  - This specifies the web page should not be included in the search engine index area. 
+     ```
+      <head>
+        <meta name="robots" content="noindex">
+      </head>
+     ```
+
+* Helpful metadata for search engines
+	- For search engines *name* values have special meaning *keywords* and *description*. However, *keywords* has not so great importance anymore, in addition much abuse and the search engines the complete side after contents examines. *keywords* should still be specified because if the page is found, the search engine displays this text, if no specification of *keywords* then the search engine looks for any text of the page.
+     ```
+      <head>
+        <meta name="keywords" content="html, meta, tutorial">
+      </head>
+     ```
+
+* These meta data should be present in a HTML framework
+	- finally it is up to everyone which are needed, these should at least be included
+
+     ```
+      <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="A description should be as short and precise as possible. It should explain in 2-3 sentences what this page is about.">
+        <meta name="viewport" content="width-device-width" initial-scale=1.0 >       
+      </head>
+     ``` 
