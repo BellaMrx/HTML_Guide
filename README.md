@@ -524,7 +524,8 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
       <head>
         <meta charset="UTF-8">
-        <meta name="description" content="A description should be as short and precise as possible. It should explain in 2-3 sentences what this page is about.">
+        <meta name="description" content="A description should be as short and precise as possible. 
+        It should explain in 2-3 sentences what this page is about.">
         <meta name="viewport" content="width-device-width" initial-scale=1.0 >       
       </head>
      ``` 
