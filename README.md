@@ -763,9 +763,9 @@ The complete explanations for each tag will be given in the next chapters, these
         <p>It looks like ...</p>
 	      <footer>
           <address>The article was created by:<br>
-            Rick Simple<br>
-            Simplesstreet 1234<br>
-            12345 Simpletown<br>
+            Rick Sample<br>
+            Samplesstreet 1234<br>
+            12345 Sampletown<br>
 		        www.website.com
           </address>
         </footer>
