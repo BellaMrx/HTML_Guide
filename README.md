@@ -764,7 +764,7 @@ The complete explanations for each tag will be given in the next chapters, these
 	      <footer>
           <address>The article was created by:<br>
             Rick Sample<br>
-            Samplesstreet 1234<br>
+            Samplestreet 1234<br>
             12345 Sampletown<br>
 		        www.website.com
           </address>
