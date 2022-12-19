@@ -532,7 +532,7 @@ The complete explanations for each tag will be given in the next chapters, these
       </head>
      ``` 
 
-* The HTML attributes for the HTML element /<meta>
+* The HTML attributes for the HTML element \<meta>
 
 | Attributes | Explanation                                                                                    |
 | ---------- | -----------------------------------------------------------------------------------------------|
@@ -556,7 +556,7 @@ The complete explanations for each tag will be given in the next chapters, these
 | \<article>    | subdivision of content into a self-contained topic-specific block		       |
 | \<aside>      | used for marginal information of a content like a sidebar or additional information about an article  |
 | \<nav>        | elements used to mark up navigation such as a sitemap or the main navigation of a web page				  |
-| \<h1> - <h6>  | headings of the 1st - 6th order												                    |
+| \<h1> - \<h6>  | headings of the 1st - 6th order												                    |
 | \<header>     | header of a content													                              |
 | \<footer>     | footer of a content													                              |	
 | \<address>    | contact information about the author of the content											  |
