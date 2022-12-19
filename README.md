@@ -423,7 +423,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 
 ### 3.6. The script element
-* This element is used to include scripts in a document. The script can either be included directly in the HTML document between /<script>.../</script>, or an external script with the src attribute.
+* This element is used to include scripts in a document. The script can either be included directly in the HTML document between \<script>...</script>, or an external script with the src attribute.
    - see example folders --> *3_TheHeader/Part_5/indexA.html* 
 
    ```
@@ -551,22 +551,22 @@ The complete explanations for each tag will be given in the next chapters, these
 
 | HTML elements | Explanation                                                                            |
 | ------------- | -------------------------------------------------------------------------------------- |
-| /<body>       | displayable area of the HTML document, visible on the web page 						 |
-| /<section>    | divides the HTML document into different sections				 					         |
-| /<article>    | subdivision of content into a self-contained topic-specific block		       |
-| /<aside>      | used for marginal information of a content like a sidebar or additional information about an article  |
-| /<nav>        | elements used to mark up navigation such as a sitemap or the main navigation of a web page				  |
-| /<h1> - <h6>  | headings of the 1st - 6th order												                    |
-| /<header>     | header of a content													                              |
-| /<footer>     | footer of a content													                              |	
-| /<address>    | contact information about the author of the content											  |
+| \<body>       | displayable area of the HTML document, visible on the web page 						 |
+| \<section>    | divides the HTML document into different sections				 					         |
+| \<article>    | subdivision of content into a self-contained topic-specific block		       |
+| \<aside>      | used for marginal information of a content like a sidebar or additional information about an article  |
+| \<nav>        | elements used to mark up navigation such as a sitemap or the main navigation of a web page				  |
+| \<h1> - <h6>  | headings of the 1st - 6th order												                    |
+| \<header>     | header of a content													                              |
+| \<footer>     | footer of a content													                              |	
+| \<address>    | contact information about the author of the content											  |
 
-* /<body>
-	- everything between /<body> and /</body>, is called the document body
+* \<body>
+	- everything between \<body> and \</body>, is called the document body
 	- all HTML elements such as text, hyperlinks, images, tables or lists are displayed there to define the structure of the web page
 	- all elements in the document body are rendered by the web browser and displayed accordingly
 
-* /<section>
+* \<section>
 	- this element is initially used only to divide the content into semantic sections
 	- mainly serve to give meaning to the content, especially helpful for developers, search engines and screen readers
 	- the content is divided into topic-related sections, helpful when creating individual chapters or subchapters 
@@ -588,9 +588,9 @@ The complete explanations for each tag will be given in the next chapters, these
       </body>
      ```
 
-* /<article>
+* \<article>
 	- should be used to summarize content in a self-contained topic-specific block
-	- is relatively similar to /<section>, however /<article> should be used for self-contained sections, such as news item
+	- is relatively similar to \<section>, however \<article> should be used for self-contained sections, such as news item
   - see example folders --> *4_TheBody/Part_2/index.html*
      ```
       <body>
