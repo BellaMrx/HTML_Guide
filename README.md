@@ -546,7 +546,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 
 ## 4. The visible area of an HTML document
-### 4.1 The HTML elements for page structuring
+### 4.1. The HTML elements for page structuring
 * These elements are needed to divide the web page into meaningful areas. The content model was introduced to combat the rampant use of *div* elements with *class* attributes.
 
 | HTML elements | Explanation                                                                            |
@@ -607,4 +607,179 @@ The complete explanations for each tag will be given in the next chapters, these
       </article>
       </body>
      ```
+
+* \<aside>
+	- can usually supplement or extend content with additional information
+	- can be used either for a sidebar or additional information (e.g. citation) within an \<article> element
+  - see example folders --> *4_TheBody/Part_3/indexB.html*
+  - see example folders --> *4_TheBody/Part_3/indexA.html*
+     ```
+      <body>
+      <h1>My blog</h1>
+      <p>Latest HTML reports</p>
+      <article>
+        <header>
+          <h2>HTML5.3</h2>
+        </header>
+        <p>Published on <time>2018-05-05</time></p>
+        <p>As already suspected ...</p>
+        <footer>
+          <a href="comments.html">Show comments...</a>
+        </footer>
+      </article>
+      <aside>
+      <h3>Partner websites</h3>
+        <ul>
+          <li><a href="#">Blog XY</a></li>
+          <li><a href="#">Magazin X</a></li>
+         <li><a href="#">Website Z</a></li>
+        </ul>
+      </aside>
+      </body>
+     ```
+
+* \<nav>
+	- this can be used to split navigation elements into blocks e.g. for the main navigation or a list of links for a sitemap
+	- should be used when whole blocks of links are needed
+  - see example folders --> *4_TheBody/Part_4/index.html*
+     ```
+      <body>
+      <nav>
+        <a href="#">Blog</a> |
+        <a href="#">Links</a> |
+        <a href="#">About me</a> |
+        <a href="#">Legal Notice</a>
+      </nav>
+      <h1>My blog</h1>
+      <p>Latest HTML reports</p>
+      <article>
+        <header>
+          <h2>HTML5.3</h2>
+        </header>
+        <p>Published on <time>2018-05-05</time></p>
+        <p>As already suspected ...</p>
+        <aside>
+        <h3>Related articles</h3>
+          <nav>
+          <ul>
+            <li><a href="#">HTML5.4 will not exist</a></li>
+            <li><a href="#">W3C and WHATWG disagree</a></li>
+            <li><a href="#">What comes after HTML5?</a></li>
+          </ul>
+          </nav>
+        </aside>
+        <footer>
+          <a href="comments.html">Show comments...</a>
+        </footer>
+      </article>
+      <aside>
+      <h3>Sitemap</h3>
+        <nav>
+        <ul>
+          <li><a href="#">Blog</a>
+          <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+          </ul>
+          </li>
+          <li><a href="#">Links</a></li>
+          <li><a href="#">About me</a>
+          <ul>
+            <li><a href="#">Vita</a></li>
+            <li><a href="#">Portfolio</a></li>
+          </ul>
+          </li>
+          <li><a href="#">Legal Notic</a></li>
+        </ul>
+        </nav>
+      </aside>
+      </body>
+     ```
+
+* \<h1> - \<h6>
+	- is used for headings, this element is used to define the content structure of a document
+  - see example folders --> *4_TheBody/Part_5/indexA.html*
+     ```
+      <body>
+      <h1>My blog</h1>
+      <p>A simple blog...</p>
+        <h2>HTML News</h2>
+          <h3>A preview of HTML5.3</h3>
+          <p>It looks like it ...</p>
+        <h2>CSS News</h2>
+          <h3>New styles</h3>
+          <p>After a long period of development ...</p>
+      </body>
+     ```
+  - Outline: is the name for the structure of the document
+	 - [HTML5 Outliner](https://h5o.github.io) 
+	 - [Validation check](https://validator.w3.org/nu/#textarea)
+	 - see example folders --> *4_TheBody/Part_5/indexB.html*
+
+* \<header> and \<footer>.
+	- is responsible for the header and footer of an HTML document
+	- in the \<header> can be other elements, but to nest another \<header> in it is not optimal, but can be used several times in the document, the \<header> does not have to be the first element 
+	- \<footer> does not have to be the last element in the document, it usually contains legal information, legal notice, contact information, no other element can be used inside the \<footer>
+  - see example folders --> *4_TheBody/Part_6/index.html*
+     ```
+      <body>
+      <header>
+        <hr />
+        <small>Blog version 1.0</small>
+        <h1>My blog</h1>
+        <p>A simple blog...</p>
+        <hr />
+      </header>
+      <h2>HTML News</h2>
+      <article>
+        <h3>New HTML elements</h3>
+        <p>It looks like ...</p>
+      </article>
+      <footer>
+        <hr />
+        <a href="#">Information</a> |
+        <a href="#">Legal Notice</a> |
+        <a href="#">Contact</a> |
+        <a href="#">About me</a>    <hr />
+      </footer>
+      </body>
+     ```
+
+* \<address> 
+	- should be used exclusively for contact information about the author, it is best to use it in the \<footer> element
+  - see example folders --> *4_TheBody/Part_7/index.html*
+     ```
+      <body>
+      <header>
+        <hr />
+        <small>Blog version 1.0</small>
+        <h1>My blog</h1>
+        <p>A simple blog...</p>
+        <hr />
+      </header>
+      <h2>HTML News</h2>
+      <article>
+        <h3>New HTML elements</h3>
+        <p>It looks like ...</p>
+	      <footer>
+          <address>The article was created by:<br>
+            Rick Simple<br>
+            Simplesstreet 1234<br>
+            12345 Simpletown<br>
+		        www.website.com
+          </address>
+        </footer>
+      </article>
+      <footer>
+        <hr />
+        <a href="#">Information</a> |
+        <a href="#">Legal Notice</a> |
+        <a href="#">Contact</a> |
+        <a href="#">About me</a>    <hr />
+      </footer>
+      </body>
+     ```
+
+### 4.2. 
+
 
