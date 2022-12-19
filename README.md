@@ -22,8 +22,10 @@
     - 3.5. The style element
     - 3.6. The script element
     - 3.7. The meta element
+4. The visible area of an HTML document
+    - 4.1 The HTML elements for page structuring 
 
----------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
 
 ## 1. Introduction to HTML
 
@@ -171,7 +173,7 @@
    - Accessible websites, incorrect text or structure can cause assistive tools such as read aloud software to not work properly.
    - helpful for beginners to recognize errors quickly and prevents writing unclean code --> a clean code shows quality
 
------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
 
 ## 2. Structure of a HTML document
 
@@ -281,7 +283,7 @@
   - everything contained in it, such as texts, images, hyperlinks or tables is displayed in the browser
 
 
------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
 
 
 ## 3. The header data of an HTML document
@@ -447,8 +449,8 @@ The complete explanations for each tag will be given in the next chapters, these
    ```
 
 
-| Attributes  | Explanation                                                                                    |
-| ----------- | -----------------------------------------------------------------------------------------------|
+| Attributes  | Explanation                                                                                |
+| ----------- | ------------------------------------------------------------------------------------------ |
 | async       | the script is executed asynchronously with the HTML document, can only be used for external scripts |
 | charset     | lsets the character encoding for the external script			 				|
 | defer       | the web page is parsed first and then the script is executed, can only be used for external scripts |
@@ -538,3 +540,71 @@ The complete explanations for each tag will be given in the next chapters, these
 | charset    | sets the character encoding for the HTML document				 						                          |
 | http-equiv | is used for the HTTP response header. Some possible values are: content-language, content-type, default-style, refresh	|
 | name       | defines a name for the metadata. Some default values are: application-name, author, description, generator, keywords	|
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+## 4. The visible area of an HTML document
+### 4.1 The HTML elements for page structuring
+* These elements are needed to divide the web page into meaningful areas. The content model was introduced to combat the rampant use of *div* elements with *class* attributes.
+
+| HTML elements | Explanation                                                                            |
+| ------------- | -------------------------------------------------------------------------------------- |
+| /<body>       | displayable area of the HTML document, visible on the web page 						 |
+| /<section>    | divides the HTML document into different sections				 					         |
+| /<article>    | subdivision of content into a self-contained topic-specific block		       |
+| /<aside>      | used for marginal information of a content like a sidebar or additional information about an article  |
+| /<nav>        | elements used to mark up navigation such as a sitemap or the main navigation of a web page				  |
+| /<h1> - <h6>  | headings of the 1st - 6th order												                    |
+| /<header>     | header of a content													                              |
+| /<footer>     | footer of a content													                              |	
+| /<address>    | contact information about the author of the content											  |
+
+* /<body>
+	- everything between /<body> and /</body>, is called the document body
+	- all HTML elements such as text, hyperlinks, images, tables or lists are displayed there to define the structure of the web page
+	- all elements in the document body are rendered by the web browser and displayed accordingly
+
+* /<section>
+	- this element is initially used only to divide the content into semantic sections
+	- mainly serve to give meaning to the content, especially helpful for developers, search engines and screen readers
+	- the content is divided into topic-related sections, helpful when creating individual chapters or subchapters 
+  - see example folders --> *4_TheBody/Part_1/index.html* 
+     ```
+      <body>
+        <section>
+        <h1>Chapter 1</h1>
+        <p>The first chapter</p>
+        </section>
+        <section>
+          <h1>Chapter 2</h1>
+          <p>The second chapter</p>
+          <section>
+            <h2>Chapter 2.1</h2>
+            <p>A subchapter of chapter 2</p>
+          </section>
+        </section>
+      </body>
+     ```
+
+* /<article>
+	- should be used to summarize content in a self-contained topic-specific block
+	- is relatively similar to /<section>, however /<article> should be used for self-contained sections, such as news item
+  - see example folders --> *4_TheBody/Part_2/index.html*
+     ```
+      <body>
+      <h1>My blog</h1>
+      <p>Latest HTML reports</p>
+      <article>
+        <header>
+          <h2>HTML5.3</h2>
+        </header>
+        <p>Published on <time>2018-05-05</time></p>
+        <footer>
+          <a href="comments.html">Show comments...</a>
+        </footer>
+      </article>
+      </body>
+     ```
+
