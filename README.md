@@ -716,7 +716,7 @@ The complete explanations for each tag will be given in the next chapters, these
 	 - [Validation check](https://validator.w3.org/nu/#textarea)
 	 - see example folders --> *4_TheBody/Part_5/indexB.html*
 
-* \<header> and \<footer>.
+* \<header> and \<footer>
 	- is responsible for the header and footer of an HTML document
 	- in the \<header> can be other elements, but to nest another \<header> in it is not optimal, but can be used several times in the document, the \<header> does not have to be the first element 
 	- \<footer> does not have to be the last element in the document, it usually contains legal information, legal notice, contact information, no other element can be used inside the \<footer>
@@ -780,6 +780,23 @@ The complete explanations for each tag will be given in the next chapters, these
       </body>
      ```
 
-### 4.2. 
+### 4.2 The HTML elements for text structuring 
+* These elements are used to structure plain text content. 
 
-
+| HTML elements | Explanation                                             |
+| ------------- | ------------------------------------------------------- |
+| \<p>          | Text paragraph 								                          |
+| \<br>         | Line break 								                              |
+| \<wbr>        | optional line break within a word 			                |
+| \<hr>         | thematic separation at the paragraph level 				      |
+| \<blockquote> | Quote in the form of a text paragraph 					        |
+| \<div>        | Define a general area 					                        |
+| \<main>       | should be used for a main content area of a web page    |
+| \<figure>     | group or combine content for separate description       |
+| \<figcaption> | labeling content grouped with the *figure* element      |
+| \<ul>         | unordered bulleted list 						                    |
+| \<ol>         | ordered list (usually numbered) 					              |
+| \<li>         | a list element in an *ul* or *ol* list 				          |
+| \<dl>         | a description list with *dt* and *dd* elements 			    |
+| \<dt>         | the expression to describe before the *dd* element 			|
+| \<dd>         | the description that follows after the *dt* element 	  |
