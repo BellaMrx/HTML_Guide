@@ -832,8 +832,28 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
       <p>To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.</p>
      ``` 
-A commonly used entity in HTML is the non-breaking space: &nbsp;. A non-breaking space is a space that will not break into a new line.
-Two words separated by a non-breaking space will stick together (not break into a new line). This is handy when breaking the words might be disruptive.
+- A commonly used entity in HTML is the non-breaking space: \&nbsp;. A non-breaking space is a space that will not break into a new line. Two words separated by a non-breaking space will stick together (not break into a new line). This is handy when breaking the words might be disruptive.
+     ```
+       <p>word1&nbsp;&nbsp;&nbsp;word2</p>
+       <p>word1&nbsp;&nbsp;&nbsp;word2</p>
+     ```
 
 * \<hr>
-	- 
+	- this creates a thematic separation, e.g. to separate a content more clearly from each other 
+  - see example folders --> *4_TheBody/Part_10/index.html* 
+     ```
+      <article>
+        <h3>New HTML elements</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretiumquis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+        <hr />
+      </article>
+      <article>
+        <h3>Finally implemented</h3>
+        <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,viverra quis, feugiat a, tellus. </p>
+        <hr />
+      </article>
+     ```
+
+* \<blockquote>
+  - 
+
