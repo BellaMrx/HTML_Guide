@@ -780,7 +780,7 @@ The complete explanations for each tag will be given in the next chapters, these
       </body>
      ```
 
-### 4.2 The HTML elements for text structuring 
+### 4.2. The HTML elements for text structuring 
 * These elements are used to structure plain text content. 
 
 | HTML elements | Explanation                                             |
@@ -800,3 +800,40 @@ The complete explanations for each tag will be given in the next chapters, these
 | \<dl>         | a description list with *dt* and *dd* elements 			    |
 | \<dt>         | the expression to describe before the *dd* element 			|
 | \<dd>         | the description that follows after the *dt* element 	  |
+
+
+* \<p>
+	- is used with text paragraphs, everything written between \<p> and \</p> is treated as a text paragraph
+	- images, videoss or audios or other text markup can also be used within them
+	- not used within \<p> elements are other group elements, headings or section elements
+  - see example folders --> *4_TheBody/Part_8/index.html*
+     ```
+      <h2>HTML News</h2>
+      <article>
+          <h3>New HTML elements</h3>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+          <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. </p>
+      </article>
+     ```
+
+* \<br>
+  - is needed to force a line break 
+  - see example folders --> *4_TheBody/Part_9/index.html* 
+     ```
+      <address>
+      Rick Sample<br>
+      Sampletown<br>
+      www.address.com    
+      </address>
+     ```
+
+* \<wbr>
+  - is needed to force an optional line break e.g. for an optimal display in the web browser
+     ```
+      <p>To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.</p>
+     ``` 
+A commonly used entity in HTML is the non-breaking space: &nbsp;. A non-breaking space is a space that will not break into a new line.
+Two words separated by a non-breaking space will stick together (not break into a new line). This is handy when breaking the words might be disruptive.
+
+* \<hr>
+	- 
