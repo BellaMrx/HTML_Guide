@@ -872,6 +872,91 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * \<div>
+  - here a general area is defined, this causes first only a new line
+	- it has real meaning only with CSS to define layout areas
+  - the div element should only be used if there is no suitable HTML element, it is better to use semantic HTML e.g. header, nav, section, article, footer
+  - can be used several times in the document
+  - see example folders --> *4_TheBody/Part_12/indexB.html*
+  - see example folders --> *4_TheBody/Part_12/indexA.html*
+     ```
+      <body>
+          <div class="header">
+              <hr />
+              <h1>My blog</h1>
+              <p>A simple blog...</p>
+              <hr />
+          </div>
+          <h2>HTML News</h2>
+          <div class="article">
+              <h3>New HTML elements</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                  quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+          </div>
+          <div class="footer">
+              <hr />
+              <a href="#">Information</a> |
+              <a href="#">Legal Notice</a> |
+              <a href="#">Contact</a> |
+              <a href="#">About me</a>
+              <hr />
+          </div>
+      </body>
+     ```
+
+* \<main>
+  - is used in practice for the main content of a web page, should not be used within section, article elements etc.
+	- usually behaves like a div element, but should be used only once in the document
+	- is not a section element (\<section>) but a pure grouping element
+  - see example folders --> *4_TheBody/Part_13/index.html*
+     ```
+      <body>
+      <header>
+        <h1>My blog</h1>
+        <p>A simple blog...</p>
+      </header>
+      <main>
+        <h2>HTML News</h2>
+        <article>
+          <h3>HTML5.3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+        </article>
+      </main>
+      <footer>
+        <a href="#">Information</a> |
+        <a href="#">Legal Notice</a> |
+        <a href="#">Contact</a> |
+        <a href="#">About me</a>
+      </footer>
+      </body>
+     ```
+
+* \<figure> and \<figcaption>
+	- the **figure** element is used when content such as images, text, lists, tables or other HTML elements should stand out from the usual continuous text
+	- for an additional optional caption **figcaption** is used
+  - see example folders --> *4_TheBody/Part_14/index.html*
+     ```
+      <article>
+          <h3>figure and figcaption in use</h3>
+          <p>The text before figure...</p>
+          <figure>
+              <img src="nature5.jpg" alt="nature" />
+              <figcaption>Figure 1: Once upon a time ...</figcaption>
+          </figure>
+          <p>The text according to figure</p>
+      </article>
+     ```
+
+* \<ul> and \<li>
+  - an unordered list in which all entries are marked with a bullet point
+	- Web browsers usually display these bullets with bullet points 
+  - see example folders --> *4_TheBody/Part_15/index.html*
+
+
+
+
+
+
+
 
 
 

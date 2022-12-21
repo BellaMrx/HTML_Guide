@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Elements for list display</title>
+    <meta charset="UTF-8">
+    <style>
+        header {
+            background: snow;
+            border: 1px dashed black;
+            padding: 10px
+        }
+        
+        footer {
+            background: snow;
+            border: 1px dashed black;
+            padding: 10px;
+        }
+        
+        article {
+            padding-left: 25px;
+            padding-right: 25px;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>List representations</h1>
+        <p>Demonstrates different list representations</p>.
+    </header>
+    <main>
+        <article>
+            <h2>Unordered bulleted list with ul</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Donec quam felis ultricies</li>
+                <li>Nulla consequat massa quis </li>
+                <li>Etiam ultricies nisi vel</li>
+                <li>Donec vitae sapien ut libero</li>
+            </ul>
+        </article>
+        <article>
+            <h2>Numbered enumeration list with ol</h2>
+            <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Donec quam felis ultricies</li>
+                <li>Nulla consequat massa quis </li>
+                <li>Etiam ultricies nisi vel</li>
+                <li>Donec vitae sapien ut libero</li>
+            </ol>
+        </article>
+        <article>
+            <h2>Invert numbered enumeration list</h2>
+            <ol reversed="reversed">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Donec quam felis ultricies</li>
+                <li>Nulla consequat massa quis </li>
+                <li>Etiam ultricies nisi vel</li>
+                <li>Donec vitae sapien ut libero</li>
+            </ol>
+        </article>
+        <article>
+            <h2>Change enumeration list numbering</h2>
+            <ol start="20">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Donec quam felis ultricies</li>
+                <li>Nulla consequat massa quis </li>
+                <li value="101">Etiam ultricies nisi vel</li>
+                <li>Donec vitae sapien ut libero</li>
+            </ol>
+        </article>
+        <article>
+            <h2>Enumerated lists nest ul</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet
+                    <ul>
+                        <li>Donec quam felis ultricies</li>
+                        <li>Nulla consequat massa quis </li>
+                    </ul>
+                </li>
+                <li>Etiam ultricies nisi vel</li>
+                <li>Donec vitae sapien ut libero</li>
+            </ul>
+        </article>
+        <article>
+            <h2>Nest numbered lists ol</h2>
+            <ol>
+                <li>Lorem ipsum dolor sit amet
+                    <ol>
+                        <li>Donec quam felis ultricies</li>
+                        <li>Nulla consequat massa quis </li>
+                    </ol>
+                </li>
+                <li>Etiam ultricies nisi vel</li>
+                <li>Donec vitae sapien ut libero</li>
+            </ol>
+        </article>
+        <article>
+            <h2>Nest and shuffle lists deeper</h2>
+            <ol>
+                <li>Lorem ipsum dolor sit amet
+                    <ol>
+                        <li>Donec quam felis ultricies</li>
+                        <li>Nulla consequat massa quis
+                            <ol>
+                                <li>Donec quam felis ultricies</li>
+                                <li>Nulla consequat massa quis </li>
+                            </ol>
+                    </ol>
+                    </li>
+                    <li>Etiam ultricies nisi vel
+                        <ul>
+                            <li>Donec quam felis ultricies</li>
+                            <li>Nulla consequat massa quis </li>
+                        </ul>
+                    </li>
+                    <li>Donec vitae sapien ut libero</li>
+            </ol>
+        </article>
+        <article>
+            <h2>Description lists with dl, dt and dd</h2>
+            <h3>List of abbreviations</h3>
+            <dl>
+                <dt>4U</dt>
+                <dd>For you</dd>
+                <dt>ACK</dt>
+                <dd>Acknowledgment</dd>
+                <dt>ASAP</dt>
+                <dd>As soon as possible</dd>
+                <dt>FYI</dt>
+                <dd>For your information</dd>
+            </dl>
+        </article>
+    </main>
+    <footer>
+        <a href="#">Information</a> |
+        <a href="#">Legal Notice</a> |
+        <a href="#">Contact</a> |
+        <a href="#">About me</a>
+    </footer>
+</body>
+
+</html>
