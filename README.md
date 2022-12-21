@@ -856,7 +856,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 * \<blockquote>
   - here usually a text is quoted from another source.
-	- \<blockquote> contains a **cite** attribute, this indicates the source of the quote, but unfortunately it is not yet visible in the web browser and therefore the source should be added to the web page additionally
+  - the \<blockquote> contains a **cite** attribute, this indicates the source of the quote, but unfortunately it is not yet visible in the web browser and therefore the source should be added to the web page additionally
   - see example folders --> *4_TheBody/Part_11/index.html*
 
      ```
@@ -873,7 +873,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 * \<div>
   - here a general area is defined, this causes first only a new line
-	- it has real meaning only with CSS to define layout areas
+  - it has real meaning only with CSS to define layout areas
   - the div element should only be used if there is no suitable HTML element, it is better to use semantic HTML e.g. header, nav, section, article, footer
   - can be used several times in the document
   - see example folders --> *4_TheBody/Part_12/indexB.html*
@@ -905,7 +905,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 * \<main>
   - is used in practice for the main content of a web page, should not be used within section, article elements etc.
-	- usually behaves like a div element, but should be used only once in the document
+  - usually behaves like a div element, but should be used only once in the document
 	- is not a section element (\<section>) but a pure grouping element
   - see example folders --> *4_TheBody/Part_13/index.html*
      ```
@@ -948,7 +948,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 * \<ul> and \<li>
   - an unordered list in which all entries are marked with a bullet point
-	- Web browsers usually display these bullets with bullet points 
+  - Web browsers usually display these bullets with bullet points 
   - see example folders --> *4_TheBody/Part_15/index.html*
 
 
