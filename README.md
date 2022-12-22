@@ -182,13 +182,29 @@
 ### 2.1. Syntax and structure of HTML documents
 * The HTML document is very structured. A complete *HTML element* usually consists of an opening HTML tag (**\<html>**), a closing HTML tag (**\</html>**) and everything in between. As *HTML- element* is usually called everything that stands between the tags. So the *HTML elements* ("headline") are marked by *HTML tags* (**\<h1>** and **\</h1>**).
 
-* example --> *2_StructureOfaHTMLdocument/Part_1/index.html*
   - everything between **\<html>** and **\</html>** (root element) is the HTML code for the HTML document
   - between **\<head>** and **\</head>** the header data of the HTML document is summarized
   - the part visible in the web browser is between **\<body>** and **\</body>**
   - between **\<h1>** and **\</h1>** is a 1st order heading
   - between **\<h2>** and **\</h2>** there is a 2nd order heading
   - between **\<p>** and **\</p>** there is a normal paragraph
+
+  - example --> *2_StructureOfaHTMLdocument/Part_1/index.html*
+   ```
+    <!doctype html>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+      </head>
+      <body>
+        <h1>Headline</h1>
+        <p>Here is a usual paragraph text.</p>
+        <h2>A subheading</h2>
+        <p>Another paragraph with text.</p>
+      </body>
+    </html>
+   ```
 
 * The HTML code of an HTML document consists of pure text. A web browser creates a model from this in the form of a tree structure of objects such as HTML elements, attributes, and texts. This is called a **Document Object Model (DOM)**. Each object in it is called a **node** and can be manipulated via a public interface using JavaScript. This DOM tree can be viewed in the browser, using developer tools provided by the browser.
 
@@ -198,10 +214,10 @@
 
 
 * Most HTML elements can be nested and contain other HTML elements, creating a hierarchical structure.
-* example --> *2_StructureOfaHTMLdocument/Part_2/index.html*
   - Here, within the paragraph, the b element has been nested (b = bold). **b** is the child element of **p** and **p** is the child element of **body**. **html** is the parent element of **body**. In this example, **b** is the child-child-child element of **html**.
   - Complex HTML documents contain a lot of nesting.
   - It is important to avoid incorrect nesting, otherwise the web page can be displayed incorrectly and it becomes very confusing.
+  - example --> *2_StructureOfaHTMLdocument/Part_2/index.html*
 
    ```
     <!doctype html>
@@ -220,10 +236,10 @@
 * Some HTML elements are standalone tags (void tags) that have no content e.g. **\<br>** (which creates a line break), but this should not be abused, to increase the spacing between lines use CSS.
 
 * HTML elements can contain additional attributes (properties). These can be used to specify additional information about an element. Attributes can be used only with start tags.
-  - example --> *2_StructureOfaHTMLdocument/Part_3/index.html*
   - with the attribute **lang="en"** you specify the language that will be used
   - the **\<a></a>** element defines a hyperlink to another page, at **href** you specify the URL to navigate to 
   - the standalone tag **\<img>** can be used to display images, **src** specifies the location of the image, alt specifies the alternative text if the image cannot be displayed
+  - example --> *2_StructureOfaHTMLdocument/Part_3/index.html*
 
    ```
     <!doctype html>
@@ -1039,7 +1055,7 @@ The complete explanations for each tag will be given in the next chapters, these
   - the div - element can still be used but only if no semantic element (header, nav, section etc.) fits
   - e.g. the screenreader does not recognize by the ID whether it is a navigation bar on the web page with \<div id="nav"> but only so \<nav> 
 
-* HTML document without precise structure
+#### HTML document without precise structure
   - example --> *4_TheBody/Part_16/index.html* 
      ```
       <body>
@@ -1072,7 +1088,7 @@ The complete explanations for each tag will be given in the next chapters, these
       </body>
      ```
 
-* Generic structuring with \<div>
+#### Generic structuring with \<div>
   - example --> *4_TheBody/Part_17/indexB.html* 
   - example --> *4_TheBody/Part_17/indexA.html* 
      ```
@@ -1116,7 +1132,7 @@ The complete explanations for each tag will be given in the next chapters, these
       </body>
      ```
 
-* semantisch strukturierte Webseiten
+#### semantically structured web pages
   - example --> *4_TheBody/Part_18/index.html* 
      ```
       <body>
