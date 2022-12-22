@@ -2,7 +2,7 @@
 
  detailed tutorial about HTML + templates (all basics for HTML)
 
----------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
 
 ## Contents
 1. Introduction to HTML
@@ -25,6 +25,7 @@
 4. The visible area of an HTML document
     - 4.1. The HTML elements for page structuring 
     - 4.2. The HTML elements for text structuring
+    - 4.3. Semantic HTML
 
 -------------------------------------------------------------------------------------------------------------
 
@@ -995,8 +996,8 @@ The complete explanations for each tag will be given in the next chapters, these
             </ol>
         </article>
      ```
-	- with the HTML attribute **start** the start value of the first \<li> element, the following numberings are increased by 1
-	- within the \<li> element it is also possible with the HTML attribute **value**
+  - with the HTML attribute **start** the start value of the first \<li> element, the following numberings are increased by 1
+  - within the \<li> element it is also possible with the HTML attribute **value**
   - example --> *4_TheBody/Part_15/index.html* 
      ```
         <article>
@@ -1038,8 +1039,8 @@ The complete explanations for each tag will be given in the next chapters, these
   - the div - element can still be used but only if no semantic element (header, nav, section etc.) fits
   - e.g. the screenreader does not recognize by the ID whether it is a navigation bar on the web page with \<div id="nav"> but only so \<nav> 
 
-- HTML document without precise structure
-    - example --> *4_TheBody/Part_16/index.html* 
+* HTML document without precise structure
+  - example --> *4_TheBody/Part_16/index.html* 
      ```
       <body>
       <h1>My blog</h1>
@@ -1071,6 +1072,96 @@ The complete explanations for each tag will be given in the next chapters, these
       </body>
      ```
 
+* Generic structuring with \<div>
+  - example --> *4_TheBody/Part_17/indexB.html* 
+  - example --> *4_TheBody/Part_17/indexA.html* 
+     ```
+      <body>
+      <div>
+      <h1>My blog</h1>
+      <p>A blog about web development ...</p>
+      </div>
+      <div>
+      <p>Navigation: 
+        <a href="#">Blog</a> |
+        <a href="#">Information</a> |
+        <a href="#">Contact</a> |
+        <a href="#">About me</a>
+      </p>
+      </div>
+      <div>
+      <h2>Old posts</h2>
+      <ul>
+        <li><a href="#">Last Week</a></li>
+        <li><a href="#">Archive</a></li>
+      </ul>
+      </div>
+      <div>
+      <h2>How to structure web pages?</h2>
+      <p>HTML documents are structured ...</p>
+      <h3>Similar topics</h3>
+      <ul>
+        <li><a href="#">Styling web pages with CSS</a></li>
+        <li><a href="#">Functionality with JavaScript</a></li>
+      </ul>
+      </div>
+      <div>
+      <p> 
+        <a href="#">Information</a> |
+        <a href="#">Legal Notice</a> |
+        <a href="#">Contact</a> |
+        <a href="#">About me</a>
+      </p>
+      </div>
+      </body>
+     ```
+
+* semantisch strukturierte Webseiten
+  - example --> *4_TheBody/Part_18/index.html* 
+     ```
+      <body>
+          <header>
+              <h1>My blog</h1>
+              <p>A blog about web development ...</p>
+          </header>
+          <nav>
+              <p>Navigation:
+                  <a href="#">Blog</a> |
+                  <a href="#">Information</a> |
+                  <a href="#">Contact</a> |
+                  <a href="#">About me</a>
+              </p>
+          </nav>
+          <aside>
+              <h2>Old posts</h2>
+              <ul>
+                  <li><a href="#">Last Week</a></li>
+                  <li><a href="#">Archive</a></li>
+              </ul>
+          </aside>
+          <main>
+              <article>
+                  <h2>How to structure web pages?</h2>
+                  <p>HTML documents are structured ...</p>
+                  <h3>Similar topics</h3>
+                  <ul>
+                      <li><a href="#">Styling web pages with CSS</a></li>
+                      <li><a href="#">Functionality with JavaScript</a></li>
+                  </ul>
+              </article>
+          </main>
+          <footer>
+              <p>
+                  <a href="#">Information</a> |
+                  <a href="#">Legal Notice</a> |
+                  <a href="#">Contact</a> |
+                  <a href="#">About me</a>
+              </p>
+          </footer>
+      </body>
+     ```
+
+### 4.4. 
 
 
 
