@@ -1182,34 +1182,34 @@ The complete explanations for each tag will be given in the next chapters, these
 * These are elements that are used within a plain text for single letters, words or parts of sentences to change them slightly visually. Even though text formatting with these elements is possible via HTML, CSS is responsible for the actual text formatting.
 - example --> *4_TheBody/Part_19/index.html*
 
-| HTML elements      | Explanation                                                              |
-| ------------------ | ------------------------------------------------------------------------ |
-| <abbr>             | Mark abbreviations or acronyms |
-| <cite>             | Mark text as source text of a working title |
-| <code>             | Mark up computer code within a paragraph of text |
-| <pre>              | Mark up preformatted text. All spaces and line breaks are displayed as specified in the text |
-| <kbd>              | Mark up text as keyboard input |
-| <samp>             | |
-| <dfn>              | |
-| <var>              | |
-| <bdo>        	     | |
-| <bdi>         	   | |
-| <em>         		   | |
-| <strong>         	 | |
-| <i>         		   | |
-| <b>         		   | |
-| <mark>         	   | |
-| <q>         		   | |
-| <u>         		   | |
-| <s>         		   | |
-| <ins>         	   | |
-| <del>         	   | |
-| <sub>          	   | |
-| <sup>         	   | |
-| <time>          	 | |
-| <small>          	 | |
-| <ruby>, <rp>, <rt> | |
-| <span>          	 | |
+| HTML elements       | Explanation                                                              |
+| ------------------- | ------------------------------------------------------------------------ |
+| \<abbr>             | Mark abbreviations or acronyms                                           |
+| \<cite>             | Mark text as source text of a working title                              |
+| \<code>             | Mark up computer code within a paragraph of text                         |
+| \<pre>              | Mark up preformatted text. All spaces and line breaks are displayed as specified in the text |
+| \<kbd>              | Mark up text as keyboard input                                           |
+| \<samp>             | Mark up text as screen output of a program                               |
+| \<dfn>              | define a term                                                            |
+| \<var>              | Mark up text as a variable                                               |
+| \<bdo>        	    | Change text direction for bidirectional text                             |
+| \<bdi>         	    | Define area for bidirectional text                                       |
+| \<em>         	    | Highlight text that would emphasize when speaking                        |
+| \<strong>           | Highlight words or passages that are particularly important in terms of content |
+| \<i>         		    | to mark words or passages with technical terms, thoughts, foreign words  |
+| \<b>         		    | for marking meaningful names or keywords                                 |
+| \<mark>         	  | Highlight text with a marker                                             |
+| \<q>         		    | Mark words or passages as quotation or spoken text                       |
+| \<u>         		    | Mark up text as proper noun underlining or incorrect words or passages   |
+| \<s>         		    | Mark text as no longer valid or obsolete                                 |
+| \<ins>         	    | Mark text as newly added in the revised sense                            |
+| \<del>         	    | Mark text as deleted in revised sense                                    |
+| \<sub>          	  | subscript                                                                |
+| \<sup>         	    | superscript                                                              |
+| \<time>          	  | Date and time markup                                                     |
+| \<small>          	| Text is displayed in small print e.g. copyright information              |
+| \<ruby>, <rp>, <rt> | Ruby character                                                           |
+| \<span>          	  | mark up a general area within a paragraph of text                        |
 
 
 
