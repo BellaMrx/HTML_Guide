@@ -26,6 +26,7 @@
     - 4.1. The HTML elements for page structuring 
     - 4.2. The HTML elements for text structuring
     - 4.3. Semantic HTML
+    - 4.4. HTML elements for text markup
 
 -------------------------------------------------------------------------------------------------------------
 
@@ -1177,7 +1178,40 @@ The complete explanations for each tag will be given in the next chapters, these
       </body>
      ```
 
-### 4.4. 
+### 4.4. HTML elements for text markup
+* These are elements that are used within a plain text for single letters, words or parts of sentences to change them slightly visually. Even though text formatting with these elements is possible via HTML, CSS is responsible for the actual text formatting.
+- example --> *4_TheBody/Part_19/index.html*
+
+| HTML elements      | Explanation                                                              |
+| ------------------ | ------------------------------------------------------------------------ |
+| <abbr>             | Mark abbreviations or acronyms |
+| <cite>             | Mark text as source text of a working title |
+| <code>             | Mark up computer code within a paragraph of text |
+| <pre>              | Mark up preformatted text. All spaces and line breaks are displayed as specified in the text |
+| <kbd>              | Mark up text as keyboard input |
+| <samp>             | |
+| <dfn>              | |
+| <var>              | |
+| <bdo>        	     | |
+| <bdi>         	   | |
+| <em>         		   | |
+| <strong>         	 | |
+| <i>         		   | |
+| <b>         		   | |
+| <mark>         	   | |
+| <q>         		   | |
+| <u>         		   | |
+| <s>         		   | |
+| <ins>         	   | |
+| <del>         	   | |
+| <sub>          	   | |
+| <sup>         	   | |
+| <time>          	 | |
+| <small>          	 | |
+| <ruby>, <rp>, <rt> | |
+| <span>          	 | |
+
+
 
 
 
