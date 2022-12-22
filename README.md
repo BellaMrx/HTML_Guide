@@ -158,7 +158,7 @@
 
 ### 1.5. Create and view a simple web page
   1. open an editor (for the beginning a simple editor is enough), and create a new empty document.
-  2. enter HTML code into the editor, see folder --> *1_IntroductionToHTML/Part_1/index.html*
+  2. enter HTML code into the editor, example --> *1_IntroductionToHTML/Part_1/index.html*
   3. save HTML code, it is recommended to create a new directory for it. When saving the file, make sure that the file is saved with the file extension *.html*. As encoding *UTF-8* is always good, you can also use *ANSI* for the time being.
   4. The HTML file can now be opened with a browser, usually it is enough to double-click the file and the standard browser opens and displays the file.
 
@@ -181,7 +181,7 @@
 ### 2.1. Syntax and structure of HTML documents
 * The HTML document is very structured. A complete *HTML element* usually consists of an opening HTML tag (**\<html>**), a closing HTML tag (**\</html>**) and everything in between. As *HTML- element* is usually called everything that stands between the tags. So the *HTML elements* ("headline") are marked by *HTML tags* (**\<h1>** and **\</h1>**).
 
-* see example folders --> *2_StructureOfaHTMLdocument/Part_1/index.html*
+* example --> *2_StructureOfaHTMLdocument/Part_1/index.html*
   - everything between **\<html>** and **\</html>** (root element) is the HTML code for the HTML document
   - between **\<head>** and **\</head>** the header data of the HTML document is summarized
   - the part visible in the web browser is between **\<body>** and **\</body>**
@@ -197,7 +197,7 @@
 
 
 * Most HTML elements can be nested and contain other HTML elements, creating a hierarchical structure.
-* see example folders --> *2_StructureOfaHTMLdocument/Part_2/index.html*
+* example --> *2_StructureOfaHTMLdocument/Part_2/index.html*
   - Here, within the paragraph, the b element has been nested (b = bold). **b** is the child element of **p** and **p** is the child element of **body**. **html** is the parent element of **body**. In this example, **b** is the child-child-child element of **html**.
   - Complex HTML documents contain a lot of nesting.
   - It is important to avoid incorrect nesting, otherwise the web page can be displayed incorrectly and it becomes very confusing.
@@ -219,7 +219,7 @@
 * Some HTML elements are standalone tags (void tags) that have no content e.g. **\<br>** (which creates a line break), but this should not be abused, to increase the spacing between lines use CSS.
 
 * HTML elements can contain additional attributes (properties). These can be used to specify additional information about an element. Attributes can be used only with start tags.
-  - see example folders --> *2_StructureOfaHTMLdocument/Part_3/index.html*
+  - example --> *2_StructureOfaHTMLdocument/Part_3/index.html*
   - with the attribute **lang="en"** you specify the language that will be used
   - the **\<a></a>** element defines a hyperlink to another page, at **href** you specify the URL to navigate to 
   - the standalone tag **\<img>** can be used to display images, **src** specifies the location of the image, alt specifies the alternative text if the image cannot be displayed
@@ -300,7 +300,7 @@
 | \<style>...\</style>   | sets the local stylesheet rules for the HTML document                           |
 | \<script>...\<script>  | includes the client-side scripts, may also be used outside the **head** element |
 | \<meta>                | sets the metadata like keywords, descriptions or the character set for the HTML document     |
-
+---
 
      ```
       <!doctype html>
@@ -337,14 +337,14 @@ The complete explanations for each tag will be given in the next chapters, these
       <title>The heading of the HTML page</title>
     </head>
    ```
-- see example folders --> *3_TheHeader/Part_1/index.html*
+- example --> *3_TheHeader/Part_1/index.html*
 
 ![Preview](Images/BrowserTitle.PNG)
 
 
 ### 3.3. The base element
  * The base-element specifies a base URL or base target for all relative URLs in an HTML document. By defining such a base URL, a relative or absolute address to the file can be used in the document as if it were located directly on the same host or computer. Can be used only once in the HTML document.
-   - see example folders --> *3_TheHeader/Part_2/index.html*
+   - example --> *3_TheHeader/Part_2/index.html*
 
     ```
      <head>
@@ -365,7 +365,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 ### 3.4. The link element
 * The link element is a stand-alone tag that may be used multiple times in the HTML document. In practice, it is often used to include an external CSS file, and other files. The relationship between the HTML document and the external document is specified with the HTML attribute *rel*.
-   - see example folders --> *3_TheHeader/Part_3/index.html*
+   - example --> *3_TheHeader/Part_3/index.html*
 
    ```
     <head>
@@ -400,7 +400,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 ### 3.5. The style element
 * This element can be used to include style information (CSS) within the HTML document.
-   - see example folders --> *3_TheHeader/Part_4/index.html*
+   - example --> *3_TheHeader/Part_4/index.html*
 
    ```
     <head>
@@ -425,7 +425,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 ### 3.6. The script element
 * This element is used to include scripts in a document. The script can either be included directly in the HTML document between \<script>...</script>, or an external script with the src attribute.
-   - see example folders --> *3_TheHeader/Part_5/indexA.html* 
+   - example --> *3_TheHeader/Part_5/indexA.html* 
 
    ```
     <head>
@@ -439,7 +439,7 @@ The complete explanations for each tag will be given in the next chapters, these
     </head>
    ```
 
-   - see example folders --> *3_TheHeader/Part_5/indexB.html* --> external script
+   - example --> *3_TheHeader/Part_5/indexB.html* --> external script
 
    ```
     <head>
@@ -475,14 +475,14 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
  
   - The *http-equiv* specification is for the web browser to communicate with, but web servers don't actually parse HTML documents, so it's up to the browser who processes the specification.
-  - see example folders --> *3_TheHeader/Part_6/indexA.html* 
+  - example --> *3_TheHeader/Part_6/indexA.html* 
      ```
       <head>
         <meta http-equiv="refresh" content="5">
       </head>
      ```
   - This specification should be used if the web page was not created in English to be able to display special characters.
-  - see example folders --> *3_TheHeader/Part_6/indexB.html* 
+  - example --> *3_TheHeader/Part_6/indexB.html* 
      ```
       <head>
         <meta charset="UTF-8">
@@ -571,7 +571,7 @@ The complete explanations for each tag will be given in the next chapters, these
 	- this element is initially used only to divide the content into semantic sections
 	- mainly serve to give meaning to the content, especially helpful for developers, search engines and screen readers
 	- the content is divided into topic-related sections, helpful when creating individual chapters or subchapters 
-  - see example folders --> *4_TheBody/Part_1/index.html* 
+  - example --> *4_TheBody/Part_1/index.html* 
      ```
       <body>
         <section>
@@ -592,7 +592,7 @@ The complete explanations for each tag will be given in the next chapters, these
 * \<article>
 	- should be used to summarize content in a self-contained topic-specific block
 	- is relatively similar to \<section>, however \<article> should be used for self-contained sections, such as news item
-  - see example folders --> *4_TheBody/Part_2/index.html*
+  - example --> *4_TheBody/Part_2/index.html*
      ```
       <body>
       <h1>My blog</h1>
@@ -612,8 +612,8 @@ The complete explanations for each tag will be given in the next chapters, these
 * \<aside>
 	- can usually supplement or extend content with additional information
 	- can be used either for a sidebar or additional information (e.g. citation) within an \<article> element
-  - see example folders --> *4_TheBody/Part_3/indexB.html*
-  - see example folders --> *4_TheBody/Part_3/indexA.html*
+  - example --> *4_TheBody/Part_3/indexB.html*
+  - example --> *4_TheBody/Part_3/indexA.html*
      ```
       <body>
       <h1>My blog</h1>
@@ -642,7 +642,7 @@ The complete explanations for each tag will be given in the next chapters, these
 * \<nav>
 	- this can be used to split navigation elements into blocks e.g. for the main navigation or a list of links for a sitemap
 	- should be used when whole blocks of links are needed
-  - see example folders --> *4_TheBody/Part_4/index.html*
+  - example --> *4_TheBody/Part_4/index.html*
      ```
       <body>
       <nav>
@@ -699,7 +699,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 * \<h1> - \<h6>
 	- is used for headings, this element is used to define the content structure of a document
-  - see example folders --> *4_TheBody/Part_5/indexA.html*
+  - example --> *4_TheBody/Part_5/indexA.html*
      ```
       <body>
       <h1>My blog</h1>
@@ -715,13 +715,13 @@ The complete explanations for each tag will be given in the next chapters, these
   - Outline: is the name for the structure of the document
 	 - [HTML5 Outliner](https://h5o.github.io) 
 	 - [Validation check](https://validator.w3.org/nu/#textarea)
-	 - see example folders --> *4_TheBody/Part_5/indexB.html*
+	 - example --> *4_TheBody/Part_5/indexB.html*
 
 * \<header> and \<footer>
 	- is responsible for the header and footer of an HTML document
 	- in the \<header> can be other elements, but to nest another \<header> in it is not optimal, but can be used several times in the document, the \<header> does not have to be the first element 
 	- \<footer> does not have to be the last element in the document, it usually contains legal information, legal notice, contact information, no other element can be used inside the \<footer>
-  - see example folders --> *4_TheBody/Part_6/index.html*
+  - example --> *4_TheBody/Part_6/index.html*
      ```
       <body>
       <header>
@@ -748,7 +748,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 * \<address> 
 	- should be used exclusively for contact information about the author, it is best to use it in the \<footer> element
-  - see example folders --> *4_TheBody/Part_7/index.html*
+  - example --> *4_TheBody/Part_7/index.html*
      ```
       <body>
       <header>
@@ -807,7 +807,7 @@ The complete explanations for each tag will be given in the next chapters, these
 	- is used with text paragraphs, everything written between \<p> and \</p> is treated as a text paragraph
 	- images, videoss or audios or other text markup can also be used within them
 	- cannot be used within the *p elements* other group elements, headings or section elements.
-  - see example folders --> *4_TheBody/Part_8/index.html*
+  - example --> *4_TheBody/Part_8/index.html*
      ```
       <h2>HTML News</h2>
       <article>
@@ -819,7 +819,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 * \<br>
   - is needed to force a line break 
-  - see example folders --> *4_TheBody/Part_9/index.html* 
+  - example --> *4_TheBody/Part_9/index.html* 
      ```
       <address>
       Rick Sample<br>
@@ -840,7 +840,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 * \<hr>
 	- this creates a thematic separation, e.g. to separate a content more clearly from each other 
-  - see example folders --> *4_TheBody/Part_10/index.html* 
+  - example --> *4_TheBody/Part_10/index.html* 
      ```
       <article>
         <h3>New HTML elements</h3>
@@ -857,7 +857,7 @@ The complete explanations for each tag will be given in the next chapters, these
 * \<blockquote>
   - here usually a text is quoted from another source.
   - the \<blockquote> contains a **cite** attribute, this indicates the source of the quote, but unfortunately it is not yet visible in the web browser and therefore the source should be added to the web page additionally
-  - see example folders --> *4_TheBody/Part_11/index.html*
+  - example --> *4_TheBody/Part_11/index.html*
 
      ```
       <article>
@@ -876,8 +876,8 @@ The complete explanations for each tag will be given in the next chapters, these
   - it has real meaning only with CSS to define layout areas
   - the div element should only be used if there is no suitable HTML element, it is better to use semantic HTML e.g. header, nav, section, article, footer
   - can be used several times in the document
-  - see example folders --> *4_TheBody/Part_12/indexB.html*
-  - see example folders --> *4_TheBody/Part_12/indexA.html*
+  - example --> *4_TheBody/Part_12/indexB.html*
+  - example --> *4_TheBody/Part_12/indexA.html*
      ```
       <body>
           <div class="header">
@@ -906,8 +906,8 @@ The complete explanations for each tag will be given in the next chapters, these
 * \<main>
   - is used in practice for the main content of a web page, should not be used within section, article elements etc.
   - usually behaves like a div element, but should be used only once in the document
-	- is not a section element (\<section>) but a pure grouping element
-  - see example folders --> *4_TheBody/Part_13/index.html*
+  - is not a section element (\<section>) but a pure grouping element
+  - example --> *4_TheBody/Part_13/index.html*
      ```
       <body>
       <header>
@@ -933,7 +933,7 @@ The complete explanations for each tag will be given in the next chapters, these
 * \<figure> and \<figcaption>
 	- the **figure** element is used when content such as images, text, lists, tables or other HTML elements should stand out from the usual continuous text
 	- for an additional optional caption **figcaption** is used
-  - see example folders --> *4_TheBody/Part_14/index.html*
+  - example --> *4_TheBody/Part_14/index.html*
      ```
       <article>
           <h3>figure and figcaption in use</h3>
@@ -949,7 +949,130 @@ The complete explanations for each tag will be given in the next chapters, these
 * \<ul> and \<li>
   - an unordered list in which all entries are marked with a bullet point
   - Web browsers usually display these bullets with bullet points 
-  - see example folders --> *4_TheBody/Part_15/index.html*
+  - lists can be nested
+  - example --> *4_TheBody/Part_15/index.html*
+     ```
+        <article>
+            <h2>Unordered bulleted list with ul</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Donec quam felis ultricies</li>
+                <li>Nulla consequat massa quis </li>
+                <li>Etiam ultricies nisi vel</li>
+                <li>Donec vitae sapien ut libero</li>
+            </ul>
+        </article>
+     ```
+
+* \<ol> and \<li>
+  - \<ol> is needed for ordered lists
+  - they are numbered lists, in which the individual \<li> - elements are automaitsch numbered
+  - lists can be nested
+  - example --> *4_TheBody/Part_15/index.html*
+     ```
+        <article>
+            <h2>Numbered enumeration list with ol</h2>
+            <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Donec quam felis ultricies</li>
+                <li>Nulla consequat massa quis </li>
+                <li>Etiam ultricies nisi vel</li>
+                <li>Donec vitae sapien ut libero</li>
+            </ol>
+        </article>
+     ```
+  - it is possible to reverse the numbering with HTML attribute **reversed**, then the numbering will be displayed in descending order
+  - example --> *4_TheBody/Part_15/index.html* 
+     ```
+        <article>
+            <h2>Invert numbered enumeration list</h2>
+            <ol reversed="reversed">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Donec quam felis ultricies</li>
+                <li>Nulla consequat massa quis </li>
+                <li>Etiam ultricies nisi vel</li>
+                <li>Donec vitae sapien ut libero</li>
+            </ol>
+        </article>
+     ```
+	- with the HTML attribute **start** the start value of the first \<li> element, the following numberings are increased by 1
+	- within the \<li> element it is also possible with the HTML attribute **value**
+  - example --> *4_TheBody/Part_15/index.html* 
+     ```
+        <article>
+            <h2>Change enumeration list numbering</h2>
+            <ol start="20">
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Donec quam felis ultricies</li>
+                <li>Nulla consequat massa quis </li>
+                <li value="101">Etiam ultricies nisi vel</li>
+                <li>Donec vitae sapien ut libero</li>
+            </ol>
+        </article>
+     ```
+
+* \<dl>, \<dt>, \<dd>
+  - with this, description lists are created
+  - often used for glossaries, listing of special metadata and values
+  - example --> *4_TheBody/Part_15/index.html* 
+     ```
+        <article>
+            <h2>Description lists with dl, dt and dd</h2>
+            <h3>List of abbreviations</h3>
+            <dl>
+                <dt>4U</dt>
+                <dd>For you</dd>
+                <dt>ACK</dt>
+                <dd>Acknowledgment</dd>
+                <dt>ASAP</dt>
+                <dd>As soon as possible</dd>
+                <dt>FYI</dt>
+                <dd>For your information</dd>
+            </dl>
+        </article>
+     ```
+
+### 4.3. Semantic HTML
+  - semantic web pages help search engines (Google prefers semantic web pages)
+  - with \<div> it is possible to create semantic web pages, but it is not standardtized structuring (due to different IDs and class names)
+  - the div - element can still be used but only if no semantic element (header, nav, section etc.) fits
+  - e.g. the screenreader does not recognize by the ID whether it is a navigation bar on the web page with \<div id="nav"> but only so \<nav> 
+
+- HTML document without precise structure
+    - example --> *4_TheBody/Part_16/index.html* 
+     ```
+      <body>
+      <h1>My blog</h1>
+      <p>A blog about web development ...</p>
+      <p>Navigation: 
+        <a href="#">Blog</a> |
+        <a href="#">Information</a> |
+        <a href="#">Contact</a> |
+        <a href="#">About me</a>
+      </p>
+      <h2>Old posts</h2>
+      <ul>
+        <li><a href="#">Last Week</a></li>
+        <li><a href="#">Archive</a></li>
+      </ul>
+      <h2>How to structure web pages?</h2>
+      <p>HTML documents are structured ...</p>
+      <h3>Similar topics</h3>
+      <ul>
+        <li><a href="#">Styling web pages with CSS</a></li>
+        <li><a href="#">Functionality with JavaScript</a></li>
+      </ul>
+      <p> 
+        <a href="#">Information</a> |
+        <a href="#">Legal Notice</a> |
+        <a href="#">Contact</a> |
+        <a href="#">About me</a>
+      </p>
+      </body>
+     ```
+
+
+
 
 
 
