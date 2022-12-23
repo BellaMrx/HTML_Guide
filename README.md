@@ -1277,7 +1277,44 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * \<dfn>
+  - this marks a definition
+  - example --> *4_TheBody/Part_19/index.html*
+     ```
+        <article>
+            <h2>Definition/Term with dfn</h2>
+            <p>A <dfn>smartphone</dfn> has more computer functionality and connectivity than a 
+            cell phone.</p>
+        </article>
+     ```
 
+* \<var>
+	- with the var element the text can be marked as a variable
+	- this variable can be part of an application, a mathematical expression or identifier of a variable in a programming language
+  - example --> *4_TheBody/Part_19/index.html*
+     ```
+        <article>
+            <h2>Variables with var</h2>
+            <p>The radius <var>r</var> is equal to half the diameter <var>d</var>.</p>
+        </article>
+     ```
+
+* \<bdo> and \<bdi>
+  	- with the **bdo** element (bidirectional override) the text direction can be changed
+	- to change the direction the HTML attribute **dir** must be used, with **rtl** the text runs from right to left and with **ltr** from left to right
+	- with the **bdi** -element (bi-directional isolation) the borders of the text direction change can be marked more exactly with a unicode-capable web browser
+  - example --> *4_TheBody/Part_19/index.html*
+     ```
+        <article>
+            <h2>Change text direction with bdo and bdi</h2>
+            <p>Hello World <bdo dir="rtl">Hello World</bdo></p>
+            <p>שלום</p>
+            <p><bdi>السلام عليكم</bdi>: 1 (as-salaam alaykum)</p>
+            <p><bdi>שלום</bdi>: 2 (shalom)</p>
+            <p>Howdy: 3 (a greeting in the US southern states)</p>
+        </article>
+     ```
+
+* \<em>, \<strong>, \<i> and \<b>
 
 
 
