@@ -1212,12 +1212,71 @@ The complete explanations for each tag will be given in the next chapters, these
 | \<span>          	    | mark up a general area within a paragraph of text                        |
 
 
+* \<abbr>
+  - with \<abbr> abbreviations or acronyms can be displayed 
+  - it is also useful to use the HTML attribute **title**, this helps e.g. translation systems or screen readers and also search engines, it shows the full meaning of the abbreviation as soon as you scroll over it
+  - example --> *4_TheBody/Part_19/index.html*
+     ```
+        <article>
+            <h2>Abbreviations with abbr</h2>
+            <p>The <abbr title="World Wide Web">WWW</abbr> is full of abbreviations.</p>
+        </article>
+     ```
 
+* \<cite>
+  - if the title of a book, movie, painting, song, etc. is to be displayed, **cite** can be used
+  - example --> *4_TheBody/Part_19/index.html* 
+     ```
+        <article>
+            <h2>Working title with cite</h2>
+            <p>According to the book <cite>HTML - For beginner</cite> it says:</p>
+            <blockquote>In HTML 4.01 this element was also used for short quotes. In new HTML the semantic meaning has been converted and should now only be used for working titles.</blockquote>
+        </article>
+     ```
 
+* \<code> and \<pre>
+  - if a code is to be marked in a continuous text, **code** is used
+  - if several lines of computer code are to be formatted, **code** should be used between **pre**.
+  - for **<** in code **&lt;** is used and **&gt;** for **>**, this is so that the HTML document can distinguish between code and code-text
+  - example --> *4_TheBody/Part_19/index.html*
+     ```
+        <article>
+            <h2>Computer code with <code>code</code></h2>
+            <p>The <code>code</code> element does not contain any attributes.</p>
+        </article>
+        <article>
+            <h2>A preformatted text me pre.</h2>
+            <p>Here is a source code snippet of a C program:</p>
+            <figure>
+                <pre><code>#include &lt;stdio.h&gt;
+ 
+        int main(void)
+        {
+            puts("Hello World!");
+            return 0;
+        }</code></pre>
+                <figcaption>Listing 1: Hello World in C</figcaption>
+            </figure>
+        </article>
 
+     ```
 
+* \<kbd> and \<samp>
+  - the kbd element (keyboard) is used to mark continuous text as keyboard input
+  - **samp** is used for the screen output of programs
+  - example --> *4_TheBody/Part_19/index.html*
+     ```
+        <article>
+            <h2>Keyboard input with kdb and program output with samp</h2>
+            <p><kbd>Ctrl</kbd> + <kbd>A</kbd> select the complete text.</p>
+            <pre>term#1&gt; <kbd>gcc -o Wall hello hello.c</kbd>
+        term#1&gt; <kbd>./hello</kbd>
+        <samp>Hello World!</samp>
+        term#1&gt;</pre>
+        </article>
+     ```
 
-
+* \<dfn>
 
 
 
