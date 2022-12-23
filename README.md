@@ -1237,7 +1237,7 @@ The complete explanations for each tag will be given in the next chapters, these
 * \<code> and \<pre>
   - if a code is to be marked in a continuous text, **code** is used
   - if several lines of computer code are to be formatted, **code** should be used between **pre**.
-  - for **<** in code **&lt;** is used and **&gt;** for **>**, this is so that the HTML document can distinguish between code and code-text
+  - for **<** in code **\&lt;** is used and **\&gt;** for **>**, this is so that the HTML document can distinguish between code and code-text
   - example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
