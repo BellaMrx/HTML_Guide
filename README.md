@@ -1315,6 +1315,22 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * \<em>, \<strong>, \<i> and \<b>
+  - to emphasize a text in italics \<em> (emphasis) or to make a text bold \<strong> is used
+  - with \<i> the text is also displayed in italics, it should be used for special technical terms, a thought, scientific names or foreign words
+  - with \<b> the text is also displayed in bold, should be used for meaningful names or keywords
+  - example --> *4_TheBody/Part_19/index.html*
+     ```
+        <article>
+            <h2>Change text direction with bdo and bdi</h2>
+            <p>Hello World <bdo dir="rtl">Hello World</bdo></p>
+            <p>שלום</p>
+            <p><bdi>السلام عليكم</bdi>: 1 (as-salaam alaykum)</p>
+            <p><bdi>שלום</bdi>: 2 (shalom)</p>
+            <p>Howdy: 3 (a greeting in the US southern states)</p>
+        </article>
+     ```
+
+* \<mark>
 
 
 
