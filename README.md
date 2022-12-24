@@ -1331,6 +1331,26 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * \<mark>
+  - can be used to mark a text so that it is visually highlighted, like with a Highlighter
+  - works only if the content is created dynamically
+  - this is only for highlighting, to change the background color it is better to use \<span> and then style with CSS
+  - example --> *4_TheBody/Part_19/index.html*
+     ```
+              <article>
+                  <h2>mark text with mark</h2>
+                  <p>In 2021, profits have increased by <mark>100 percent</mark>.</p>
+                  <p>Here is a source code snippet of a C program:</p>
+                  <pre><code>#include &lt;stdio.h&gt;
+ 
+      int main(void)
+      {
+          <mark>puts("Hello World!");</mark>
+          return 0;
+      }</code></pre>
+              </article>
+     ```
+
+
 
 
 
