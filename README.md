@@ -1368,7 +1368,8 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
         <article>
             <h2>Underline or strike through text with s and u</h2>
-            <p>You can put a text in the center with <s><code>&lt;center&gt;</code> or</s> the CSS property <code>text-align</code> and the value <var>center</var>.</p>
+            <p>You can put a text in the center with <s><code>&lt;center&gt;</code> or</s> the CSS 
+            property <code>text-align</code> and the value <var>center</var>.</p>
             <p>我来自<u>德国</u>。= I come from Germany.</p>
             <p>Also <u class="spell-checker">correct spelling</u> can be marked with it.</p>
         </article>
@@ -1387,6 +1388,67 @@ The complete explanations for each tag will be given in the next chapters, these
      ```  
 
 * \<sup> and \<sub>
+  - these elements are mainly used for simple mathematical and chemical formulas
+  - the \<sub> element (sub = subscript) is used to make the text deeper
+  - the \<sup> element (sub = superscript) is used to superscript the text
+  - example --> *4_TheBody/Part_19/index.html*
+     ```
+        <article>
+            <h2>High or low points with sub and sup</h2>
+            <p><sup>[1]</sup> Reaction diagram: 2 H<sub>2</sub>O &RightArrow; 2 H<sub>2</sub> + O<sub>2</sub></p>
+            <p><sup>[2]</sup> Calculate circle area: A = &pi; * r<sup>2</sup></p>
+            <p><sub>[1] = https://en.wikipedia.org/wiki/Water</sub><br>
+                <sub>[2] = https://en.wikipedia.org/wiki/Circle</sub></p>
+        </article>
+     ```
 
+* \<time>
+  - the \<time> element was introduced to mark up dates and times.
+  - the purpose of this element is that the time can be uniquely encoded for machines and represented in a readable form for the user, for this the **datetime** attribute is used
+  - it is e.g. easier for a script in blog articles to extract the date from the element
+  - it is also advantageous when searching in search engines for articles of a certain time period
+  - example --> *4_TheBody/Part_19/index.html*
+     ```
+        <header>
+            <h2>Date and time with time</h2>
+            <time datetime="2021-08-01">August 1, 2021</time>
+        </header>
+     ```
 
+* \<small>
+	- the \<small> element is used to display words or text passages in lowercase.
+	- e.g. for copyrights, license information, legal notices
+  - example --> *4_TheBody/Part_19/index.html*
+     ```
+        <header>
+            <h2>Small print with small</h2>
+            <small>&copy; Rick Sample; <time datetime="2021-01-01">January 1, 2021</time></small>
+        </header>
+     ```
 
+* \<ruby>, \<rp> and \<rt>
+  - is an annotation system in which the text with annotations appears in one line
+  - example --> *4_TheBody/Part_19/index.html*
+     ```
+        <article>
+          <h2>The elements ruby, rt und rp</h2>
+          <p style="font-size:20pt;">
+            <ruby>
+              LOL<rp> (</rp><rt>Laugh Out Loud</rt><rp>)</rp>
+            </ruby></p>
+          <p><small>more infos: <a href="https://en.wikipedia.org/wiki/Ruby_character">
+            https://en.wikipedia.org/wiki/Ruby_character</a></small></p>
+        </article>
+     ```
+
+* \<span>
+  - the \<span> element can mark up single text passages in the middle of the text with CSS
+	- also quite helpful is this element for JavaScript
+  - example --> *4_TheBody/Part_19/index.html*
+     ```
+        <article>
+            <h2>The span element</h2>
+            <p>Current temperature <span id="temp">18</span> °C</p>
+            <p>A formatting with <span style="text-decoration:overline; color:grey;">CSS</span> and the span element.</p>
+        </article>
+     ```
