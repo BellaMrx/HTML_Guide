@@ -1350,9 +1350,43 @@ The complete explanations for each tag will be given in the next chapters, these
               </article>
      ```
 
+* \<q>
+  - the \<q> element is used when something is to be quoted in the middle of the text or when a spoken text is to be marked
+  - example --> *4_TheBody/Part_19/index.html*
+     ```
+        <article>
+            <h2>Quoting continuous text with q</h2>
+            <p><q cite="https://en.wikiquote.org/wiki/Albert_Einstein">A happy man is too satisfied with the present to dwell too much on the future.</q></p>
+        </article>
+     ```
 
+* \<u> and \<s>
+  - the \<u> element (u = underline) is used for proper noun underlining, as it is e.g. in the Chinese script, or to indicate words that may be erroneous
+  - the web browser usually presents the \<u> element with an underline
+  - the \<s> element (s = strike-through) is used to indicate that a text is outdated or incorrect, the browser will display the text as crossed out
+  - example --> *4_TheBody/Part_19/index.html*
+     ```
+        <article>
+            <h2>Underline or strike through text with s and u</h2>
+            <p>You can put a text in the center with <s><code>&lt;center&gt;</code> or</s> the CSS property <code>text-align</code> and the value <var>center</var>.</p>
+            <p>我来自<u>德国</u>。= I come from Germany.</p>
+            <p>Also <u class="spell-checker">correct spelling</u> can be marked with it.</p>
+        </article>
+     ```
 
+* \<ins> and \<del>
+  - the \<del> element (del = delete) is used when a content edit of a text is marked as deleted or revised 
+  - the \<ins> element (ins = insert) is the counterpart to the \<del> element, and is used when something new is added to a document 
+  - example --> *4_TheBody/Part_19/index.html*
+     ```
+        <article>
+            <h2>mark changes with del and ins</h2>
+            <del><p>The singer will perform in the concert hall on 01.01.2021!</p></del>
+            <ins><p>The concert will not take place because the singer is ill!</p></ins>
+        </article>
+     ```  
 
+* \<sup> and \<sub>
 
 
 
