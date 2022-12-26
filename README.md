@@ -832,8 +832,12 @@ The complete explanations for each tag will be given in the next chapters, these
       <h2>HTML News</h2>
       <article>
           <h3>New HTML elements</h3>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
-          <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. </p>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget 
+          dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+          In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+          <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus 
+          elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat 
+          a, tellus. </p>
       </article>
      ```
 
@@ -864,12 +868,18 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
       <article>
         <h3>New HTML elements</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretiumquis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget 
+        dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretiumquis, sem. Nulla 
+        consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, 
+        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
         <hr />
       </article>
       <article>
         <h3>Finally implemented</h3>
-        <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,viverra quis, feugiat a, tellus. </p>
+        <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus 
+        elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, 
+        consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,viverra quis, feugiat 
+        a, tellus. </p>
         <hr />
       </article>
      ```
@@ -882,10 +892,14 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
       <article>
           <h3>New HTML elements</h3>
-          <p>Lorem ipsum dolor sit amet, <q>consectetuer adipiscing</q> elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-              eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+          <p>Lorem ipsum dolor sit amet, <q>consectetuer adipiscing</q> elit. Aenean commodo ligula 
+          eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+              eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla 
+              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, 
+              venenatis vitae, justo. </p>
           <blockquote cite="https://www.blindtextgenerator.com/">
-              Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+              Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, 
+              vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
               <small> - https://www.blindtextgenerator.com/ - </small>
           </blockquote>
       </article>
@@ -909,8 +923,11 @@ The complete explanations for each tag will be given in the next chapters, these
           <h2>HTML News</h2>
           <div class="article">
               <h3>New HTML elements</h3>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                  quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+               dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                  quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet 
+                  nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, 
+                  justo. </p>
           </div>
           <div class="footer">
               <hr />
@@ -938,7 +955,9 @@ The complete explanations for each tag will be given in the next chapters, these
         <h2>HTML News</h2>
         <article>
           <h3>HTML5.3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget 
+          dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+          In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
         </article>
       </main>
       <footer>
@@ -1232,7 +1251,9 @@ The complete explanations for each tag will be given in the next chapters, these
         <article>
             <h2>Working title with cite</h2>
             <p>According to the book <cite>HTML - For beginner</cite> it says:</p>
-            <blockquote>In HTML 4.01 this element was also used for short quotes. In new HTML the semantic meaning has been converted and should now only be used for working titles.</blockquote>
+            <blockquote>In HTML 4.01 this element was also used for short quotes. In new HTML the 
+            semantic meaning has been converted and should now only be used for 
+            working titles.</blockquote>
         </article>
      ```
 
@@ -1358,7 +1379,8 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
         <article>
             <h2>Quoting continuous text with q</h2>
-            <p><q cite="https://en.wikiquote.org/wiki/Albert_Einstein">A happy man is too satisfied with the present to dwell too much on the future.</q></p>
+            <p><q cite="https://en.wikiquote.org/wiki/Albert_Einstein">A happy man is too satisfied with 
+            the present to dwell too much on the future.</q></p>
         </article>
      ```
 
@@ -1397,7 +1419,8 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
         <article>
             <h2>High or low points with sub and sup</h2>
-            <p><sup>[1]</sup> Reaction diagram: 2 H<sub>2</sub>O &RightArrow; 2 H<sub>2</sub> + O<sub>2</sub></p>
+            <p><sup>[1]</sup> Reaction diagram: 2 H<sub>2</sub>O &RightArrow; 2 H<sub>2</sub> + 
+            O<sub>2</sub></p>
             <p><sup>[2]</sup> Calculate circle area: A = &pi; * r<sup>2</sup></p>
             <p><sub>[1] = https://en.wikipedia.org/wiki/Water</sub><br>
                 <sub>[2] = https://en.wikipedia.org/wiki/Circle</sub></p>
@@ -1445,13 +1468,14 @@ The complete explanations for each tag will be given in the next chapters, these
 
 * \<span>
   - the \<span> element can mark up single text passages in the middle of the text with CSS
-	- also quite helpful is this element for JavaScript
+  - also quite helpful is this element for JavaScript
   - example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
             <h2>The span element</h2>
             <p>Current temperature <span id="temp">18</span> °C</p>
-            <p>A formatting with <span style="text-decoration:overline; color:grey;">CSS</span> and the span element.</p>
+            <p>A formatting with <span style="text-decoration:overline; color:grey;">CSS</span> and 
+            the span element.</p>
         </article>
      ```
 
