@@ -27,6 +27,8 @@
     - 4.2. The HTML elements for text structuring
     - 4.3. Semantic HTML
     - 4.4. HTML elements for text markup
+    - 4.5. Character entities in HTML
+5. 
 
 -------------------------------------------------------------------------------------------------------------
 
@@ -1452,3 +1454,40 @@ The complete explanations for each tag will be given in the next chapters, these
             <p>A formatting with <span style="text-decoration:overline; color:grey;">CSS</span> and the span element.</p>
         </article>
      ```
+
+### 4.5. Character entities in HTML
+* The importance of character entities has decreased with the spread of Unicode (UTF-8), but it is still worth mentioning them briefly.
+	e.g.: 
+     ```
+      <p><bdi>שלום</bdi> = shalom</p>
+     ```
+  Without the Unicode specification, the browser may not be able to display these special characters. Therefore, the specification of the Unicode is always advantageous, with special characters and characters.
+     ```
+      <meta charset="UTF-8">
+     ``` 
+  Another question, of course, is how to display these special characters when none of them are present on the keyboard. With the help of character entities:
+     ```
+      <p><bdo>&#1501;&#1503;&#1500;&#1513;</bdo> = shalom</p>
+     ```
+	* Numeric entities: 
+		- With the help of &#xxx; (xxx = encoding of the character), this is used when no input is possible from the keyboard.
+  * Banished entities:
+		- e.g. the < is represented with **\&lt;** and the > character with **\&gt;**
+      ```
+        <p>5 > 4 < 6</p>
+      ```
+    Special characters that belong to HTML syntax (e.g. < and >) should be displayed to the corresponding entities. Otherwise, display errors may occur on the web page.
+      ```
+        <p>5 &gt; 4 &lt; 6</p>
+      ```
+
+An overview of the numeric and named entities can be found here: [Unicode/Charts](https://www.unicode.org/charts/)
+More information about Unicode can be found at: [GitHub](http://r12a.github.io/scripts/tutorial/) and [Unicode](https://www.unicode.org)
+
+### The HTML elements are used only for text markup, CSS is responsible for formatting.
+
+-------------------------------------------------------------------------------------------------------------
+
+    
+
+  
