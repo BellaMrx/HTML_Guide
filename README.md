@@ -1466,13 +1466,13 @@ The complete explanations for each tag will be given in the next chapters, these
       <meta charset="UTF-8">
      ``` 
   Another question, of course, is how to display these special characters when none of them are present on the keyboard. With the help of character entities:
+	* Numeric entities: 
+		- With the help of &#xxx; (xxx = encoding of the character), this is used when no input is possible from the keyboard.
      ```
       <p><bdo>&#1501;&#1503;&#1500;&#1513;</bdo> = shalom</p>
      ```
-	* Numeric entities: 
-		- With the help of &#xxx; (xxx = encoding of the character), this is used when no input is possible from the keyboard.
   * Banished entities:
-		- e.g. the < is represented with **\&lt;** and the > character with **\&gt;**
+    - e.g. the < is represented with **\&lt;** and the > character with **\&gt;**
       ```
         <p>5 > 4 < 6</p>
       ```
@@ -1481,10 +1481,10 @@ The complete explanations for each tag will be given in the next chapters, these
         <p>5 &gt; 4 &lt; 6</p>
       ```
 
-An overview of the numeric and named entities can be found here: [Unicode/Charts](https://www.unicode.org/charts/)
-More information about Unicode can be found at: [GitHub](http://r12a.github.io/scripts/tutorial/) and [Unicode](https://www.unicode.org)
+* An overview of the numeric and named entities can be found here: [Unicode/Charts](https://www.unicode.org/charts/)
+* More information about Unicode can be found at: [GitHub](http://r12a.github.io/scripts/tutorial/) and [Unicode](https://www.unicode.org)
 
-### The HTML elements are used only for text markup, CSS is responsible for formatting.
+#### The HTML elements are used only for text markup, CSS is responsible for formatting.
 
 -------------------------------------------------------------------------------------------------------------
 
