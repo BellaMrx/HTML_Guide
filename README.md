@@ -28,7 +28,8 @@
     - 4.3. Semantic HTML
     - 4.4. HTML elements for text markup
     - 4.5. Character entities in HTML
-5. 
+5. Tables and hyperlinks
+    - 5.1. Structuring data in a table
 
 -------------------------------------------------------------------------------------------------------------
 
@@ -1510,8 +1511,25 @@ The complete explanations for each tag will be given in the next chapters, these
 
 #### The HTML elements are used only for text markup, CSS is responsible for formatting.
 
--------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
 
-    
 
-  
+## 5. Tables and hyperlinks
+### 5.1. Structuring data in a table
+* Tables are useful to display related data e.g. stock quotes, financial data, travel plans or sports results in a grid of rows and columns
+
+| HTML elements  | Explanation              |
+| -------------- | ------------------------ |
+| \<table>       | table                    |
+| \<tr>          | table row                |
+| \<td>          | table cell               |
+| \<th>          | table header cell        |
+| \<thead>       | table header area        |
+| \<tbody>       | table body               |
+| \<tfoot>       | table footer area        |
+| \<colgroup>    | group of table columns   | 
+| \<col>         | table column             |
+| \<caption>     | table heading/legend     |
+
+* a simple table structure with \<table>, \<tr>, \<td>, \<th>  
+![Preview](Images/Table_Image.PNG)
