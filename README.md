@@ -321,7 +321,7 @@
 | \<style>...\</style>   | sets the local stylesheet rules for the HTML document                           |
 | \<script>...\<script>  | includes the client-side scripts, may also be used outside the **head** element |
 | \<meta>                | sets the metadata like keywords, descriptions or the character set for the HTML document     |
----
+
 
      ```
       <!doctype html>
@@ -1516,7 +1516,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 ## 5. Tables and hyperlinks
 ### 5.1. Structuring data in a table
-* Tables are useful to display related data e.g. stock quotes, financial data, travel plans or sports results in a grid of rows and columns
+  - Tables are useful to display related data e.g. stock quotes, financial data, travel plans or sports results in a grid of rows and columns
 
 | HTML elements  | Explanation              |
 | -------------- | ------------------------ |
@@ -1531,5 +1531,89 @@ The complete explanations for each tag will be given in the next chapters, these
 | \<col>         | table column             |
 | \<caption>     | table heading/legend     |
 
-* a simple table structure with \<table>, \<tr>, \<td>, \<th>  
+  - Tables are created between the element **\<table> ... \</table>** is created
+  - the content of the table is specified row by row with **\<tr>...\</tr>** (tr = table row)
+  - within the table row the individual columns are noted with **\<td>...\</td>** (td = table data)
+  - the table headings are displayed between **\<th>...\</th>** (th = table heading), can be used like **\<td>**, but the text is displayed bold
+  - the web browser displays the table without formatting, height and width usually adapts to the content
+  - example --> *5_Tables_Hyperlinks/Part_1/index.html*
+     ```
+      <h1>Browser statistics November 2021 - 2022</h1>
+      <table>
+          <tr>
+            <th>Browser</th>
+            <th>Accesses</th>
+            <th>Percent</th>
+          </tr>
+          <tr>
+            <td>Chrome</td>
+            <td>144780</td>
+            <td>65,86%</td>
+          </tr>
+          <tr>
+            <td>Firefox</td>
+            <td>34099</td>
+            <td>3.04%</td>
+          </tr>
+          <tr>
+            <td>Safari</td>
+            <td>16019</td>
+            <td>18.67%</td>
+          </tr>
+      </table>
+     ```
+
+  - in a cell between **\<td>...\</td>** can also be other elements, theoretically even additional tables.
+  - if an empty cell is to be displayed, an empty **\<td>...\</td>** or **\<th>...\</th>** must be created anyway
+  - with old web browsers it could come to problems with blanks then simply use the HTML entity **\&nbsp;** to force a blank space
+
+  - a simple table structure with \<table>, \<tr>, \<td>, \<th>  
 ![Preview](Images/Table_Image.PNG)
+
+* **colspan** and **rowspan**
+	- table entries can be summarized over several rows with the HTML attribute **colspan** and **rowspan**
+	- the numeric value specifies the number of cells to be merged
+  - the **scope** attribute specifies whether the table heading should apply to a column (scope="col") or a row (scope="row")
+  - summarize columns - example --> *5_Tables_Hyperlinks/Part_2/indexA.html*
+     ```
+      <h1>Daily planning</h1>
+      <table>
+        <tr>
+          <th></th>
+          <th scope="col">Morning</th>
+          <th scope="col">Noon</th>
+          <th scope="col">Afternoon</th>
+        </tr>
+        <tr>
+          <th scope="row">Monday</th>
+          <td colspan="2">Fotoshooting (Outdoor)</td>
+          <td>Image editing workshop</td>
+        </tr>
+        <tr>
+          <th scope="row">Tuesday</th>
+          <td>Street photography (city)</td>
+          <td colspan="2">Photo shooting (portrait)</td>
+        </tr>
+        <tr>
+          <th scope="row">Wednesday</th>
+          <td>Nude photography</td>
+          <td>Image editing workshop</td>
+          <td>Graduation</td>
+        </tr>
+      </table>
+     ```
+  - summarize lines - example --> *5_Tables_Hyperlinks/Part_2/indexB.html*
+     ```
+      <table>
+      ...
+        <tr>
+          <th scope="row">Tuesday</th>
+          <td rowspan="2">Street photography (city)</td>
+          <td colspan="2">Photo shooting (portrait)</td>
+        </tr>
+      ...
+      </table>
+     ```
+
+* HTML attributes for the table elements 
+
