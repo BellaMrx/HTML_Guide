@@ -1757,4 +1757,59 @@ The complete explanations for each tag will be given in the next chapters, these
 
 
 ### 5.2. Hyperlinks with \<a>
+* Hyperlinks are important elements of HTML because they allow you to move from one web page to another. They are needed to structure and link projects. Starting from the main web page, links are often used to go to other sub-pages and back to the main page. Only with the linking of several files a web page becomes a meaningfully operable web page.
+  - Hyperlinks are represented with the **\<a>** element (a = anchor)
+  - the text between **\<a>...\</a>** is called link text and is activated by the **href** attribute
+  - between the **a** element other elements can be used, not only pure text, e.g. a graphic as hyperlink (should not be too much, could overwhelm users)
+  - the hyperlink is usually underlined in blue by the browser, if it has already been visited it is usually displayed in purple (depending on the browser), but this can be changed with CSS
+  - the most important attribute is href, this attribute first activates the hyperlink
+     ```
+               {      Hyperlink      }  {      Text       }
+      <a href="https://www.google.com/">Google: click here</a>
+     ```
+
+* Folder structure
+  HTML  --> index.html
+        --> sites       --> links.html
+                        --> about.html
+                        --> legal_notice.html
+  - example --> *5_Tables_Hyperlinks/Part_6/index.html*
+     ```
+      <nav>
+        Blog |
+        <a href="sites/links.html">Links</a> |
+        <a href="sites/about.html">About Me</a> |
+        <a href="sites/legal_notice.html">Legal Notice</a>
+      </nav>
+     ```
+  ![Preview](5_Tables_Hyperlinks/Images/Preview_5_6.PNG)
+  - example --> *5_Tables_Hyperlinks/Part_6/sites/links.html*
+     ```
+      <nav>
+        <a href="../index.html">Blog</a> |
+        Links |
+        <a href="about.html">About Me</a> |
+        <a href="legal_notice.html">Legal Notice</a>
+      </nav>
+     ```
+  ![Preview](5_Tables_Hyperlinks/Images/Preview_5_6_links.PNG)
+
+* Links to other external websites 
+  - example --> *5_Tables_Hyperlinks/Part_7/index.html*
+     ```
+      <h3>Related links</h3>
+      <nav>
+          <ul>
+              <li>
+                  <a href="https://www.w3.org/TR/html53/">HTML Recommendation</a>
+              </li>
+              <li><a href="http://www.w3.org/">W3C</a></li>
+              <li><a href="http://www.whatwg.org/">WHATWG</a></li>
+          </ul>
+      </nav>
+     ```
+  ![Preview](5_Tables_Hyperlinks/Images/Preview_5_7.PNG)
+
+
+
 
