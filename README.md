@@ -1769,10 +1769,10 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * Folder structure
-  HTML  --> index.html
-        --> sites       --> links.html
-                        --> about.html
-                        --> legal_notice.html
+  HTML----> index.html
+  |-------> sites---------> links.html
+            |-------------> about.html
+            |-------------> legal_notice.html
   - example --> *5_Tables_Hyperlinks/Part_6/index.html*
      ```
       <nav>
