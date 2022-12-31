@@ -1616,4 +1616,76 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * HTML attributes for the table elements 
+  - the table element supports only the **border** attribute to display a frame, the value may be **"1"** or **" "**
+     ```
+      <table border="1">
+      ...
+      </table>
+     ```
+  - but this variant is not used, instead you use CSS to style the table
+     ```
+      <head>
+        <style>
+          table, td, th { border: 1px solid gray }
+        </style>
+      </head>
+     ```
 
+* Structure tables with \<thead>, \<tbody> and \<tfoot>
+	- the table header is displayed between **\<thead>...\</thead>** (thead = table head)
+     ```
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Visitors</th>
+                <th>Bytes</th>
+            </tr>
+        </thead>
+     ```
+  - the actual data is marked between **\<tbody>...\</tbody>** (tbody = table body)
+     ```
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>3234</td>
+                <td>133 MB</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>3500</td>
+                <td>236 MB</td>
+            </tr>
+            ...
+        </tbody>
+     ```
+	- the table foot is displayed between **\<tfoot>...\</tfoot>** (tfoot = table foot)
+     ```
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>23435</th>
+                <th>3.246 MB</th>
+            </tr>
+        </tfoot>
+     ```
+  - example --> *5_Tables_Hyperlinks/Part_3/index.html*
+  ![Preview](5_Tables_Hyperlinks/Images/Preview_5_3.PNG)
+
+
+* Group columns of a table with \<colgroup> and \<col>
+  - the elements \<colgroup> (colgroup = column group) and \<col> are used to divide single columns into semantic and logical areas
+  - to combine several elements in one **col** element, the attribute **span** is used with specification of a value for the number of columns
+  - example --> *5_Tables_Hyperlinks/Part_4/index.html*
+     ```
+      <table>
+        <colgroup>
+            <col span="2" style="background-color: lightgrey" />
+            <col style="background-color: WhiteSmoke" />
+        </colgroup>
+        ...
+      </table>
+     ```
+
+  ![Preview](5_Tables_Hyperlinks/Images/Preview_5_4.PNG)
+
+* Label tables with \<caption> or \<figcaption>
