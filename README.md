@@ -30,7 +30,7 @@
     - 4.5. Character entities in HTML
 5. Tables and hyperlinks
     - 5.1. Structuring data in a table
-
+    - 5.2. Hyperlinks with \<a>
 -------------------------------------------------------------------------------------------------------------
 
 ## 1. Introduction to HTML
@@ -1633,6 +1633,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 * Structure tables with \<thead>, \<tbody> and \<tfoot>
 	- the table header is displayed between **\<thead>...\</thead>** (thead = table head)
+  - example --> *5_Tables_Hyperlinks/Part_3/index.html*
      ```
         <thead>
             <tr>
@@ -1668,7 +1669,6 @@ The complete explanations for each tag will be given in the next chapters, these
             </tr>
         </tfoot>
      ```
-  - example --> *5_Tables_Hyperlinks/Part_3/index.html*
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_3.PNG)
 
 
@@ -1689,3 +1689,72 @@ The complete explanations for each tag will be given in the next chapters, these
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_4.PNG)
 
 * Label tables with \<caption> or \<figcaption>
+  - to label a table **\<caption>** is used, or the new variants **\<figure>** and **\<figcaption>**
+
+  - \<caption>
+  - example --> *5_Tables_Hyperlinks/Part_5/indexA.html*
+     ```
+      <h1>Browser statistics 2021 - 2022</h1>
+      <table>
+          <caption>
+              Browser statistics 2021/2022
+          </caption>
+          <tr>
+              <th>Browser</th>
+              <th>Accesses</th>
+              <th>Percent</th>
+          </tr>
+        ...
+      </table>
+     ```
+  ![Preview](5_Tables_Hyperlinks/Images/Preview_5_5A.PNG)
+
+  - further labels can be added with the HTML elements **details** and **summary**
+  - example --> *5_Tables_Hyperlinks/Part_5/indexA.html*
+     ```
+      <h1>Browser statistics 2021 - 2022</h1>
+      <table>
+          <caption>
+              <details>
+                  <summary>2021/2022</summary>
+                  <p>
+                    Here you can find the browser statistics of the domain.com website listed from 2021 - 2022
+                  </p>
+              </details>
+          </caption>
+          <tr>
+              <th>Browser</th>
+              <th>Accesses</th>
+              <th>Percent</th>
+          </tr>
+        ...
+      </table>
+     ```
+  ![Preview](5_Tables_Hyperlinks/Images/Preview_5_5B_1.PNG)
+  ![Preview](5_Tables_Hyperlinks/Images/Preview_5_5B_2.PNG)
+
+  - \<figcaption>
+  - example --> *5_Tables_Hyperlinks/Part_5/indexC.html*
+     ```
+        <figure>
+            <table>
+                <tr>
+                    <th>Browser</th>
+                    <th>Accesses</th>
+                    <th>Percent</th>
+                </tr>
+                <tr>
+                    <td>Chrome</td>
+                    <td>144780</td>
+                    <td>65,86%</td>
+                </tr>
+                ...
+            </table>
+            <figcaption>Table 1: Browser statistics 2021/2022</figcaption>
+        </figure>
+     ```
+  ![Preview](5_Tables_Hyperlinks/Images/Preview_5_5C.PNG)
+
+
+### 5.2. Hyperlinks with \<a>
+
