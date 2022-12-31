@@ -1769,13 +1769,9 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * Folder structure
-       ```
-                ---> index.html
-        HTML
-                ---> sites      ---> links.html
-                                ---> about.html
-                                ---> legal_notice.html
-       ```
+
+  ![Preview](5_Tables_Hyperlinks/Images/folder_structure.png)
+
   - example --> *5_Tables_Hyperlinks/Part_6/index.html*
      ```
       <nav>
