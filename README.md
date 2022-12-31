@@ -1810,6 +1810,40 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_7.PNG)
 
+* The HTML attributes for the \<a> element
 
+| attributes    | Explanation                                                              |
+| ------------- | ------------------------------------------------------------------------ |
+| download      | this offers the link target for download |
+| href          | this specifies the URL of the page to which the hyperlink will lead when activated |
+| hreflang      | here the language of the linked document can be specified, specifications are allowed in abbreviations e.g. **de** for Germany |
+| media         | this can be used to specify media for which the link target has been optimized, media types can be enumerated separated by commas or specify **all** for all media types |
+| type          | this can be used to tell the browser the MIME type (file format) the linked file belongs to |
 
+| rel              | this determines the type of link, there are also certain attribute values for **rel**: bookmark, external, nofollow, noreferrer |
+| ---------------- | ------------------------------------------------------------------------ |
+| rel="bookmark"   | here it is specified that the link target is a parent section of the current document |
+| rel="external"   | this indicates that the hyperlink belongs to an external web offer |
+| rel="nofollow"   | signals the search engines not to follow this link |
+| rel="noreferrer" | this instructs the visitor's web browser not to use a referrer address when clicking on the link, thus avoiding that the web server of the destination address receives information from where the visitor came from |
+
+| target           | here you specify where the reference target is to be opened |
+| ---------------- | ------------------------------------------------------------------------ |
+| target="_blank"  | this will create a new tab when the link is clicked on  |
+| target="_parent" | is the parent window |
+| target="_self"   | indicates the current window |
+| target="_top"    | Specifies the top window level |
+
+* target
+     ```
+        <p>
+          As already reported, the
+          <a target="_blank" href="http://www.w3.org/">World Wide Web Consortium</a>
+          submitted a new recommendation for HTML, ...
+        </p>
+     ``` 
+
+* download
+
+* links to specific parts of a web page 
 
