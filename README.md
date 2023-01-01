@@ -2,7 +2,7 @@
 
  detailed tutorial about HTML + templates (all basics for HTML)
 
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 ## Contents
 1. Introduction to HTML
@@ -31,7 +31,8 @@
 5. Tables and hyperlinks
     - 5.1. Structuring data in a table
     - 5.2. Hyperlinks with \<a>
--------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------
 
 ## 1. Introduction to HTML
 
@@ -179,7 +180,7 @@
    - Accessible websites, incorrect text or structure can cause assistive tools such as read aloud software to not work properly.
    - helpful for beginners to recognize errors quickly and prevents writing unclean code --> a clean code shows quality
 
--------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
 
 ## 2. Structure of a HTML document
 
@@ -305,7 +306,7 @@
   - everything contained in it, such as texts, images, hyperlinks or tables is displayed in the browser
 
 
--------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
 
 
 ## 3. The header data of an HTML document
@@ -564,7 +565,7 @@ The complete explanations for each tag will be given in the next chapters, these
 | name       | defines a name for the metadata. Some default values are: application-name, author, description, generator, keywords	|
 
 
--------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
 
 
 ## 4. The visible area of an HTML document
@@ -1511,7 +1512,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 #### The HTML elements are used only for text markup, CSS is responsible for formatting.
 
-------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
 
 
 ## 5. Tables and hyperlinks
@@ -1811,34 +1812,34 @@ The complete explanations for each tag will be given in the next chapters, these
 
 * The HTML attributes for the \<a> element
 
-| attributes    | Explanation                                                              |
-| ------------- | ------------------------------------------------------------------------ |
-| download      | this offers the link target for download |
-| href          | this specifies the URL of the page to which the hyperlink will lead when activated |
-| hreflang      | here the language of the linked document can be specified, specifications are allowed in abbreviations e.g. **de** for Germany |
-| media         | this can be used to specify media for which the link target has been optimized, media types can be enumerated separated by commas or specify **all** for all media types |
-| type          | this can be used to tell the browser the MIME type (file format) the linked file belongs to |
+| attributes      | Explanation                                                              |
+| --------------- | ------------------------------------------------------------------------ |
+| `download`      | this offers the link target for download |
+| `href`          | this specifies the URL of the page to which the hyperlink will lead when activated |
+| `hreflang`      | here the language of the linked document can be specified, specifications are allowed in abbreviations e.g. **de** for Germany |
+| `media`         | this can be used to specify media for which the link target has been optimized, media types can be enumerated separated by commas or specify `all` for all media types |
+| `type`          | this can be used to tell the browser the MIME type (file format) the linked file belongs to |
 
-| attribute        | Explanation                                                              |
-| ---------------- | ------------------------------------------------------------------------ |
-| rel              | this determines the type of link, there are also certain attribute values for **rel**: bookmark, external, nofollow, noreferrer |
-| rel="bookmark"   | here it is specified that the link target is a parent section of the current document |
-| rel="external"   | this indicates that the hyperlink belongs to an external web offer |
-| rel="nofollow"   | signals the search engines not to follow this link |
-| rel="noreferrer" | this instructs the visitor's web browser not to use a referrer address when clicking on the link, thus avoiding that the web server of the destination address receives information from where the visitor came from |
+| attribute          | Explanation                                                              |
+| ------------------ | ------------------------------------------------------------------------ |
+| `rel`              | this determines the type of link, there are also certain attribute values for `rel`: bookmark, external, nofollow, noreferrer |
+| `rel="bookmark"`   | here it is specified that the link target is a parent section of the current document |
+| `rel="external"`   | this indicates that the hyperlink belongs to an external web offer |
+| `rel="nofollow"`   | signals the search engines not to follow this link |
+| `rel="noreferrer"` | this instructs the visitor's web browser not to use a referrer address when clicking on the link, thus avoiding that the web server of the destination address receives information from where the visitor came from |
 
-| attribute        | Explanation                                                              |
-| ---------------- | ------------------------------------------------------------------------ |
-| target           | here you specify where the reference target is to be opened |
-| target="_blank"  | this will create a new tab when the link is clicked on  |
-| target="_parent" | is the parent window |
-| target="_self"   | indicates the current window |
-| target="_top"    | Specifies the top window level |
+| attribute          | Explanation                                                              |
+| ------------------ | ------------------------------------------------------------------------ |
+| `target`           | here you specify where the reference target is to be opened |
+| `target="_blank"`  | this will create a new tab when the link is clicked on  |
+| `target="_parent"` | is the parent window |
+| `target="_self"`   | indicates the current window |
+| `target="_top"`    | Specifies the top window level |
 
-* target
+* **target**
 	- with `target` a link target is opened in a new window or tab, if it gets the attribute value `_blank`
 	- The goal is that the visitor does not get lost on the main page, and returns there when the newly opened page has been read
-	- `_blank` is the most used attribute value of `target` further are `_self` `_parent` `_top`
+	- `_blank` is the most used attribute value of `target` further are `_self`, `_parent`, `_top`
      ```
         <p>
           As already reported, the
@@ -1847,7 +1848,93 @@ The complete explanations for each tag will be given in the next chapters, these
         </p>
      ``` 
 
-* download
+* **href=mailto:...**
+  - there is the possibility to open an email address with a specific email application when clicking on the link
+	- this is browser dependent and may require the user to set up a specific application, the functionality of a mailto link is not reliable
+	- The specification of an email address is often obligatory, but this also means that unsolicited commercial emails can be expected, as web crawlers scan the web pages for email addresses. There is a way around this: 1. display the email address as a graphic, but this has the disadvantage that screen readers cannot read the email. 2. obfuscate the email with JavaScript [for more info: click here](http://alistapart.com/article/gracefulemailobfuscation). 3. the [reCAPTCHA](http://google.com/recaptcha/intro/index.html) module of Google
+	- When specifying the email address on the website, it is important to observe the legal requirements.
+  - example --> *5_Tables_Hyperlinks/Part_8/index.html*
+     ```
+      <footer>
+        <a href="mailto:example@email.com">Send Email</a>
+      </footer>
+     ```
+![Preview](5_Tables_Hyperlinks/Images/Preview_5_8_mark.png)
 
-* links to specific parts of a web page 
+* **links to other content types**
+	- if links are set to other types of documents not used on the web (e.g. Word, Excel, PDF), it depends on the web browser how it is displayed
+  - it is also important to always inform the user what is behind a link
+  - example --> *5_Tables_Hyperlinks/Part_9/index.html*
+     ```
+      <body>
+        <h1>Reference to other content types</h1>
+        <p>Open a PDF document: <a href="docs/document.pdf">PDF</a></p>
+        <p>Open a movie: <a href="docs/movie.mp4">Movie</a></p>
+        <p>Open a Word document: <a href="docs/worddocument.doc" type="application/msword">DOC</a></p>
+      </body>
+     ```
+![Preview](5_Tables_Hyperlinks/Images/Preview_5_9.PNG)
+
+* **download**
+  - with the attribute download the browser is instructed to offer the file for download, importantly the user must be informed about what is being downloaded 
+  - old web browsers do not support the download attribute
+  - example --> *5_Tables_Hyperlinks/Part_10/index.html*
+     ```
+      <body body>
+        <h1>Reference to other content types</h1>
+        <p>
+            Download a PDF document:
+            <a href="docs/document.pdf" download>PDF</a>
+        </p>
+        <p>
+            Download a MP4 movie:
+            <a href="docs/movie.mp4" download="movie.mp4">MP4</a>
+        </p>
+        <p>
+            Download a Word document:
+            <a href="docs/worddokument.doc" download="worddokument.doc">DOC</a>
+        </p>
+        <p>
+            Download an HTML document:
+            <a href="docs/website.html" download="docs/website.html">HTML</a>
+        </p>
+      </body>
+     ```
+![Preview](5_Tables_Hyperlinks/Images/Preview_5_10.PNG)
+
+* **links to specific parts of a web page**
+	- to get to a certain paragraph can be annoying on large web pages if you have to scroll too much
+	- therefore you can set anchors, with an `id` and with `#` you can call the section then 
+  - example --> *5_Tables_Hyperlinks/Part_11/index.html*
+     ```
+      <body>
+        <h1 id="top">Contents</h1>
+        <ul>
+          <li><a href="#intro">Introduction to HTML</a></li>
+          <li><a href="#syntax">The syntax of HTML</a></li>
+          <li><a href="#versions">Versions of HTML</a></li>
+          <li><a href="#technics">Techniques around HTML</a></li>
+          <li><a href="#practice">To the table of contents</a></li>
+        </ul>
+        <h1 id="intro">Introduction to HTML</h1>
+        <p>...</p>
+        <p><a href="#top">To the table of contents</a></p>
+        <h2 id="syntax">The syntax of HTML</h2>
+        <p>...</p>
+        <p><a href="#top">To the table of contents</a></p>
+        <h2 id="versions">Versions of HTML</h2>
+        <p>...</p>
+        <p><a href="#top">To the table of contents</a></p>
+        <h2 id="technics">Techniques around HTML</h2>
+        <p>...</p>
+        <p><a href="#top">To the table of contents</a></p>
+        <h2 id="practice">Getting started in practice</h2>
+        <p>...</p>
+        <p><a href="#top">To the table of contents</a></p>
+      </body>
+     ```
+![Preview](5_Tables_Hyperlinks/Images/Preview_5_11.PNG)
+
+
+-----------------------------------------------------------------------------------------
 
