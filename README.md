@@ -858,6 +858,7 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
       <p>To learn AJAX, you must be familiar with the XML<wbr>Http<wbr>Request Object.</p>
      ``` 
+
 - A commonly used entity in HTML is the non-breaking space: \&nbsp;. A non-breaking space is a space that will not break into a new line. Two words separated by a non-breaking space will stick together (not break into a new line). This is handy when breaking the words might be disruptive.
      ```
        <p>word1&nbsp;&nbsp;&nbsp;word2</p>
@@ -884,10 +885,11 @@ The complete explanations for each tag will be given in the next chapters, these
         <hr />
       </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_10.PNG)
 
 * \<blockquote>
   - here usually a text is quoted from another source.
-  - the \<blockquote> contains a **cite** attribute, this indicates the source of the quote, but unfortunately it is not yet visible in the web browser and therefore the source should be added to the web page additionally
+  - the `<blockquote>` contains a `cite` attribute, this indicates the source of the quote, but unfortunately it is not yet visible in the web browser and therefore the source should be added to the web page additionally
   - example --> *4_TheBody/Part_11/index.html*
 
      ```
@@ -905,6 +907,7 @@ The complete explanations for each tag will be given in the next chapters, these
           </blockquote>
       </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_11.PNG)
 
 * \<div>
   - here a general area is defined, this causes first only a new line
@@ -912,6 +915,8 @@ The complete explanations for each tag will be given in the next chapters, these
   - the div element should only be used if there is no suitable HTML element, it is better to use semantic HTML e.g. header, nav, section, article, footer
   - can be used several times in the document
   - example --> *4_TheBody/Part_12/indexB.html*
+![Preview](4_TheBody/Images/Preview_4_12B.PNG)
+
   - example --> *4_TheBody/Part_12/indexA.html*
      ```
       <body>
@@ -940,11 +945,12 @@ The complete explanations for each tag will be given in the next chapters, these
           </div>
       </body>
      ```
+![Preview](4_TheBody/Images/Preview_4_12A.PNG)
 
 * \<main>
   - is used in practice for the main content of a web page, should not be used within section, article elements etc.
   - usually behaves like a div element, but should be used only once in the document
-  - is not a section element (\<section>) but a pure grouping element
+  - is not a section element (`<section>`) but a pure grouping element
   - example --> *4_TheBody/Part_13/index.html*
      ```
       <body>
@@ -969,10 +975,11 @@ The complete explanations for each tag will be given in the next chapters, these
       </footer>
       </body>
      ```
+![Preview](4_TheBody/Images/Preview_4_13.PNG)
 
 * \<figure> and \<figcaption>
-	- the **figure** element is used when content such as images, text, lists, tables or other HTML elements should stand out from the usual continuous text
-	- for an additional optional caption **figcaption** is used
+	- the `figure` element is used when content such as images, text, lists, tables or other HTML elements should stand out from the usual continuous text
+	- for an additional optional caption `figcaption` is used
   - example --> *4_TheBody/Part_14/index.html*
      ```
       <article>
@@ -985,6 +992,7 @@ The complete explanations for each tag will be given in the next chapters, these
           <p>The text according to figure</p>
       </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_14.PNG)
 
 * \<ul> and \<li>
   - an unordered list in which all entries are marked with a bullet point
@@ -1003,10 +1011,11 @@ The complete explanations for each tag will be given in the next chapters, these
             </ul>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_15.PNG)
 
 * \<ol> and \<li>
-  - \<ol> is needed for ordered lists
-  - they are numbered lists, in which the individual \<li> - elements are automaitsch numbered
+  - `<ol>` is needed for ordered lists
+  - they are numbered lists, in which the individual `<li>` - elements are automaitsch numbered
   - lists can be nested
   - example --> *4_TheBody/Part_15/index.html*
      ```
@@ -1021,7 +1030,7 @@ The complete explanations for each tag will be given in the next chapters, these
             </ol>
         </article>
      ```
-  - it is possible to reverse the numbering with HTML attribute **reversed**, then the numbering will be displayed in descending order
+  - it is possible to reverse the numbering with HTML attribute `reversed`, then the numbering will be displayed in descending order
   - example --> *4_TheBody/Part_15/index.html* 
      ```
         <article>
@@ -1035,8 +1044,8 @@ The complete explanations for each tag will be given in the next chapters, these
             </ol>
         </article>
      ```
-  - with the HTML attribute **start** the start value of the first \<li> element, the following numberings are increased by 1
-  - within the \<li> element it is also possible with the HTML attribute **value**
+  - with the HTML attribute `start` the start value of the first `<li>` element, the following numberings are increased by 1
+  - within the `<li>` element it is also possible with the HTML attribute `value`
   - example --> *4_TheBody/Part_15/index.html* 
      ```
         <article>
@@ -1074,9 +1083,9 @@ The complete explanations for each tag will be given in the next chapters, these
 
 ### 4.3. Semantic HTML
   - semantic web pages help search engines (Google prefers semantic web pages)
-  - with \<div> it is possible to create semantic web pages, but it is not standardtized structuring (due to different IDs and class names)
+  - with `<div>` it is possible to create semantic web pages, but it is not standardtized structuring (due to different IDs and class names)
   - the div - element can still be used but only if no semantic element (header, nav, section etc.) fits
-  - e.g. the screenreader does not recognize by the ID whether it is a navigation bar on the web page with \<div id="nav"> but only so \<nav> 
+  - e.g. the screenreader does not recognize by the ID whether it is a navigation bar on the web page with `<div id="nav">` but only so `<nav>` 
 
 #### HTML document without precise structure
   - example --> *4_TheBody/Part_16/index.html* 
@@ -1110,9 +1119,12 @@ The complete explanations for each tag will be given in the next chapters, these
       </p>
       </body>
      ```
+![Preview](4_TheBody/Images/Preview_4_16.PNG)
 
 #### Generic structuring with \<div>
   - example --> *4_TheBody/Part_17/indexB.html* 
+![Preview](4_TheBody/Images/Preview_4_17B.PNG)
+
   - example --> *4_TheBody/Part_17/indexA.html* 
      ```
       <body>
@@ -1154,6 +1166,7 @@ The complete explanations for each tag will be given in the next chapters, these
       </div>
       </body>
      ```
+![Preview](4_TheBody/Images/Preview_4_17A.PNG)
 
 #### semantically structured web pages
   - example --> *4_TheBody/Part_18/index.html* 
@@ -1199,44 +1212,46 @@ The complete explanations for each tag will be given in the next chapters, these
           </footer>
       </body>
      ```
+![Preview](4_TheBody/Images/Preview_4_18.PNG)
 
 ### 4.4. HTML elements for text markup
 * These are elements that are used within a plain text for single letters, words or parts of sentences to change them slightly visually. Even though text formatting with these elements is possible via HTML, CSS is responsible for the actual text formatting.
 - example --> *4_TheBody/Part_19/index.html*
+![Preview](4_TheBody/Images/Preview_4_19.PNG)
 
-| HTML elements         | Explanation                                                              |
-| --------------------- | ------------------------------------------------------------------------ |
-| \<abbr>               | Mark abbreviations or acronyms                                           |
-| \<cite>               | Mark text as source text of a working title                              |
-| \<code>               | Mark up computer code within a paragraph of text                         |
-| \<pre>                | Mark up preformatted text. All spaces and line breaks are displayed as specified in the text |
-| \<kbd>                | Mark up text as keyboard input                                           |
-| \<samp>               | Mark up text as screen output of a program                               |
-| \<dfn>                | define a term                                                            |
-| \<var>                | Mark up text as a variable                                               |
-| \<bdo>        	      | Change text direction for bidirectional text                             |
-| \<bdi>         	      | Define area for bidirectional text                                       |
-| \<em>         	      | Highlight text that would emphasize when speaking                        |
-| \<strong>             | Highlight words or passages that are particularly important in terms of content |
-| \<i>         		      | to mark words or passages with technical terms, thoughts, foreign words  |
-| \<b>         		      | for marking meaningful names or keywords                                 |
-| \<mark>         	    | Highlight text with a marker                                             |
-| \<q>         		      | Mark words or passages as quotation or spoken text                       |
-| \<u>         		      | Mark up text as proper noun underlining or incorrect words or passages   |
-| \<s>         		      | Mark text as no longer valid or obsolete                                 |
-| \<ins>         	      | Mark text as newly added in the revised sense                            |
-| \<del>         	      | Mark text as deleted in revised sense                                    |
-| \<sub>          	    | subscript                                                                |
-| \<sup>         	      | superscript                                                              |
-| \<time>          	    | Date and time markup                                                     |
-| \<small>          	  | Text is displayed in small print e.g. copyright information              |
-| \<ruby>, \<rp>, \<rt> | Ruby character                                                           |
-| \<span>          	    | mark up a general area within a paragraph of text                        |
+| HTML elements           | Explanation                                                              |
+| ----------------------- | ------------------------------------------------------------------------ |
+| `<abbr>`                | Mark abbreviations or acronyms                                           |
+| `<cite>`                | Mark text as source text of a working title                              |
+| `<code>`                | Mark up computer code within a paragraph of text                         |
+| `<pre>`                 | Mark up preformatted text. All spaces and line breaks are displayed as specified in the text |
+| `<kbd>`                 | Mark up text as keyboard input                                           |
+| `<samp>`                | Mark up text as screen output of a program                               |
+| `<dfn>`                 | define a term                                                            |
+| `<var>`                 | Mark up text as a variable                                               |
+| `<bdo>`        	        | Change text direction for bidirectional text                             |
+| `<bdi>`         	      | Define area for bidirectional text                                       |
+| `<em>`         	        | Highlight text that would emphasize when speaking                        |
+| `<strong>`              | Highlight words or passages that are particularly important in terms of content |
+| `<i>`         		      | to mark words or passages with technical terms, thoughts, foreign words  |
+| `<b>`         		      | for marking meaningful names or keywords                                 |
+| `<mark>`         	      | Highlight text with a marker                                             |
+| `<q>`         		      | Mark words or passages as quotation or spoken text                       |
+| `<u>`         		      | Mark up text as proper noun underlining or incorrect words or passages   |
+| `<s>`         		      | Mark text as no longer valid or obsolete                                 |
+| `<ins>`         	      | Mark text as newly added in the revised sense                            |
+| `<del>`         	      | Mark text as deleted in revised sense                                    |
+| `<sub>`          	      | subscript                                                                |
+| `<sup>`         	      | superscript                                                              |
+| `<time>`          	    | Date and time markup                                                     |
+| `<small>`          	    | Text is displayed in small print e.g. copyright information              |
+| `<ruby>`, `<rp>`, `<rt>`| Ruby character                                                           |
+| `<span>`          	    | mark up a general area within a paragraph of text                        |
 
 
 * \<abbr>
-  - with \<abbr> abbreviations or acronyms can be displayed 
-  - it is also useful to use the HTML attribute **title**, this helps e.g. translation systems or screen readers and also search engines, it shows the full meaning of the abbreviation as soon as you scroll over it
+  - with `<abbr>` abbreviations or acronyms can be displayed 
+  - it is also useful to use the HTML attribute `title`, this helps e.g. translation systems or screen readers and also search engines, it shows the full meaning of the abbreviation as soon as you scroll over it
   - example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
@@ -1246,7 +1261,7 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * \<cite>
-  - if the title of a book, movie, painting, song, etc. is to be displayed, **cite** can be used
+  - if the title of a book, movie, painting, song, etc. is to be displayed, `cite` can be used
   - example --> *4_TheBody/Part_19/index.html* 
      ```
         <article>
@@ -1259,9 +1274,9 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * \<code> and \<pre>
-  - if a code is to be marked in a continuous text, **code** is used
-  - if several lines of computer code are to be formatted, **code** should be used between **pre**.
-  - for **<** in code **\&lt;** is used and **\&gt;** for **>**, this is so that the HTML document can distinguish between code and code-text
+  - if a code is to be marked in a continuous text, `code` is used
+  - if several lines of computer code are to be formatted, `code` should be used between `pre`.
+  - for `<` in code `&lt;` is used and `&gt;` for `>`, this is so that the HTML document can distinguish between code and code-text
   - example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
@@ -1287,7 +1302,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 * \<kbd> and \<samp>
   - the kbd element (keyboard) is used to mark continuous text as keyboard input
-  - **samp** is used for the screen output of programs
+  - `samp` is used for the screen output of programs
   - example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
@@ -1324,8 +1339,8 @@ The complete explanations for each tag will be given in the next chapters, these
 
 * \<bdo> and \<bdi>
   	- with the **bdo** element (bidirectional override) the text direction can be changed
-	- to change the direction the HTML attribute **dir** must be used, with **rtl** the text runs from right to left and with **ltr** from left to right
-	- with the **bdi** -element (bi-directional isolation) the borders of the text direction change can be marked more exactly with a unicode-capable web browser
+	- to change the direction the HTML attribute `dir` must be used, with `rtl` the text runs from right to left and with `ltr` from left to right
+	- with the `bdi` -element (bi-directional isolation) the borders of the text direction change can be marked more exactly with a unicode-capable web browser
   - example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
@@ -1339,9 +1354,9 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * \<em>, \<strong>, \<i> and \<b>
-  - to emphasize a text in italics \<em> (emphasis) or to make a text bold \<strong> is used
-  - with \<i> the text is also displayed in italics, it should be used for special technical terms, a thought, scientific names or foreign words
-  - with \<b> the text is also displayed in bold, should be used for meaningful names or keywords
+  - to emphasize a text in italics `<em>` (emphasis) or to make a text bold `<strong>` is used
+  - with `<i>` the text is also displayed in italics, it should be used for special technical terms, a thought, scientific names or foreign words
+  - with `<b>` the text is also displayed in bold, should be used for meaningful names or keywords
   - example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
@@ -1357,7 +1372,7 @@ The complete explanations for each tag will be given in the next chapters, these
 * \<mark>
   - can be used to mark a text so that it is visually highlighted, like with a Highlighter
   - works only if the content is created dynamically
-  - this is only for highlighting, to change the background color it is better to use \<span> and then style with CSS
+  - this is only for highlighting, to change the background color it is better to use `<span>` and then style with CSS
   - example --> *4_TheBody/Part_19/index.html*
      ```
               <article>
@@ -1375,7 +1390,7 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * \<q>
-  - the \<q> element is used when something is to be quoted in the middle of the text or when a spoken text is to be marked
+  - the `<q>` element is used when something is to be quoted in the middle of the text or when a spoken text is to be marked
   - example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
@@ -1386,9 +1401,9 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * \<u> and \<s>
-  - the \<u> element (u = underline) is used for proper noun underlining, as it is e.g. in the Chinese script, or to indicate words that may be erroneous
-  - the web browser usually presents the \<u> element with an underline
-  - the \<s> element (s = strike-through) is used to indicate that a text is outdated or incorrect, the browser will display the text as crossed out
+  - the `<u>` element (u = underline) is used for proper noun underlining, as it is e.g. in the Chinese script, or to indicate words that may be erroneous
+  - the web browser usually presents the `<u>` element with an underline
+  - the `<s>` element (s = strike-through) is used to indicate that a text is outdated or incorrect, the browser will display the text as crossed out
   - example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
@@ -1401,8 +1416,8 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * \<ins> and \<del>
-  - the \<del> element (del = delete) is used when a content edit of a text is marked as deleted or revised 
-  - the \<ins> element (ins = insert) is the counterpart to the \<del> element, and is used when something new is added to a document 
+  - the `<del>` element (del = delete) is used when a content edit of a text is marked as deleted or revised 
+  - the `<ins>` element (ins = insert) is the counterpart to the `<del>` element, and is used when something new is added to a document 
   - example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
@@ -1414,8 +1429,8 @@ The complete explanations for each tag will be given in the next chapters, these
 
 * \<sup> and \<sub>
   - these elements are mainly used for simple mathematical and chemical formulas
-  - the \<sub> element (sub = subscript) is used to make the text deeper
-  - the \<sup> element (sub = superscript) is used to superscript the text
+  - the `<sub>` element (sub = subscript) is used to make the text deeper
+  - the `<sup>` element (sub = superscript) is used to superscript the text
   - example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
@@ -1429,8 +1444,8 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * \<time>
-  - the \<time> element was introduced to mark up dates and times.
-  - the purpose of this element is that the time can be uniquely encoded for machines and represented in a readable form for the user, for this the **datetime** attribute is used
+  - the `<time>` element was introduced to mark up dates and times.
+  - the purpose of this element is that the time can be uniquely encoded for machines and represented in a readable form for the user, for this the `datetime` attribute is used
   - it is e.g. easier for a script in blog articles to extract the date from the element
   - it is also advantageous when searching in search engines for articles of a certain time period
   - example --> *4_TheBody/Part_19/index.html*
@@ -1442,7 +1457,7 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * \<small>
-	- the \<small> element is used to display words or text passages in lowercase.
+	- the `<small>` element is used to display words or text passages in lowercase.
 	- e.g. for copyrights, license information, legal notices
   - example --> *4_TheBody/Part_19/index.html*
      ```
@@ -1452,7 +1467,7 @@ The complete explanations for each tag will be given in the next chapters, these
         </header>
      ```
 
-* \<ruby>, \<rp> and \<rt>
+* <ruby>, \<rp> and \<rt>
   - is an annotation system in which the text with annotations appears in one line
   - example --> *4_TheBody/Part_19/index.html*
      ```
@@ -1468,7 +1483,7 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * \<span>
-  - the \<span> element can mark up single text passages in the middle of the text with CSS
+  - the `<span>` element can mark up single text passages in the middle of the text with CSS
   - also quite helpful is this element for JavaScript
   - example --> *4_TheBody/Part_19/index.html*
      ```
@@ -1497,7 +1512,7 @@ The complete explanations for each tag will be given in the next chapters, these
       <p><bdo>&#1501;&#1503;&#1500;&#1513;</bdo> = shalom</p>
      ```
   * Banished entities:
-    - e.g. the < is represented with **\&lt;** and the > character with **\&gt;**
+    - e.g. the < is represented with `&lt;` and the > character with `&gt;`
       ```
         <p>5 > 4 < 6</p>
       ```
@@ -1518,23 +1533,23 @@ The complete explanations for each tag will be given in the next chapters, these
 ### 5.1. Structuring data in a table
   - Tables are useful to display related data e.g. stock quotes, financial data, travel plans or sports results in a grid of rows and columns
 
-| HTML elements  | Explanation              |
-| -------------- | ------------------------ |
-| \<table>       | table                    |
-| \<tr>          | table row                |
-| \<td>          | table cell               |
-| \<th>          | table header cell        |
-| \<thead>       | table header area        |
-| \<tbody>       | table body               |
-| \<tfoot>       | table footer area        |
-| \<colgroup>    | group of table columns   | 
-| \<col>         | table column             |
-| \<caption>     | table heading/legend     |
+| HTML elements   | Explanation              |
+| --------------- | ------------------------ |
+| `<table>`       | table                    |
+| `<tr>`          | table row                |
+| `<td>`          | table cell               |
+| `<th>`          | table header cell        |
+| `<thead>`       | table header area        |
+| `<tbody>`       | table body               |
+| `<tfoot>`       | table footer area        |
+| `<colgroup>`    | group of table columns   | 
+| `<col>`         | table column             |
+| `<caption>`     | table heading/legend     |
 
-  - Tables are created between the element **\<table> ... \</table>** is created
-  - the content of the table is specified row by row with **\<tr>...\</tr>** (tr = table row)
-  - within the table row the individual columns are noted with **\<td>...\</td>** (td = table data)
-  - the table headings are displayed between **\<th>...\</th>** (th = table heading), can be used like **\<td>**, but the text is displayed bold
+  - Tables are created between the element `<table> ... </table>` is created
+  - the content of the table is specified row by row with `<tr> ... </tr>` (tr = table row)
+  - within the table row the individual columns are noted with `<td> ... </td>` (td = table data)
+  - the table headings are displayed between `<th> ... </th>` (th = table heading), can be used like `<td>`, but the text is displayed bold
   - the web browser displays the table without formatting, height and width usually adapts to the content
   - example --> *5_Tables_Hyperlinks/Part_1/index.html*
      ```
@@ -1562,18 +1577,19 @@ The complete explanations for each tag will be given in the next chapters, these
           </tr>
       </table>
      ```
+![Preview](5_Tables_Hyperlinks/Images/Preview_5_1.PNG)
 
-  - in a cell between **\<td>...\</td>** can also be other elements, theoretically even additional tables.
-  - if an empty cell is to be displayed, an empty **\<td>...\</td>** or **\<th>...\</th>** must be created anyway
-  - with old web browsers it could come to problems with blanks then simply use the HTML entity **\&nbsp;** to force a blank space
+  - in a cell between `<td> ... </td>` can also be other elements, theoretically even additional tables.
+  - if an empty cell is to be displayed, an empty `<td> ... </td>` or `<th> ... </th>` must be created anyway
+  - with old web browsers it could come to problems with blanks then simply use the HTML entity `&nbsp;` to force a blank space
 
   - a simple table structure with \<table>, \<tr>, \<td>, \<th>  
 ![Preview](Images/Table_Image.PNG)
 
 * **colspan** and **rowspan**
-	- table entries can be summarized over several rows with the HTML attribute **colspan** and **rowspan**
+	- table entries can be summarized over several rows with the HTML attribute `colspan` and `rowspan`
 	- the numeric value specifies the number of cells to be merged
-  - the **scope** attribute specifies whether the table heading should apply to a column (scope="col") or a row (scope="row")
+  - the `scope` attribute specifies whether the table heading should apply to a column (scope="col") or a row (scope="row")
   - summarize columns - example --> *5_Tables_Hyperlinks/Part_2/indexA.html*
      ```
       <h1>Daily planning</h1>
@@ -1602,6 +1618,8 @@ The complete explanations for each tag will be given in the next chapters, these
         </tr>
       </table>
      ```
+![Preview](5_Tables_Hyperlinks/Images/Preview_5_2A.PNG)
+
   - summarize lines - example --> *5_Tables_Hyperlinks/Part_2/indexB.html*
      ```
       <table>
@@ -1614,9 +1632,10 @@ The complete explanations for each tag will be given in the next chapters, these
       ...
       </table>
      ```
+![Preview](5_Tables_Hyperlinks/Images/Preview_5_2B.PNG)
 
 * HTML attributes for the table elements 
-  - the table element supports only the **border** attribute to display a frame, the value may be **"1"** or **" "**
+  - the table element supports only the `border` attribute to display a frame, the value may be `"1"` or `" "`
      ```
       <table border="1">
       ...
@@ -1632,7 +1651,7 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 
 * Structure tables with \<thead>, \<tbody> and \<tfoot>
-	- the table header is displayed between **\<thead>...\</thead>** (thead = table head)
+	- the table header is displayed between `<thead> ... </thead>` (thead = table head)
   - example --> *5_Tables_Hyperlinks/Part_3/index.html*
      ```
         <thead>
@@ -1643,7 +1662,8 @@ The complete explanations for each tag will be given in the next chapters, these
             </tr>
         </thead>
      ```
-  - the actual data is marked between **\<tbody>...\</tbody>** (tbody = table body)
+
+  - the actual data is marked between `<tbody> ... </tbody>` (tbody = table body)
      ```
         <tbody>
             <tr>
@@ -1659,7 +1679,8 @@ The complete explanations for each tag will be given in the next chapters, these
             ...
         </tbody>
      ```
-	- the table foot is displayed between **\<tfoot>...\</tfoot>** (tfoot = table foot)
+
+	- the table foot is displayed between `<tfoot> ... </tfoot>` (tfoot = table foot)
      ```
         <tfoot>
             <tr>
@@ -1669,12 +1690,12 @@ The complete explanations for each tag will be given in the next chapters, these
             </tr>
         </tfoot>
      ```
-  ![Preview](5_Tables_Hyperlinks/Images/Preview_5_3.PNG)
+![Preview](5_Tables_Hyperlinks/Images/Preview_5_3.PNG)
 
 
 * Group columns of a table with \<colgroup> and \<col>
-  - the elements \<colgroup> (colgroup = column group) and \<col> are used to divide single columns into semantic and logical areas
-  - to combine several elements in one **col** element, the attribute **span** is used with specification of a value for the number of columns
+  - the elements `<colgroup>` (colgroup = column group) and `<col>` are used to divide single columns into semantic and logical areas
+  - to combine several elements in one `col` element, the attribute `span` is used with specification of a value for the number of columns
   - example --> *5_Tables_Hyperlinks/Part_4/index.html*
      ```
       <table>
@@ -1685,11 +1706,10 @@ The complete explanations for each tag will be given in the next chapters, these
         ...
       </table>
      ```
-
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_4.PNG)
 
 * Label tables with \<caption> or \<figcaption>
-  - to label a table **\<caption>** is used, or the new variants **\<figure>** and **\<figcaption>**
+  - to label a table `<caption>` is used, or the new variants `<figure>` and `<figcaption>`
 
   - \<caption>
   - example --> *5_Tables_Hyperlinks/Part_5/indexA.html*
@@ -1709,7 +1729,7 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_5A.PNG)
 
-  - further labels can be added with the HTML elements **details** and **summary**
+  - further labels can be added with the HTML elements `details` and `summary`
   - example --> *5_Tables_Hyperlinks/Part_5/indexA.html*
      ```
       <h1>Browser statistics 2021 - 2022</h1>
@@ -1758,9 +1778,9 @@ The complete explanations for each tag will be given in the next chapters, these
 
 ### 5.2. Hyperlinks with \<a>
 * Hyperlinks are important elements of HTML because they allow you to move from one web page to another. They are needed to structure and link projects. Starting from the main web page, links are often used to go to other sub-pages and back to the main page. Only with the linking of several files a web page becomes a meaningfully operable web page.
-  - Hyperlinks are represented with the **\<a>** element (a = anchor)
-  - the text between **\<a>...\</a>** is called link text and is activated by the **href** attribute
-  - between the **a** element other elements can be used, not only pure text, e.g. a graphic as hyperlink (should not be too much, could overwhelm users)
+  - Hyperlinks are represented with the `<a>` element (a = anchor)
+  - the text between `<a> ... </a>` is called link text and is activated by the `href` attribute
+  - between the `a` element other elements can be used, not only pure text, e.g. a graphic as hyperlink (should not be too much, could overwhelm users)
   - the hyperlink is usually underlined in blue by the browser, if it has already been visited it is usually displayed in purple (depending on the browser), but this can be changed with CSS
   - the most important attribute is href, this attribute first activates the hyperlink
      ```
@@ -1782,6 +1802,7 @@ The complete explanations for each tag will be given in the next chapters, these
       </nav>
      ```
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_6.PNG)
+  
   - example --> *5_Tables_Hyperlinks/Part_6/sites/links.html*
      ```
       <nav>
