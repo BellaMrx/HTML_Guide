@@ -1812,14 +1812,6 @@ The complete explanations for each tag will be given in the next chapters, these
 
 * The HTML attributes for the \<a> element
 
-| attributes      | Explanation                                                              |
-| --------------- | ------------------------------------------------------------------------ |
-| `download`      | this offers the link target for download |
-| `href`          | this specifies the URL of the page to which the hyperlink will lead when activated |
-| `hreflang`      | here the language of the linked document can be specified, specifications are allowed in abbreviations e.g. **de** for Germany |
-| `media`         | this can be used to specify media for which the link target has been optimized, media types can be enumerated separated by commas or specify `all` for all media types |
-| `type`          | this can be used to tell the browser the MIME type (file format) the linked file belongs to |
-
 | attribute          | Explanation                                                              |
 | ------------------ | ------------------------------------------------------------------------ |
 | `rel`              | this determines the type of link, there are also certain attribute values for `rel`: bookmark, external, nofollow, noreferrer |
@@ -1828,25 +1820,17 @@ The complete explanations for each tag will be given in the next chapters, these
 | `rel="nofollow"`   | signals the search engines not to follow this link |
 | `rel="noreferrer"` | this instructs the visitor's web browser not to use a referrer address when clicking on the link, thus avoiding that the web server of the destination address receives information from where the visitor came from |
 
-| attribute          | Explanation                                                              |
-| ------------------ | ------------------------------------------------------------------------ |
-| `target`           | here you specify where the reference target is to be opened |
-| `target="_blank"`  | this will create a new tab when the link is clicked on  |
-| `target="_parent"` | is the parent window |
-| `target="_self"`   | indicates the current window |
-| `target="_top"`    | Specifies the top window level |
-
-* **target**
-	- with `target` a link target is opened in a new window or tab, if it gets the attribute value `_blank`
-	- The goal is that the visitor does not get lost on the main page, and returns there when the newly opened page has been read
-	- `_blank` is the most used attribute value of `target` further are `_self`, `_parent`, `_top`
      ```
-        <p>
-          As already reported, the
-          <a target="_blank" href="http://www.w3.org/">World Wide Web Consortium</a>
-          submitted a new recommendation for HTML, ...
-        </p>
-     ``` 
+      <a rel="nofollow" href="https://www.w3schools.com/tags/att_a_rel.asp">HTML <a> rel Attribute</a>
+     ```
+
+| attributes      | Explanation                                                              |
+| --------------- | ------------------------------------------------------------------------ |
+| `download`      | this offers the link target for download |
+| `href`          | this specifies the URL of the page to which the hyperlink will lead when activated |
+| `hreflang`      | here the language of the linked document can be specified, specifications are allowed in abbreviations e.g. **de** for Germany |
+| `media`         | this can be used to specify media for which the link target has been optimized, media types can be enumerated separated by commas or specify `all` for all media types |
+| `type`          | this can be used to tell the browser the MIME type (file format) the linked file belongs to |
 
 * **href=mailto:...**
   - there is the possibility to open an email address with a specific email application when clicking on the link
@@ -1859,7 +1843,7 @@ The complete explanations for each tag will be given in the next chapters, these
         <a href="mailto:example@email.com">Send Email</a>
       </footer>
      ```
-![Preview](5_Tables_Hyperlinks/Images/Preview_5_8_mark.png)
+![Preview](5_Tables_Hyperlinks/Images/Preview_5_8.PNG)
 
 * **links to other content types**
 	- if links are set to other types of documents not used on the web (e.g. Word, Excel, PDF), it depends on the web browser how it is displayed
@@ -1901,6 +1885,26 @@ The complete explanations for each tag will be given in the next chapters, these
       </body>
      ```
 ![Preview](5_Tables_Hyperlinks/Images/Preview_5_10.PNG)
+
+| attribute          | Explanation                                                              |
+| ------------------ | ------------------------------------------------------------------------ |
+| `target`           | here you specify where the reference target is to be opened |
+| `target="_blank"`  | this will create a new tab when the link is clicked on  |
+| `target="_parent"` | is the parent window |
+| `target="_self"`   | indicates the current window |
+| `target="_top"`    | Specifies the top window level |
+
+* **target**
+	- with `target` a link target is opened in a new window or tab, if it gets the attribute value `_blank`
+	- The goal is that the visitor does not get lost on the main page, and returns there when the newly opened page has been read
+	- `_blank` is the most used attribute value of `target` further are `_self`, `_parent`, `_top`
+     ```
+        <p>
+          As already reported, the
+          <a target="_blank" href="http://www.w3.org/">World Wide Web Consortium</a>
+          submitted a new recommendation for HTML, ...
+        </p>
+     ``` 
 
 * **links to specific parts of a web page**
 	- to get to a certain paragraph can be annoying on large web pages if you have to scroll too much
