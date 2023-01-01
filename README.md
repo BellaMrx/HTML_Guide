@@ -35,7 +35,6 @@
 --------------------------------------------------------------------------------------------
 
 ## 1. Introduction to HTML
-
 ### 1.1. Different types of websites
   * **Web presence (Homepage / Corporate Website)**
     - can be a private homepage or a web presence of companies, associations, authorities or business persons
@@ -90,11 +89,9 @@
     - good knowledge of HTML and co. necessary to update website
     - creation of many single files for static website can be very time consuming
 
-
  ![Preview](Images/staticWebsite.PNG)
 
  This is a simplified representation of how a static web page is returned. The web browser first sends a request for a web page to the web server that hosts the web page. The web server finds the page and sends it back to the web server as a response. If it is not found, an error message is returned (status code 404).
-
 
   * **Dynamic websites**
     - usually a CMS (Content-Management-System) generates the web pages.
@@ -112,7 +109,6 @@
     - there are higher costs, because special features like script languages and databases are needed, but not as expensive as a few years ago
     - for creating own modules and plug-ins programming skills are necessary
 
-
  ![Preview](Images/dynWebsite.PNG)
 
  This is a simplified representation of how a dynamic web page is created. A web browser makes a request for a web page to a web server. The web server finds the page and passes it to the application server. The application server searches the page for commands and completes the web page. Additionally, instructions for database queries may be included. The database driver then returns the requested record to the application server, where the data is inserted into the web page. The web page is then sent as a response to the web browser.
@@ -123,7 +119,6 @@
 
   * **HTML** (Hypertext Markup Language)
     - is a text-based markup language for structuring electronic documents such as text with hyperlinks, images and other content. HTML documents are the basis of the World Wide Web and are displayed by web browsers. In addition to the content displayed by the browser, HTML files can contain additional details in the form of meta information, e.g. about the languages used in the text, the author or the summarized content of the text --> [W3C](https://www.w3.org/)
-
   
   * **CSS** (Cascading Style Sheets)
     - It is a design and formatting language used to determine the appearance of HTML documents. So it's about design or style, not the content of a web page. In practice, HTML is used only for structuring the web page, and CSS for formatting and styling. It is possible to include CSS directly in HTML. For large or more web pages it is advantageous to save this in a CSS file, then all web pages can be changed with once.
@@ -183,9 +178,8 @@
 -----------------------------------------------------------------------------------------------
 
 ## 2. Structure of a HTML document
-
 ### 2.1. Syntax and structure of HTML documents
-  * The HTML document is very structured. A complete *HTML element* usually consists of an opening HTML tag (`<html>`), a closing HTML tag (`</html>`) and everything in between. As *HTML- element* is usually called everything that stands between the tags. So the *HTML elements* ("headline") are marked by *HTML tags* (`<h1>*` and `</h1>`).
+  * The HTML document is very structured. A complete *HTML element* usually consists of an opening HTML tag (`<html>`), a closing HTML tag (`</html>`) and everything in between. As *HTML- element* is usually called everything that stands between the tags. So the *HTML elements* ("headline") are marked by *HTML tags* (`<h1>` and `</h1>`).
 
   - everything between `<html>` and `</html>` (root element) is the HTML code for the HTML document
   - between `<head>` and `</head>` the header data of the HTML document is summarized
@@ -210,12 +204,11 @@
       </body>
     </html>
    ```
+![Preview](2_StructureOfaHTMLdocument/Images/Preview_2_1.PNG)
 
 * The HTML code of an HTML document consists of pure text. A web browser creates a model from this in the form of a tree structure of objects such as HTML elements, attributes, and texts. This is called a **Document Object Model (DOM)**. Each object in it is called a **node** and can be manipulated via a public interface using JavaScript. This DOM tree can be viewed in the browser, using developer tools provided by the browser.
 
-
 ![Preview](Images/DOM_Inspector.PNG)
-
 
 
 * Most HTML elements can be nested and contain other HTML elements, creating a hierarchical structure.
@@ -236,14 +229,14 @@
     </body>
   </html>
    ```
+![Preview](2_StructureOfaHTMLdocument/Images/Preview_2_2.PNG)
 
-
-* Some HTML elements are standalone tags (void tags) that have no content e.g. **\<br>** (which creates a line break), but this should not be abused, to increase the spacing between lines use CSS.
+* Some HTML elements are standalone tags (void tags) that have no content e.g. `<br>` (which creates a line break), but this should not be abused, to increase the spacing between lines use CSS.
 
 * HTML elements can contain additional attributes (properties). These can be used to specify additional information about an element. Attributes can be used only with start tags.
-  - with the attribute **lang="en"** you specify the language that will be used
-  - the **\<a></a>** element defines a hyperlink to another page, at **href** you specify the URL to navigate to 
-  - the standalone tag **\<img>** can be used to display images, **src** specifies the location of the image, alt specifies the alternative text if the image cannot be displayed
+  - with the attribute `lang="en"` you specify the language that will be used
+  - the `<a>...</a>` element defines a hyperlink to another page, at `href` you specify the URL to navigate to 
+  - the standalone tag `<img>` can be used to display images, `src` specifies the location of the image, alt specifies the alternative text if the image cannot be displayed
   - example --> *2_StructureOfaHTMLdocument/Part_3/index.html*
 
    ```
@@ -263,14 +256,13 @@
       </body>
     </html>
    ```
-
+![Preview](2_StructureOfaHTMLdocument/Images/Preview_2_3.PNG)
 
 * There is the possibility to leave comments within the HTML document, these are helpful to understand the code later, if you forget something. Comments are not visible on the web page in the browser but in the source code, which everyone can see.
   - this is how a comment is created, everything between the characters is the comment and is not visible on the web page:
    ```
     <!-- comment --> 
    ```
-
 
 ### 2.2. Basic structure of a simple HTML document
 
