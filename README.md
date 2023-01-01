@@ -1011,7 +1011,7 @@ The complete explanations for each tag will be given in the next chapters, these
             </ul>
         </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_15.PNG)
+![Preview](4_TheBody/Images/Preview_4_15.png)
 
 * \<ol> and \<li>
   - `<ol>` is needed for ordered lists
@@ -1217,7 +1217,7 @@ The complete explanations for each tag will be given in the next chapters, these
 ### 4.4. HTML elements for text markup
 * These are elements that are used within a plain text for single letters, words or parts of sentences to change them slightly visually. Even though text formatting with these elements is possible via HTML, CSS is responsible for the actual text formatting.
 - example --> *4_TheBody/Part_19/index.html*
-![Preview](4_TheBody/Images/Preview_4_19.PNG)
+![Preview](4_TheBody/Images/Preview_4_19.png)
 
 | HTML elements           | Explanation                                                              |
 | ----------------------- | ------------------------------------------------------------------------ |
@@ -1802,7 +1802,7 @@ The complete explanations for each tag will be given in the next chapters, these
       </nav>
      ```
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_6.PNG)
-  
+
   - example --> *5_Tables_Hyperlinks/Part_6/sites/links.html*
      ```
       <nav>
