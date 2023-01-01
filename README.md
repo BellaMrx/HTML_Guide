@@ -1822,7 +1822,6 @@ The complete explanations for each tag will be given in the next chapters, these
 | attribute        | Explanation                                                              |
 | ---------------- | ------------------------------------------------------------------------ |
 | rel              | this determines the type of link, there are also certain attribute values for **rel**: bookmark, external, nofollow, noreferrer |
-| ---------------- | ------------------------------------------------------------------------ |
 | rel="bookmark"   | here it is specified that the link target is a parent section of the current document |
 | rel="external"   | this indicates that the hyperlink belongs to an external web offer |
 | rel="nofollow"   | signals the search engines not to follow this link |
@@ -1831,13 +1830,15 @@ The complete explanations for each tag will be given in the next chapters, these
 | attribute        | Explanation                                                              |
 | ---------------- | ------------------------------------------------------------------------ |
 | target           | here you specify where the reference target is to be opened |
-| ---------------- | ------------------------------------------------------------------------ |
 | target="_blank"  | this will create a new tab when the link is clicked on  |
 | target="_parent" | is the parent window |
 | target="_self"   | indicates the current window |
 | target="_top"    | Specifies the top window level |
 
 * target
+	- with `target` a link target is opened in a new window or tab, if it gets the attribute value `_blank`
+	- The goal is that the visitor does not get lost on the main page, and returns there when the newly opened page has been read
+	- `_blank` is the most used attribute value of `target` further are `_self` `_parent` `_top`
      ```
         <p>
           As already reported, the
