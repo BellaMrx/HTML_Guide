@@ -1819,6 +1819,8 @@ The complete explanations for each tag will be given in the next chapters, these
 | media         | this can be used to specify media for which the link target has been optimized, media types can be enumerated separated by commas or specify **all** for all media types |
 | type          | this can be used to tell the browser the MIME type (file format) the linked file belongs to |
 
+| attribute        | Explanation                                                              |
+| ---------------- | ------------------------------------------------------------------------ |
 | rel              | this determines the type of link, there are also certain attribute values for **rel**: bookmark, external, nofollow, noreferrer |
 | ---------------- | ------------------------------------------------------------------------ |
 | rel="bookmark"   | here it is specified that the link target is a parent section of the current document |
@@ -1826,6 +1828,8 @@ The complete explanations for each tag will be given in the next chapters, these
 | rel="nofollow"   | signals the search engines not to follow this link |
 | rel="noreferrer" | this instructs the visitor's web browser not to use a referrer address when clicking on the link, thus avoiding that the web server of the destination address receives information from where the visitor came from |
 
+| attribute        | Explanation                                                              |
+| ---------------- | ------------------------------------------------------------------------ |
 | target           | here you specify where the reference target is to be opened |
 | ---------------- | ------------------------------------------------------------------------ |
 | target="_blank"  | this will create a new tab when the link is clicked on  |
