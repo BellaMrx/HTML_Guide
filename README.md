@@ -313,8 +313,6 @@
 | `<script>...<script>`   | includes the client-side scripts, may also be used outside the **head** element |
 | `<meta>`                | sets the metadata like keywords, descriptions or the character set for the HTML document |
 
-----
-
       ```
         <!doctype html>
         <html>
@@ -560,20 +558,20 @@ The complete explanations for each tag will be given in the next chapters, these
 ### 4.1. The HTML elements for page structuring
 * These elements are needed to divide the web page into meaningful areas. The content model was introduced to combat the rampant use of *div* elements with *class* attributes.
 
-| HTML elements | Explanation                                                                            |
-| ------------- | -------------------------------------------------------------------------------------- |
-| \<body>       | displayable area of the HTML document, visible on the web page 						 |
-| \<section>    | divides the HTML document into different sections				 					         |
-| \<article>    | subdivision of content into a self-contained topic-specific block		       |
-| \<aside>      | used for marginal information of a content like a sidebar or additional information about an article  |
-| \<nav>        | elements used to mark up navigation such as a sitemap or the main navigation of a web page				  |
-| \<h1> - \<h6>  | headings of the 1st - 6th order												                    |
-| \<header>     | header of a content													                              |
-| \<footer>     | footer of a content													                              |	
-| \<address>    | contact information about the author of the content											  |
+| HTML elements  | Explanation                                                                 |
+| -------------- | --------------------------------------------------------------------------- |
+| `<body>`       | displayable area of the HTML document, visible on the web page 						 |
+| `<section>`    | divides the HTML document into different sections				 					         |
+| `<article>`    | subdivision of content into a self-contained topic-specific block		       |
+| `<aside>`      | used for marginal information of a content like a sidebar or additional information about an article  |
+| `<nav>`        | elements used to mark up navigation such as a sitemap or the main navigation of a web page				  |
+| `<h1>` - `<h6>`| headings of the 1st - 6th order												                    |
+| `<header>`     | header of a content													                              |
+| `<footer>`     | footer of a content													                              |	
+| `<address>`    | contact information about the author of the content											  |
 
 * \<body>
-	- everything between \<body> and \</body>, is called the document body
+	- everything between `<body> ... </body>`, is called the document body
 	- all HTML elements such as text, hyperlinks, images, tables or lists are displayed there to define the structure of the web page
 	- all elements in the document body are rendered by the web browser and displayed accordingly
 
@@ -598,10 +596,11 @@ The complete explanations for each tag will be given in the next chapters, these
         </section>
       </body>
      ```
+![Preview](4_TheBody/Images/Preview_4_1.PNG)
 
 * \<article>
 	- should be used to summarize content in a self-contained topic-specific block
-	- is relatively similar to \<section>, however \<article> should be used for self-contained sections, such as news item
+	- is relatively similar to `<section>`, however `<article>` should be used for self-contained sections, such as news item
   - example --> *4_TheBody/Part_2/index.html*
      ```
       <body>
@@ -618,11 +617,14 @@ The complete explanations for each tag will be given in the next chapters, these
       </article>
       </body>
      ```
+![Preview](4_TheBody/Images/Preview_4_2.PNG)
 
 * \<aside>
 	- can usually supplement or extend content with additional information
-	- can be used either for a sidebar or additional information (e.g. citation) within an \<article> element
+	- can be used either for a sidebar or additional information (e.g. citation) within an `<article>` element
   - example --> *4_TheBody/Part_3/indexB.html*
+![Preview](4_TheBody/Images/Preview_4_3B.PNG)
+
   - example --> *4_TheBody/Part_3/indexA.html*
      ```
       <body>
@@ -648,6 +650,7 @@ The complete explanations for each tag will be given in the next chapters, these
       </aside>
       </body>
      ```
+![Preview](4_TheBody/Images/Preview_4_3A.PNG)
 
 * \<nav>
 	- this can be used to split navigation elements into blocks e.g. for the main navigation or a list of links for a sitemap
@@ -706,6 +709,7 @@ The complete explanations for each tag will be given in the next chapters, these
       </aside>
       </body>
      ```
+![Preview](4_TheBody/Images/Preview_4_4.PNG)
 
 * \<h1> - \<h6>
 	- is used for headings, this element is used to define the content structure of a document
@@ -722,15 +726,18 @@ The complete explanations for each tag will be given in the next chapters, these
           <p>After a long period of development ...</p>
       </body>
      ```
+![Preview](4_TheBody/Images/Preview_4_5A.PNG)
+
   - Outline: is the name for the structure of the document
 	 - [HTML5 Outliner](https://h5o.github.io) 
 	 - [Validation check](https://validator.w3.org/nu/#textarea)
 	 - example --> *4_TheBody/Part_5/indexB.html*
+![Preview](4_TheBody/Images/Preview_4_5B.PNG)
 
 * \<header> and \<footer>
 	- is responsible for the header and footer of an HTML document
-	- in the \<header> can be other elements, but to nest another \<header> in it is not optimal, but can be used several times in the document, the \<header> does not have to be the first element 
-	- \<footer> does not have to be the last element in the document, it usually contains legal information, legal notice, contact information, no other element can be used inside the \<footer>
+	- in the `<header>` can be other elements, but to nest another `<header>` in it is not optimal, but can be used several times in the document, the `<header>` does not have to be the first element 
+	- `<footer>` does not have to be the last element in the document, it usually contains legal information, legal notice, contact information, no other element can be used inside the `<footer>`
   - example --> *4_TheBody/Part_6/index.html*
      ```
       <body>
@@ -751,13 +758,14 @@ The complete explanations for each tag will be given in the next chapters, these
         <a href="#">Information</a> |
         <a href="#">Legal Notice</a> |
         <a href="#">Contact</a> |
-        <a href="#">About me</a>    <hr />
+        <a href="#">About me</a>    <hr/>
       </footer>
       </body>
      ```
+![Preview](4_TheBody/Images/Preview_4_6.PNG)
 
 * \<address> 
-	- should be used exclusively for contact information about the author, it is best to use it in the \<footer> element
+	- should be used exclusively for contact information about the author, it is best to use it in the `<footer>` element
   - example --> *4_TheBody/Part_7/index.html*
      ```
       <body>
@@ -790,31 +798,32 @@ The complete explanations for each tag will be given in the next chapters, these
       </footer>
       </body>
      ```
+![Preview](4_TheBody/Images/Preview_4_7.PNG)
 
 ### 4.2. The HTML elements for text structuring 
 * These elements are used to structure plain text content. 
 
 | HTML elements | Explanation                                             |
 | ------------- | ------------------------------------------------------- |
-| \<p>          | Text paragraph 								                          |
-| \<br>         | Line break 								                              |
-| \<wbr>        | optional line break within a word 			                |
-| \<hr>         | thematic separation at the paragraph level 				      |
-| \<blockquote> | Quote in the form of a text paragraph 					        |
-| \<div>        | Define a general area 					                        |
-| \<main>       | should be used for a main content area of a web page    |
-| \<figure>     | group or combine content for separate description       |
-| \<figcaption> | labeling content grouped with the *figure* element      |
-| \<ul>         | unordered bulleted list 						                    |
-| \<ol>         | ordered list (usually numbered) 					              |
-| \<li>         | a list element in an *ul* or *ol* list 				          |
-| \<dl>         | a description list with *dt* and *dd* elements 			    |
-| \<dt>         | the expression to describe before the *dd* element 			|
-| \<dd>         | the description that follows after the *dt* element 	  |
+| `<p>`          | Text paragraph 								                        |
+| `<br>`         | Line break 								                            |
+| `<wbr>`        | optional line break within a word 			                |
+| `<hr>`         | thematic separation at the paragraph level 				    |
+| `<blockquote>` | Quote in the form of a text paragraph 					        |
+| `<div>`        | Define a general area 					                        |
+| `<main>`       | should be used for a main content area of a web page   |
+| `<figure>`     | group or combine content for separate description      |
+| `<figcaption>` | labeling content grouped with the `figure` element     |
+| `<ul>`         | unordered bulleted list 						                    |
+| `<ol>`         | ordered list (usually numbered) 					              |
+| `<li>`         | a list element in an `ul` or `ol` list 				        |
+| `<dl>`         | a description list with `dt` and `dd` elements 			  |
+| `<dt>`        | the expression to describe before the `dd` element 			|
+| `<dd>`         | the description that follows after the `dt` element 	  |
 
 
 * \<p>
-	- is used with text paragraphs, everything written between \<p> and \</p> is treated as a text paragraph
+	- is used with text paragraphs, everything written between `<p> ... </p>` is treated as a text paragraph
 	- images, videoss or audios or other text markup can also be used within them
 	- cannot be used within the *p elements* other group elements, headings or section elements.
   - example --> *4_TheBody/Part_8/index.html*
@@ -830,6 +839,7 @@ The complete explanations for each tag will be given in the next chapters, these
           a, tellus. </p>
       </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_8.PNG)
 
 * \<br>
   - is needed to force a line break 
@@ -841,6 +851,7 @@ The complete explanations for each tag will be given in the next chapters, these
       www.address.com    
       </address>
      ```
+![Preview](4_TheBody/Images/Preview_4_9.PNG)
 
 * \<wbr>
   - is needed to force an optional line break e.g. for an optimal display in the web browser
