@@ -311,7 +311,9 @@
 | `<link>`                | sets logical links of the HTML document to other files to be included           |
 | `<style>...</style>`    | sets the local stylesheet rules for the HTML document                           |
 | `<script>...<script>`   | includes the client-side scripts, may also be used outside the **head** element |
-| `<meta>`                | sets the metadata like keywords, descriptions or the character set for the HTML document     |
+| `<meta>`                | sets the metadata like keywords, descriptions or the character set for the HTML document |
+
+----
 
       ```
         <!doctype html>
@@ -393,19 +395,19 @@ The complete explanations for each tag will be given in the next chapters, these
 | `size`    | Specifies the size for the resource to be linked, e.g. `rel="icon" size="any "`. |
 | `type`    | This specifies the *MIME type* for the document to be linked e.g. `type="text/css "`. |
 | `rel`     | This sets the relationship between the current document and the external resource in `href`. Possible values are: |
-| alternate | links to an alternative presentation form of the current page 		       				       |
-| author    | links to another page with information about the author    		      				           |
-| mailto    | link to an e-mail address of the author                               	 	       			 |
-| archives  | links to a previous version of certain documents           		       				           |
-| help      | links to a help document                                      		       				       |
-| icon      | this assigns a favicon to the web page                                                 |
-| license   | links the current page, with the page of the rights of use for the contents of the page|
-| next,pref | is used to create a link from the current or previous page      	                     |
-| prefetch  | links to an external web page that the user is likely to visit next       				     |
-| pingback  | the website of a pingback server is specified here							                       |
-| search    | links the current document to another document where the search is possible through the whole web page 	|
-| stylesheet| links an external CSS file to the current HTML document							                   |
-| tag       | a simple tag as a linked resource that applies to the current document					       |
+| `alternate`    | links to an alternative presentation form of the current page |
+| `author`       | links to another page with information about the author |
+| `mailto`       | link to an e-mail address of the author |
+| `archives`     | links to a previous version of certain documents |
+| `help`         | links to a help document |
+| `icon`         | this assigns a favicon to the web page |
+| `license`      | links the current page, with the page of the rights of use for the contents of the page |
+| `next`, `pref` | is used to create a link from the current or previous page |
+| `prefetch`  | links to an external web page that the user is likely to visit next |
+| `pingback`  | the website of a pingback server is specified here |
+| `search`    | links the current document to another document where the search is possible through the whole web page |
+| `stylesheet `| links an external CSS file to the current HTML document |
+| `tag`       | a simple tag as a linked resource that applies to the current document |
 
 
 ### 3.5. The style element
