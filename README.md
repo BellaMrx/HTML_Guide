@@ -287,7 +287,7 @@
 * \<html> ... \</html>
   - informs the web browser that there is HTML code present
   - it encloses all other elements in the HTML code (except `<!doctype html>`)
-  - there you can also specify the language `lang="en "`* (very helpful for accessibility)
+  - there you can also specify the language `lang="en "` (very helpful for accessibility)
 
 * \<head> ... \</head>
   - here information is given which is evaluated by the web browser and search engines e.g. scripts, stylesheets, meta information with information about the HTML document.  
@@ -313,29 +313,30 @@
 | `<script>...<script>`   | includes the client-side scripts, may also be used outside the **head** element |
 | `<meta>`                | sets the metadata like keywords, descriptions or the character set for the HTML document     |
 
-     ```
-      <!doctype html>
-      <html>
-        <head>
-          <base href="https://www.website.com/" target="_blank">
-          <link rel="stylesheet" href="style.css">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <style>
-            body {background-color: green;}
-          </style>
-          <script src="ajax_libs_jquery_3.5.js"></script>
-          <meta name="keywords" content="HTML, CSS">
-          <meta name="description" content="Free Web tutorials for HTML">
-          <meta charset="UTF-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>Website title</title>
-        </head>
-        <body>
-          <!-- Visible area of the web page in the browser -->
-        </body>
-      </html>
-     ```
+      ```
+        <!doctype html>
+        <html>
+          <head>
+            <base href="https://www.website.com/" target="_blank">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+              body {background-color: green;}
+            </style>
+            <script src="ajax_libs_jquery_3.5.js"></script>
+            <meta name="keywords" content="HTML, CSS">
+            <meta name="description" content="Free Web tutorials for HTML">
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Website title</title>
+          </head>
+          <body>
+            <!-- Visible area of the web page in the browser -->
+          </body>
+        </html>
+      ```
+
 The complete explanations for each tag will be given in the next chapters, these are just examples, at this point you don't need to understand it all.
 
 
