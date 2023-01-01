@@ -46,7 +46,7 @@
     - a website with usually chronologically sorted entries, which are separated from each other
     - can also be the start page of a website to display the latest articles or current information
     - online magazines can also be structured in this way
-    - many companies and private persons often use ready-made systems like e.g., *WordPress* or *Drupal*
+    - many companies and private persons often use ready-made systems like e.g. *WordPress* or *Drupal*
     - there are different blog types e.g. *corporate blog* (official company blog), *microblogging* (Twitter)
     - the installation of a blog software (e.g. *WordPress*) is flexible, because the blog can be extended with many templates and modules
     - portfolio websites are well suited for designers, photographers, artists and creatives, often website themes with minimalistic design
@@ -185,14 +185,14 @@
 ## 2. Structure of a HTML document
 
 ### 2.1. Syntax and structure of HTML documents
-* The HTML document is very structured. A complete *HTML element* usually consists of an opening HTML tag (**\<html>**), a closing HTML tag (**\</html>**) and everything in between. As *HTML- element* is usually called everything that stands between the tags. So the *HTML elements* ("headline") are marked by *HTML tags* (**\<h1>** and **\</h1>**).
+  * The HTML document is very structured. A complete *HTML element* usually consists of an opening HTML tag (`\<html>`), a closing HTML tag (`\</html>`) and everything in between. As *HTML- element* is usually called everything that stands between the tags. So the *HTML elements* ("headline") are marked by *HTML tags* (`\<h1>*` and `\</h1>`).
 
-  - everything between **\<html>** and **\</html>** (root element) is the HTML code for the HTML document
-  - between **\<head>** and **\</head>** the header data of the HTML document is summarized
-  - the part visible in the web browser is between **\<body>** and **\</body>**
-  - between **\<h1>** and **\</h1>** is a 1st order heading
-  - between **\<h2>** and **\</h2>** there is a 2nd order heading
-  - between **\<p>** and **\</p>** there is a normal paragraph
+  - everything between `\<html>` and `\</html>` (root element) is the HTML code for the HTML document
+  - between `\<head>` and `\</head>` the header data of the HTML document is summarized
+  - the part visible in the web browser is between `\<body>` and `\</body>`
+  - between `\<h1>` and `\</h1>` is a 1st order heading
+  - between `\<h2>` and `\</h2>` there is a 2nd order heading
+  - between `\<p>` and `\</p>` there is a normal paragraph
 
   - example --> *2_StructureOfaHTMLdocument/Part_1/index.html*
    ```
