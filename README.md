@@ -1854,9 +1854,9 @@ The complete explanations for each tag will be given in the next chapters, these
 
 * **href=mailto:...**
   - there is the possibility to open an email address with a specific email application when clicking on the link
-	- this is browser dependent and may require the user to set up a specific application, the functionality of a mailto link is not reliable
-	- The specification of an email address is often obligatory, but this also means that unsolicited commercial emails can be expected, as web crawlers scan the web pages for email addresses. There is a way around this: 1. display the email address as a graphic, but this has the disadvantage that screen readers cannot read the email. 2. obfuscate the email with JavaScript [for more info: click here](http://alistapart.com/article/gracefulemailobfuscation). 3. the [reCAPTCHA](http://google.com/recaptcha/intro/index.html) module of Google
-	- When specifying the email address on the website, it is important to observe the legal requirements.
+  - this is browser dependent and may require the user to set up a specific application, the functionality of a mailto link is not reliable
+  - The specification of an email address is often obligatory, but this also means that unsolicited commercial emails can be expected, as web crawlers scan the web pages for email addresses. There is a way around this: 1. display the email address as a graphic, but this has the disadvantage that screen readers cannot read the email. 2. obfuscate the email with JavaScript [for more info: click here](http://alistapart.com/article/gracefulemailobfuscation). 3. the [reCAPTCHA](http://google.com/recaptcha/intro/index.html) module of Google
+  - When specifying the email address on the website, it is important to observe the legal requirements.
   - example --> *5_Tables_Hyperlinks/Part_8/index.html*
      ```
       <footer>
