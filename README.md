@@ -31,6 +31,8 @@
 5. Tables and hyperlinks
     - 5.1. Structuring data in a table
     - 5.2. Hyperlinks with \<a>
+      - 5.2.1. The HTML attributes for the \<a> element
+6. 
 
 --------------------------------------------------------------------------------------------
 
@@ -1487,7 +1489,7 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
 ![Preview](4_TheBody/Images/Preview_4_19_15.PNG)
 
-* <ruby>, \<rp> and \<rt>
+* \<ruby>, \<rp> and \<rt>
   - is an annotation system in which the text with annotations appears in one line
   - example --> *4_TheBody/Part_19/index.html*
      ```
@@ -1852,7 +1854,7 @@ The complete explanations for each tag will be given in the next chapters, these
      ```
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_7.PNG)
 
-* The HTML attributes for the \<a> element
+### 5.2.1. The HTML attributes for the \<a> element
 
 | attribute          | Explanation                                                              |
 | ------------------ | ------------------------------------------------------------------------ |
