@@ -1222,8 +1222,6 @@ The complete explanations for each tag will be given in the next chapters, these
 
 ### 4.4. HTML elements for text markup
 * These are elements that are used within a plain text for single letters, words or parts of sentences to change them slightly visually. Even though text formatting with these elements is possible via HTML, CSS is responsible for the actual text formatting.
-- example --> *4_TheBody/Part_19/index.html*
-![Preview](4_TheBody/Images/Preview_4_19.png)
 
 | HTML elements           | Explanation                                                              |
 | ----------------------- | ------------------------------------------------------------------------ |
@@ -1265,6 +1263,7 @@ The complete explanations for each tag will be given in the next chapters, these
             <p>The <abbr title="World Wide Web">WWW</abbr> is full of abbreviations.</p>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_19_1.PNG)
 
 * \<cite>
   - if the title of a book, movie, painting, song, etc. is to be displayed, `cite` can be used
@@ -1278,6 +1277,7 @@ The complete explanations for each tag will be given in the next chapters, these
             working titles.</blockquote>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_19_2.PNG)
 
 * \<code> and \<pre>
   - if a code is to be marked in a continuous text, `code` is used
@@ -1303,8 +1303,8 @@ The complete explanations for each tag will be given in the next chapters, these
                 <figcaption>Listing 1: Hello World in C</figcaption>
             </figure>
         </article>
-
      ```
+![Preview](4_TheBody/Images/Preview_4_19_3.PNG)
 
 * \<kbd> and \<samp>
   - the kbd element (keyboard) is used to mark continuous text as keyboard input
@@ -1320,6 +1320,7 @@ The complete explanations for each tag will be given in the next chapters, these
         term#1&gt;</pre>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_19_4.PNG)
 
 * \<dfn>
   - this marks a definition
@@ -1331,6 +1332,7 @@ The complete explanations for each tag will be given in the next chapters, these
             cell phone.</p>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_19_5.PNG)
 
 * \<var>
 	- with the var element the text can be marked as a variable
@@ -1342,6 +1344,7 @@ The complete explanations for each tag will be given in the next chapters, these
             <p>The radius <var>r</var> is equal to half the diameter <var>d</var>.</p>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_19_6.PNG)
 
 * \<bdo> and \<bdi>
   	- with the **bdo** element (bidirectional override) the text direction can be changed
@@ -1358,6 +1361,7 @@ The complete explanations for each tag will be given in the next chapters, these
             <p>Howdy: 3 (a greeting in the US southern states)</p>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_19_7.PNG)
 
 * \<em>, \<strong>, \<i> and \<b>
   - to emphasize a text in italics `<em>` (emphasis) or to make a text bold `<strong>` is used
@@ -1366,14 +1370,14 @@ The complete explanations for each tag will be given in the next chapters, these
   - example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
-            <h2>Change text direction with bdo and bdi</h2>
-            <p>Hello World <bdo dir="rtl">Hello World</bdo></p>
-            <p>שלום</p>
-            <p><bdi>السلام عليكم</bdi>: 1 (as-salaam alaykum)</p>
-            <p><bdi>שלום</bdi>: 2 (shalom)</p>
-            <p>Howdy: 3 (a greeting in the US southern states)</p>
+            <h2>Emphasize text (em, strong, b and i)</h2>
+            <p><em>Bear!</em> Who the hell is this <em>bear!</em></p>
+            <p><strong>Attention!</strong> <em>Bear</em> could be behind you!</p>
+            <p><strong>Deadline in <strong><em>Summer 2022</em></strong></strong>
+            </p>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_19_8.PNG)
 
 * \<mark>
   - can be used to mark a text so that it is visually highlighted, like with a Highlighter
@@ -1394,6 +1398,7 @@ The complete explanations for each tag will be given in the next chapters, these
       }</code></pre>
               </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_19_9.PNG)
 
 * \<q>
   - the `<q>` element is used when something is to be quoted in the middle of the text or when a spoken text is to be marked
@@ -1405,6 +1410,7 @@ The complete explanations for each tag will be given in the next chapters, these
             the present to dwell too much on the future.</q></p>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_19_10.PNG)
 
 * \<u> and \<s>
   - the `<u>` element (u = underline) is used for proper noun underlining, as it is e.g. in the Chinese script, or to indicate words that may be erroneous
@@ -1420,6 +1426,7 @@ The complete explanations for each tag will be given in the next chapters, these
             <p>Also <u class="spell-checker">correct spelling</u> can be marked with it.</p>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_19_11.PNG)
 
 * \<ins> and \<del>
   - the `<del>` element (del = delete) is used when a content edit of a text is marked as deleted or revised 
@@ -1431,7 +1438,8 @@ The complete explanations for each tag will be given in the next chapters, these
             <del><p>The singer will perform in the concert hall on 01.01.2021!</p></del>
             <ins><p>The concert will not take place because the singer is ill!</p></ins>
         </article>
-     ```  
+     ``` 
+![Preview](4_TheBody/Images/Preview_4_19_12.PNG) 
 
 * \<sup> and \<sub>
   - these elements are mainly used for simple mathematical and chemical formulas
@@ -1448,6 +1456,7 @@ The complete explanations for each tag will be given in the next chapters, these
                 <sub>[2] = https://en.wikipedia.org/wiki/Circle</sub></p>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_19_13.PNG) 
 
 * \<time>
   - the `<time>` element was introduced to mark up dates and times.
@@ -1461,17 +1470,22 @@ The complete explanations for each tag will be given in the next chapters, these
             <time datetime="2021-08-01">August 1, 2021</time>
         </header>
      ```
+![Preview](4_TheBody/Images/Preview_4_19_14.PNG) 
 
 * \<small>
 	- the `<small>` element is used to display words or text passages in lowercase.
 	- e.g. for copyrights, license information, legal notices
   - example --> *4_TheBody/Part_19/index.html*
      ```
-        <header>
-            <h2>Small print with small</h2>
-            <small>&copy; Rick Sample; <time datetime="2021-01-01">January 1, 2021</time></small>
-        </header>
+        <article>
+            <header>
+                <h2>Small print with small</h2>
+                <small>&copy; Rick Sample; <time datetime="2021-01-01">January 1, 2021</time></small>
+            </header>
+            <p>The shipment can be delivered <time datetime="P2D">2 days</time>. <small>(Due to strong demand, it may take longer (+1 day)).</small></p>
+        </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_19_15.PNG)
 
 * <ruby>, \<rp> and \<rt>
   - is an annotation system in which the text with annotations appears in one line
@@ -1487,6 +1501,7 @@ The complete explanations for each tag will be given in the next chapters, these
             https://en.wikipedia.org/wiki/Ruby_character</a></small></p>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_19_16.PNG)
 
 * \<span>
   - the `<span>` element can mark up single text passages in the middle of the text with CSS
@@ -1500,6 +1515,7 @@ The complete explanations for each tag will be given in the next chapters, these
             the span element.</p>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_19_17.PNG)
 
 ### 4.5. Character entities in HTML
 * The importance of character entities has decreased with the spread of Unicode (UTF-8), but it is still worth mentioning them briefly.
