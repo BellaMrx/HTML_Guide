@@ -1131,6 +1131,46 @@ The complete explanations for each tag will be given in the next chapters, these
 
 #### Generic structuring with \<div>
   - example --> *4_TheBody/Part_17/indexB.html* 
+     ```
+      <body>
+        <div id="header">
+          <h1>My blog</h1>
+          <p>A blog about web development ...</p>
+        </div>
+        <div id="navigation">
+          <p>Navigation: 
+            <a href="#">Blog</a> |
+            <a href="#">Information</a> |
+            <a href="#">Contact</a> |
+            <a href="#">About me</a>
+          </p>
+        </div>
+        <div id="sidebar">
+          <h2>Old posts</h2>
+          <ul>
+            <li><a href="#">Last Week</a></li>
+            <li><a href="#">Archive</a></li>
+          </ul>
+        </div>
+        <div id="content">
+          <h2>How to structure web pages?</h2>
+          <p>HTML documents are structured ...</p>
+          <h3>Similar topics</h3>
+          <ul>
+            <li><a href="#">Styling web pages with CSS</a></li>
+            <li><a href="#">Functionality with JavaScript</a></li>
+          </ul>
+        </div>
+        <div id="footer">
+          <p> 
+            <a href="#">Information</a> |
+            <a href="#">Legal Notice</a> |
+            <a href="#">Contact</a> |
+            <a href="#">About me</a>
+          </p>
+        </div>
+      </body>
+     ```
 ![Preview](4_TheBody/Images/Preview_4_17B.PNG)
 
   - example --> *4_TheBody/Part_17/indexA.html* 
