@@ -1011,7 +1011,7 @@ The complete explanations for each tag will be given in the next chapters, these
             </ul>
         </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_15.png)
+![Preview](4_TheBody/Images/Preview_4_15_1.PNG)
 
 * \<ol> and \<li>
   - `<ol>` is needed for ordered lists
@@ -1030,6 +1030,8 @@ The complete explanations for each tag will be given in the next chapters, these
             </ol>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_15_2.PNG)
+
   - it is possible to reverse the numbering with HTML attribute `reversed`, then the numbering will be displayed in descending order
   - example --> *4_TheBody/Part_15/index.html* 
      ```
@@ -1044,6 +1046,8 @@ The complete explanations for each tag will be given in the next chapters, these
             </ol>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_15_3.PNG)
+
   - with the HTML attribute `start` the start value of the first `<li>` element, the following numberings are increased by 1
   - within the `<li>` element it is also possible with the HTML attribute `value`
   - example --> *4_TheBody/Part_15/index.html* 
@@ -1059,6 +1063,7 @@ The complete explanations for each tag will be given in the next chapters, these
             </ol>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_15_4.PNG)
 
 * \<dl>, \<dt>, \<dd>
   - with this, description lists are created
@@ -1080,6 +1085,7 @@ The complete explanations for each tag will be given in the next chapters, these
             </dl>
         </article>
      ```
+![Preview](4_TheBody/Images/Preview_4_15_5.PNG)
 
 ### 4.3. Semantic HTML
   - semantic web pages help search engines (Google prefers semantic web pages)
