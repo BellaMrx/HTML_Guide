@@ -1592,7 +1592,6 @@ The complete explanations for each tag will be given in the next chapters, these
 
 ---------------------------------------------------------------------------------------
 
-
 ## 5. Tables and hyperlinks
 ### 5.1. Structuring data in a table
   - Tables are useful to display related data e.g. stock quotes, financial data, travel plans or sports results in a grid of rows and columns
@@ -2025,4 +2024,36 @@ The complete explanations for each tag will be given in the next chapters, these
 
 
 -----------------------------------------------------------------------------------------
+
+## 6. Graphics and multimedia
+
+| HTML elements          | Explanation         								                  |
+| ---------------------- | ---------------------------------------------------- |
+| `<img>`                | embed a graphic file in an HTML document             |
+| `<map>`, `<area>`      | creates a reference sensitive graphic                |
+| `<picture>`, `<source>`| loads the adequate image from several image sources  |
+| `<svg>`       		     | integrates a scalable vector graphic into a web page |
+| `<math>`       		     | embed a formula written with MathML                  |
+| `<canvas>`       	     | represents a drawing area for drawing graphics       |
+| `<video>`       	     | Play video files without plug-ins                    |
+| `<audio>`       	     | Play audio files without plug-ins                    |
+| `<embed>`, `<object>`, `<iframe>` | embed active elements such as PDF documents, Flash animations, Java applets, Word documents and many others |
+
+### 6.1. Embedding images with \<img>
+  - Images can be included on a web page using the `<img>` element (img = image), after which there is no line break if `<img>` is used in the text. The attributes `src` and `alt` should be present at least. The `src` attribute indicates where the web browser will find the image file. The `alt` attribute gives an alternative description of the image file, this should be short (75-125 characters) describing what is in the image. This is useful if the image file cannot be loaded or for screen readers and also search engines. When creating web pages, the images should be placed in an extra directory (usually named "Images"). The `title` attribute can be used to display additional information when the user touches the image with the mouse.
+- example --> *6_ Graphics_Multimedia/Part_1/index.html*
+     ```
+      <h1>Beautiful world</h1>
+      <p>
+        <a href="Images/flower_1920.jpg" target="_blank"><img src="Images/flower_480.jpg" alt="Purple flower" title="Opens this image in a larger version in a new window or tab."></a>
+        <img src="Images/chicks_480.jpg" alt="Chicks in the grass" title="Hot chicks on grass">
+      </p>
+      <p>
+      A whale in the clouds. <img src="Images/whale_480.jpg" alt="a whale in the clouds"> He is on his way to Ocean.
+      </p>
+     ```
+![Preview](6_Graphics_Multimedia/Images/Preview_6_1.PNG)
+
+
+
 
