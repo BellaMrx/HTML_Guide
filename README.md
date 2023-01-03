@@ -2052,7 +2052,7 @@ The complete explanations for each tag will be given in the next chapters, these
       A whale in the clouds. <img src="Images/whale_480.jpg" alt="a whale in the clouds"> He is on his way to Ocean.
       </p>
      ```
-![Preview](6_Graphics_Multimedia/Images/Preview_6_1.PNG)
+![Preview](6_/Images/Preview_6_1.PNG)
 
 
 
