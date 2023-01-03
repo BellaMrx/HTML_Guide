@@ -2041,7 +2041,7 @@ The complete explanations for each tag will be given in the next chapters, these
 
 ### 6.1. Embedding images with \<img>
   - Images can be included on a web page using the `<img>` element (img = image), after which there is no line break if `<img>` is used in the text. The attributes `src` and `alt` should be present at least. The `src` attribute indicates where the web browser will find the image file. The `alt` attribute gives an alternative description of the image file, this should be short (75-125 characters) describing what is in the image. This is useful if the image file cannot be loaded or for screen readers and also search engines. When creating web pages, the images should be placed in an extra directory (usually named "Images"). The `title` attribute can be used to display additional information when the user touches the image with the mouse.
-- example --> *6_ Graphics_Multimedia/Part_1/index.html*
+- example --> *6_Graphics_Multimedia/Part_1/index.html*
      ```
       <h1>Beautiful world</h1>
       <p>
