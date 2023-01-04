@@ -2061,9 +2061,7 @@ The complete explanations for each tag will be given in the next chapters, these
   - scaling with `width` and `height` is possible, but if possible the image should be adjusted to the correct size with an image editing program, on the one hand the data volume is reduced and the risk that the images are displayed distorted is eliminated
   - example --> *6_Graphics_Multimedia/Part_2/index.html*
      ```
-      <p>
         <img src="Images/flower_1920.jpg" alt="Purple flower" width="480" height="360">
-      </p>
      ``` 
 
 * **\<figure> and \<figcaption>**
@@ -2088,6 +2086,40 @@ The complete explanations for each tag will be given in the next chapters, these
 | `width` 	  | specifies the horizontal extent (width) of the image in pixels        |
 
 ### 6.2. Create image maps
+* Reference-sensitive graphics (image maps) are links that are embedded within a graphic. An image map defined in HTML consists of three parts:
+  - the actual image added to the HTML document with the img element, additionally within the `<img>` -tag the attribute `usemap` must be specified with an anchor to a `map` element
+     ```
+        <img src="Images/picture.jpg" alt="alternative text" usemap="#mapname">
+     ``` 
+  - the `map` element with the anchor name previously specified in the img element with the usemap attribute, it is recommended to place the `map` element at the beginning or at the end of the document
+  - between `<map>` and `</map>` an area element is used for each area, there the coordinates with the actual reference sensitive area for the graphic are needed. Within the `<area>` tag, you can define a square area, a circular area, or a polygon. Each area element defines a clickable area in the image.
+
+| HTML elements | Explanation          								                |
+| ------------- | --------------------------------------------------- |
+| `<img>`       | Inserting a graphic with an anchor on a map element |
+| `<map>`    		| Area for the reference sensitive graphic            |
+| `<area>`    	| This defines a clickable area in the image          |
+
+  - example --> *6_Graphics_Multimedia/Part_3/index.html*
+  - in this example, in a rectangular graphic with 200 x 200 pixels, four rectangular reference-sensitive areas with 100 x 100 pixels have been defined. First the graphic popart.jpg is inserted into the HTML document. The value `#mood` is used as the anchor name in the `usemap` attribute. The reference sensitive area is introduced with the `map` element and the name of the image map (name="mood"). Between `<map>` and `</map>` the coordinates for the references are specified with the `area` element.
+
+    ```
+      <h1>What mood are you in?</h1>
+      <p>Select a color according to your mood:</p>
+      <p>
+          <img src="Images/popart.jpg" alt="Reference sensitive pop art graphic" width="200" height="200" usemap="#mood">
+      </p>
+      <map name="mood">
+        <area shape="rect" coords="0,0,100,100" href="Colors/cyan.html" alt="Cyan" title="Cyan">
+        <area shape="rect" coords="0,100,100,200" href="Colors/green.html" alt="Green" title="Green">
+        <area shape="rect" coords="100,100,200,200" href="Colors/yellow.html" alt="Yello" title="Yellow">
+        <area shape="rect" coords="100,0,200,100" href="Colors/red.html" alt="Red" title="Red">
+      </map>
+    ``` 
+
+![Preview](6_Graphics_Multimedia/Images/Preview_6_3_1.PNG)
+![Preview](6_Graphics_Multimedia/Images/Preview_6_3_2.PNG)
+
 
 
 
