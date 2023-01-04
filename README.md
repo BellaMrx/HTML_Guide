@@ -2054,7 +2054,7 @@ The complete explanations for each tag will be given in the next chapters, these
       A whale in the clouds. <img src="Images/whale_480.jpg" alt="a whale in the clouds"> He is on his way to Ocean.
       </p>
      ```
-![Preview](6_/Images/Preview_6_1.PNG)
+![Preview](6_Graphics_Multimedia/Images/Preview_6_1.PNG)
 
 * **width and height**
   - to scale the display size of images, `width` and `height` can be used, if the image is a bit too large
@@ -2076,7 +2076,7 @@ The complete explanations for each tag will be given in the next chapters, these
           <figcaption>The Cape daisy (Osteospermum ecklonis) originates from South Africa and is very popular in Europe.</figcaption>
         </figure>
      ```
-![Preview](6_/Images/Preview_6_2.PNG)
+![Preview](6_Graphics_Multimedia/Images/Preview_6_2.PNG)
 
 | attribute   | Explanation         								              |
 | ----------- | ------------------------------------------------- |
