@@ -32,7 +32,9 @@
     - 5.1. Structuring data in a table
     - 5.2. Hyperlinks with \<a>
       - 5.2.1. The HTML attributes for the \<a> element
-6. 
+6. Graphics and multimedia
+    - 6.1. Embedding images with \<img>
+    - 6.2. Create image maps
 
 --------------------------------------------------------------------------------------------
 
@@ -2053,6 +2055,41 @@ The complete explanations for each tag will be given in the next chapters, these
       </p>
      ```
 ![Preview](6_/Images/Preview_6_1.PNG)
+
+* **width and height**
+  - to scale the display size of images, `width` and `height` can be used, if the image is a bit too large
+  - scaling with `width` and `height` is possible, but if possible the image should be adjusted to the correct size with an image editing program, on the one hand the data volume is reduced and the risk that the images are displayed distorted is eliminated
+  - example --> *6_Graphics_Multimedia/Part_2/index.html*
+     ```
+      <p>
+        <img src="Images/flower_1920.jpg" alt="Purple flower" width="480" height="360">
+      </p>
+     ``` 
+
+* **\<figure> and \<figcaption>**
+  - with `<figure>` and `<figcaption>` it is possible to create separate captions
+  - example --> *6_Graphics_Multimedia/Part_2/index.html*
+      ```
+        <h1>Purple flower</h1>
+        <figure>
+          <img src="Images/flower_1920.jpg" alt="Purple flower" width="480" height="360"><br>
+          <figcaption>The Cape daisy (Osteospermum ecklonis) originates from South Africa and is very popular in Europe.</figcaption>
+        </figure>
+     ```
+![Preview](6_/Images/Preview_6_2.PNG)
+
+| attribute   | Explanation         								              |
+| ----------- | ------------------------------------------------- |
+| `alt`       | this will display an alternative text if graphics cannot be displayed |
+| `height`    | specifies the vertical extent (height) of the image in pixels         |
+| `ismap` 	  | is a boolean value that can be used if the images are a server-side image map (rarely used) | 
+| `src` 		  | this specifies the link destination to the image file                 |
+| `usemap` 	  | specifies the name of an image map that should be linked to the image |
+| `width` 	  | specifies the horizontal extent (width) of the image in pixels        |
+
+### 6.2. Create image maps
+
+
 
 
 
