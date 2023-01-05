@@ -2172,12 +2172,9 @@ Pixel coordinates with a graphics program [Online Image Map Editor](http://masch
 
 | `shape`    	      | This determines the type of area for the reference-sensitive area of a reference-sensitive graphic. The possible values for this are:                               |
 | ----------------- | ---------------------------------------------------------------------- |
-| `shape="circle"`  | a circle with the coordinates x (center from 
-left), y (center from top) and r (radius) for the coord attribute                            |
-| `shape="rect"`    | a rectangle with the coordinates x1, y1 (upper left corner) and x2, y2 
-corner) and x2, y2 (lower right corner) for the coord attribute                              |
-| `shape="poly"`    | a polygon with the coordinates x1, y1, x2, y2, ..., xn, yn
-(from the upper left corner) for the coord attribute                                         |
+| `shape="circle"`  | a circle with the coordinates x (center from left), y (center from top) and r (radius) for the coord attribute                            |
+| `shape="rect"`    | a rectangle with the coordinates x1, y1 (upper left corner) and x2, y2 corner) and x2, y2 (lower right corner) for the coord attribute                              |
+| `shape="poly"`    | a polygon with the coordinates x1, y1, x2, y2, ..., xn, yn(from the upper left corner) for the coord attribute                                         |
 
 | `target`  | This sets the target window for the content to be called. Possible values for this are: |
 | --------- | ---------------------------------------------------------------------- |
