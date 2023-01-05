@@ -2163,8 +2163,7 @@ Pixel coordinates with a graphics program [Online Image Map Editor](http://masch
 | `rel="help"`      | Links to a help document                              |
 | `rel="license"`   | Links to copyright information for the document       |
 | `rel="next"`      | the next document in a selection of documents         |
-| `rel="nofollow":` | Links that search engines should not follow 
-(e.g. commercial advertising page) |
+| `rel="nofollow":` | Links that search engines should not follow (e.g. commercial advertising page) |
 | `rel="noreferrer"`| The web browser should not send an HTTP ReferrerHeader when the user follows the link.                                                                       |
 | `rel="prefetch"`  | Specifies that the target resource should be cached.  |
 | `rel="prev"`      | The previous document in a selection of documents     |
