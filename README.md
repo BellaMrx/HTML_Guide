@@ -37,6 +37,7 @@
     - 6.2. Create image maps
     - 6.3. Load suitable images with \<picture>
     - 6.4. Use icons
+    - 6.5. Vector graphics (SVG)
 
 --------------------------------------------------------------------------------------------
 
@@ -2200,6 +2201,7 @@ Pixel coordinates with a graphics program [Online Image Map Editor](http://masch
      ```
 small display
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_4_1.PNG)
+
 large display
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_4_2.PNG)
 
@@ -2213,5 +2215,27 @@ large display
 
 
 ### 6.4. Use icons
+* These icons are called favicons, these are good for recognition on the website. Favicons can be created with any image editing software. But also on the web there are online tools with which icons can be created e.g. [favicon.io](https://favicon.io/)
+  - example --> *6_Graphics_Multimedia/Part_5/index.html*
+     ```
+      <head>
+        <title>Add icon for the website</title>
+        <meta charset="UTF-8" />
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png" />
+        <link rel="manifest" href="Images/site.webmanifest" />
+      </head>
+      <body>
+        <h1>Demonstrates the favicon</h1>
+        <p>Add the HTML document to your favorites</p>
+      </body>
+     ```
+
+![Preview](6_Graphics_Multimedia/Images/Preview_6_5.PNG)
+
+
+### 6.5. Vector graphics (SVG)
+
 
 
