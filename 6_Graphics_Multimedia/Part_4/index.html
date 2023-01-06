@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Flexible images with picture</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+  <h1>The picture element in action</h1>
+  <p>
+  <picture> 
+     <source media="(min-width: 1024px)" srcset="Images/Image_1024.jpg">
+     <source media="(min-width: 640px)" srcset="Images/Image_640.jpg">
+     <source media="(min-width: 480px)" srcset="Images/Image_480.jpg">
+     <!-- Fallback for old browser -->
+     <img src="Images/Image_480.jpg" alt="Hong Kong Island">
+  </picture>
+  </p>
+  </body>
+</html>

@@ -35,6 +35,8 @@
 6. Graphics and multimedia
     - 6.1. Embedding images with \<img>
     - 6.2. Create image maps
+    - 6.3. Load suitable images with \<picture>
+    - 6.4. Use icons
 
 --------------------------------------------------------------------------------------------
 
@@ -2184,4 +2186,31 @@ Pixel coordinates with a graphics program [Online Image Map Editor](http://masch
 | `_parent` | output in the calling window                                           |
 
 
-### 6.3. Load matching images with \<picture>
+### 6.3. Load suitable images with \<picture>
+* The picture element allows to provide a suitable picture for all display sizes. Each source element in the `<picture>` element contains a query (media query) with the HTML attribute `media`, specifications such as viewport width, viewport height and alignment are queried. The sources of `<source>` are read from top to bottom. If the viewport is at least 1024 pixels (`min-width:1024px`), the image is loaded with 1024 pixels. If the viewport is at least 640 pixels, the image is loaded with 640 pixels.
+  - example --> *6_Graphics_Multimedia/Part_4/index.html*
+     ```
+      <picture> 
+        <source media="(min-width: 1024px)" srcset="Images/Image_1024.jpg">
+        <source media="(min-width: 640px)" srcset="Images/Image_640.jpg">
+        <source media="(min-width: 480px)" srcset="Images/Image_480.jpg">
+        <!-- Fallback for old browser -->
+        <img src="Images/Image_480.jpg" alt="Hong Kong Island">
+      </picture>
+     ```
+
+![Preview](6_Graphics_Multimedia/Images/Preview_6_4_1.PNG)
+![Preview](6_Graphics_Multimedia/Images/Preview_6_4_2.PNG)
+
+| attribute | Explanation         								              |
+| --------- | ------------------------------------------------- |
+| `srcset`  | This allows media queries to create breakpoints for the images to be loaded |
+| `media`   | This specifies a comma-separated list of image sources. For each specified image source you can specify the width and pixel density (default value: 1x) can be specified |
+| `src`     | With this you specify the URL to an image source |
+| `type`  	| This sets the MIME type for the image resource   |
+| `sizes`   | a comma-separated list with a media characteristic and the size specification |
+
+
+### 6.4. Use icons
+
+
