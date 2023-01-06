@@ -2198,8 +2198,9 @@ Pixel coordinates with a graphics program [Online Image Map Editor](http://masch
         <img src="Images/Image_480.jpg" alt="Hong Kong Island">
       </picture>
      ```
-
+small display
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_4_1.PNG)
+large display
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_4_2.PNG)
 
 | attribute | Explanation         								              |
