@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Embedding an SVG graphic</title>
+</head>
+<body>
+<h1>Embed SVG graphics directly</h1>
+<p>
+
+<svg width="300" height="100">
+  <ellipse ry="45" rx="140" cy="50" cx="150" fill="green" stroke-width="10" stroke="black"/>
+  <text text-anchor="middle" font-size="60" y="67" x="150" fill="white">SVG</text>
+</svg>
+<br>
+<svg height="300" width="100">
+  <ellipse cx="50" cy="150" rx="45" ry="140"
+  style="fill:red;stroke:black;stroke-width:3" />
+</svg>
+<br>
+<svg width="410" height="200">
+  <rect x="5" y="5" width="390" height="150" 
+        style="fill:blueviolet;stroke-width:3;stroke:black" />
+</svg>
+<br>
+<svg width="210" height="200">
+<polygon points="100,5 125,85 80,105"
+         style="fill:blue;stroke:black;stroke-width:5" />
+</svg>
+<br>
+<svg width="210" height="200">
+<polyline points="100,5 125,85 80,105"
+         style="fill:blue;stroke:black;stroke-width:5" />
+</svg>
+<br>
+<svg height="200" width="200">
+  <circle cx="100" cy="100" r="90" stroke="black" stroke-width="3" fill="yellow" />
+</svg>
+<br>
+<svg height="100" width="250">
+  <line x1="0" y1="0" x2="250" y2="100" style="stroke:purple;stroke-width:3" />
+</svg>
+<br>
+<svg height="100" width="500">
+  <text x="5" y="80" fill="red" font-size="60">A text with SVG</text>
+</svg>
+
+</p>
+</body>
+</html>

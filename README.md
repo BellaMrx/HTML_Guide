@@ -1,6 +1,6 @@
-# HTML_Tutorial
+# HTML_Guide
 
- detailed tutorial about HTML + templates (all basics for HTML)
+ detailed guide about HTML + templates (all basics for HTML)
 
 -----------------------------------------------------------------------------------------------
 
@@ -2153,7 +2153,7 @@ Pixel coordinates with a graphics program [Online Image Map Editor](http://masch
 | `alt`         | Allows you to specify an alternative text that will be displayed when the if the link-sensitive graphic is not displayed. For valid valid HTML, this attribute must also be used with any area element when the href attribute is used |
 | `coords`   	  | Here you specify the coordinates for the reference sensitive area. These are absolute values that you must separate with commas. |
 | `download`    | You use this to specify a URL or pathname to a file that can be can be downloaded when the user clicks the link. |
-| `href`    	  | Here you specify the link for the reference target of the link-sensitive area that will be called when the user clicks on it. If attribute is not used, this area element is not a hyperlink. hyperlink. |
+| `href`    	  | Here you specify the link for the reference target of the link-sensitive area that will be called when the user clicks on it. If attribute is not used, this area element is not a hyperlink. |
 | `hreflang`    | This specifies the language of the reference target of the reference-sensitive area. |
 | `media`    	  | This allows you to specify the media type of the link or a resource specify |
 | `type`   	    | Sets the MIME type of the destination address. |
@@ -2251,9 +2251,55 @@ The quality of the SVG graphic always remains the same even if the `width` and `
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_6.PNG)
 
 Editors for SVG graphics editing:
+- [SVG-edit](https://github.com/SVG-Edit/svgedit)
 - [Inkscape](www.inkscape.org)
-- [SVG-edit](https://gitbub.com/SVG-Edit/svgedit)
 - any simple text editor
+
+* **Integrate SVG directly into the web page with \<svg>**
+- It is possible to embed the SVG directly into the HTML document. The SVG syntax with the SVG element is noted between `<svg> ... </svg>` is noted. SVG itself offers different tags e.g. for circles, ellipses, rectangles, polygons, lines, elements for paths, texts and animations.
+  - example --> *6_Graphics_Multimedia/Part_7/index.html*
+     ```
+      <h1>Embed SVG graphics directly</h1>
+      <p>
+      <svg width="300" height="100">
+        <ellipse ry="45" rx="140" cy="50" cx="150" fill="green" stroke-width="10" stroke="black"/>
+        <text text-anchor="middle" font-size="60" y="67" x="150" fill="white">SVG</text>
+      </svg>
+      <br>
+      <svg height="300" width="100">
+        <ellipse cx="50" cy="150" rx="45" ry="140" style="fill:red;stroke:black;stroke-width:3" />
+      </svg>
+      <br>
+      <svg width="410" height="200">
+        <rect x="5" y="5" width="390" height="150" style="fill:blueviolet;stroke-width:3;stroke:black" />
+      </svg>
+      <br>
+      <svg width="210" height="200">
+        <polygon points="100,5 125,85 80,105" style="fill:blue;stroke:black;stroke-width:5" />
+      </svg>
+      <br>
+      <svg width="210" height="200">
+        <polyline points="100,5 125,85 80,105" style="fill:blue;stroke:black;stroke-width:5" />
+      </svg>
+      <br>
+      <svg height="200" width="200">
+        <circle cx="100" cy="100" r="90" stroke="black" stroke-width="3" fill="yellow" />
+      </svg>
+      <br>
+      <svg height="100" width="250">
+        <line x1="0" y1="0" x2="250" y2="100" style="stroke:purple;stroke-width:3" />
+      </svg>
+      <br>
+      <svg height="100" width="500">
+        <text x="5" y="80" fill="red" font-size="60">A text with SVG</text>
+      </svg>
+      </p>
+     ```
+![Preview](6_Graphics_Multimedia/Images/Preview_6_7.PNG)
+
+- Inside `<svg> ... </svg>`, the rules of XML documents must be followed and be case sensitive. Unlike HTML, SVG syntax is very precise and an error will usually result in incorrect or no display.
+
+* **Mathematical formulas with MathML**
 
 
 
