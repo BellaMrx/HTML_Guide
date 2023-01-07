@@ -2397,13 +2397,15 @@ HTML attributes for the \<video> element
 | `loop`      | If the video file has finished playing, it will be played again with this attribute |
 | `muted`     | The sound of the video file is muted with this attribute. |
 | `poster`    | This allows you to specify a URL to an image that will be displayed, as long as or when the video is not present (for example, if it has not yet has not been loaded) |
-| `preload`   | This allows you to specify how the video file should be preloaded when the web page is loaded. The following values are possible:
-- `preload="auto"`: (default) The web browser should load the complete video file when the page is loaded.
-- `preload="metadata"`: Only the metadata should be loaded when the page is loaded.
-- `preload="none"`: The web browser should not load the video file at all the video file at all when the page is loaded |
 | `src`       | This specifies the location (URL) of the video file. |
 | `width`     | With this you set the width of the video to be displayed |
 | `type`      | specification of the video format |
+
+| `preload`   | This allows you to specify how the video file should be preloaded when the web page is loaded. The following values are possible: |
+| -------------- | ------------------------------------------------- |
+|`preload="auto"`| (default) The web browser should load the complete video file when the page is loaded.
+|`preload="metadata"`| Only the metadata should be loaded when the page is loaded.
+|`preload="none"`| The web browser should not load the video file at all the video file at all when the page is loaded |
 
 
 It is also possible to play a video via YouTube. Works only on live server.
