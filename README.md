@@ -2255,7 +2255,7 @@ Editors for SVG graphics editing:
 - [Inkscape](www.inkscape.org)
 - any simple text editor
 
-* **Integrate SVG directly into the web page with \<svg>**
+#### **Integrate SVG directly into the web page with \<svg>**
 - It is possible to embed the SVG directly into the HTML document. The SVG syntax with the SVG element is noted between `<svg> ... </svg>` is noted. SVG itself offers different tags e.g. for circles, ellipses, rectangles, polygons, lines, elements for paths, texts and animations.
   - example --> *6_Graphics_Multimedia/Part_7/index.html*
      ```
@@ -2295,11 +2295,70 @@ Editors for SVG graphics editing:
       </svg>
       </p>
      ```
-![Preview](6_Graphics_Multimedia/Images/Preview_6_7.PNG)
+![Preview](6_Graphics_Multimedia/Images/Preview_6_7.png)
 
 - Inside `<svg> ... </svg>`, the rules of XML documents must be followed and be case sensitive. Unlike HTML, SVG syntax is very precise and an error will usually result in incorrect or no display.
 
-* **Mathematical formulas with MathML**
+#### **Mathematical formulas with MathML**
+Mathematical formulas can be integrated directly into a web page using MathML (Mathematical Markup Language). The MathML tags are noted between `<math> ... </math>`. Unfortunately not yet supported by all browsers, but the problem can be solved with the help of [MathJax](http://www.mathjax.org).
+  - example --> *6_Graphics_Multimedia/Part_8/index.html*
+     ```
+      <head>
+        <meta charset="UTF-8">
+        <title>Mathematical formulas</title>
+        <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+      </head>
+      <body>
+      <h1>MathML for mathematical formulas</h1>
+      <p>
+        A simple mathematical formula: 
+          <math>
+            <mrow>
+              <msup><mi>a</mi><mn>2</mn></msup>
+              <mo>+</mo>
+              <msup><mi>b</mi><mn>2</mn></msup>
+              <mo>=</mo>
+              <msup><mi>c</mi><mn>2</mn></msup>
+            </mrow>
+          </math>
+      </p>
+      </body>
+     ```
+![Preview](6_Graphics_Multimedia/Images/Preview_6_8.PNG)
+
+More on the topic at [W3C](https://www.w3.org/TR/MathML3/).
+
+
+### 6.6 Drawing graphics with \<canvas>
+Is nothing more than a white area on which something can be drawn with the help of JavaScript.
+  - In the introductory `<canvas>` tag, the `id` is specified with , `width` and `height` determine the size of the drawing area. The `id` is particularly important in order to be able to access the `<canvas>` element later with JavaScript.
+  - example --> *6_Graphics_Multimedia/Part_9/index.html*
+     ```
+      <head>
+        <meta charset="UTF-8">
+        <title>Create a canvas object</title>
+        <style>
+          canvas {border:1px solid #000000;}
+        </style>
+      </head>
+      <body>
+      <h1>Create drawing area with canvas</h1>
+      <canvas id="myCanvas" width="400" height="200">
+        Your browser does not support the canvas element.
+      </canvas>
+      </body>
+     ```
+![Preview](6_Graphics_Multimedia/Images/Preview_6_9.PNG)
+
+On the website www.effect-games.com/demos/canvascycle/ [EffectGames](http://www.effectgames.com/demos/canvascycle/) you can see well what is possible with `<canvas>`.
+
+On my GitHub account you can also find a few examples about canvas:
+  - [Motocross Rally](https://github.com/BellaMrx/Motocross_Rally) - game only in HTML, CSS, JavaScript
+  - [Breakout](https://github.com/Projects-Games-HTML-CSS-JS/Breakout) - game only in HTML, CSS, JavaScript
+  - [Ping Pong](https://github.com/Projects-Games-HTML-CSS-JS/Ping-Pong) -  game only in HTML, CSS, JavaScript 
+
+
 
 
 
