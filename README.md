@@ -38,6 +38,9 @@
     - 6.3. Load suitable images with \<picture>
     - 6.4. Use icons
     - 6.5. Vector graphics (SVG)
+    - 6.6. Drawing graphics with \<canvas>
+    - 6.7. Play videos with the \<video> HTML element
+    - 6.8. Play audio files with the HTML element \<audio>
 
 --------------------------------------------------------------------------------------------
 
@@ -2359,6 +2362,69 @@ On my GitHub account you can also find a few examples about canvas:
   - [Ping Pong](https://github.com/Projects-Games-HTML-CSS-JS/Ping-Pong) -  game only in HTML, CSS, JavaScript 
 
 
+### 6.7. Play videos with the <video> HTML element
+With the `<video>` element it is possible to play a video in the web browser without a special extension. All modern browsers support this element.
+Currently 3 video formats are supported: *MP4*, *WebM*, *OGG*. However, not every browser supports all 3 formats. The most widely used is *MP4*.
 
+  - example --> *6_Graphics_Multimedia/Part_10/index.html*
+     ```
+      <body>
+        <h1>Play videos</h1>
+        <video width="640" src="Video/ClickMe.mp4" controls autoplay>
+          Your web browser does not support the video tag.
+        </video>
+      </body>
+     ```
+![Preview](6_Graphics_Multimedia/Images/Preview_6_10.PNG)
+
+If you want to be sure that the browser plays the video. Can you also offer all 3 formats, then other types can be specified.
+  - example --> *6_Graphics_Multimedia/Part_11/index.html*
+     ```
+      <body>
+        <h1>Play videos</h1>
+        <video width="640" src="Video/ClickMe.mp4" controls autoplay>
+          Your web browser does not support the video tag.
+        </video>
+      </body>
+     ```
+
+HTML attributes for the \<video> element 
+| attribute   | Explanation         								              |
+| ----------- | ------------------------------------------------- |
+| `autoplay`  | The video file will be played automatically when the web page has finished loading. has been loaded |
+| `controls`  | Displays a bar with control functions such as Play, Pause, etc, with which the user can control the video file |
+| `height`    | With this you specify the height of the video to be displayed |
+| `loop`      | If the video file has finished playing, it will be played again with this attribute |
+| `muted`     | The sound of the video file is muted with this attribute. |
+| `poster`    | This allows you to specify a URL to an image that will be displayed, as long as or when the video is not present (for example, if it has not yet has not been loaded) |
+| `preload`   | This allows you to specify how the video file should be preloaded when the web page is loaded. The following values are possible:
+- `preload="auto"`: (default) The web browser should load the complete video file when the page is loaded.
+- `preload="metadata"`: Only the metadata should be loaded when the page is loaded.
+- `preload="none"`: The web browser should not load the video file at all the video file at all when the page is loaded |
+| `src`       | This specifies the location (URL) of the video file. |
+| `width`     | With this you set the width of the video to be displayed |
+| `type`      | specification of the video format |
+
+
+It is also possible to play a video via YouTube. Works only on live server.
+  - example --> *6_Graphics_Multimedia/Part_12/index.html*
+     ```
+      <body>
+          <figure>
+              <iframe width="400" height="225" src="https://www.youtube.com/watch?v=MDLn5-zSQQI" allowfullscreen></iframe>
+              <figcaption>iframe</figcaption>
+          </figure>
+          <figure>
+              <object width="400" height="225" data="https://www.youtube.com/watch?v=MDLn5-zSQQI"></object>
+              <figcaption>object</figcaption>
+          </figure>
+          <figure>
+              <embed width="400" height="225" src="https://www.youtube.com/watch?v=MDLn5-zSQQI" />
+              <figcaption>embed</figcaption>
+          </figure>
+      </body>
+     ```
+
+### 6.8. Play audio files with the HTML element \<audio>
 
 

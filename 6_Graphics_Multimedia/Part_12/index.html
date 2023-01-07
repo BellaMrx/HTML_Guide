@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Play videos</title>
+    <style>
+        iframe {
+            border: 5px solid red;
+        }
+        
+        object {
+            border: 5px solid green;
+        }
+        
+        embed {
+            border: 5px solid blue;
+        }
+        
+        figure {
+            float: left;
+        }
+        
+        figcaption {
+            background: lightgrey;
+            border: 1px solid black;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <figure>
+        <iframe width="400" height="225" src="https://www.youtube.com/watch?v=MDLn5-zSQQI" allowfullscreen></iframe>
+        <figcaption>iframe</figcaption>
+    </figure>
+
+    <figure>
+        <object width="400" height="225" data="https://www.youtube.com/watch?v=MDLn5-zSQQI"></object>
+        <figcaption>object</figcaption>
+    </figure>
+
+    <figure>
+        <embed width="400" height="225" src="https://www.youtube.com/watch?v=MDLn5-zSQQI" />
+        <figcaption>embed</figcaption>
+    </figure>
+</body>
+
+</html>
