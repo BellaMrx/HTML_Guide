@@ -2485,7 +2485,7 @@ With this element it is possible to embed something in an HTML document. In prac
         </iframe> 
       </body>
      ```
-![Preview](6_Graphics_Multimedia/Images/Preview_6_14.PNG)
+![Preview](6_Graphics_Multimedia/Images/Preview_6_14.png)
 
 * When embedding an external HTML document, it may be necessary to restrict certain things for security reasons. Such a restriction is available with the sandbox attribute. When the sandbox attribute is used in the `<iframe>`, it prevents the execution of scripts, links going out of the frame, plug-ins, accessing cookies and submitting forms.
 
