@@ -1,6 +1,6 @@
 # HTML_Guide
 
- detailed guide about HTML + templates (all basics for HTML)
+ detailed guide about HTML (all basics for HTML) + templates
 
 -----------------------------------------------------------------------------------------------
 
@@ -41,6 +41,8 @@
     - 6.6. Drawing graphics with \<canvas>
     - 6.7. Play videos with the \<video> HTML element
     - 6.8. Play audio files with the HTML element \<audio>
+    - 6.9. Embedding other active content
+7. HTML -forms and interactive elements 
 
 --------------------------------------------------------------------------------------------
 
@@ -2464,6 +2466,35 @@ load the complete audio file when the page is loaded. |
 when the page is loaded. |
 |`preload="none"`| The web browser should not load the audio file at all not load at all when the page is loaded. |
 
+
+### 6.9. Embedding other active content
+It is possible to include videos, audio files and images in an HTML document without additional software. But for many other content there is no extra HTML element, e.g. Excel files, AutoCAD or special movie formats, which cannot be used directly by the web browser, but via plug-ins. To include active content in an HTML document that is supported via extensions, there is the **object** element and the **embed** element. However, most modern web browsers have removed or disabled direct support for browser plug-ins, so it is no longer advisable to use them.
+
+More information about [object](https://www.w3schools.com/tags/tag_object.asp).
+More information about [embed](https://www.w3schools.com/tags/tag_embed.asp).
+
+#### The \<iframe> element
+With this element it is possible to embed something in an HTML document. In practice it often happens that this element is used to embed other HTML document.
+  - example --> *6_Graphics_Multimedia/Part_14/index.html*
+     ```
+      <body>
+        <h1>use iframe</h1>
+        <img src="Images/sourcecode.png" alt="sourcecode" width="50%">
+        <iframe height="140" width="680" src="indexMathML.html"> 
+          Your web browser is from the stone age and can not iframe!<br>
+        </iframe> 
+      </body>
+     ```
+![Preview](6_Graphics_Multimedia/Images/Preview_6_14.PNG)
+
+* When embedding an external HTML document, it may be necessary to restrict certain things for security reasons. Such a restriction is available with the sandbox attribute. When the sandbox attribute is used in the `<iframe>`, it prevents the execution of scripts, links going out of the frame, plug-ins, accessing cookies and submitting forms.
+
+More information about [sandbox](https://www.w3schools.com/tags/att_iframe_sandbox.asp).
+
+
+----------------------------------------------------------------------------------------------------
+
+## 7. HTML -forms and interactive elements 
 
 
 
