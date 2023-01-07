@@ -2215,7 +2215,7 @@ large display
 
 
 ### 6.4. Use icons
-* These icons are called favicons, these are good for recognition on the website. Favicons can be created with any image editing software. But also on the web there are online tools with which icons can be created e.g. [favicon.io](https://favicon.io/)
+* These icons are called favicons, these are good for recognition on the website. Favicons can be created with any image editing software. But also on the web there are online tools with which icons can be created e.g. [favicon.io](https://favicon.io/) . Favicons should be saved in `.ico` format. If another file format is used, the MIME type should be specified (e.g. PNG format: `type="image.png"`). The size of a favicon is usually `16x16` or `32x32` pixels. Additionally icons can be used for mobile devices e.g. IPhone or IPad the value `apple-icon-touch` is specified at `rel`.
   - example --> *6_Graphics_Multimedia/Part_5/index.html*
      ```
       <head>
@@ -2236,6 +2236,24 @@ large display
 
 
 ### 6.5. Vector graphics (SVG)
+* If vector graphics are to be used, there is the XML format SVG (Scalable Vector Graphics) for this purpose. The advantage of SVG is that a graphic never loses quality when zooming in or out. SVG can be created and edited with a simple text editor. 
+The SVG is in XML syntax and therefore platform independent, so it can be created in PHP, dynamically modified with JavaScript or formatted with CSS. SVGs are used for e.g. cartographies, illustrations like logos, icons, scientific diagrams, program flow charts, technical drawings or visualization of graphs.
+The quality of the SVG graphic always remains the same even if the `width` and `height` attributes are used to scale the size of the display.
+  - example --> *6_Graphics_Multimedia/Part_6/index.html*
+     ```
+      <h1>SVG as graphic reference</h1>
+      <p>
+        <img src="svg/logo.svg" width="100" height="50" alt="50%"><br>
+        <img src="svg/logo.svg" alt="100%"><br>
+        <img src="svg/logo.svg" width="400" height="200" alt="200%">	
+      </p>
+     ```
+![Preview](6_Graphics_Multimedia/Images/Preview_6_6.PNG)
+
+Editors for SVG graphics editing:
+- [Inkscape](www.inkscape.org)
+- [SVG-edit](https://gitbub.com/SVG-Edit/svgedit)
+- any simple text editor
 
 
 
