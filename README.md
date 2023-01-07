@@ -2403,9 +2403,9 @@ HTML attributes for the \<video> element
 
 | `preload`   | This allows you to specify how the video file should be preloaded when the web page is loaded. The following values are possible: |
 | -------------- | ------------------------------------------------- |
-|`preload="auto"`| (default) The web browser should load the complete video file when the page is loaded.
-|`preload="metadata"`| Only the metadata should be loaded when the page is loaded.
-|`preload="none"`| The web browser should not load the video file at all the video file at all when the page is loaded |
+|`preload="auto"`| (default) The web browser should load the complete video file when the page is loaded. |
+|`preload="metadata"`| Only the metadata should be loaded when the page is loaded. |
+|`preload="none"`| The web browser should not load the video file at all the video file at all when the page is loaded. |
 
 
 It is also possible to play a video via YouTube. Works only on live server.
@@ -2428,5 +2428,42 @@ It is also possible to play a video via YouTube. Works only on live server.
      ```
 
 ### 6.8. Play audio files with the HTML element \<audio>
+In principle the `<audio>` element works, also here there are 3 formats: *MP3*, *OGG* and *WAV* which can be played without any additional software. All web browsers can handle the *MP3* format.
+  - example --> *6_Graphics_Multimedia/Part_13/index.html*
+     ```
+      <body>
+        <h1>Play audio</h1>
+        <audio controls>
+          <source src="Sound/EinsteinWAV.wav" type="audio/wav" />
+          <source src="Sound/EinsteinOGG.ogg" type="audio/ogg" />
+          <source src="Sound/EinsteinMP3.mp3" type="audio/mpeg" />
+            Your web browser does not support the video tag.
+        </audio>
+        <p>
+          Albert Einstein interview
+        </p>
+      </body>
+     ```
+![Preview](6_Graphics_Multimedia/Images/Preview_6_13.PNG)
+
+HTML attributes for the \<audio> element 
+| attribute   | Explanation         								              |
+| ----------- | ------------------------------------------------- |
+| `autoplay`  | The audio file is played automatically when the web page has finished loading. |
+| `controls`  | Displays a bar with control functions such as play, pause, etc., with which the user can control the audio file. |
+| `loop`      | When the audio file has finished playing, it will be played again with this attribute. |
+| `muted`     | The sound of the audio file is muted with this attribute. |
+| `type`      | specification of the audio format |
+| `src`       | This specifies the location (URL) of the audio file. |
+
+| `preload`   | The audio file is played automatically when the web page has finished loading. |
+| ----------- | ------------------------------------------------- |
+|`preload="auto"`| (Default setting) The web browser should load the 
+load the complete audio file when the page is loaded. |
+|`preload="metadata"`| Only the metadata should be loaded, 
+when the page is loaded. |
+|`preload="none"`| The web browser should not load the audio file at all not load at all when the page is loaded. |
+
+
 
 
