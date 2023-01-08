@@ -590,7 +590,8 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - mainly serve to give meaning to the content, especially helpful for developers, search engines and screen readers
   - the content is divided into topic-related sections, helpful when creating individual chapters or subchapters
   
-  example --> *4_TheBody/Part_1/index.html* 
+  example --> *4_TheBody/Part_1/index.html*
+
      ```
       <body>
         <section>
@@ -614,6 +615,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - is relatively similar to `<section>`, however `<article>` should be used for self-contained sections, such as news item
 
   example --> *4_TheBody/Part_2/index.html*
+
      ```
       <body>
       <h1>My blog</h1>
@@ -639,6 +641,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   ![Preview](4_TheBody/Images/Preview_4_3B.PNG)
 
   example --> *4_TheBody/Part_3/indexA.html*
+
      ```
       <body>
       <h1>My blog</h1>
@@ -670,6 +673,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - should be used when whole blocks of links are needed
 
   example --> *4_TheBody/Part_4/index.html*
+
      ```
       <body>
       <nav>
@@ -729,6 +733,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - is used for headings, this element is used to define the content structure of a document
 
   example --> *4_TheBody/Part_5/indexA.html*
+
      ```
       <body>
       <h1>My blog</h1>
@@ -756,6 +761,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
  - `<footer>` does not have to be the last element in the document, it usually contains legal information, legal notice, contact information, no other element can be used inside the `<footer>`
 
   example --> *4_TheBody/Part_6/index.html*
+
      ```
       <body>
       <header>
@@ -785,6 +791,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - should be used exclusively for contact information about the author, it is best to use it in the `<footer>` element
 
   example --> *4_TheBody/Part_7/index.html*
+
      ```
       <body>
       <header>
@@ -846,6 +853,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - cannot be used within the *p elements* other group elements, headings or section elements
 
   example --> *4_TheBody/Part_8/index.html*
+
      ```
       <h2>HTML News</h2>
       <article>
@@ -864,6 +872,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - is needed to force a line break
 
   example --> *4_TheBody/Part_9/index.html*
+
      ```
       <address>
       Rick Sample<br>
@@ -888,7 +897,8 @@ The base-element specifies a base URL or base target for all relative URLs in an
 #### **\<hr>**
   - this creates a thematic separation, e.g. to separate a content more clearly from each other
 
-  example --> *4_TheBody/Part_10/index.html* 
+  example --> *4_TheBody/Part_10/index.html*
+
      ```
       <article>
         <h3>New HTML elements</h3>
@@ -914,6 +924,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the `<blockquote>` contains a `cite` attribute, this indicates the source of the quote, but unfortunately it is not yet visible in the web browser and therefore the source should be added to the web page additionally
 
   example --> *4_TheBody/Part_11/index.html*
+
      ```
       <article>
           <h3>New HTML elements</h3>
@@ -941,6 +952,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   ![Preview](4_TheBody/Images/Preview_4_12B.PNG)
 
   example --> *4_TheBody/Part_12/indexA.html*
+
      ```
       <body>
           <div class="header">
@@ -976,6 +988,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - is not a section element (`<section>`) but a pure grouping element
   
   example --> *4_TheBody/Part_13/index.html*
+
      ```
       <body>
       <header>
@@ -1006,6 +1019,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - for an additional optional caption `figcaption` is used
 
   example --> *4_TheBody/Part_14/index.html*
+
      ```
       <article>
           <h3>figure and figcaption in use</h3>
@@ -1025,6 +1039,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - lists can be nested
 
   example --> *4_TheBody/Part_15/index.html*
+
      ```
         <article>
             <h2>Unordered bulleted list with ul</h2>
@@ -1045,6 +1060,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - lists can be nested
 
   example --> *4_TheBody/Part_15/index.html*
+
      ```
         <article>
             <h2>Numbered enumeration list with ol</h2>
@@ -1081,6 +1097,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 * within the `<li>` element it is also possible with the HTML attribute `value`
 
   example --> *4_TheBody/Part_15/index.html* 
+
      ```
         <article>
             <h2>Change enumeration list numbering</h2>
@@ -1099,7 +1116,8 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - with this, description lists are created
   - often used for glossaries, listing of special metadata and values
 
-  example --> *4_TheBody/Part_15/index.html* 
+  example --> *4_TheBody/Part_15/index.html*
+
      ```
         <article>
             <h2>Description lists with dl, dt and dd</h2>
@@ -1329,6 +1347,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - it is also useful to use the HTML attribute `title`, this helps e.g. translation systems or screen readers and also search engines, it shows the full meaning of the abbreviation as soon as you scroll over it
 
   example --> *4_TheBody/Part_19/index.html*
+
      ```
         <article>
             <h2>Abbreviations with abbr</h2>
@@ -1341,6 +1360,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - if the title of a book, movie, painting, song, etc. is to be displayed, `cite` can be used
 
   example --> *4_TheBody/Part_19/index.html* 
+
      ```
         <article>
             <h2>Working title with cite</h2>
@@ -1358,6 +1378,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - for `<` in code `&lt;` is used and `&gt;` for `>`, this is so that the HTML document can distinguish between code and code-text
 
   example --> *4_TheBody/Part_19/index.html*
+
      ```
         <article>
             <h2>Computer code with <code>code</code></h2>
@@ -1385,6 +1406,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - `samp` is used for the screen output of programs
 
   example --> *4_TheBody/Part_19/index.html*
+
      ```
         <article>
             <h2>Keyboard input with kdb and program output with samp</h2>
@@ -1401,6 +1423,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - this marks a definition
 
   example --> *4_TheBody/Part_19/index.html*
+
      ```
         <article>
             <h2>Definition/Term with dfn</h2>
@@ -1415,6 +1438,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - this variable can be part of an application, a mathematical expression or identifier of a variable in a programming language
 
   example --> *4_TheBody/Part_19/index.html*
+
      ```
         <article>
             <h2>Variables with var</h2>
@@ -1429,6 +1453,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - with the `bdi` -element (bi-directional isolation) the borders of the text direction change can be marked more exactly with a unicode-capable web browser
 
   example --> *4_TheBody/Part_19/index.html*
+
      ```
         <article>
             <h2>Change text direction with bdo and bdi</h2>
@@ -1447,6 +1472,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - with `<b>` the text is also displayed in bold, should be used for meaningful names or keywords
 
   example --> *4_TheBody/Part_19/index.html*
+
      ```
         <article>
             <h2>Emphasize text (em, strong, b and i)</h2>
@@ -1464,6 +1490,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - this is only for highlighting, to change the background color it is better to use `<span>` and then style with CSS
 
   example --> *4_TheBody/Part_19/index.html*
+
      ```
               <article>
                   <h2>mark text with mark</h2>
@@ -1484,6 +1511,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the `<q>` element is used when something is to be quoted in the middle of the text or when a spoken text is to be marked
 
   example --> *4_TheBody/Part_19/index.html*
+
      ```
         <article>
             <h2>Quoting continuous text with q</h2>
@@ -1499,6 +1527,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the `<s>` element (s = strike-through) is used to indicate that a text is outdated or incorrect, the browser will display the text as crossed out
 
   example --> *4_TheBody/Part_19/index.html*
+
      ```
         <article>
             <h2>Underline or strike through text with s and u</h2>
@@ -1515,6 +1544,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the `<ins>` element (ins = insert) is the counterpart to the `<del>` element, and is used when something new is added to a document 
 
   example --> *4_TheBody/Part_19/index.html*
+
      ```
         <article>
             <h2>mark changes with del and ins</h2>
@@ -1530,6 +1560,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the `<sup>` element (sub = superscript) is used to superscript the text
 
   example --> *4_TheBody/Part_19/index.html*
+
      ```
         <article>
             <h2>High or low points with sub and sup</h2>
@@ -1549,6 +1580,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - it is also advantageous when searching in search engines for articles of a certain time period
 
   example --> *4_TheBody/Part_19/index.html*
+
      ```
         <header>
             <h2>Date and time with time</h2>
@@ -1562,6 +1594,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - e.g. for copyrights, license information, legal notices
 
   example --> *4_TheBody/Part_19/index.html*
+
      ```
         <article>
             <header>
@@ -1575,6 +1608,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 
 #### **\<ruby>, \<rp> and \<rt>**
   - is an annotation system in which the text with annotations appears in one line
+
   example --> *4_TheBody/Part_19/index.html*
 
      ```
@@ -1595,6 +1629,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - also quite helpful is this element for JavaScript
 
   example --> *4_TheBody/Part_19/index.html*
+
      ```
         <article>
             <h2>The span element</h2>
@@ -1620,11 +1655,13 @@ The base-element specifies a base URL or base target for all relative URLs in an
  Another question, of course, is how to display these special characters when none of them are present on the keyboard. With the help of character entities:
   * Numeric entities: 
 	  - With the help of &#xxx; (xxx = encoding of the character), this is used when no input is possible from the keyboard.
+
      ```
       <p><bdo>&#1501;&#1503;&#1500;&#1513;</bdo> = shalom</p>
      ```
   * Banished entities:
     - e.g. the < is represented with `&lt;` and the > character with `&gt;`
+    
       ```
         <p>5 > 4 < 6</p>
       ```
