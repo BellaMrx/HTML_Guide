@@ -42,7 +42,7 @@
     - 6.7. Play videos with the \<video> HTML element
     - 6.8. Play audio files with the HTML element \<audio>
     - 6.9. Embedding other active content
-7. HTML -forms and interactive elements 
+7. Forms and interactive elements 
     - 7.1. Define an area for forms
 
 --------------------------------------------------------------------------------------------
@@ -102,9 +102,9 @@
     - good knowledge of HTML and co. necessary to update website
     - creation of many single files for static website can be very time consuming
 
+ This is a simplified representation of how a static web page is returned. The web browser first sends a request for a web page to the web server that hosts the web page. The web server finds the page and sends it back to the web server as a response. If it is not found, an error message is returned (status code 404).
  ![Preview](Images/staticWebsite.PNG)
 
- This is a simplified representation of how a static web page is returned. The web browser first sends a request for a web page to the web server that hosts the web page. The web server finds the page and sends it back to the web server as a response. If it is not found, an error message is returned (status code 404).
 
   * **Dynamic websites**
     - usually a CMS (Content-Management-System) generates the web pages.
@@ -122,13 +122,12 @@
     - there are higher costs, because special features like script languages and databases are needed, but not as expensive as a few years ago
     - for creating own modules and plug-ins programming skills are necessary
 
- ![Preview](Images/dynWebsite.PNG)
-
  This is a simplified representation of how a dynamic web page is created. A web browser makes a request for a web page to a web server. The web server finds the page and passes it to the application server. The application server searches the page for commands and completes the web page. Additionally, instructions for database queries may be included. The database driver then returns the requested record to the application server, where the data is inserted into the web page. The web page is then sent as a response to the web browser.
+ ![Preview](Images/dynWebsite.PNG)
 
 
 ### 1.3. Programming languages for web development
-  * This is an overview of the programming language that a web developer must know.
+ This is an overview of the programming language that a web developer must know.
 
   * **HTML** (Hypertext Markup Language)
     - is a text-based markup language for structuring electronic documents such as text with hyperlinks, images and other content. HTML documents are the basis of the World Wide Web and are displayed by web browsers. In addition to the content displayed by the browser, HTML files can contain additional details in the form of meta information, e.g. about the languages used in the text, the author or the summarized content of the text --> [W3C](https://www.w3.org/)
@@ -145,29 +144,28 @@
 
 
 ### 1.4. Software for the creation and presentation of web pages
-  * Basically, on every operating system there is a text editor for creating web pages and a browser for displaying the web page.
-	  - Windows: Notepad
-	  - Linux: e.g. gEdit
-	  - Mac: TextEdit 
+ Basically, on every operating system there is a text editor for creating web pages and a browser for displaying the web page.
+  - Windows: Notepad
+  - Linux: e.g. gEdit
+  - Mac: TextEdit 
 
-  * Most web developers use special editors, the advantage is on the one hand the syntax highlighting and many other helpful functions for the creation of web pages.
-    - Visual Studio Code --> [VSCode](https://code.visualstudio.com/) (my favorite)
-    - Adobe Brackets --> [Adobe Brackets](https://brackets.io/) 
-    - Atom --> [Atom](https://atom.io/) 
-    - Sublime Text --> [Sublime Text](https://www.sublimetext.com/) 
-    - Notepad++ --> for beginners 
+ Most web developers use special editors, the advantage is on the one hand the syntax highlighting and many other helpful functions for the creation of web pages.
+  - Visual Studio Code --> [VSCode](https://code.visualstudio.com/) (my favorite)
+  - Adobe Brackets --> [Adobe Brackets](https://brackets.io/) 
+  - Atom --> [Atom](https://atom.io/) 
+  - Sublime Text --> [Sublime Text](https://www.sublimetext.com/) 
+  - Notepad++ --> for beginners 
 
-  * For the display of the HTML document you need a web browser. For testing it is best to use several web browsers, because there are small differences. You should also test the web pages on different devices, such as desktop computer, laptop, tablet and smartphone. In the best case, the display of the website adapts to the devices. This adaptability is called responsive web design. This adaptation does not happen automatically.
-	  - the main web browsers currently are (largest mart share): Google Chrome, Mozilla Firefox, Safari (Apple) and Edge (Microsoft).
-	  - Other web browsers (smaller market share): Vivaldi, Opera, Brave 
+ For the display of the HTML document you need a web browser. For testing it is best to use several web browsers, because there are small differences. You should also test the web pages on different devices, such as desktop computer, laptop, tablet and smartphone. In the best case, the display of the website adapts to the devices. This adaptability is called responsive web design. This adaptation does not happen automatically.
+  - the main web browsers currently are (largest mart share): Google Chrome, Mozilla Firefox, Safari (Apple) and Edge (Microsoft).
+  - Other web browsers (smaller market share): Vivaldi, Opera, Brave 
 
-  * The HTML renderer (browser engine) converts the source code into a visible web page.
-    
-    | Renderer  | Browser                                                     |
-    | --------- | ----------------------------------------------------------- |
-    | Quantum   | Firefox                                                     |
-    | Webkit    | Safari and all web browsers on iOS                          |
-    | Blink     | Chrome, Edge, Samsung Internet, Vivaldi, Opera, Brave etc.  |
+ The HTML renderer (browser engine) converts the source code into a visible web page.    
+| Renderer  | Browser                                                     |
+| --------- | ----------------------------------------------------------- |
+| Quantum   | Firefox                                                     |
+| Webkit    | Safari and all web browsers on iOS                          |
+| Blink     | Chrome, Edge, Samsung Internet, Vivaldi, Opera, Brave etc.  |
 
 
 ### 1.5. Create and view a simple web page
@@ -176,11 +174,11 @@
   3. save HTML code, it is recommended to create a new directory for it. When saving the file, make sure that the file is saved with the file extension *.html*. As encoding *UTF-8* is always good, you can also use *ANSI* for the time being.
   4. The HTML file can now be opened with a browser, usually it is enough to double-click the file and the standard browser opens and displays the file.
 
- * **Check HTML-Code**
-   - Whether the HTML code or the web page is correct, you can check it, with the online tool  at W3C [Validator](http://validator.w3.org) you can validate the code (in many editors such a function is available or can be integrated later)
-   - if the code is error free a green bar is displayed (W3C)
-   - If the validation is invalid, the error is listed with a message. An error output does not mean that the web page cannot be displayed, because the web browsers are relatively error tolerant, but it can lead to errors.
-   - Many large websites have errors, hardly any site is 100% error free.
+**Check HTML-Code**
+  - Whether the HTML code or the web page is correct, you can check it, with the online tool  at W3C [Validator](http://validator.w3.org) you can validate the code (in many editors such a function is available or can be integrated later)
+  - if the code is error free a green bar is displayed (W3C)
+  - If the validation is invalid, the error is listed with a message. An error output does not mean that the web page cannot be displayed, because the web browsers are relatively error tolerant, but it can lead to errors.
+  - Many large websites have errors, hardly any site is 100% error free.
 
  * Advantages to validate the HTML code:
    - the correct display in all browsers, the browsers are relatively error-tolerant but there are differences, especially with mobile devices you should pay attention to it
@@ -2495,7 +2493,7 @@ When embedding an external HTML document, it may be necessary to restrict certai
 
 ----------------------------------------------------------------------------------------------------
 
-## 7. HTML -forms and interactive elements 
+## 7. Forms and interactive elements 
 HTML forms are mostly used for e.g. contact forms, surveys, registrations on a website or newsletter, guestbooks, order forms, search functions, adding and uploading data and more. HTML offers many different input fields such as text input fields, dropdown lists and simple buttons.
 
 
