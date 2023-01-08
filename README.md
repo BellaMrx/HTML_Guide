@@ -1661,7 +1661,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
      ```
   * Banished entities:
     - e.g. the < is represented with `&lt;` and the > character with `&gt;`
-    
+
       ```
         <p>5 > 4 < 6</p>
       ```
@@ -1680,7 +1680,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 
 ## 5. Tables and hyperlinks
 ### 5.1. Structuring data in a table
-  - Tables are useful to display related data e.g. stock quotes, financial data, travel plans or sports results in a grid of rows and columns
+ Tables are useful to display related data e.g. stock quotes, financial data, travel plans or sports results in a grid of rows and columns
 
 | HTML elements   | Explanation              |
 | --------------- | ------------------------ |
@@ -1700,7 +1700,9 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - within the table row the individual columns are noted with `<td> ... </td>` (td = table data)
   - the table headings are displayed between `<th> ... </th>` (th = table heading), can be used like `<td>`, but the text is displayed bold
   - the web browser displays the table without formatting, height and width usually adapts to the content
-  - example --> *5_Tables_Hyperlinks/Part_1/index.html*
+
+  example --> *5_Tables_Hyperlinks/Part_1/index.html*
+
      ```
       <h1>Browser statistics November 2021 - 2022</h1>
       <table>
@@ -1732,14 +1734,15 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - if an empty cell is to be displayed, an empty `<td> ... </td>` or `<th> ... </th>` must be created anyway
   - with old web browsers it could come to problems with blanks then simply use the HTML entity `&nbsp;` to force a blank space
 
-  - a simple table structure with \<table>, \<tr>, \<td>, \<th>  
-![Preview](Images/Table_Image.PNG)
+  a simple table structure with \<table>, \<tr>, \<td>, \<th>  
+  ![Preview](Images/Table_Image.PNG)
 
-* **colspan** and **rowspan**
-	- table entries can be summarized over several rows with the HTML attribute `colspan` and `rowspan`
-	- the numeric value specifies the number of cells to be merged
+#### **colspan** and **rowspan**
+  - table entries can be summarized over several rows with the HTML attribute `colspan` and `rowspan`
+  - the numeric value specifies the number of cells to be merged
   - the `scope` attribute specifies whether the table heading should apply to a column (scope="col") or a row (scope="row")
-  - summarize columns - example --> *5_Tables_Hyperlinks/Part_2/indexA.html*
+
+  - summarize columns - example --> *5_Tables_Hyperlinks/Part_2/indexA.html* 
      ```
       <h1>Daily planning</h1>
       <table>
@@ -1783,14 +1786,17 @@ The base-element specifies a base URL or base target for all relative URLs in an
      ```
 ![Preview](5_Tables_Hyperlinks/Images/Preview_5_2B.PNG)
 
-* HTML attributes for the table elements 
+#### **HTML attributes for the table elements** 
   - the table element supports only the `border` attribute to display a frame, the value may be `"1"` or `" "`
+
      ```
       <table border="1">
       ...
       </table>
      ```
+
   - but this variant is not used, instead you use CSS to style the table
+
      ```
       <head>
         <style>
@@ -1799,9 +1805,11 @@ The base-element specifies a base URL or base target for all relative URLs in an
       </head>
      ```
 
-* Structure tables with \<thead>, \<tbody> and \<tfoot>
-	- the table header is displayed between `<thead> ... </thead>` (thead = table head)
-  - example --> *5_Tables_Hyperlinks/Part_3/index.html*
+#### **Structure tables with \<thead>, \<tbody> and \<tfoot>**
+  - the table header is displayed between `<thead> ... </thead>` (thead = table head)
+
+  example --> *5_Tables_Hyperlinks/Part_3/index.html*
+
      ```
         <thead>
             <tr>
@@ -1813,6 +1821,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
      ```
 
   - the actual data is marked between `<tbody> ... </tbody>` (tbody = table body)
+
      ```
         <tbody>
             <tr>
@@ -1830,6 +1839,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
      ```
 
 	- the table foot is displayed between `<tfoot> ... </tfoot>` (tfoot = table foot)
+
      ```
         <tfoot>
             <tr>
@@ -1842,10 +1852,12 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ![Preview](5_Tables_Hyperlinks/Images/Preview_5_3.PNG)
 
 
-* Group columns of a table with \<colgroup> and \<col>
+#### **Group columns of a table with \<colgroup> and \<col>**
   - the elements `<colgroup>` (colgroup = column group) and `<col>` are used to divide single columns into semantic and logical areas
   - to combine several elements in one `col` element, the attribute `span` is used with specification of a value for the number of columns
-  - example --> *5_Tables_Hyperlinks/Part_4/index.html*
+
+  example --> *5_Tables_Hyperlinks/Part_4/index.html*
+
      ```
       <table>
         <colgroup>
@@ -1857,11 +1869,13 @@ The base-element specifies a base URL or base target for all relative URLs in an
      ```
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_4.PNG)
 
-* Label tables with \<caption> or \<figcaption>
+#### **Label tables with \<caption> or \<figcaption>**
   - to label a table `<caption>` is used, or the new variants `<figure>` and `<figcaption>`
 
-  - \<caption>
-  - example --> *5_Tables_Hyperlinks/Part_5/indexA.html*
+  - **\<caption>**
+
+  example --> *5_Tables_Hyperlinks/Part_5/indexA.html*
+
      ```
       <h1>Browser statistics 2021 - 2022</h1>
       <table>
@@ -1879,7 +1893,9 @@ The base-element specifies a base URL or base target for all relative URLs in an
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_5A.PNG)
 
   - further labels can be added with the HTML elements `details` and `summary`
-  - example --> *5_Tables_Hyperlinks/Part_5/indexA.html*
+
+  example --> *5_Tables_Hyperlinks/Part_5/indexA.html*
+
      ```
       <h1>Browser statistics 2021 - 2022</h1>
       <table>
@@ -1902,8 +1918,10 @@ The base-element specifies a base URL or base target for all relative URLs in an
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_5B_1.PNG)
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_5B_2.PNG)
 
-  - \<figcaption>
-  - example --> *5_Tables_Hyperlinks/Part_5/indexC.html*
+  - **\<figcaption>**
+
+  example --> *5_Tables_Hyperlinks/Part_5/indexC.html*
+
      ```
         <figure>
             <table>
@@ -1926,22 +1944,24 @@ The base-element specifies a base URL or base target for all relative URLs in an
 
 
 ### 5.2. Hyperlinks with \<a>
-* Hyperlinks are important elements of HTML because they allow you to move from one web page to another. They are needed to structure and link projects. Starting from the main web page, links are often used to go to other sub-pages and back to the main page. Only with the linking of several files a web page becomes a meaningfully operable web page.
+ Hyperlinks are important elements of HTML because they allow you to move from one web page to another. They are needed to structure and link projects. Starting from the main web page, links are often used to go to other sub-pages and back to the main page. Only with the linking of several files a web page becomes a meaningfully operable web page.
   - Hyperlinks are represented with the `<a>` element (a = anchor)
   - the text between `<a> ... </a>` is called link text and is activated by the `href` attribute
   - between the `a` element other elements can be used, not only pure text, e.g. a graphic as hyperlink (should not be too much, could overwhelm users)
   - the hyperlink is usually underlined in blue by the browser, if it has already been visited it is usually displayed in purple (depending on the browser), but this can be changed with CSS
   - the most important attribute is href, this attribute first activates the hyperlink
+
      ```
                {      Hyperlink      }  {      Text       }
       <a href="https://www.google.com/">Google: click here</a>
      ```
 
-* Folder structure
+#### **Folder structure**
 
   ![Preview](5_Tables_Hyperlinks/Images/folder_structure.png)
 
-  - example --> *5_Tables_Hyperlinks/Part_6/index.html*
+  example --> *5_Tables_Hyperlinks/Part_6/index.html*
+
      ```
       <nav>
         Blog |
@@ -1952,7 +1972,8 @@ The base-element specifies a base URL or base target for all relative URLs in an
      ```
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_6.PNG)
 
-  - example --> *5_Tables_Hyperlinks/Part_6/sites/links.html*
+  example --> *5_Tables_Hyperlinks/Part_6/sites/links.html*
+
      ```
       <nav>
         <a href="../index.html">Blog</a> |
@@ -1963,8 +1984,9 @@ The base-element specifies a base URL or base target for all relative URLs in an
      ```
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_6_links.PNG)
 
-* Links to other external websites 
-  - example --> *5_Tables_Hyperlinks/Part_7/index.html*
+#### **Links to other external websites** 
+  example --> *5_Tables_Hyperlinks/Part_7/index.html*
+
      ```
       <h3>Related links</h3>
       <nav>
@@ -2006,7 +2028,9 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - this is browser dependent and may require the user to set up a specific application, the functionality of a mailto link is not reliable
   - The specification of an email address is often obligatory, but this also means that unsolicited commercial emails can be expected, as web crawlers scan the web pages for email addresses. There is a way around this: 1. display the email address as a graphic, but this has the disadvantage that screen readers cannot read the email. 2. obfuscate the email with JavaScript [for more info: click here](http://alistapart.com/article/gracefulemailobfuscation). 3. the [reCAPTCHA](http://google.com/recaptcha/intro/index.html) module of Google
   - When specifying the email address on the website, it is important to observe the legal requirements.
-  - example --> *5_Tables_Hyperlinks/Part_8/index.html*
+
+  example --> *5_Tables_Hyperlinks/Part_8/index.html*
+
      ```
       <footer>
         <a href="mailto:example@email.com">Send Email</a>
@@ -2017,7 +2041,9 @@ The base-element specifies a base URL or base target for all relative URLs in an
 * **links to other content types**
 	- if links are set to other types of documents not used on the web (e.g. Word, Excel, PDF), it depends on the web browser how it is displayed
   - it is also important to always inform the user what is behind a link
-  - example --> *5_Tables_Hyperlinks/Part_9/index.html*
+
+  example --> *5_Tables_Hyperlinks/Part_9/index.html*
+
      ```
       <body>
         <h1>Reference to other content types</h1>
@@ -2031,7 +2057,9 @@ The base-element specifies a base URL or base target for all relative URLs in an
 * **download**
   - with the attribute download the browser is instructed to offer the file for download, importantly the user must be informed about what is being downloaded 
   - old web browsers do not support the download attribute
-  - example --> *5_Tables_Hyperlinks/Part_10/index.html*
+
+  example --> *5_Tables_Hyperlinks/Part_10/index.html*
+
      ```
       <body body>
         <h1>Reference to other content types</h1>
@@ -2067,6 +2095,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 	- with `target` a link target is opened in a new window or tab, if it gets the attribute value `_blank`
 	- The goal is that the visitor does not get lost on the main page, and returns there when the newly opened page has been read
 	- `_blank` is the most used attribute value of `target` further are `_self`, `_parent`, `_top`
+
      ```
         <p>
           As already reported, the
@@ -2078,7 +2107,9 @@ The base-element specifies a base URL or base target for all relative URLs in an
 * **links to specific parts of a web page**
 	- to get to a certain paragraph can be annoying on large web pages if you have to scroll too much
 	- therefore you can set anchors, with an `id` and with `#` you can call the section then 
-  - example --> *5_Tables_Hyperlinks/Part_11/index.html*
+
+  example --> *5_Tables_Hyperlinks/Part_11/index.html*
+  
      ```
       <body>
         <h1 id="top">Contents</h1>
