@@ -2195,6 +2195,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
           <figcaption>The Cape daisy (Osteospermum ecklonis) originates from South Africa and is very popular in Europe.</figcaption>
         </figure>
      ```
+     
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_2.PNG)
 
 | attribute   | Explanation         								              |
@@ -2473,6 +2474,7 @@ Is nothing more than a white area on which something can be drawn with the help 
   - In the introductory `<canvas>` tag, the `id` is specified with , `width` and `height` determine the size of the drawing area. The `id` is particularly important in order to be able to access the `<canvas>` element later with JavaScript.
 
   example --> *6_Graphics_Multimedia/Part_9/index.html*
+
      ```
       <head>
         <meta charset="UTF-8">
@@ -2616,7 +2618,7 @@ It is possible to include videos, audio files and images in an HTML document wit
 With this element it is possible to embed something in an HTML document. In practice it often happens that this element is used to embed other HTML document.
 
   example --> *6_Graphics_Multimedia/Part_14/index.html*
-  
+
      ```
       <body>
         <h1>use iframe</h1>
