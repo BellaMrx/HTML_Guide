@@ -43,6 +43,7 @@
     - 6.8. Play audio files with the HTML element \<audio>
     - 6.9. Embedding other active content
 7. HTML -forms and interactive elements 
+    - 7.1. Define an area for forms
 
 --------------------------------------------------------------------------------------------
 
@@ -2495,6 +2496,35 @@ When embedding an external HTML document, it may be necessary to restrict certai
 ----------------------------------------------------------------------------------------------------
 
 ## 7. HTML -forms and interactive elements 
+HTML forms are mostly used for e.g. contact forms, surveys, registrations on a website or newsletter, guestbooks, order forms, search functions, adding and uploading data and more. HTML offers many different input fields such as text input fields, dropdown lists and simple buttons.
 
 
+| HTML elements | Explanation          								                |
+| ------------- | --------------------------------------------------- |
+| `<form>`      | Use this element to define the HTML forms in the HTML document. |
+| `<fieldset>`  | You can use the fieldset element to combine multiple form elements, such as input fields, into a logical group. Many web browsers additionally frame this area visually. You can also use the *legend* element to define a heading for this group. |
+| `<legend>`    | Use the *legend* element to specify a heading for a *fieldset* group. |
+| `<label>`     | Marks a text as a simple text label in the form. Using the *for* attribute, you can associate the text label with an *input* element and thus have a label set for an input field. |
+| `<datalist>`  | This defines a predefined list of options for a single-line text field for an *input* element. The *datalist* element uses autocompletion, where the user sees a kind of dropdown list of predefined values. Using the *list* attribute in the input element associates the element with a *datalist* element. You define the individual options of the list using the *option* element and *value* attribute. |
+| `<input>`     | With this you define an input field in which the user can enter different types of data. What kind of data this is and how the *input* element is represented depends on the *type* attribute used. The *input* element is also a stand-alone element without a closing tag. |
+| `<button>`    | With this you define a button similar to `<input type="submit">`, but you can also include graphics and use other HTML elements. |
+| `<select>`    | With this you define a selection list with fixed entries in a form, from which the user can select an entry. An entry in the list, on the other hand, is defined within the *select* element with the *option* element. |
+| `<optgroup>`  | This allows you to define suboptions grouped in an extensive *select* list. |
+| `<option>`    | Here you define the individual entries of a *select* -selection list from which the user can choose.  |
+| `<textarea>`  | Use this element to create a multiline text input field. |
+| `<output>`    | The *output* element defines an output area for the result of calculations. |
+| `<progress>`  | This allows you to visualize a progress bar or a history for a task, such as a questionnaire or download. |
+| `<meter>`     | This element visualizes a certain size of scalar values with a state indicator and using various HTML attributes. |
 
+### 7.1. Define an area for forms
+An area in the HTML form is marked between `<form> ... </form>`, everything in between belongs to the form. There can be used different HTML input fields like text input fields, selection lists and labels.
+Two typical attributes that are commonly used are `action` and `method`.
+- `action`: Here the URL is specified, which is called when submitting the form and to which the entered data is to be transferred. This is often a PHP script that processes the transmitted data.
+- `method`: This specifies the HTTP request method, how the data should be sent to the server for processing. The default setting is `method="get"`, with which the browser appends the data as a parameter to the end of the URL. For large amounts of data, however, `method="post"` is used, which means that the data is not sent via the URL, but transferred to the body of the HTTP request.
+
+The two attributes `action` and `method` do not necessarily have to be used in the `<form>` tag. The attributes are unnecessary, for example, if the data entered in the form is only processed with JavaScript, e.g. to perform simple calculations. For such purposes, you do not need a URL to be called or an HTTP request method.
+
+Other attributes are:
+- `enctype`: The default value is the MIME type `"application/x-www-form-urlencoded"`, which masks characters that have a special meaning in a URL with URL encoding. For example, a space character is transmitted as the string `%20`. If files are uploaded, the value `"multipart/form-data"` should be used.
+- `accept-charset`: Here you specify with which character encoding the data should be sent to the web server e.g. `"UFT-8"`.
+- `target`: This specifies the target window in which the web server should output its response. The values are `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.
