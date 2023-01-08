@@ -293,32 +293,32 @@ Most HTML elements can be nested and contain other HTML elements, creating a hie
   - is the first specification in an HTML document, and not an HTML tag but an instruction
   - it is an instruction for the web browser, in which HTML version the web page was created 
 
-### **\<html> ... \</html>**
+#### **\<html> ... \</html>**
   - informs the web browser that there is HTML code present
   - it encloses all other elements in the HTML code (except `<!doctype html>`)
   - there you can also specify the language `lang="en "` (very helpful for accessibility)
 
-### **\<head> ... \</head>**
+#### **\<head> ... \</head>**
   - here information is given which is evaluated by the web browser and search engines e.g. scripts, stylesheets, meta information with information about the HTML document.  
   - the `<title> ... </title>` specifies only the title of the web page that can be seen in the browser
 
-### **\<body> ... \</body>**
+#### **\<body> ... \</body>**
   - the body element is the displayable area of an HTML document
   - everything contained in it, such as texts, images, hyperlinks or tables is displayed in the browser
+
 
 ------------------------------------------------------------------------------------------------
 
 ## 3. The header data of an HTML document
 ### 3.1. The HTML elements for the header
-* Between `<head>` and `</head>` different HTML elements can be inserted, with which the contents and the representation can be controlled. Relationships between the web browser and other pages or documents can also be established there. The content in the header (except **title**) is not displayed in the browser. The **head** element must follow directly after the open **html** element. The only specification in the **head** area that should always be made is the **title** element.. 
+ Between `<head>` and `</head>` different HTML elements can be inserted, with which the contents and the representation can be controlled. Relationships between the web browser and other pages or documents can also be established there. The content in the header (except **title**) is not displayed in the browser. The **head** element must follow directly after the open **html** element. The only specification in the **head** area that should always be made is the **title** element.. 
 
-
-| HTML element            | Explanation                                                               |
-|------------------------ | --------------------------------------------------------------------------|
-| `<title>...</title>`    | the **title** of the HTML document (visible in the browser)                         |
-| `<base>`                | sets base URLs / targets for all relative URLs in a web page                    |
-| `<link>`                | sets logical links of the HTML document to other files to be included           |
-| `<style>...</style>`    | sets the local stylesheet rules for the HTML document                           |
+| HTML element            | Explanation                                                           |
+|------------------------ | --------------------------------------------------------------------- |
+| `<title>...</title>`    | the **title** of the HTML document (visible in the browser) |
+| `<base>`                | sets base URLs / targets for all relative URLs in a web page |
+| `<link>`                | sets logical links of the HTML document to other files to be included |
+| `<style>...</style>`    | sets the local stylesheet rules for the HTML document |
 | `<script>...<script>`   | includes the client-side scripts, may also be used outside the **head** element |
 | `<meta>`                | sets the metadata like keywords, descriptions or the character set for the HTML document |
 
@@ -345,36 +345,35 @@ Most HTML elements can be nested and contain other HTML elements, creating a hie
           </body>
         </html>
       ```
-
 The complete explanations for each tag will be given in the next chapters, these are just examples, at this point you don't need to understand it all.
 
 
 ### 3.2. The title element 
- * A title should be used in each HTML document, which is displayed in the browser header. Only one title element can be used per HTML document. The title element can be skipped, but the web page will not be considered valid. The title element serves the user e.g. if the page is saved as a bookmark, then the title is displayed as a name suggestion. And most importantly, the title has a high importance in search engines, because it is what the user sees first in the search engine when the pages are listed. 
-  - example --> *3_TheHeader/Part_1/index.html*
+ A title should be used in each HTML document, which is displayed in the browser header. Only one title element can be used per HTML document. The title element can be skipped, but the web page will not be considered valid. The title element serves the user e.g. if the page is saved as a bookmark, then the title is displayed as a name suggestion. And most importantly, the title has a high importance in search engines, because it is what the user sees first in the search engine when the pages are listed. 
+ 
+ example --> *3_TheHeader/Part_1/index.html*
    ```
     <head>
       <meta charset="UTF-8">
       <title>The heading of the HTML page</title>
     </head>
    ```
-![Preview](Images/BrowserTitle.PNG)
+ ![Preview](Images/BrowserTitle.PNG)
 
 
 ### 3.3. The base element
- * The base-element specifies a base URL or base target for all relative URLs in an HTML document. By defining such a base URL, a relative or absolute address to the file can be used in the document as if it were located directly on the same host or computer. Can be used only once in the HTML document.
-   - example --> *3_TheHeader/Part_2/index.html*
+The base-element specifies a base URL or base target for all relative URLs in an HTML document. By defining such a base URL, a relative or absolute address to the file can be used in the document as if it were located directly on the same host or computer. Can be used only once in the HTML document.
 
-    ```
-     <head>
-       <base href="https://www.w3schools.com/" target="_blank">
-     </head>
-    ```
-   source [w3school](https://www.w3schools.com/tags/tag_base.asp)
+ example --> *3_TheHeader/Part_2/index.html* --> source [w3school](https://www.w3schools.com/tags/tag_base.asp)
+   ```
+      <head>
+        <base href="https://www.w3schools.com/" target="_blank">
+      </head>
+   ```
 
 | Attributes | Explanation                                                                            |
 | ---------- | -------------------------------------------------------------------------------------- |
-| `href`     | The base URL is defined in the process. This URL is used by the web browser as the base address for relative and absolute path specifications in the document and is supplemented with this base URL.         |
+| `href`     | The base URL is defined in the process. This URL is used by the web browser as the base address for relative and absolute path specifications in the document and is supplemented with this base URL.   |
 | `target`   | This attribute is used to specify the target window in which the link target should be displayed. Possible values and their meaning are:                                                                        |
 | `_self`    | opens the link in the current window, is the default setting when `target` is not used             |
 | `_blank`   | opens the link in a new window or tab                                                              |
@@ -383,9 +382,9 @@ The complete explanations for each tag will be given in the next chapters, these
 
 
 ### 3.4. The link element
-* The link element is a stand-alone tag that may be used multiple times in the HTML document. In practice, it is often used to include an external CSS file, and other files. The relationship between the HTML document and the external document is specified with the HTML attribute `rel`.
-   - example --> *3_TheHeader/Part_3/index.html*
-
+ The link element is a stand-alone tag that may be used multiple times in the HTML document. In practice, it is often used to include an external CSS file, and other files. The relationship between the HTML document and the external document is specified with the HTML attribute `rel`.
+ 
+ example --> *3_TheHeader/Part_3/index.html*
    ```
     <head>
       <title>Logical linking with link</title>
@@ -418,8 +417,9 @@ The complete explanations for each tag will be given in the next chapters, these
 
 
 ### 3.5. The style element
-* This element can be used to include style information (CSS) within the HTML document.
-   - example --> *3_TheHeader/Part_4/index.html*
+ This element can be used to include style information (CSS) within the HTML document.
+ 
+ example --> *3_TheHeader/Part_4/index.html*
    ```
     <head>
       <style type="text/css">
@@ -435,7 +435,7 @@ The complete explanations for each tag will be given in the next chapters, these
       <meta charset="UTF-8">
     </head>
    ```
-![Preview](3_TheHeader/Images/Preview_3_4.PNG)
+ ![Preview](3_TheHeader/Images/Preview_3_4.PNG)
 
 | Attributes  | Explanation                                                                       |
 | ----------- | --------------------------------------------------------------------------------- |
@@ -444,8 +444,8 @@ The complete explanations for each tag will be given in the next chapters, these
 
 
 ### 3.6. The script element
-* This element is used to include scripts in a document. The script can either be included directly in the HTML document between `<script>...</script>`, or an external script with the src attribute.
-  - example --> *3_TheHeader/Part_5/indexA.html* 
+ This element is used to include scripts in a document. The script can either be included directly in the HTML document between `<script>...</script>`, or an external script with the src attribute.
+ example --> *3_TheHeader/Part_5/indexA.html* 
    ```
     <head>
       <title>Use the script element</title>
@@ -458,7 +458,7 @@ The complete explanations for each tag will be given in the next chapters, these
     </head>
    ```
 
-  - example --> *3_TheHeader/Part_5/indexB.html* --> external script
+ example --> *3_TheHeader/Part_5/indexB.html* --> external script
    ```
     <head>
       <title>Use the script element</title>
@@ -467,9 +467,8 @@ The complete explanations for each tag will be given in the next chapters, these
     </head>
    ```
 
-
-| Attributes  | Explanation                                                                                |
-| ----------- | ------------------------------------------------------------------------------------------ |
+| Attributes  | Explanation                                                                |
+| ----------- | -------------------------------------------------------------------------- |
 | `async`       | the script is executed asynchronously with the HTML document, can only be used for external scripts |
 | `charset`     | lsets the character encoding for the external script			 				|
 | `defer`       | the web page is parsed first and then the script is executed, can only be used for external scripts |
@@ -478,13 +477,13 @@ The complete explanations for each tag will be given in the next chapters, these
 
 
 ### 3.7. The meta element
-* This can be used to record additional information or data about the HTML document. This can be instructions for the web browser, the web server or a web crawler. This information is optional but often included. There are many such attributes, and many of these are not uniformly standardized. A meta element usually consists of two attributes (`http-equiv, name/content`).
+ This can be used to record additional information or data about the HTML document. This can be instructions for the web browser, the web server or a web crawler. This information is optional but often included. There are many such attributes, and many of these are not uniformly standardized. A meta element usually consists of two attributes (`http-equiv, name/content`).
    ```
     <meta http-equiv="refresh" content="5">
    ```
 
-* The most used meta tags
-  - The HTML attribute `name` can contain any amount of information in the `content`. But some default metadata for `name` has been defined. The `name/content` combination is not meant for personal information, but about the HTML document. The `keyword` is important for search engines. 
+#### **The most used meta tags**
+ - The HTML attribute `name` can contain any amount of information in the `content`. But some default metadata for `name` has been defined. The `name/content` combination is not meant for personal information, but about the HTML document. The `keyword` is important for search engines. 
      ```
       <head>
         <meta name="author" content="John Doe">
@@ -492,57 +491,58 @@ The complete explanations for each tag will be given in the next chapters, these
       </head>
      ```
  
-  - The `http-equiv` specification is for the web browser to communicate with, but web servers don't actually parse HTML documents, so it's up to the browser who processes the specification.
-  - example --> *3_TheHeader/Part_6/indexA.html* 
+ - The `http-equiv` specification is for the web browser to communicate with, but web servers don't actually parse HTML documents, so it's up to the browser who processes the specification.
+ example --> *3_TheHeader/Part_6/indexA.html* 
+
      ```
       <head>
         <meta http-equiv="refresh" content="5">
       </head>
      ```
      
-  - This specification should be used if the web page was not created in English to be able to display special characters.
-  - example --> *3_TheHeader/Part_6/indexB.html* 
+ - This specification should be used if the web page was not created in English to be able to display special characters.
+ example --> *3_TheHeader/Part_6/indexB.html* 
+
      ```
       <head>
         <meta charset="UTF-8">
       </head>
      ```
 
-* The viewport
-  - is the area of the browser window in which the webinahlte are displayed. In order for the web page to be displayed properly on a mobile device, we need this specification (responsive web design)
-	- `initial-scale=1.0` ensures that the browser displays the page with the normal zoom level.
+#### **The viewport**
+ - is the area of the browser window in which the webinahlte are displayed. In order for the web page to be displayed properly on a mobile device, we need this specification (responsive web design)
+ - `initial-scale=1.0` ensures that the browser displays the page with the normal zoom level.
      ```
       <head>
         <meta name="viewport" content="width-device-width" initial-scale=1.0 >
       </head>
      ```
 
-* Webcrawler
-  - This allows the search robot to include the web page in the search engine index and follow the hyperlink. However, it can be omitted because that is the usual behavior of a web crawler. 
+#### **Webcrawler**
+ - This allows the search robot to include the web page in the search engine index and follow the hyperlink. However, it can be omitted because that is the usual behavior of a web crawler. 
      ```
       <head>
         <meta name="robots" content="index,follow">
       </head>
      ```
 
-  - This specifies the web page should not be included in the search engine index area. 
+ - This specifies the web page should not be included in the search engine index area. 
      ```
       <head>
         <meta name="robots" content="noindex">
       </head>
      ```
 
-* Helpful metadata for search engines
-	- For search engines `name` values have special meaning `keywords` and `description`. However, `keywords` has not so great importance anymore, in addition much abuse and the search engines the complete side after contents examines. `keywords` should still be specified because if the page is found, the search engine displays this text, if no specification of `keywords` then the search engine looks for any text of the page.
+#### **Helpful metadata for search engines**
+ - For search engines `name` values have special meaning `keywords` and `description`. However, `keywords` has not so great importance anymore, in addition much abuse and the search engines the complete side after contents examines. `keywords` should still be specified because if the page is found, the search engine displays this text, if no specification of `keywords` then the search engine looks for any text of the page.
      ```
       <head>
         <meta name="keywords" content="html, meta, tutorial">
       </head>
      ```
 
-* These meta data should be present in a HTML framework
-	- finally it is up to everyone which are needed, these should at least be included
-
+#### **These meta data should be present in a HTML framework**
+ - finally it is up to everyone which are needed, these should at least be included
      ```
       <head>
         <meta charset="UTF-8">
@@ -552,14 +552,14 @@ The complete explanations for each tag will be given in the next chapters, these
       </head>
      ``` 
 
-* The HTML attributes for the HTML element \<meta>
-
-| Attributes   | Explanation                                                                          |
-| ------------ | ------------------------------------------------------------------------------------ |
-| `content`    | passes the value associated with the attribute of `http-equiv` or `name`					    |
-| `charset`    | sets the character encoding for the HTML document				 						                |
+ The HTML attributes for the HTML element \<meta>
+| Attributes   | Explanation                                                                        |
+| ------------ | ---------------------------------------------------------------------------------- |
+| `content`    | passes the value associated with the attribute of `http-equiv` or `name`					  |
+| `charset`    | sets the character encoding for the HTML document				 						              |
 | `http-equiv` | is used for the HTTP response header. Some possible values are: `content-language`, `content-type`, `default-style`, `refresh`	|
 | `name`       | defines a name for the metadata. Some default values are: `application-name`, `author`, `description`, `generator`, `keywords`	|
+
 
 ------------------------------------------------------------------------------------------
 
