@@ -2109,7 +2109,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 	- therefore you can set anchors, with an `id` and with `#` you can call the section then 
 
   example --> *5_Tables_Hyperlinks/Part_11/index.html*
-  
+
      ```
       <body>
         <h1 id="top">Contents</h1>
@@ -2157,8 +2157,10 @@ The base-element specifies a base URL or base target for all relative URLs in an
 | `<embed>`, `<object>`, `<iframe>` | embed active elements such as PDF documents, Flash animations, Java applets, Word documents and many others |
 
 ### 6.1. Embedding images with \<img>
-  - Images can be included on a web page using the `<img>` element (img = image), after which there is no line break if `<img>` is used in the text. The attributes `src` and `alt` should be present at least. The `src` attribute indicates where the web browser will find the image file. The `alt` attribute gives an alternative description of the image file, this should be short (75-125 characters) describing what is in the image. This is useful if the image file cannot be loaded or for screen readers and also search engines. When creating web pages, the images should be placed in an extra directory (usually named "Images"). The `title` attribute can be used to display additional information when the user touches the image with the mouse.
-- example --> *6_Graphics_Multimedia/Part_1/index.html*
+ Images can be included on a web page using the `<img>` element (img = image), after which there is no line break if `<img>` is used in the text. The attributes `src` and `alt` should be present at least. The `src` attribute indicates where the web browser will find the image file. The `alt` attribute gives an alternative description of the image file, this should be short (75-125 characters) describing what is in the image. This is useful if the image file cannot be loaded or for screen readers and also search engines. When creating web pages, the images should be placed in an extra directory (usually named "Images"). The `title` attribute can be used to display additional information when the user touches the image with the mouse.
+
+  example --> *6_Graphics_Multimedia/Part_1/index.html*
+
      ```
       <h1>Beautiful world</h1>
       <p>
@@ -2174,14 +2176,18 @@ The base-element specifies a base URL or base target for all relative URLs in an
 * **width and height**
   - to scale the display size of images, `width` and `height` can be used, if the image is a bit too large
   - scaling with `width` and `height` is possible, but if possible the image should be adjusted to the correct size with an image editing program, on the one hand the data volume is reduced and the risk that the images are displayed distorted is eliminated
-  - example --> *6_Graphics_Multimedia/Part_2/index.html*
+
+  example --> *6_Graphics_Multimedia/Part_2/index.html*
+
      ```
         <img src="Images/flower_1920.jpg" alt="Purple flower" width="480" height="360">
      ``` 
 
 * **\<figure> and \<figcaption>**
   - with `<figure>` and `<figcaption>` it is possible to create separate captions
-  - example --> *6_Graphics_Multimedia/Part_2/index.html*
+
+  example --> *6_Graphics_Multimedia/Part_2/index.html*
+
       ```
         <h1>Purple flower</h1>
         <figure>
@@ -2201,11 +2207,13 @@ The base-element specifies a base URL or base target for all relative URLs in an
 | `width` 	  | specifies the horizontal extent (width) of the image in pixels        |
 
 ### 6.2. Create image maps
-* Reference-sensitive graphics (image maps) are links that are embedded within a graphic. An image map defined in HTML consists of three parts:
+ Reference-sensitive graphics (image maps) are links that are embedded within a graphic. An image map defined in HTML consists of three parts:
   - the actual image added to the HTML document with the img element, additionally within the `<img>` -tag the attribute `usemap` must be specified with an anchor to a `map` element
+
      ```
         <img src="Images/picture.jpg" alt="alternative text" usemap="#mapname">
      ``` 
+
   - the `map` element with the anchor name previously specified in the img element with the usemap attribute, it is recommended to place the `map` element at the beginning or at the end of the document
   - between `<map>` and `</map>` an area element is used for each area, there the coordinates with the actual reference sensitive area for the graphic are needed. Within the `<area>` tag, you can define a square area, a circular area, or a polygon. Each area element defines a clickable area in the image.
 
@@ -2215,8 +2223,9 @@ The base-element specifies a base URL or base target for all relative URLs in an
 | `<map>`    		| Area for the reference sensitive graphic            |
 | `<area>`    	| This defines a clickable area in the image          |
 
-  - example --> *6_Graphics_Multimedia/Part_3/index.html*
-  - in this example, in a rectangular graphic with 200 x 200 pixels, four rectangular reference-sensitive areas with 100 x 100 pixels have been defined. First the graphic popart.jpg is inserted into the HTML document. The value `#mood` is used as the anchor name in the `usemap` attribute. The reference sensitive area is introduced with the `map` element and the name of the image map (name="mood"). Between `<map>` and `</map>` the coordinates for the references are specified with the `area` element.
+  example --> *6_Graphics_Multimedia/Part_3/index.html*
+
+ In this example, in a rectangular graphic with 200 x 200 pixels, four rectangular reference-sensitive areas with 100 x 100 pixels have been defined. First the graphic popart.jpg is inserted into the HTML document. The value `#mood` is used as the anchor name in the `usemap` attribute. The reference sensitive area is introduced with the `map` element and the name of the image map (name="mood"). Between `<map>` and `</map>` the coordinates for the references are specified with the `area` element.
 
     ```
       <h1>What mood are you in?</h1>
@@ -2236,7 +2245,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_3_2.PNG)
 
 
-* HTML attributes for the HTML element \<area>
+#### **HTML attributes for the HTML element \<area>**
   - The shape attribute specifies the `shape` of an area. The `shape` attribute is used together with the `coords` attribute to specify the size, shape, and placement of an area.
   - Three forms are available for this:
     - `rect` (= rectangle)
@@ -2244,17 +2253,23 @@ The base-element specifies a base URL or base target for all relative URLs in an
     - `poly` (= polygon)
   - The `coords` attribute specifies the coordinates of an area in an image map. The `coords` attribute is used together with the shape attribute to specify the size, shape, and placement of an area.
   - The coordinates of the top-left corner of an area are `0,0`.
+
      ```
       <area shape="rect" coords="0,0,100,100" ...>
      ```
-  - If circle is used with shape, the coordinates are x,y,r (`chords="x,y,r"`). 
+
+  - If circle is used with shape, the coordinates are x,y,r (`chords="x,y,r"`).
+
      ```
       <area shape="circle" coords="100,100,50" ...>
      ```
+
   - If poly is used with shape, any number of coordinates with **x1,y1,x2,y2...xn,yn** can be used in coords. 
+
      ```
       <area shape="poly" coords="129,0,260,95,129,138">
      ```
+
 Pixel coordinates with a graphics program [Online Image Map Editor](http://maschek.hu/imagemap/imgmap/)
 
 ![Preview](Images/ImageMapXYAxis.PNG)
@@ -2300,8 +2315,10 @@ Pixel coordinates with a graphics program [Online Image Map Editor](http://masch
 
 
 ### 6.3. Load suitable images with \<picture>
-* The picture element allows to provide a suitable picture for all display sizes. Each source element in the `<picture>` element contains a query (media query) with the HTML attribute `media`, specifications such as viewport width, viewport height and alignment are queried. The sources of `<source>` are read from top to bottom. If the viewport is at least 1024 pixels (`min-width:1024px`), the image is loaded with 1024 pixels. If the viewport is at least 640 pixels, the image is loaded with 640 pixels.
-  - example --> *6_Graphics_Multimedia/Part_4/index.html*
+ The picture element allows to provide a suitable picture for all display sizes. Each source element in the `<picture>` element contains a query (media query) with the HTML attribute `media`, specifications such as viewport width, viewport height and alignment are queried. The sources of `<source>` are read from top to bottom. If the viewport is at least 1024 pixels (`min-width:1024px`), the image is loaded with 1024 pixels. If the viewport is at least 640 pixels, the image is loaded with 640 pixels.
+
+  example --> *6_Graphics_Multimedia/Part_4/index.html*
+
      ```
       <picture> 
         <source media="(min-width: 1024px)" srcset="Images/Image_1024.jpg">
@@ -2329,8 +2346,10 @@ large display
 
 
 ### 6.4. Use icons
-* These icons are called favicons, these are good for recognition on the website. Favicons can be created with any image editing software. But also on the web there are online tools with which icons can be created e.g. [favicon.io](https://favicon.io/) . Favicons should be saved in `.ico` format. If another file format is used, the MIME type should be specified (e.g. PNG format: `type="image.png"`). The size of a favicon is usually `16x16` or `32x32` pixels. Additionally icons can be used for mobile devices e.g. IPhone or IPad the value `apple-icon-touch` is specified at `rel`.
-  - example --> *6_Graphics_Multimedia/Part_5/index.html*
+ These icons are called favicons, these are good for recognition on the website. Favicons can be created with any image editing software. But also on the web there are online tools with which icons can be created e.g. [favicon.io](https://favicon.io/) . Favicons should be saved in `.ico` format. If another file format is used, the MIME type should be specified (e.g. PNG format: `type="image.png"`). The size of a favicon is usually `16x16` or `32x32` pixels. Additionally icons can be used for mobile devices e.g. IPhone or IPad the value `apple-icon-touch` is specified at `rel`.
+
+  example --> *6_Graphics_Multimedia/Part_5/index.html*
+
      ```
       <head>
         <title>Add icon for the website</title>
@@ -2345,15 +2364,16 @@ large display
         <p>Add the HTML document to your favorites</p>
       </body>
      ```
-
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_5.PNG)
 
 
 ### 6.5. Vector graphics (SVG)
-* If vector graphics are to be used, there is the XML format SVG (Scalable Vector Graphics) for this purpose. The advantage of SVG is that a graphic never loses quality when zooming in or out. SVG can be created and edited with a simple text editor. 
-The SVG is in XML syntax and therefore platform independent, so it can be created in PHP, dynamically modified with JavaScript or formatted with CSS. SVGs are used for e.g. cartographies, illustrations like logos, icons, scientific diagrams, program flow charts, technical drawings or visualization of graphs.
-The quality of the SVG graphic always remains the same even if the `width` and `height` attributes are used to scale the size of the display.
-  - example --> *6_Graphics_Multimedia/Part_6/index.html*
+ If vector graphics are to be used, there is the XML format SVG (Scalable Vector Graphics) for this purpose. The advantage of SVG is that a graphic never loses quality when zooming in or out. SVG can be created and edited with a simple text editor. 
+ The SVG is in XML syntax and therefore platform independent, so it can be created in PHP, dynamically modified with JavaScript or formatted with CSS. SVGs are used for e.g. cartographies, illustrations like logos, icons, scientific diagrams, program flow charts, technical drawings or visualization of graphs.
+ The quality of the SVG graphic always remains the same even if the `width` and `height` attributes are used to scale the size of the display.
+
+  example --> *6_Graphics_Multimedia/Part_6/index.html*
+
      ```
       <h1>SVG as graphic reference</h1>
       <p>
@@ -2370,8 +2390,10 @@ Editors for SVG graphics editing:
 - any simple text editor
 
 #### **Integrate SVG directly into the web page with \<svg>**
-- It is possible to embed the SVG directly into the HTML document. The SVG syntax with the SVG element is noted between `<svg> ... </svg>` is noted. SVG itself offers different tags e.g. for circles, ellipses, rectangles, polygons, lines, elements for paths, texts and animations.
-  - example --> *6_Graphics_Multimedia/Part_7/index.html*
+ It is possible to embed the SVG directly into the HTML document. The SVG syntax with the SVG element is noted between `<svg> ... </svg>` is noted. SVG itself offers different tags e.g. for circles, ellipses, rectangles, polygons, lines, elements for paths, texts and animations.
+
+  example --> *6_Graphics_Multimedia/Part_7/index.html*
+
      ```
       <h1>Embed SVG graphics directly</h1>
       <p>
@@ -2411,11 +2433,13 @@ Editors for SVG graphics editing:
      ```
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_7.png)
 
-- Inside `<svg> ... </svg>`, the rules of XML documents must be followed and be case sensitive. Unlike HTML, SVG syntax is very precise and an error will usually result in incorrect or no display.
+ Inside `<svg> ... </svg>`, the rules of XML documents must be followed and be case sensitive. Unlike HTML, SVG syntax is very precise and an error will usually result in incorrect or no display.
 
 #### **Mathematical formulas with MathML**
 Mathematical formulas can be integrated directly into a web page using MathML (Mathematical Markup Language). The MathML tags are noted between `<math> ... </math>`. Unfortunately not yet supported by all browsers, but the problem can be solved with the help of [MathJax](http://www.mathjax.org).
-  - example --> *6_Graphics_Multimedia/Part_8/index.html*
+
+  example --> *6_Graphics_Multimedia/Part_8/index.html*
+
      ```
       <head>
         <meta charset="UTF-8">
@@ -2447,7 +2471,8 @@ More on the topic at [W3C](https://www.w3.org/TR/MathML3/).
 ### 6.6 Drawing graphics with \<canvas>
 Is nothing more than a white area on which something can be drawn with the help of JavaScript.
   - In the introductory `<canvas>` tag, the `id` is specified with , `width` and `height` determine the size of the drawing area. The `id` is particularly important in order to be able to access the `<canvas>` element later with JavaScript.
-  - example --> *6_Graphics_Multimedia/Part_9/index.html*
+
+  example --> *6_Graphics_Multimedia/Part_9/index.html*
      ```
       <head>
         <meta charset="UTF-8">
@@ -2477,7 +2502,8 @@ On my GitHub account you can also find a few examples about canvas:
 With the `<video>` element it is possible to play a video in the web browser without a special extension. All modern browsers support this element.
 Currently 3 video formats are supported: *MP4*, *WebM*, *OGG*. However, not every browser supports all 3 formats. The most widely used is *MP4*.
 
-  - example --> *6_Graphics_Multimedia/Part_10/index.html*
+  example --> *6_Graphics_Multimedia/Part_10/index.html*
+
      ```
       <body>
         <h1>Play videos</h1>
@@ -2489,7 +2515,9 @@ Currently 3 video formats are supported: *MP4*, *WebM*, *OGG*. However, not ever
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_10.PNG)
 
 If you want to be sure that the browser plays the video. Can you also offer all 3 formats, then other types can be specified.
-  - example --> *6_Graphics_Multimedia/Part_11/index.html*
+
+  example --> *6_Graphics_Multimedia/Part_11/index.html*
+
      ```
       <body>
         <h1>Play videos</h1>
@@ -2520,7 +2548,9 @@ HTML attributes for the \<video> element
 
 
 It is also possible to play a video via YouTube. Works only on live server.
-  - example --> *6_Graphics_Multimedia/Part_12/index.html*
+
+  example --> *6_Graphics_Multimedia/Part_12/index.html*
+
      ```
       <body>
           <figure>
@@ -2540,7 +2570,9 @@ It is also possible to play a video via YouTube. Works only on live server.
 
 ### 6.8. Play audio files with the HTML element \<audio>
 In principle the `<audio>` element works, also here there are 3 formats: *MP3*, *OGG* and *WAV* which can be played without any additional software. All web browsers can handle the *MP3* format.
-  - example --> *6_Graphics_Multimedia/Part_13/index.html*
+
+  example --> *6_Graphics_Multimedia/Part_13/index.html*
+
      ```
       <body>
         <h1>Play audio</h1>
@@ -2582,7 +2614,9 @@ It is possible to include videos, audio files and images in an HTML document wit
 
 #### The \<iframe> element
 With this element it is possible to embed something in an HTML document. In practice it often happens that this element is used to embed other HTML document.
-  - example --> *6_Graphics_Multimedia/Part_14/index.html*
+
+  example --> *6_Graphics_Multimedia/Part_14/index.html*
+  
      ```
       <body>
         <h1>use iframe</h1>
