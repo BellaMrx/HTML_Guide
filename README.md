@@ -2162,14 +2162,14 @@ The base-element specifies a base URL or base target for all relative URLs in an
   example --> *6_Graphics_Multimedia/Part_1/index.html*
 
      ```
-        <h1>Beautiful world</h1>
-        <p>
-          <a href="Images/flower_1920.jpg" target="_blank"><img src="Images/flower_480.jpg" alt="Purple flower" title="Opens this image in a larger version in a new window or tab."></a>
-          <img src="Images/chicks_480.jpg" alt="Chicks in the grass" title="Hot chicks on grass">
-        </p>
-        <p>
-        A whale in the clouds. <img src="Images/whale_480.jpg" alt="a whale in the clouds"> He is on his way to Ocean.
-        </p>
+      <h1>Beautiful world</h1>
+      <p>
+        <a href="Images/flower_1920.jpg" target="_blank"><img src="Images/flower_480.jpg" alt="Purple flower" title="Opens this image in a larger version in a new window or tab."></a>
+        <img src="Images/chicks_480.jpg" alt="Chicks in the grass" title="Hot chicks on grass">
+      </p>
+      <p>
+      A whale in the clouds. <img src="Images/whale_480.jpg" alt="a whale in the clouds"> He is on his way to Ocean.
+      </p>
      ```
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_1.PNG)
 
@@ -2180,7 +2180,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   example --> *6_Graphics_Multimedia/Part_2/index.html*
 
      ```
-        <img src="Images/flower_1920.jpg" alt="Purple flower" width="480" height="360">
+      <img src="Images/flower_1920.jpg" alt="Purple flower" width="480" height="360">
      ``` 
 
 #### **\<figure> and \<figcaption>**
@@ -2212,7 +2212,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the actual image added to the HTML document with the img element, additionally within the `<img>` -tag the attribute `usemap` must be specified with an anchor to a `map` element
 
      ```
-        <img src="Images/picture.jpg" alt="alternative text" usemap="#mapname">
+      <img src="Images/picture.jpg" alt="alternative text" usemap="#mapname">
      ``` 
 
   - the `map` element with the anchor name previously specified in the img element with the usemap attribute, it is recommended to place the `map` element at the beginning or at the end of the document
