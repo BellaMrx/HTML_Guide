@@ -289,7 +289,7 @@ Most HTML elements can be nested and contain other HTML elements, creating a hie
   </html>
    ```
 
-### **\<!doctype html>**
+#### **\<!doctype html>**
   - is the first specification in an HTML document, and not an HTML tag but an instruction
   - it is an instruction for the web browser, in which HTML version the web page was created 
 
