@@ -87,7 +87,7 @@
 
 
 ### 1.2. Dynamic and static websites
- **Static websites**
+### **Static websites**
   - the complete content such as texts, image data is stored unchanged in individual files on the web server
   - the content of such a file is created with HTML
   - in case of changes, the files usually have to be changed manually on the local computer and then uploaded to the webserver again
@@ -190,8 +190,7 @@
 
 ## 2. Structure of a HTML document
 ### 2.1. Syntax and structure of HTML documents
-  * The HTML document is very structured. A complete *HTML element* usually consists of an opening HTML tag (`<html>`), a closing HTML tag (`</html>`) and everything in between. As *HTML- element* is usually called everything that stands between the tags. So the *HTML elements* ("headline") are marked by *HTML tags* (`<h1>` and `</h1>`).
-
+ The HTML document is very structured. A complete *HTML element* usually consists of an opening HTML tag (`<html>`), a closing HTML tag (`</html>`) and everything in between. As *HTML- element* is usually called everything that stands between the tags. So the *HTML elements* ("headline") are marked by *HTML tags* (`<h1>` and `</h1>`).
   - everything between `<html>` and `</html>` (root element) is the HTML code for the HTML document
   - between `<head>` and `</head>` the header data of the HTML document is summarized
   - the part visible in the web browser is between `<body>` and `</body>`
@@ -199,7 +198,7 @@
   - between `<h2>` and `</h2>` there is a 2nd order heading
   - between `<p>` and `</p>` there is a normal paragraph
 
-  - example --> *2_StructureOfaHTMLdocument/Part_1/index.html*
+ example --> *2_StructureOfaHTMLdocument/Part_1/index.html*
    ```
     <!doctype html>
     <html>
@@ -215,19 +214,19 @@
       </body>
     </html>
    ```
-![Preview](2_StructureOfaHTMLdocument/Images/Preview_2_1.PNG)
+ ![Preview](2_StructureOfaHTMLdocument/Images/Preview_2_1.PNG)
 
-* The HTML code of an HTML document consists of pure text. A web browser creates a model from this in the form of a tree structure of objects such as HTML elements, attributes, and texts. This is called a **Document Object Model (DOM)**. Each object in it is called a **node** and can be manipulated via a public interface using JavaScript. This DOM tree can be viewed in the browser, using developer tools provided by the browser.
+ The HTML code of an HTML document consists of pure text. A web browser creates a model from this in the form of a tree structure of objects such as HTML elements, attributes, and texts. This is called a **Document Object Model (DOM)**. Each object in it is called a **node** and can be manipulated via a public interface using JavaScript. This DOM tree can be viewed in the browser, using developer tools provided by the browser.
 
-![Preview](Images/DOM_Inspector.PNG)
+ ![Preview](Images/DOM_Inspector.PNG)
 
 
-* Most HTML elements can be nested and contain other HTML elements, creating a hierarchical structure.
+Most HTML elements can be nested and contain other HTML elements, creating a hierarchical structure.
   - Here, within the paragraph, the b element has been nested (b = bold). **b** is the child element of **p** and **p** is the child element of **body**. **html** is the parent element of **body**. In this example, **b** is the child-child-child element of **html**.
   - Complex HTML documents contain a lot of nesting.
   - It is important to avoid incorrect nesting, otherwise the web page can be displayed incorrectly and it becomes very confusing.
-  - example --> *2_StructureOfaHTMLdocument/Part_2/index.html*
 
+ example --> *2_StructureOfaHTMLdocument/Part_2/index.html*
    ```
     <!doctype html>
     <html>
@@ -242,14 +241,14 @@
    ```
 ![Preview](2_StructureOfaHTMLdocument/Images/Preview_2_2.PNG)
 
-* Some HTML elements are standalone tags (void tags) that have no content e.g. `<br>` (which creates a line break), but this should not be abused, to increase the spacing between lines use CSS.
+ Some HTML elements are standalone tags (void tags) that have no content e.g. `<br>` (which creates a line break), but this should not be abused, to increase the spacing between lines use CSS.
 
-* HTML elements can contain additional attributes (properties). These can be used to specify additional information about an element. Attributes can be used only with start tags.
+ HTML elements can contain additional attributes (properties). These can be used to specify additional information about an element. Attributes can be used only with start tags.
   - with the attribute `lang="en"` you specify the language that will be used
   - the `<a>...</a>` element defines a hyperlink to another page, at `href` you specify the URL to navigate to 
   - the standalone tag `<img>` can be used to display images, `src` specifies the location of the image, alt specifies the alternative text if the image cannot be displayed
-  - example --> *2_StructureOfaHTMLdocument/Part_3/index.html*
 
+ example --> *2_StructureOfaHTMLdocument/Part_3/index.html*
    ```
     <!doctype html>
     <html>
@@ -267,9 +266,9 @@
       </body>
     </html>
    ```
-![Preview](2_StructureOfaHTMLdocument/Images/Preview_2_3.PNG)
+ ![Preview](2_StructureOfaHTMLdocument/Images/Preview_2_3.PNG)
 
-* There is the possibility to leave comments within the HTML document, these are helpful to understand the code later, if you forget something. Comments are not visible on the web page in the browser but in the source code, which everyone can see.
+ There is the possibility to leave comments within the HTML document, these are helpful to understand the code later, if you forget something. Comments are not visible on the web page in the browser but in the source code, which everyone can see.
   - this is how a comment is created, everything between the characters is the comment and is not visible on the web page:
    ```
     <!-- comment --> 
@@ -290,21 +289,20 @@
   </html>
    ```
 
-
-* \<!doctype html>
+### **\<!doctype html>**
   - is the first specification in an HTML document, and not an HTML tag but an instruction
   - it is an instruction for the web browser, in which HTML version the web page was created 
 
-* \<html> ... \</html>
+### **\<html> ... \</html>**
   - informs the web browser that there is HTML code present
   - it encloses all other elements in the HTML code (except `<!doctype html>`)
   - there you can also specify the language `lang="en "` (very helpful for accessibility)
 
-* \<head> ... \</head>
+### **\<head> ... \</head>**
   - here information is given which is evaluated by the web browser and search engines e.g. scripts, stylesheets, meta information with information about the HTML document.  
   - the `<title> ... </title>` specifies only the title of the web page that can be seen in the browser
 
-* \<body> ... \</body>
+### **\<body> ... \</body>**
   - the body element is the displayable area of an HTML document
   - everything contained in it, such as texts, images, hyperlinks or tables is displayed in the browser
 
