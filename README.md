@@ -197,8 +197,8 @@
   - between `<h1>` and `</h1>` is a 1st order heading
   - between `<h2>` and `</h2>` there is a 2nd order heading
   - between `<p>` and `</p>` there is a normal paragraph
-
- example --> *2_StructureOfaHTMLdocument/Part_1/index.html*
+  
+  example --> *2_StructureOfaHTMLdocument/Part_1/index.html*
    ```
     <!doctype html>
     <html>
@@ -214,7 +214,7 @@
       </body>
     </html>
    ```
- ![Preview](2_StructureOfaHTMLdocument/Images/Preview_2_1.PNG)
+  ![Preview](2_StructureOfaHTMLdocument/Images/Preview_2_1.PNG)
 
  The HTML code of an HTML document consists of pure text. A web browser creates a model from this in the form of a tree structure of objects such as HTML elements, attributes, and texts. This is called a **Document Object Model (DOM)**. Each object in it is called a **node** and can be manipulated via a public interface using JavaScript. This DOM tree can be viewed in the browser, using developer tools provided by the browser.
 
@@ -226,7 +226,7 @@ Most HTML elements can be nested and contain other HTML elements, creating a hie
   - Complex HTML documents contain a lot of nesting.
   - It is important to avoid incorrect nesting, otherwise the web page can be displayed incorrectly and it becomes very confusing.
 
- example --> *2_StructureOfaHTMLdocument/Part_2/index.html*
+  example --> *2_StructureOfaHTMLdocument/Part_2/index.html*
    ```
     <!doctype html>
     <html>
@@ -239,7 +239,7 @@ Most HTML elements can be nested and contain other HTML elements, creating a hie
     </body>
   </html>
    ```
-![Preview](2_StructureOfaHTMLdocument/Images/Preview_2_2.PNG)
+  ![Preview](2_StructureOfaHTMLdocument/Images/Preview_2_2.PNG)
 
  Some HTML elements are standalone tags (void tags) that have no content e.g. `<br>` (which creates a line break), but this should not be abused, to increase the spacing between lines use CSS.
 
@@ -248,7 +248,7 @@ Most HTML elements can be nested and contain other HTML elements, creating a hie
   - the `<a>...</a>` element defines a hyperlink to another page, at `href` you specify the URL to navigate to 
   - the standalone tag `<img>` can be used to display images, `src` specifies the location of the image, alt specifies the alternative text if the image cannot be displayed
 
- example --> *2_StructureOfaHTMLdocument/Part_3/index.html*
+  example --> *2_StructureOfaHTMLdocument/Part_3/index.html*
    ```
     <!doctype html>
     <html>
@@ -266,7 +266,7 @@ Most HTML elements can be nested and contain other HTML elements, creating a hie
       </body>
     </html>
    ```
- ![Preview](2_StructureOfaHTMLdocument/Images/Preview_2_3.PNG)
+  ![Preview](2_StructureOfaHTMLdocument/Images/Preview_2_3.PNG)
 
  There is the possibility to leave comments within the HTML document, these are helpful to understand the code later, if you forget something. Comments are not visible on the web page in the browser but in the source code, which everyone can see.
   - this is how a comment is created, everything between the characters is the comment and is not visible on the web page:
@@ -351,7 +351,7 @@ The complete explanations for each tag will be given in the next chapters, these
 ### 3.2. The title element 
  A title should be used in each HTML document, which is displayed in the browser header. Only one title element can be used per HTML document. The title element can be skipped, but the web page will not be considered valid. The title element serves the user e.g. if the page is saved as a bookmark, then the title is displayed as a name suggestion. And most importantly, the title has a high importance in search engines, because it is what the user sees first in the search engine when the pages are listed. 
  
- example --> *3_TheHeader/Part_1/index.html*
+  example --> *3_TheHeader/Part_1/index.html*
    ```
     <head>
       <meta charset="UTF-8">
@@ -364,7 +364,7 @@ The complete explanations for each tag will be given in the next chapters, these
 ### 3.3. The base element
 The base-element specifies a base URL or base target for all relative URLs in an HTML document. By defining such a base URL, a relative or absolute address to the file can be used in the document as if it were located directly on the same host or computer. Can be used only once in the HTML document.
 
- example --> *3_TheHeader/Part_2/index.html* --> source [w3school](https://www.w3schools.com/tags/tag_base.asp)
+  example --> *3_TheHeader/Part_2/index.html* --> source [w3school](https://www.w3schools.com/tags/tag_base.asp)
    ```
       <head>
         <base href="https://www.w3schools.com/" target="_blank">
@@ -384,7 +384,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ### 3.4. The link element
  The link element is a stand-alone tag that may be used multiple times in the HTML document. In practice, it is often used to include an external CSS file, and other files. The relationship between the HTML document and the external document is specified with the HTML attribute `rel`.
  
- example --> *3_TheHeader/Part_3/index.html*
+  example --> *3_TheHeader/Part_3/index.html*
    ```
     <head>
       <title>Logical linking with link</title>
@@ -419,7 +419,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ### 3.5. The style element
  This element can be used to include style information (CSS) within the HTML document.
  
- example --> *3_TheHeader/Part_4/index.html*
+  example --> *3_TheHeader/Part_4/index.html*
    ```
     <head>
       <style type="text/css">
@@ -446,7 +446,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ### 3.6. The script element
  This element is used to include scripts in a document. The script can either be included directly in the HTML document between `<script>...</script>`, or an external script with the src attribute.
 
- example --> *3_TheHeader/Part_5/indexA.html* 
+  example --> *3_TheHeader/Part_5/indexA.html* 
    ```
     <head>
       <title>Use the script element</title>
@@ -459,7 +459,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
     </head>
    ```
 
- example --> *3_TheHeader/Part_5/indexB.html* --> external script
+  example --> *3_TheHeader/Part_5/indexB.html* --> external script
    ```
     <head>
       <title>Use the script element</title>
@@ -493,7 +493,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
      ```
  
  - The `http-equiv` specification is for the web browser to communicate with, but web servers don't actually parse HTML documents, so it's up to the browser who processes the specification.
- example --> *3_TheHeader/Part_6/indexA.html* 
+  example --> *3_TheHeader/Part_6/indexA.html* 
 
      ```
       <head>
@@ -502,7 +502,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
      ```
      
  - This specification should be used if the web page was not created in English to be able to display special characters.
- example --> *3_TheHeader/Part_6/indexB.html* 
+  example --> *3_TheHeader/Part_6/indexB.html* 
 
      ```
       <head>
@@ -589,8 +589,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - this element is initially used only to divide the content into semantic sections
   - mainly serve to give meaning to the content, especially helpful for developers, search engines and screen readers
   - the content is divided into topic-related sections, helpful when creating individual chapters or subchapters
- example --> *4_TheBody/Part_1/index.html* 
-
+  example --> *4_TheBody/Part_1/index.html* 
      ```
       <body>
         <section>
@@ -607,13 +606,12 @@ The base-element specifies a base URL or base target for all relative URLs in an
         </section>
       </body>
      ```
- ![Preview](4_TheBody/Images/Preview_4_1.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_1.PNG)
 
 #### **\<article>**
   - should be used to summarize content in a self-contained topic-specific block
   - is relatively similar to `<section>`, however `<article>` should be used for self-contained sections, such as news item
- example --> *4_TheBody/Part_2/index.html*
-
+  example --> *4_TheBody/Part_2/index.html*
      ```
       <body>
       <h1>My blog</h1>
@@ -629,16 +627,16 @@ The base-element specifies a base URL or base target for all relative URLs in an
       </article>
       </body>
      ```
- ![Preview](4_TheBody/Images/Preview_4_2.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_2.PNG)
 
 #### **\<aside>**
   - can usually supplement or extend content with additional information
   - can be used either for a sidebar or additional information (e.g. citation) within an `<article>` element
- example --> *4_TheBody/Part_3/indexB.html*
- ![Preview](4_TheBody/Images/Preview_4_3B.PNG)
+  example --> *4_TheBody/Part_3/indexB.html*
 
- example --> *4_TheBody/Part_3/indexA.html*
+  ![Preview](4_TheBody/Images/Preview_4_3B.PNG)
 
+  example --> *4_TheBody/Part_3/indexA.html*
      ```
       <body>
       <h1>My blog</h1>
@@ -663,13 +661,12 @@ The base-element specifies a base URL or base target for all relative URLs in an
       </aside>
       </body>
      ```
-![Preview](4_TheBody/Images/Preview_4_3A.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_3A.PNG)
 
 #### **\<nav>**
   - this can be used to split navigation elements into blocks e.g. for the main navigation or a list of links for a sitemap
   - should be used when whole blocks of links are needed
- example --> *4_TheBody/Part_4/index.html*
-
+  example --> *4_TheBody/Part_4/index.html*
      ```
       <body>
       <nav>
@@ -723,12 +720,11 @@ The base-element specifies a base URL or base target for all relative URLs in an
       </aside>
       </body>
      ```
- ![Preview](4_TheBody/Images/Preview_4_4.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_4.PNG)
 
 #### **\<h1> - \<h6>**
   - is used for headings, this element is used to define the content structure of a document
- example --> *4_TheBody/Part_5/indexA.html*
-
+  example --> *4_TheBody/Part_5/indexA.html*
      ```
       <body>
       <h1>My blog</h1>
@@ -741,20 +737,20 @@ The base-element specifies a base URL or base target for all relative URLs in an
           <p>After a long period of development ...</p>
       </body>
      ```
-![Preview](4_TheBody/Images/Preview_4_5A.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_5A.PNG)
 
   - Outline: is the name for the structure of the document
 	 - [HTML5 Outliner](https://h5o.github.io) 
 	 - [Validation check](https://validator.w3.org/nu/#textarea)
- example --> *4_TheBody/Part_5/indexB.html*
-![Preview](4_TheBody/Images/Preview_4_5B.PNG)
+  example --> *4_TheBody/Part_5/indexB.html*
+
+  ![Preview](4_TheBody/Images/Preview_4_5B.PNG)
 
 #### **\<header> and \<footer>**
  - is responsible for the header and footer of an HTML document
  - in the `<header>` can be other elements, but to nest another `<header>` in it is not optimal, but can be used several times in the document, the `<header>` does not have to be the first element 
  - `<footer>` does not have to be the last element in the document, it usually contains legal information, legal notice, contact information, no other element can be used inside the `<footer>`
- example --> *4_TheBody/Part_6/index.html*
-
+  example --> *4_TheBody/Part_6/index.html*
      ```
       <body>
       <header>
@@ -778,12 +774,11 @@ The base-element specifies a base URL or base target for all relative URLs in an
       </footer>
       </body>
      ```
- ![Preview](4_TheBody/Images/Preview_4_6.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_6.PNG)
 
 #### **\<address>** 
   - should be used exclusively for contact information about the author, it is best to use it in the `<footer>` element
- example --> *4_TheBody/Part_7/index.html*
-
+  example --> *4_TheBody/Part_7/index.html*
      ```
       <body>
       <header>
@@ -815,7 +810,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
       </footer>
       </body>
      ```
- ![Preview](4_TheBody/Images/Preview_4_7.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_7.PNG)
 
 ### 4.2. The HTML elements for text structuring 
  These elements are used to structure plain text content. 
@@ -843,8 +838,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - is used with text paragraphs, everything written between `<p> ... </p>` is treated as a text paragraph
   - images, videoss or audios or other text markup can also be used within them
   - cannot be used within the *p elements* other group elements, headings or section elements.
- example --> *4_TheBody/Part_8/index.html*
-
+  example --> *4_TheBody/Part_8/index.html*
      ```
       <h2>HTML News</h2>
       <article>
@@ -857,7 +851,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
           a, tellus. </p>
       </article>
      ```
- ![Preview](4_TheBody/Images/Preview_4_8.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_8.PNG)
 
 #### **\<br>**
   - is needed to force a line break 
@@ -1144,7 +1138,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
       </p>
       </body>
      ```
-![Preview](4_TheBody/Images/Preview_4_16.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_16.PNG)
 
 #### Generic structuring with \<div>
   - example --> *4_TheBody/Part_17/indexB.html* 
@@ -1280,7 +1274,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ![Preview](4_TheBody/Images/Preview_4_18.PNG)
 
 ### 4.4. HTML elements for text markup
-* These are elements that are used within a plain text for single letters, words or parts of sentences to change them slightly visually. Even though text formatting with these elements is possible via HTML, CSS is responsible for the actual text formatting.
+ These are elements that are used within a plain text for single letters, words or parts of sentences to change them slightly visually. Even though text formatting with these elements is possible via HTML, CSS is responsible for the actual text formatting.
 
 | HTML elements           | Explanation                                                              |
 | ----------------------- | ------------------------------------------------------------------------ |
@@ -1312,21 +1306,21 @@ The base-element specifies a base URL or base target for all relative URLs in an
 | `<span>`          	    | mark up a general area within a paragraph of text                        |
 
 
-* \<abbr>
+#### **\<abbr>**
   - with `<abbr>` abbreviations or acronyms can be displayed 
   - it is also useful to use the HTML attribute `title`, this helps e.g. translation systems or screen readers and also search engines, it shows the full meaning of the abbreviation as soon as you scroll over it
-  - example --> *4_TheBody/Part_19/index.html*
+  example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
             <h2>Abbreviations with abbr</h2>
             <p>The <abbr title="World Wide Web">WWW</abbr> is full of abbreviations.</p>
         </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_19_1.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_19_1.PNG)
 
-* \<cite>
+#### **\<cite>**
   - if the title of a book, movie, painting, song, etc. is to be displayed, `cite` can be used
-  - example --> *4_TheBody/Part_19/index.html* 
+  example --> *4_TheBody/Part_19/index.html* 
      ```
         <article>
             <h2>Working title with cite</h2>
@@ -1336,13 +1330,13 @@ The base-element specifies a base URL or base target for all relative URLs in an
             working titles.</blockquote>
         </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_19_2.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_19_2.PNG)
 
-* \<code> and \<pre>
+#### **\<code> and \<pre>**
   - if a code is to be marked in a continuous text, `code` is used
   - if several lines of computer code are to be formatted, `code` should be used between `pre`.
   - for `<` in code `&lt;` is used and `&gt;` for `>`, this is so that the HTML document can distinguish between code and code-text
-  - example --> *4_TheBody/Part_19/index.html*
+  example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
             <h2>Computer code with <code>code</code></h2>
@@ -1363,12 +1357,12 @@ The base-element specifies a base URL or base target for all relative URLs in an
             </figure>
         </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_19_3.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_19_3.PNG)
 
-* \<kbd> and \<samp>
+#### **\<kbd> and \<samp>**
   - the kbd element (keyboard) is used to mark continuous text as keyboard input
   - `samp` is used for the screen output of programs
-  - example --> *4_TheBody/Part_19/index.html*
+  example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
             <h2>Keyboard input with kdb and program output with samp</h2>
@@ -1379,11 +1373,11 @@ The base-element specifies a base URL or base target for all relative URLs in an
         term#1&gt;</pre>
         </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_19_4.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_19_4.PNG)
 
-* \<dfn>
+#### **\<dfn>**
   - this marks a definition
-  - example --> *4_TheBody/Part_19/index.html*
+  example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
             <h2>Definition/Term with dfn</h2>
@@ -1391,25 +1385,25 @@ The base-element specifies a base URL or base target for all relative URLs in an
             cell phone.</p>
         </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_19_5.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_19_5.PNG)
 
-* \<var>
-	- with the var element the text can be marked as a variable
-	- this variable can be part of an application, a mathematical expression or identifier of a variable in a programming language
-  - example --> *4_TheBody/Part_19/index.html*
+#### **\<var>**
+  - with the var element the text can be marked as a variable
+  - this variable can be part of an application, a mathematical expression or identifier of a variable in a programming language
+  example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
             <h2>Variables with var</h2>
             <p>The radius <var>r</var> is equal to half the diameter <var>d</var>.</p>
         </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_19_6.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_19_6.PNG)
 
-* \<bdo> and \<bdi>
-  	- with the **bdo** element (bidirectional override) the text direction can be changed
-	- to change the direction the HTML attribute `dir` must be used, with `rtl` the text runs from right to left and with `ltr` from left to right
-	- with the `bdi` -element (bi-directional isolation) the borders of the text direction change can be marked more exactly with a unicode-capable web browser
-  - example --> *4_TheBody/Part_19/index.html*
+#### **\<bdo> and \<bdi>**
+  - with the **bdo** element (bidirectional override) the text direction can be changed
+  - to change the direction the HTML attribute `dir` must be used, with `rtl` the text runs from right to left and with `ltr` from left to right
+  - with the `bdi` -element (bi-directional isolation) the borders of the text direction change can be marked more exactly with a unicode-capable web browser
+  example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
             <h2>Change text direction with bdo and bdi</h2>
@@ -1420,13 +1414,13 @@ The base-element specifies a base URL or base target for all relative URLs in an
             <p>Howdy: 3 (a greeting in the US southern states)</p>
         </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_19_7.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_19_7.PNG)
 
-* \<em>, \<strong>, \<i> and \<b>
+#### **\<em>, \<strong>, \<i> and \<b>**  
   - to emphasize a text in italics `<em>` (emphasis) or to make a text bold `<strong>` is used
   - with `<i>` the text is also displayed in italics, it should be used for special technical terms, a thought, scientific names or foreign words
   - with `<b>` the text is also displayed in bold, should be used for meaningful names or keywords
-  - example --> *4_TheBody/Part_19/index.html*
+  example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
             <h2>Emphasize text (em, strong, b and i)</h2>
@@ -1436,13 +1430,13 @@ The base-element specifies a base URL or base target for all relative URLs in an
             </p>
         </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_19_8.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_19_8.PNG)
 
-* \<mark>
+#### **\<mark>**
   - can be used to mark a text so that it is visually highlighted, like with a Highlighter
   - works only if the content is created dynamically
   - this is only for highlighting, to change the background color it is better to use `<span>` and then style with CSS
-  - example --> *4_TheBody/Part_19/index.html*
+  example --> *4_TheBody/Part_19/index.html*
      ```
               <article>
                   <h2>mark text with mark</h2>
@@ -1457,11 +1451,11 @@ The base-element specifies a base URL or base target for all relative URLs in an
       }</code></pre>
               </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_19_9.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_19_9.PNG)
 
-* \<q>
+#### **\<q>**
   - the `<q>` element is used when something is to be quoted in the middle of the text or when a spoken text is to be marked
-  - example --> *4_TheBody/Part_19/index.html*
+  example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
             <h2>Quoting continuous text with q</h2>
@@ -1469,13 +1463,13 @@ The base-element specifies a base URL or base target for all relative URLs in an
             the present to dwell too much on the future.</q></p>
         </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_19_10.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_19_10.PNG)
 
-* \<u> and \<s>
+#### **\<u> and \<s>**
   - the `<u>` element (u = underline) is used for proper noun underlining, as it is e.g. in the Chinese script, or to indicate words that may be erroneous
   - the web browser usually presents the `<u>` element with an underline
   - the `<s>` element (s = strike-through) is used to indicate that a text is outdated or incorrect, the browser will display the text as crossed out
-  - example --> *4_TheBody/Part_19/index.html*
+  example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
             <h2>Underline or strike through text with s and u</h2>
@@ -1485,12 +1479,12 @@ The base-element specifies a base URL or base target for all relative URLs in an
             <p>Also <u class="spell-checker">correct spelling</u> can be marked with it.</p>
         </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_19_11.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_19_11.PNG)
 
-* \<ins> and \<del>
+#### **\<ins> and \<del>**
   - the `<del>` element (del = delete) is used when a content edit of a text is marked as deleted or revised 
   - the `<ins>` element (ins = insert) is the counterpart to the `<del>` element, and is used when something new is added to a document 
-  - example --> *4_TheBody/Part_19/index.html*
+  example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
             <h2>mark changes with del and ins</h2>
@@ -1498,13 +1492,13 @@ The base-element specifies a base URL or base target for all relative URLs in an
             <ins><p>The concert will not take place because the singer is ill!</p></ins>
         </article>
      ``` 
-![Preview](4_TheBody/Images/Preview_4_19_12.PNG) 
+  ![Preview](4_TheBody/Images/Preview_4_19_12.PNG) 
 
-* \<sup> and \<sub>
+#### **\<sup> and \<sub>**
   - these elements are mainly used for simple mathematical and chemical formulas
   - the `<sub>` element (sub = subscript) is used to make the text deeper
   - the `<sup>` element (sub = superscript) is used to superscript the text
-  - example --> *4_TheBody/Part_19/index.html*
+  example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
             <h2>High or low points with sub and sup</h2>
@@ -1515,26 +1509,26 @@ The base-element specifies a base URL or base target for all relative URLs in an
                 <sub>[2] = https://en.wikipedia.org/wiki/Circle</sub></p>
         </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_19_13.PNG) 
+  ![Preview](4_TheBody/Images/Preview_4_19_13.PNG) 
 
-* \<time>
+#### **\<time>**
   - the `<time>` element was introduced to mark up dates and times.
   - the purpose of this element is that the time can be uniquely encoded for machines and represented in a readable form for the user, for this the `datetime` attribute is used
   - it is e.g. easier for a script in blog articles to extract the date from the element
   - it is also advantageous when searching in search engines for articles of a certain time period
-  - example --> *4_TheBody/Part_19/index.html*
+  example --> *4_TheBody/Part_19/index.html*
      ```
         <header>
             <h2>Date and time with time</h2>
             <time datetime="2021-08-01">August 1, 2021</time>
         </header>
      ```
-![Preview](4_TheBody/Images/Preview_4_19_14.PNG) 
+  ![Preview](4_TheBody/Images/Preview_4_19_14.PNG) 
 
-* \<small>
-	- the `<small>` element is used to display words or text passages in lowercase.
-	- e.g. for copyrights, license information, legal notices
-  - example --> *4_TheBody/Part_19/index.html*
+#### **\<small>**
+  - the `<small>` element is used to display words or text passages in lowercase.
+  - e.g. for copyrights, license information, legal notices
+  example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
             <header>
@@ -1544,11 +1538,11 @@ The base-element specifies a base URL or base target for all relative URLs in an
             <p>The shipment can be delivered <time datetime="P2D">2 days</time>. <small>(Due to strong demand, it may take longer (+1 day)).</small></p>
         </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_19_15.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_19_15.PNG)
 
-* \<ruby>, \<rp> and \<rt>
+#### **\<ruby>, \<rp> and \<rt>**
   - is an annotation system in which the text with annotations appears in one line
-  - example --> *4_TheBody/Part_19/index.html*
+  example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
           <h2>The elements ruby, rt und rp</h2>
@@ -1560,12 +1554,12 @@ The base-element specifies a base URL or base target for all relative URLs in an
             https://en.wikipedia.org/wiki/Ruby_character</a></small></p>
         </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_19_16.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_19_16.PNG)
 
-* \<span>
+#### **\<span>**
   - the `<span>` element can mark up single text passages in the middle of the text with CSS
   - also quite helpful is this element for JavaScript
-  - example --> *4_TheBody/Part_19/index.html*
+  example --> *4_TheBody/Part_19/index.html*
      ```
         <article>
             <h2>The span element</h2>
@@ -1574,21 +1568,23 @@ The base-element specifies a base URL or base target for all relative URLs in an
             the span element.</p>
         </article>
      ```
-![Preview](4_TheBody/Images/Preview_4_19_17.PNG)
+  ![Preview](4_TheBody/Images/Preview_4_19_17.PNG)
 
 ### 4.5. Character entities in HTML
-* The importance of character entities has decreased with the spread of Unicode (UTF-8), but it is still worth mentioning them briefly.
-	e.g.: 
+ The importance of character entities has decreased with the spread of Unicode (UTF-8), but it is still worth mentioning them briefly.
+	e.g.:
+
      ```
       <p><bdi>שלום</bdi> = shalom</p>
      ```
-  Without the Unicode specification, the browser may not be able to display these special characters. Therefore, the specification of the Unicode is always advantageous, with special characters and characters.
+ Without the Unicode specification, the browser may not be able to display these special characters. Therefore, the specification of the Unicode is always advantageous, with special characters and characters.
+
      ```
       <meta charset="UTF-8">
      ``` 
-  Another question, of course, is how to display these special characters when none of them are present on the keyboard. With the help of character entities:
-	* Numeric entities: 
-		- With the help of &#xxx; (xxx = encoding of the character), this is used when no input is possible from the keyboard.
+ Another question, of course, is how to display these special characters when none of them are present on the keyboard. With the help of character entities:
+  * Numeric entities: 
+	  - With the help of &#xxx; (xxx = encoding of the character), this is used when no input is possible from the keyboard.
      ```
       <p><bdo>&#1501;&#1503;&#1500;&#1513;</bdo> = shalom</p>
      ```
@@ -1597,13 +1593,14 @@ The base-element specifies a base URL or base target for all relative URLs in an
       ```
         <p>5 > 4 < 6</p>
       ```
-    Special characters that belong to HTML syntax (e.g. < and >) should be displayed to the corresponding entities. Otherwise, display errors may occur on the web page.
+ Special characters that belong to HTML syntax (e.g. < and >) should be displayed to the corresponding entities. Otherwise, display errors may occur on the web page.
+
       ```
         <p>5 &gt; 4 &lt; 6</p>
       ```
 
-* An overview of the numeric and named entities can be found here: [Unicode/Charts](https://www.unicode.org/charts/)
-* More information about Unicode can be found at: [GitHub](http://r12a.github.io/scripts/tutorial/) and [Unicode](https://www.unicode.org)
+ An overview of the numeric and named entities can be found here: [Unicode/Charts](https://www.unicode.org/charts/)
+ More information about Unicode can be found at: [GitHub](http://r12a.github.io/scripts/tutorial/) and [Unicode](https://www.unicode.org)
 
 #### The HTML elements are used only for text markup, CSS is responsible for formatting.
 
