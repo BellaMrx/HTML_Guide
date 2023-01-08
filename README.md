@@ -87,11 +87,11 @@
 
 
 ### 1.2. Dynamic and static websites
-#### **Static websites**
-    - the complete content such as texts, image data is stored unchanged in individual files on the web server
-    - the content of such a file is created with HTML
-    - in case of changes, the files usually have to be changed manually on the local computer and then uploaded to the webserver again
-    - worthwhile for smaller web presences, where changes are rarely necessary 
+ **Static websites**
+  - the complete content such as texts, image data is stored unchanged in individual files on the web server
+  - the content of such a file is created with HTML
+  - in case of changes, the files usually have to be changed manually on the local computer and then uploaded to the webserver again
+  - worthwhile for smaller web presences, where changes are rarely necessary 
 
   * Advantages:
     - costs are lower because no special features (databases, scripting languages) are needed
@@ -106,10 +106,10 @@
  ![Preview](Images/staticWebsite.PNG)
 
 
-#### **Dynamic websites**
-    - usually a CMS (Content-Management-System) generates the web pages.
-    - content like text and images are usually kept separate from the technical elements like layout or scripting
-    - a CMS must be installed in a web server environment to be able to use previously installed script languages like PHP or Python and usually databases like MySQL or PostgreSQL
+### **Dynamic websites**
+  - usually a CMS (Content-Management-System) generates the web pages.
+  - content like text and images are usually kept separate from the technical elements like layout or scripting
+  - a CMS must be installed in a web server environment to be able to use previously installed script languages like PHP or Python and usually databases like MySQL or PostgreSQL
 
   * Advantages:
     - updating content and adding new content can be done much more quickly via a web-based user interface.
