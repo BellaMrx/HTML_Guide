@@ -2162,18 +2162,18 @@ The base-element specifies a base URL or base target for all relative URLs in an
   example --> *6_Graphics_Multimedia/Part_1/index.html*
 
      ```
-      <h1>Beautiful world</h1>
-      <p>
-        <a href="Images/flower_1920.jpg" target="_blank"><img src="Images/flower_480.jpg" alt="Purple flower" title="Opens this image in a larger version in a new window or tab."></a>
-        <img src="Images/chicks_480.jpg" alt="Chicks in the grass" title="Hot chicks on grass">
-      </p>
-      <p>
-      A whale in the clouds. <img src="Images/whale_480.jpg" alt="a whale in the clouds"> He is on his way to Ocean.
-      </p>
+        <h1>Beautiful world</h1>
+        <p>
+          <a href="Images/flower_1920.jpg" target="_blank"><img src="Images/flower_480.jpg" alt="Purple flower" title="Opens this image in a larger version in a new window or tab."></a>
+          <img src="Images/chicks_480.jpg" alt="Chicks in the grass" title="Hot chicks on grass">
+        </p>
+        <p>
+        A whale in the clouds. <img src="Images/whale_480.jpg" alt="a whale in the clouds"> He is on his way to Ocean.
+        </p>
      ```
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_1.PNG)
 
-* **width and height**
+#### **width and height**
   - to scale the display size of images, `width` and `height` can be used, if the image is a bit too large
   - scaling with `width` and `height` is possible, but if possible the image should be adjusted to the correct size with an image editing program, on the one hand the data volume is reduced and the risk that the images are displayed distorted is eliminated
 
@@ -2183,7 +2183,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
         <img src="Images/flower_1920.jpg" alt="Purple flower" width="480" height="360">
      ``` 
 
-* **\<figure> and \<figcaption>**
+#### **\<figure> and \<figcaption>**
   - with `<figure>` and `<figcaption>` it is possible to create separate captions
 
   example --> *6_Graphics_Multimedia/Part_2/index.html*
@@ -2195,7 +2195,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
           <figcaption>The Cape daisy (Osteospermum ecklonis) originates from South Africa and is very popular in Europe.</figcaption>
         </figure>
      ```
-     
+
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_2.PNG)
 
 | attribute   | Explanation         								              |
