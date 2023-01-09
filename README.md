@@ -44,7 +44,7 @@
     - 6.9. Embedding other active content
 7. Forms and interactive elements 
     - 7.1. Define an area for forms
-
+    - 7.2. The HTML input fields for forms
 --------------------------------------------------------------------------------------------
 
 ## 1. Introduction to HTML
@@ -2575,7 +2575,7 @@ In principle the `<audio>` element works, also here there are 3 formats: *MP3*, 
 
   example --> *6_Graphics_Multimedia/Part_13/index.html*
 
-     ```
+   ```
       <body>
         <h1>Play audio</h1>
         <audio controls>
@@ -2588,7 +2588,7 @@ In principle the `<audio>` element works, also here there are 3 formats: *MP3*, 
           Albert Einstein interview
         </p>
       </body>
-     ```
+   ```
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_13.PNG)
 
 HTML attributes for the \<audio> element 
@@ -2619,7 +2619,7 @@ With this element it is possible to embed something in an HTML document. In prac
 
   example --> *6_Graphics_Multimedia/Part_14/index.html*
 
-     ```
+   ```
       <body>
         <h1>use iframe</h1>
         <img src="Images/sourcecode.png" alt="sourcecode" width="50%">
@@ -2627,7 +2627,7 @@ With this element it is possible to embed something in an HTML document. In prac
           Your web browser is from the stone age and can not iframe!<br>
         </iframe> 
       </body>
-     ```
+   ```
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_14.png)
 
 When embedding an external HTML document, it may be necessary to restrict certain things for security reasons. Such a restriction is available with the sandbox attribute. When the sandbox attribute is used in the `<iframe>`, it prevents the execution of scripts, links going out of the frame, plug-ins, accessing cookies and submitting forms.
@@ -2659,14 +2659,32 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 | `<meter>`     | This element visualizes a certain size of scalar values with a state indicator and using various HTML attributes. |
 
 ### 7.1. Define an area for forms
-An area in the HTML form is marked between `<form> ... </form>`, everything in between belongs to the form. There can be used different HTML input fields like text input fields, selection lists and labels.
-Two typical attributes that are commonly used are `action` and `method`.
-- `action`: Here the URL is specified, which is called when submitting the form and to which the entered data is to be transferred. This is often a PHP script that processes the transmitted data.
-- `method`: This specifies the HTTP request method, how the data should be sent to the server for processing. The default setting is `method="get"`, with which the browser appends the data as a parameter to the end of the URL. For large amounts of data, however, `method="post"` is used, which means that the data is not sent via the URL, but transferred to the body of the HTTP request.
+ An area in the HTML form is marked between `<form> ... </form>`, everything in between belongs to the form. There can be used different HTML input fields like text input fields, selection lists and labels.
+ Two typical attributes that are commonly used are `action` and `method`.
+ - `action`: Here the URL is specified, which is called when submitting the form and to which the entered data is to be transferred. This is often a PHP script that processes the transmitted data.
+ - `method`: This specifies the HTTP request method, how the data should be sent to the server for processing. The default setting is `method="get"`, with which the browser appends the data as a parameter to the end of the URL. For large amounts of data, however, `method="post"` is used, which means that the data is not sent via the URL, but transferred to the body of the HTTP request.
 
-The two attributes `action` and `method` do not necessarily have to be used in the `<form>` tag. The attributes are unnecessary, for example, if the data entered in the form is only processed with JavaScript, e.g. to perform simple calculations. For such purposes, you do not need a URL to be called or an HTTP request method.
+ The two attributes `action` and `method` do not necessarily have to be used in the `<form>` tag. The attributes are unnecessary, for example, if the data entered in the form is only processed with JavaScript, e.g. to perform simple calculations. For such purposes, you do not need a URL to be called or an HTTP request method.
 
-Other attributes are:
-- `enctype`: The default value is the MIME type `"application/x-www-form-urlencoded"`, which masks characters that have a special meaning in a URL with URL encoding. For example, a space character is transmitted as the string `%20`. If files are uploaded, the value `"multipart/form-data"` should be used.
-- `accept-charset`: Here you specify with which character encoding the data should be sent to the web server e.g. `"UFT-8"`.
-- `target`: This specifies the target window in which the web server should output its response. The values are `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.
+ Other attributes are:
+ - `enctype`: The default value is the MIME type `"application/x-www-form-urlencoded"`, which masks characters that have a special meaning in a URL with URL encoding. For example, a space character is transmitted as the string `%20`. If files are uploaded, the value `"multipart/form-data"` should be used.
+ - `accept-charset`: Here you specify with which character encoding the data should be sent to the web server e.g. `"UFT-8"`.
+ - `target`: This specifies the target window in which the web server should output its response. The values are `"_blank"`, `"_self"`, `"_parent"`, `"_top"`.
+
+
+### 7.2. The HTML input fields for forms
+
+#### **A single-line text input field with \<input type="text">**
+ The input element usually represents a single text field where the user can enter data. Since the element can be used for many other field types as well, the `type="text"` attribute should be specified.
+
+ The HTML attribute `name` should be used for an identifier for each input field, because this is needed by the (PHP) script when processing the data in order to access the entered data. The `size` -attribute specifies the display length in characters and `maxlength` the actual allowed character length.
+
+  example --> *7_Forms/Part_1/index.html*
+
+   ```
+    <h1>Single line text field</h1>
+    <form>
+        Enter name: <input type="text" name="aName" size="30" maxlength="40">
+    </form>
+   ```
+
