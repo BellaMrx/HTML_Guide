@@ -1,6 +1,8 @@
-# HTML_Guide
+# HTML Guide
 
- detailed guide about HTML (all basics for HTML) + templates
+ Detailed guide about HTML (all basics for HTML) + templates.
+
+ The code examples in the guide can be found in the listed folders.
 
 -----------------------------------------------------------------------------------------------
 
@@ -46,7 +48,7 @@
     - 7.1. Define an area for forms
     - 7.2. The HTML input fields for forms
     - 7.3. Special types of input fields
-    
+
 --------------------------------------------------------------------------------------------
 
 # 1. Introduction to HTML
@@ -2937,3 +2939,9 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 
 
 ## 7.3. Special types of input fields
+
+
+
+
+
+### Thanks for reading. I hope you enjoyed it. On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about HTML and web development. Or check out my [GitHub](https://github.com/BellaMrx) account.
