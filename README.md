@@ -1074,22 +1074,22 @@ The base-element specifies a base URL or base target for all relative URLs in an
 
 ### **\<ol> and \<li>**
   - `<ol>` is needed for ordered lists
-  - they are numbered lists, in which the individual `<li>` - elements are automaitsch numbered
+  - they are numbered lists, in which the individual `<li>` elements are automaitsch numbered
   - lists can be nested
 
   example --> *4_TheBody/Part_15/index.html*
 
    ```
-      <article>
-          <h2>Numbered enumeration list with ol</h2>
-          <ol>
-              <li>Lorem ipsum dolor sit amet</li>
-              <li>Donec quam felis ultricies</li>
-              <li>Nulla consequat massa quis </li>
-              <li>Etiam ultricies nisi vel</li>
-              <li>Donec vitae sapien ut libero</li>
-          </ol>
-      </article>
+    <article>
+        <h2>Numbered enumeration list with ol</h2>
+        <ol>
+          <li>Lorem ipsum dolor sit amet</li>
+          <li>Donec quam felis ultricies</li>
+          <li>Nulla consequat massa quis </li>
+          <li>Etiam ultricies nisi vel</li>
+          <li>Donec vitae sapien ut libero</li>
+        </ol>
+    </article>
    ```
   ![Preview](4_TheBody/Images/Preview_4_15_2.PNG)
 
@@ -2795,7 +2795,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
  Radio buttons are also provided with the input element. For this purpose `<input type="radio">` is specified. Each radio button should be provided with the `name` attribute. Radio buttons with the same name belong to the same group from which the user can select a value. The value is specified with `value`.
 
   example --> *7_Forms/Part_5/index.html*
-  
+
    ```
     <h1>Radio buttons</h1>
     <form>
