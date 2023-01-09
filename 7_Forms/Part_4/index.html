@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Dropdown and selection lists</title>
+    <style>
+        p {
+            padding-left: 30px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dropdown and selection lists</h1>
+    <form>
+        <p>
+        Example 1:<br />
+        <select name="thema1">
+          <option value="val1">HTML</option>
+          <option value="val2" selected>CSS</option>
+          <option value="val3">JavaScript</option>
+          <option value="val4">React</option>
+        </select>
+        </p>
+        <p>
+        Example 2:<br />
+        <select multiple name="thema2" size="4">
+          <option value="val5">HTML</option>
+          <option value="val6" selected>CSS</option>
+          <option value="val7">JavaScript</option>
+          <option value="val8">React</option>
+        </select>
+        </p>
+        <p>
+        Example 3:<br />
+        <select multiple name="thema3" size="6">
+          <optgroup label="Group 1">
+            <option value="val9">HTML</option>
+            <option value="val10">CSS</option>
+          </optgroup>
+          <optgroup label="Group 2">
+            <option value="val11">JavaScript</option>
+            <option value="val12">React</option>
+          </optgroup>
+        </select>
+        </p>
+    </form>
+</body>
+
+</html>
