@@ -1862,7 +1862,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
     </tbody>
    ```
 
-	- the table foot is displayed between `<tfoot> ... </tfoot>` (tfoot = table foot)
+ - the table foot is displayed between `<tfoot> ... </tfoot>` (tfoot = table foot)
 
    ```
       <tfoot>
