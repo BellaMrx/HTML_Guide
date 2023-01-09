@@ -45,6 +45,8 @@
 7. Forms and interactive elements 
     - 7.1. Define an area for forms
     - 7.2. The HTML input fields for forms
+    - 7.3. Special types of input fields
+    
 --------------------------------------------------------------------------------------------
 
 # 1. Introduction to HTML
@@ -2811,3 +2813,127 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 
 
 ### **Add a text label with \<label>**
+ Between \<label> ... \</label> a simple text label without special formatting can be used. The label element can be used to simplify the operation of other elements, e.g. radio buttons or checkboxes. The `for` attribute makes it easier for the user to make a selection when clicking, since the word is also clickable.
+ 
+  example --> *7_Forms/Part_6/index.html*
+
+   ```
+    <h1>Radio buttons with label</h1>
+    <form>
+      <p>Please select room:</p>
+      <p>
+        <input type="radio" name="room" id="r1" value="budget">
+          <label for="r1">Budget</label><br>
+        <input type="radio" name="room" id="r2" value="standard">
+          <label for="r2">Standard</label><br>
+        <input type="radio" name="room" id="r3" value="deluxe">
+          <label for="r3">Deluxe</label>
+      </p>
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_6.PNG)
+
+
+### **Use checkboxes with \<input type="checkbox">**
+ Checkboxes are also displayed with the input element if `type="checkbox"` is used. Here, too, a `name` should always be specified and the `value` is used to specify the value that is transferred to the web server when the form is submitted.
+  
+  example --> *7_Forms/Part_7/index.html*
+
+   ```
+    <h1>Checkboxesn</h1>
+    <form>
+      <p>Please select extras:</p>
+      <p>
+        <input type="checkbox" name="extra" id="c1" value="breakf">
+          <label for="c1">Breakfast</label><br>
+        <input type="checkbox" name="extra" id="c2" value="lunch">
+          <label for="c2">Lunch</label><br>
+        <input type="checkbox" name="extra" id="c3" value="dinner">
+          <label for="c3">Dinner</label>
+      </p>
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_7.PNG) 
+
+
+### **Use fields for file upload with \<input type="file">**
+ If a field is required for a file upload, the input element is specified with the attribute `type="file"`. The web browser usually generates a button. 
+ If not only the filename of the selected file is to be determined, but the entire file or the contents of the file, `method="post"` and `enctype="multipart/formdata"` must be used with the form element.
+ With the `accept` attribute it is possible to upload only certain file types.
+  
+  example --> *7_Forms/Part_8/index.html*
+
+   ```
+    <h1>File upload</h1>
+    <form method="post" enctype="multipart/form-data">
+      <p>Select file:
+        <input type="file" name="picture" accept="image/*">
+      </p>
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_8.PNG)
+
+
+### **Different buttons**
+ Buttons can be displayed with the button element (\<button> ... \</button>). Or with the input element and `type="reset"` or `type="submit"`. With `reset` the contents of the form fields within the form are reset to the initial value. The `submit` button submits the form and sends the entered data to the URL specified with the `action` attribute in the form element.
+  
+  example --> *7_Forms/Part_9/index.html*
+
+   ```
+    <h1>Buttons</h1>
+    <form>
+      Your message:<br />
+        <textarea name="txt" rows="8" cols="36" maxlength="2500">
+    Enter your message here ...
+        </textarea>
+        <br />
+      <input type="submit" value="Send" style="width: 80px" />
+      <input type="reset" value="Cancel" style="width: 80px" />
+      <button type="button">Clickable button</button>
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_9.PNG)
+
+
+### **Form fields outside the form element**
+  
+  example --> *7_Forms/Part_10/index.html*
+
+   ```
+    <h1>Use form elements outside form</h1>
+    <form id="formular1" method="post" action="">
+      <p>Subject: <input type="text" name="subject"><br>
+        Your message:<br>
+        <textarea  name="txt" rows="8" cols="50" maxlength="2500">
+    Enter your message here ...
+        </textarea><br>
+    </form>
+    <h2>Lorem ispsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+    <p>
+      <input type="submit" value="Send" style="width: 80px;" form="formular1">
+      <input type="reset" value="Cancel" style="width: 80px;" form="formular1">
+    </p>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_10.PNG)
+
+
+### **Multiple submit buttons to different URLs**
+ It is possible to set up multiple submit buttons for a form in order to submit the form with different URLs. For this purpose, two new attributes for input fields of type `submit` and `image` have been added with `formaction` and `formmethod`, which override the attributes `action` and `method` in the opening form element if they have been noted there.
+ The `formaction` specifies the URL that will be called when the submit button is pressed and to which the form data should be submitted. `formmethod` is the HTTP request method that should be used to send the data to the server for processing, i.e. either GET or POST.
+  
+  example --> *7_Forms/Part_11/index.html*
+
+   ```
+    <h1>Multiple submit buttons</h1>
+    <form>
+        <label>Receive messages: </label>
+        <input type="email" name="mail" required>
+        <input type="submit" value="to HTML" formaction="/scripts/subscribe-html.php" formmethod="post">
+        <input type="submit" value="to CSS" formaction="/scripts/subscribe-css.php" formmethod="post">
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_11.PNG)
+
+
+## 7.3. Special types of input fields
