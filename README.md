@@ -2160,8 +2160,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
  Images can be included on a web page using the `<img>` element (img = image), after which there is no line break if `<img>` is used in the text. The attributes `src` and `alt` should be present at least. The `src` attribute indicates where the web browser will find the image file. The `alt` attribute gives an alternative description of the image file, this should be short (75-125 characters) describing what is in the image. This is useful if the image file cannot be loaded or for screen readers and also search engines. When creating web pages, the images should be placed in an extra directory (usually named "Images"). The `title` attribute can be used to display additional information when the user touches the image with the mouse.
 
   example --> *6_Graphics_Multimedia/Part_1/index.html*
-
-     ```
+   ```
       <h1>Beautiful world</h1>
       <p>
         <a href="Images/flower_1920.jpg" target="_blank"><img src="Images/flower_480.jpg" alt="Purple flower" title="Opens this image in a larger version in a new window or tab."></a>
@@ -2170,7 +2169,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
       <p>
       A whale in the clouds. <img src="Images/whale_480.jpg" alt="a whale in the clouds"> He is on his way to Ocean.
       </p>
-     ```
+   ```
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_1.PNG)
 
 #### **width and height**
@@ -2178,23 +2177,21 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - scaling with `width` and `height` is possible, but if possible the image should be adjusted to the correct size with an image editing program, on the one hand the data volume is reduced and the risk that the images are displayed distorted is eliminated
 
   example --> *6_Graphics_Multimedia/Part_2/index.html*
-
-     ```
-      <img src="Images/flower_1920.jpg" alt="Purple flower" width="480" height="360">
-     ``` 
+   ```
+     <img src="Images/flower_1920.jpg" alt="Purple flower" width="480" height="360">
+   ``` 
 
 #### **\<figure> and \<figcaption>**
   - with `<figure>` and `<figcaption>` it is possible to create separate captions
 
   example --> *6_Graphics_Multimedia/Part_2/index.html*
-
-      ```
-        <h1>Purple flower</h1>
-        <figure>
-          <img src="Images/flower_1920.jpg" alt="Purple flower" width="480" height="360"><br>
-          <figcaption>The Cape daisy (Osteospermum ecklonis) originates from South Africa and is very popular in Europe.</figcaption>
-        </figure>
-     ```
+   ```
+      <h1>Purple flower</h1>
+      <figure>
+        <img src="Images/flower_1920.jpg" alt="Purple flower" width="480" height="360"><br>
+        <figcaption>The Cape daisy (Osteospermum ecklonis) originates from South Africa and is very popular in Europe.</figcaption>
+      </figure>
+   ```
 
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_2.PNG)
 
@@ -2211,9 +2208,9 @@ The base-element specifies a base URL or base target for all relative URLs in an
  Reference-sensitive graphics (image maps) are links that are embedded within a graphic. An image map defined in HTML consists of three parts:
   - the actual image added to the HTML document with the img element, additionally within the `<img>` -tag the attribute `usemap` must be specified with an anchor to a `map` element
 
-     ```
-      <img src="Images/picture.jpg" alt="alternative text" usemap="#mapname">
-     ``` 
+   ```
+    <img src="Images/picture.jpg" alt="alternative text" usemap="#mapname">
+   ``` 
 
   - the `map` element with the anchor name previously specified in the img element with the usemap attribute, it is recommended to place the `map` element at the beginning or at the end of the document
   - between `<map>` and `</map>` an area element is used for each area, there the coordinates with the actual reference sensitive area for the graphic are needed. Within the `<area>` tag, you can define a square area, a circular area, or a polygon. Each area element defines a clickable area in the image.
@@ -2228,7 +2225,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 
  In this example, in a rectangular graphic with 200 x 200 pixels, four rectangular reference-sensitive areas with 100 x 100 pixels have been defined. First the graphic popart.jpg is inserted into the HTML document. The value `#mood` is used as the anchor name in the `usemap` attribute. The reference sensitive area is introduced with the `map` element and the name of the image map (name="mood"). Between `<map>` and `</map>` the coordinates for the references are specified with the `area` element.
 
-    ```
+   ```
       <h1>What mood are you in?</h1>
       <p>Select a color according to your mood:</p>
       <p>
@@ -2240,7 +2237,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
         <area shape="rect" coords="100,100,200,200" href="Colors/yellow.html" alt="Yello" title="Yellow">
         <area shape="rect" coords="100,0,200,100" href="Colors/red.html" alt="Red" title="Red">
       </map>
-    ``` 
+   ``` 
 
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_3_1.PNG)
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_3_2.PNG)
@@ -2255,21 +2252,21 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - The `coords` attribute specifies the coordinates of an area in an image map. The `coords` attribute is used together with the shape attribute to specify the size, shape, and placement of an area.
   - The coordinates of the top-left corner of an area are `0,0`.
 
-     ```
-      <area shape="rect" coords="0,0,100,100" ...>
-     ```
+   ```
+    <area shape="rect" coords="0,0,100,100" ...>
+   ```
 
   - If circle is used with shape, the coordinates are x,y,r (`chords="x,y,r"`).
 
-     ```
-      <area shape="circle" coords="100,100,50" ...>
-     ```
+   ```
+    <area shape="circle" coords="100,100,50" ...>
+   ```
 
   - If poly is used with shape, any number of coordinates with **x1,y1,x2,y2...xn,yn** can be used in coords. 
 
-     ```
-      <area shape="poly" coords="129,0,260,95,129,138">
-     ```
+   ```
+    <area shape="poly" coords="129,0,260,95,129,138">
+   ```
 
 Pixel coordinates with a graphics program [Online Image Map Editor](http://maschek.hu/imagemap/imgmap/)
 
@@ -2319,8 +2316,7 @@ Pixel coordinates with a graphics program [Online Image Map Editor](http://masch
  The picture element allows to provide a suitable picture for all display sizes. Each source element in the `<picture>` element contains a query (media query) with the HTML attribute `media`, specifications such as viewport width, viewport height and alignment are queried. The sources of `<source>` are read from top to bottom. If the viewport is at least 1024 pixels (`min-width:1024px`), the image is loaded with 1024 pixels. If the viewport is at least 640 pixels, the image is loaded with 640 pixels.
 
   example --> *6_Graphics_Multimedia/Part_4/index.html*
-
-     ```
+   ```
       <picture> 
         <source media="(min-width: 1024px)" srcset="Images/Image_1024.jpg">
         <source media="(min-width: 640px)" srcset="Images/Image_640.jpg">
@@ -2328,7 +2324,7 @@ Pixel coordinates with a graphics program [Online Image Map Editor](http://masch
         <!-- Fallback for old browser -->
         <img src="Images/Image_480.jpg" alt="Hong Kong Island">
       </picture>
-     ```
+   ```
 small display
 
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_4_1.PNG)
@@ -2350,8 +2346,7 @@ large display
  These icons are called favicons, these are good for recognition on the website. Favicons can be created with any image editing software. But also on the web there are online tools with which icons can be created e.g. [favicon.io](https://favicon.io/) . Favicons should be saved in `.ico` format. If another file format is used, the MIME type should be specified (e.g. PNG format: `type="image.png"`). The size of a favicon is usually `16x16` or `32x32` pixels. Additionally icons can be used for mobile devices e.g. IPhone or IPad the value `apple-icon-touch` is specified at `rel`.
 
   example --> *6_Graphics_Multimedia/Part_5/index.html*
-
-     ```
+   ```
       <head>
         <title>Add icon for the website</title>
         <meta charset="UTF-8" />
@@ -2364,7 +2359,7 @@ large display
         <h1>Demonstrates the favicon</h1>
         <p>Add the HTML document to your favorites</p>
       </body>
-     ```
+   ```
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_5.PNG)
 
 
@@ -2374,15 +2369,14 @@ large display
  The quality of the SVG graphic always remains the same even if the `width` and `height` attributes are used to scale the size of the display.
 
   example --> *6_Graphics_Multimedia/Part_6/index.html*
-
-     ```
+   ```
       <h1>SVG as graphic reference</h1>
       <p>
         <img src="svg/logo.svg" width="100" height="50" alt="50%"><br>
         <img src="svg/logo.svg" alt="100%"><br>
         <img src="svg/logo.svg" width="400" height="200" alt="200%">	
       </p>
-     ```
+   ```
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_6.PNG)
 
 Editors for SVG graphics editing:
@@ -2394,8 +2388,7 @@ Editors for SVG graphics editing:
  It is possible to embed the SVG directly into the HTML document. The SVG syntax with the SVG element is noted between `<svg> ... </svg>` is noted. SVG itself offers different tags e.g. for circles, ellipses, rectangles, polygons, lines, elements for paths, texts and animations.
 
   example --> *6_Graphics_Multimedia/Part_7/index.html*
-
-     ```
+   ```
       <h1>Embed SVG graphics directly</h1>
       <p>
       <svg width="300" height="100">
@@ -2431,7 +2424,7 @@ Editors for SVG graphics editing:
         <text x="5" y="80" fill="red" font-size="60">A text with SVG</text>
       </svg>
       </p>
-     ```
+   ```
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_7.png)
 
  Inside `<svg> ... </svg>`, the rules of XML documents must be followed and be case sensitive. Unlike HTML, SVG syntax is very precise and an error will usually result in incorrect or no display.
@@ -2440,8 +2433,7 @@ Editors for SVG graphics editing:
 Mathematical formulas can be integrated directly into a web page using MathML (Mathematical Markup Language). The MathML tags are noted between `<math> ... </math>`. Unfortunately not yet supported by all browsers, but the problem can be solved with the help of [MathJax](http://www.mathjax.org).
 
   example --> *6_Graphics_Multimedia/Part_8/index.html*
-
-     ```
+   ```
       <head>
         <meta charset="UTF-8">
         <title>Mathematical formulas</title>
@@ -2463,7 +2455,7 @@ Mathematical formulas can be integrated directly into a web page using MathML (M
           </math>
       </p>
       </body>
-     ```
+   ```
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_8.PNG)
 
 More on the topic at [W3C](https://www.w3.org/TR/MathML3/).
@@ -2474,8 +2466,7 @@ Is nothing more than a white area on which something can be drawn with the help 
   - In the introductory `<canvas>` tag, the `id` is specified with , `width` and `height` determine the size of the drawing area. The `id` is particularly important in order to be able to access the `<canvas>` element later with JavaScript.
 
   example --> *6_Graphics_Multimedia/Part_9/index.html*
-
-     ```
+   ```
       <head>
         <meta charset="UTF-8">
         <title>Create a canvas object</title>
@@ -2489,7 +2480,7 @@ Is nothing more than a white area on which something can be drawn with the help 
         Your browser does not support the canvas element.
       </canvas>
       </body>
-     ```
+   ```
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_9.PNG)
 
 On the website www.effect-games.com/demos/canvascycle/ [EffectGames](http://www.effectgames.com/demos/canvascycle/) you can see well what is possible with `<canvas>`.
@@ -2505,29 +2496,27 @@ With the `<video>` element it is possible to play a video in the web browser wit
 Currently 3 video formats are supported: *MP4*, *WebM*, *OGG*. However, not every browser supports all 3 formats. The most widely used is *MP4*.
 
   example --> *6_Graphics_Multimedia/Part_10/index.html*
-
-     ```
+   ```
       <body>
         <h1>Play videos</h1>
         <video width="640" src="Video/ClickMe.mp4" controls autoplay>
           Your web browser does not support the video tag.
         </video>
       </body>
-     ```
+   ```
 ![Preview](6_Graphics_Multimedia/Images/Preview_6_10.PNG)
 
 If you want to be sure that the browser plays the video. Can you also offer all 3 formats, then other types can be specified.
 
   example --> *6_Graphics_Multimedia/Part_11/index.html*
-
-     ```
+   ```
       <body>
         <h1>Play videos</h1>
         <video width="640" src="Video/ClickMe.mp4" controls autoplay>
           Your web browser does not support the video tag.
         </video>
       </body>
-     ```
+   ```
 
 HTML attributes for the \<video> element 
 | attribute   | Explanation         								              |
@@ -2552,8 +2541,7 @@ HTML attributes for the \<video> element
 It is also possible to play a video via YouTube. Works only on live server.
 
   example --> *6_Graphics_Multimedia/Part_12/index.html*
-
-     ```
+   ```
       <body>
           <figure>
               <iframe width="400" height="225" src="https://www.youtube.com/watch?v=MDLn5-zSQQI" allowfullscreen></iframe>
@@ -2568,13 +2556,12 @@ It is also possible to play a video via YouTube. Works only on live server.
               <figcaption>embed</figcaption>
           </figure>
       </body>
-     ```
+   ```
 
 ### 6.8. Play audio files with the HTML element \<audio>
 In principle the `<audio>` element works, also here there are 3 formats: *MP3*, *OGG* and *WAV* which can be played without any additional software. All web browsers can handle the *MP3* format.
 
   example --> *6_Graphics_Multimedia/Part_13/index.html*
-
    ```
       <body>
         <h1>Play audio</h1>
@@ -2618,7 +2605,6 @@ It is possible to include videos, audio files and images in an HTML document wit
 With this element it is possible to embed something in an HTML document. In practice it often happens that this element is used to embed other HTML document.
 
   example --> *6_Graphics_Multimedia/Part_14/index.html*
-
    ```
       <body>
         <h1>use iframe</h1>
@@ -2677,10 +2663,9 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 #### **A single-line text input field with \<input type="text">**
  The input element usually represents a single text field where the user can enter data. Since the element can be used for many other field types as well, the `type="text"` attribute should be specified.
 
- The HTML attribute `name` should be used for an identifier for each input field, because this is needed by the (PHP) script when processing the data in order to access the entered data. The `size` -attribute specifies the display length in characters and `maxlength` the actual allowed character length.
+ The HTML attribute `name` should be used for an identifier for each input field, because this is needed by the script (JavaScript, PHP) when processing the data in order to access the entered data. The `size` -attribute specifies the display length in characters and `maxlength` the actual allowed character length.
 
   example --> *7_Forms/Part_1/index.html*
-
    ```
     <h1>Single line text field</h1>
     <form>
@@ -2688,4 +2673,36 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
     </form>
    ```
  ![Preview](7_Forms/Images/Preview_7_1.PNG)
+
+
+#### **A password input field with \<input type="password">**
+ To create a one-line text field for passwords you need `type="password"`, this will display the entered characters as stars or dots.
+ A password field is not encrypted and serves only as a protection against screen tampering. The entered password is transmitted over the Internet in clear text via HTTP protocol without encryption. For encrypted communication between the web browser and the web server, the HTTPS protocol must be used, and the web server must support this protocol.
+
+  example --> *7_Forms/Part_2/index.html*
+   ```
+    <h1>Text field for password</h1>
+    <form>
+      Enter password:
+      <input name="pw" type="password" size="10" maxlength="10">
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_2.PNG)
+
+
+#### **A multiline text input field with \<textarea>**
+ If a text field with multiple lines is needed for messages, comments, feedback or similar, `<textarea> ... </textarea>` is used. The number of displayed lines is specified with the `rows` attribute and the number of characters per line with `cols`. By default, the text is automatically wrapped at the end in the next line. The wrap happens only visually and is not sent when the data is sent. This can be changed with the `wrap` attribute. If the default setting `wrap="soft"` is changed to `wrap="hard"`, the text is no longer wrapped automatically.
+
+  example --> *7_Forms/Part_3/index.html*
+   ```
+    <h1>Multiline input field</h1>
+    <form>
+      Your message:<br />
+        <textarea name="txt" rows="8" cols="50" maxlength="2500">
+   Enter your message here ...
+        </textarea>
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_3.PNG)
+
 
