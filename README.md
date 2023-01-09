@@ -199,6 +199,7 @@
   - between `<p>` and `</p>` there is a normal paragraph
   
   example --> *2_StructureOfaHTMLdocument/Part_1/index.html*
+
    ```
     <!doctype html>
     <html>
@@ -227,6 +228,7 @@ Most HTML elements can be nested and contain other HTML elements, creating a hie
   - It is important to avoid incorrect nesting, otherwise the web page can be displayed incorrectly and it becomes very confusing.
 
   example --> *2_StructureOfaHTMLdocument/Part_2/index.html*
+
    ```
     <!doctype html>
     <html>
@@ -249,6 +251,7 @@ Most HTML elements can be nested and contain other HTML elements, creating a hie
   - the standalone tag `<img>` can be used to display images, `src` specifies the location of the image, alt specifies the alternative text if the image cannot be displayed
 
   example --> *2_StructureOfaHTMLdocument/Part_3/index.html*
+
    ```
     <!doctype html>
     <html>
@@ -352,6 +355,7 @@ The complete explanations for each tag will be given in the next chapters, these
  A title should be used in each HTML document, which is displayed in the browser header. Only one title element can be used per HTML document. The title element can be skipped, but the web page will not be considered valid. The title element serves the user e.g. if the page is saved as a bookmark, then the title is displayed as a name suggestion. And most importantly, the title has a high importance in search engines, because it is what the user sees first in the search engine when the pages are listed. 
  
   example --> *3_TheHeader/Part_1/index.html*
+
    ```
     <head>
       <meta charset="UTF-8">
@@ -365,6 +369,7 @@ The complete explanations for each tag will be given in the next chapters, these
 The base-element specifies a base URL or base target for all relative URLs in an HTML document. By defining such a base URL, a relative or absolute address to the file can be used in the document as if it were located directly on the same host or computer. Can be used only once in the HTML document.
 
   example --> *3_TheHeader/Part_2/index.html*  (source [w3school](https://www.w3schools.com/tags/tag_base.asp) )
+
    ```
       <head>
         <base href="https://www.w3schools.com/" target="_blank">
@@ -385,6 +390,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
  The link element is a stand-alone tag that may be used multiple times in the HTML document. In practice, it is often used to include an external CSS file, and other files. The relationship between the HTML document and the external document is specified with the HTML attribute `rel`.
  
   example --> *3_TheHeader/Part_3/index.html*
+
    ```
     <head>
       <title>Logical linking with link</title>
@@ -420,6 +426,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
  This element can be used to include style information (CSS) within the HTML document.
  
   example --> *3_TheHeader/Part_4/index.html*
+
    ```
     <head>
       <style type="text/css">
@@ -446,7 +453,8 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ## 3.6. The script element
  This element is used to include scripts in a document. The script can either be included directly in the HTML document between `<script>...</script>`, or an external script with the src attribute.
 
-  example --> *3_TheHeader/Part_5/indexA.html* 
+  example --> *3_TheHeader/Part_5/indexA.html*
+
    ```
     <head>
       <title>Use the script element</title>
@@ -460,6 +468,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
    ```
 
   example --> *3_TheHeader/Part_5/indexB.html* --> external script
+
    ```
     <head>
       <title>Use the script element</title>
@@ -479,12 +488,14 @@ The base-element specifies a base URL or base target for all relative URLs in an
 
 ## 3.7. The meta element
  This can be used to record additional information or data about the HTML document. This can be instructions for the web browser, the web server or a web crawler. This information is optional but often included. There are many such attributes, and many of these are not uniformly standardized. A meta element usually consists of two attributes (`http-equiv, name/content`).
+
    ```
     <meta http-equiv="refresh" content="5">
    ```
 
 ### **The most used meta tags**
  - The HTML attribute `name` can contain any amount of information in the `content`. But some default metadata for `name` has been defined. The `name/content` combination is not meant for personal information, but about the HTML document. The `keyword` is important for search engines. 
+
    ```
     <head>
       <meta name="author" content="John Doe">
@@ -495,6 +506,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
  - The `http-equiv` specification is for the web browser to communicate with, but web servers don't actually parse HTML documents, so it's up to the browser who processes the specification.
 
   example --> *3_TheHeader/Part_6/indexA.html* 
+
    ```
     <head>
       <meta http-equiv="refresh" content="5">
@@ -504,11 +516,12 @@ The base-element specifies a base URL or base target for all relative URLs in an
  - This specification should be used if the web page was not created in English to be able to display special characters.
 
   example --> *3_TheHeader/Part_6/indexB.html* 
-     ```
-      <head>
-        <meta charset="UTF-8">
-      </head>
-     ```
+
+   ```
+    <head>
+      <meta charset="UTF-8">
+    </head>
+   ```
 
 ### **The viewport**
  - is the area of the browser window in which the webinahlte are displayed. In order for the web page to be displayed properly on a mobile device, we need this specification (responsive web design)
@@ -548,6 +561,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 
 ### **These meta data should be present in a HTML framework**
  - finally it is up to everyone which are needed, these should at least be included
+
    ```
     <head>
       <meta charset="UTF-8">
@@ -595,6 +609,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the content is divided into topic-related sections, helpful when creating individual chapters or subchapters
   
   example --> *4_TheBody/Part_1/index.html*
+
    ```
       <body>
         <section>
@@ -618,6 +633,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - is relatively similar to `<section>`, however `<article>` should be used for self-contained sections, such as news item
 
   example --> *4_TheBody/Part_2/index.html*
+
    ```
       <body>
       <h1>My blog</h1>
@@ -643,6 +659,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   ![Preview](4_TheBody/Images/Preview_4_3B.PNG)
 
   example --> *4_TheBody/Part_3/indexA.html*
+
    ```
       <body>
       <h1>My blog</h1>
@@ -674,6 +691,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - should be used when whole blocks of links are needed
 
   example --> *4_TheBody/Part_4/index.html*
+
    ```
       <body>
       <nav>
@@ -733,6 +751,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - is used for headings, this element is used to define the content structure of a document
 
   example --> *4_TheBody/Part_5/indexA.html*
+
    ```
       <body>
       <h1>My blog</h1>
@@ -760,6 +779,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
  - `<footer>` does not have to be the last element in the document, it usually contains legal information, legal notice, contact information, no other element can be used inside the `<footer>`
 
   example --> *4_TheBody/Part_6/index.html*
+
    ```
       <body>
       <header>
@@ -789,6 +809,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - should be used exclusively for contact information about the author, it is best to use it in the `<footer>` element
 
   example --> *4_TheBody/Part_7/index.html*
+
    ```
       <body>
       <header>
@@ -850,6 +871,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - cannot be used within the *p elements* other group elements, headings or section elements
 
   example --> *4_TheBody/Part_8/index.html*
+
    ```
       <h2>HTML News</h2>
       <article>
@@ -868,6 +890,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - is needed to force a line break
 
   example --> *4_TheBody/Part_9/index.html*
+
    ```
       <address>
       Rick Sample<br>
@@ -893,6 +916,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - this creates a thematic separation, e.g. to separate a content more clearly from each other
 
   example --> *4_TheBody/Part_10/index.html*
+
    ```
       <article>
         <h3>New HTML elements</h3>
@@ -918,6 +942,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the `<blockquote>` contains a `cite` attribute, this indicates the source of the quote, but unfortunately it is not yet visible in the web browser and therefore the source should be added to the web page additionally
 
   example --> *4_TheBody/Part_11/index.html*
+
    ```
       <article>
           <h3>New HTML elements</h3>
@@ -945,6 +970,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   ![Preview](4_TheBody/Images/Preview_4_12B.PNG)
 
   example --> *4_TheBody/Part_12/indexA.html*
+
    ```
       <body>
           <div class="header">
@@ -980,6 +1006,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - is not a section element (`<section>`) but a pure grouping element
   
   example --> *4_TheBody/Part_13/index.html*
+
    ```
       <body>
       <header>
@@ -1051,6 +1078,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - lists can be nested
 
   example --> *4_TheBody/Part_15/index.html*
+
    ```
       <article>
           <h2>Numbered enumeration list with ol</h2>
@@ -1086,7 +1114,8 @@ The base-element specifies a base URL or base target for all relative URLs in an
 * with the HTML attribute `start` the start value of the first `<li>` element, the following numberings are increased by 1
 * within the `<li>` element it is also possible with the HTML attribute `value`
 
-  example --> *4_TheBody/Part_15/index.html* 
+  example --> *4_TheBody/Part_15/index.html*
+
    ```
       <article>
         <h2>Change enumeration list numbering</h2>
@@ -1106,6 +1135,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - often used for glossaries, listing of special metadata and values
 
   example --> *4_TheBody/Part_15/index.html*
+
    ```
     <article>
         <h2>Description lists with dl, dt and dd</h2>
@@ -1131,7 +1161,8 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - e.g. the screenreader does not recognize by the ID whether it is a navigation bar on the web page with `<div id="nav">` but only so `<nav>` 
 
 ### HTML document without precise structure
-  - example --> *4_TheBody/Part_16/index.html* 
+  - example --> *4_TheBody/Part_16/index.html*
+
    ```
       <body>
       <h1>My blog</h1>
@@ -1166,6 +1197,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 
 ### Generic structuring with \<div>
   - example --> *4_TheBody/Part_17/indexB.html* 
+
    ```
       <body>
         <div id="header">
@@ -1209,6 +1241,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ![Preview](4_TheBody/Images/Preview_4_17B.PNG)
 
   - example --> *4_TheBody/Part_17/indexA.html* 
+
    ```
       <body>
       <div>
@@ -1253,6 +1286,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 
 ### semantically structured web pages
   - example --> *4_TheBody/Part_18/index.html* 
+
    ```
       <body>
           <header>
@@ -1335,6 +1369,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - it is also useful to use the HTML attribute `title`, this helps e.g. translation systems or screen readers and also search engines, it shows the full meaning of the abbreviation as soon as you scroll over it
 
   example --> *4_TheBody/Part_19/index.html*
+
    ```
       <article>
           <h2>Abbreviations with abbr</h2>
@@ -1347,6 +1382,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - if the title of a book, movie, painting, song, etc. is to be displayed, `cite` can be used
 
   example --> *4_TheBody/Part_19/index.html* 
+
    ```
     <article>
         <h2>Working title with cite</h2>
@@ -1364,6 +1400,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - for `<` in code `&lt;` is used and `&gt;` for `>`, this is so that the HTML document can distinguish between code and code-text
 
   example --> *4_TheBody/Part_19/index.html*
+
    ```
       <article>
       <h2>Computer code with <code>code</code></h2>
@@ -1391,6 +1428,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - `samp` is used for the screen output of programs
 
   example --> *4_TheBody/Part_19/index.html*
+
    ```
     <article>
         <h2>Keyboard input with kdb and program output with samp</h2>
@@ -1407,6 +1445,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - this marks a definition
 
   example --> *4_TheBody/Part_19/index.html*
+
    ```
     <article>
         <h2>Definition/Term with dfn</h2>
@@ -1421,6 +1460,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - this variable can be part of an application, a mathematical expression or identifier of a variable in a programming language
 
   example --> *4_TheBody/Part_19/index.html*
+
    ```
       <article>
           <h2>Variables with var</h2>
@@ -1454,6 +1494,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - with `<b>` the text is also displayed in bold, should be used for meaningful names or keywords
 
   example --> *4_TheBody/Part_19/index.html*
+
    ```
     <article>
         <h2>Emphasize text (em, strong, b and i)</h2>
@@ -1471,6 +1512,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - this is only for highlighting, to change the background color it is better to use `<span>` and then style with CSS
 
   example --> *4_TheBody/Part_19/index.html*
+
    ```
       <article>
           <h2>mark text with mark</h2>
@@ -1491,6 +1533,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the `<q>` element is used when something is to be quoted in the middle of the text or when a spoken text is to be marked
 
   example --> *4_TheBody/Part_19/index.html*
+
    ```
     <article>
         <h2>Quoting continuous text with q</h2>
@@ -1506,6 +1549,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the `<s>` element (s = strike-through) is used to indicate that a text is outdated or incorrect, the browser will display the text as crossed out
 
   example --> *4_TheBody/Part_19/index.html*
+
    ```
     <article>
         <h2>Underline or strike through text with s and u</h2>
@@ -1522,6 +1566,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the `<ins>` element (ins = insert) is the counterpart to the `<del>` element, and is used when something new is added to a document 
 
   example --> *4_TheBody/Part_19/index.html*
+
    ```
     <article>
         <h2>mark changes with del and ins</h2>
@@ -1557,6 +1602,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - it is also advantageous when searching in search engines for articles of a certain time period
 
   example --> *4_TheBody/Part_19/index.html*
+
    ```
     <header>
         <h2>Date and time with time</h2>
@@ -1586,6 +1632,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - is an annotation system in which the text with annotations appears in one line
 
   example --> *4_TheBody/Part_19/index.html*
+
    ```
     <article>
       <h2>The elements ruby, rt und rp</h2>
@@ -1604,6 +1651,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - also quite helpful is this element for JavaScript
 
   example --> *4_TheBody/Part_19/index.html*
+
    ```
     <article>
         <h2>The span element</h2>
@@ -1676,6 +1724,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the web browser displays the table without formatting, height and width usually adapts to the content
 
   example --> *5_Tables_Hyperlinks/Part_1/index.html*
+
    ```
     <h1>Browser statistics November 2021 - 2022</h1>
     <table>
@@ -1716,6 +1765,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the `scope` attribute specifies whether the table heading should apply to a column (scope="col") or a row (scope="row")
 
   - summarize columns - example --> *5_Tables_Hyperlinks/Part_2/indexA.html* 
+
    ```
       <h1>Daily planning</h1>
       <table>
@@ -1746,6 +1796,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ![Preview](5_Tables_Hyperlinks/Images/Preview_5_2A.PNG)
 
   - summarize lines - example --> *5_Tables_Hyperlinks/Part_2/indexB.html*
+
    ```
       <table>
       ...
@@ -1830,6 +1881,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - to combine several elements in one `col` element, the attribute `span` is used with specification of a value for the number of columns
 
   example --> *5_Tables_Hyperlinks/Part_4/index.html*
+
    ```
       <table>
         <colgroup>
@@ -1847,6 +1899,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - **\<caption>**
 
   example --> *5_Tables_Hyperlinks/Part_5/indexA.html*
+
    ```
       <h1>Browser statistics 2021 - 2022</h1>
       <table>
@@ -1866,6 +1919,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - further labels can be added with the HTML elements `details` and `summary`
 
   example --> *5_Tables_Hyperlinks/Part_5/indexA.html*
+
    ```
       <h1>Browser statistics 2021 - 2022</h1>
       <table>
@@ -1891,6 +1945,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - **\<figcaption>**
 
   example --> *5_Tables_Hyperlinks/Part_5/indexC.html*
+
    ```
       <figure>
           <table>
@@ -1930,6 +1985,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   ![Preview](5_Tables_Hyperlinks/Images/folder_structure.png)
 
   example --> *5_Tables_Hyperlinks/Part_6/index.html*
+
    ```
       <nav>
         Blog |
@@ -1941,6 +1997,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_6.PNG)
 
   example --> *5_Tables_Hyperlinks/Part_6/sites/links.html*
+
    ```
       <nav>
         <a href="../index.html">Blog</a> |
@@ -1953,6 +2010,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 
 ### **Links to other external websites** 
   example --> *5_Tables_Hyperlinks/Part_7/index.html*
+
    ```
       <h3>Related links</h3>
       <nav>
@@ -2009,6 +2067,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - it is also important to always inform the user what is behind a link
 
   example --> *5_Tables_Hyperlinks/Part_9/index.html*
+
    ```
       <body>
         <h1>Reference to other content types</h1>
@@ -2024,6 +2083,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - old web browsers do not support the download attribute
 
   example --> *5_Tables_Hyperlinks/Part_10/index.html*
+
    ```
       <body body>
         <h1>Reference to other content types</h1>
@@ -2073,6 +2133,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 	- therefore you can set anchors, with an `id` and with `#` you can call the section then 
 
   example --> *5_Tables_Hyperlinks/Part_11/index.html*
+
    ```
       <body>
         <h1 id="top">Contents</h1>
@@ -2123,6 +2184,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
  Images can be included on a web page using the `<img>` element (img = image), after which there is no line break if `<img>` is used in the text. The attributes `src` and `alt` should be present at least. The `src` attribute indicates where the web browser will find the image file. The `alt` attribute gives an alternative description of the image file, this should be short (75-125 characters) describing what is in the image. This is useful if the image file cannot be loaded or for screen readers and also search engines. When creating web pages, the images should be placed in an extra directory (usually named "Images"). The `title` attribute can be used to display additional information when the user touches the image with the mouse.
 
   example --> *6_Graphics_Multimedia/Part_1/index.html*
+
    ```
       <h1>Beautiful world</h1>
       <p>
@@ -2140,6 +2202,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - scaling with `width` and `height` is possible, but if possible the image should be adjusted to the correct size with an image editing program, on the one hand the data volume is reduced and the risk that the images are displayed distorted is eliminated
 
   example --> *6_Graphics_Multimedia/Part_2/index.html*
+
    ```
      <img src="Images/flower_1920.jpg" alt="Purple flower" width="480" height="360">
    ``` 
@@ -2148,6 +2211,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - with `<figure>` and `<figcaption>` it is possible to create separate captions
 
   example --> *6_Graphics_Multimedia/Part_2/index.html*
+
    ```
       <h1>Purple flower</h1>
       <figure>
@@ -2279,6 +2343,7 @@ Pixel coordinates with a graphics program [Online Image Map Editor](http://masch
  The picture element allows to provide a suitable picture for all display sizes. Each source element in the `<picture>` element contains a query (media query) with the HTML attribute `media`, specifications such as viewport width, viewport height and alignment are queried. The sources of `<source>` are read from top to bottom. If the viewport is at least 1024 pixels (`min-width:1024px`), the image is loaded with 1024 pixels. If the viewport is at least 640 pixels, the image is loaded with 640 pixels.
 
   example --> *6_Graphics_Multimedia/Part_4/index.html*
+
    ```
       <picture> 
         <source media="(min-width: 1024px)" srcset="Images/Image_1024.jpg">
@@ -2309,6 +2374,7 @@ large display
  These icons are called favicons, these are good for recognition on the website. Favicons can be created with any image editing software. But also on the web there are online tools with which icons can be created e.g. [favicon.io](https://favicon.io/) . Favicons should be saved in `.ico` format. If another file format is used, the MIME type should be specified (e.g. PNG format: `type="image.png"`). The size of a favicon is usually `16x16` or `32x32` pixels. Additionally icons can be used for mobile devices e.g. IPhone or IPad the value `apple-icon-touch` is specified at `rel`.
 
   example --> *6_Graphics_Multimedia/Part_5/index.html*
+
    ```
       <head>
         <title>Add icon for the website</title>
@@ -2332,6 +2398,7 @@ large display
  The quality of the SVG graphic always remains the same even if the `width` and `height` attributes are used to scale the size of the display.
 
   example --> *6_Graphics_Multimedia/Part_6/index.html*
+
    ```
       <h1>SVG as graphic reference</h1>
       <p>
@@ -2351,6 +2418,7 @@ Editors for SVG graphics editing:
  It is possible to embed the SVG directly into the HTML document. The SVG syntax with the SVG element is noted between `<svg> ... </svg>` is noted. SVG itself offers different tags e.g. for circles, ellipses, rectangles, polygons, lines, elements for paths, texts and animations.
 
   example --> *6_Graphics_Multimedia/Part_7/index.html*
+
    ```
       <h1>Embed SVG graphics directly</h1>
       <p>
@@ -2396,6 +2464,7 @@ Editors for SVG graphics editing:
 Mathematical formulas can be integrated directly into a web page using MathML (Mathematical Markup Language). The MathML tags are noted between `<math> ... </math>`. Unfortunately not yet supported by all browsers, but the problem can be solved with the help of [MathJax](http://www.mathjax.org).
 
   example --> *6_Graphics_Multimedia/Part_8/index.html*
+
    ```
       <head>
         <meta charset="UTF-8">
@@ -2429,6 +2498,7 @@ Is nothing more than a white area on which something can be drawn with the help 
   - In the introductory `<canvas>` tag, the `id` is specified with , `width` and `height` determine the size of the drawing area. The `id` is particularly important in order to be able to access the `<canvas>` element later with JavaScript.
 
   example --> *6_Graphics_Multimedia/Part_9/index.html*
+
    ```
       <head>
         <meta charset="UTF-8">
@@ -2459,6 +2529,7 @@ With the `<video>` element it is possible to play a video in the web browser wit
 Currently 3 video formats are supported: *MP4*, *WebM*, *OGG*. However, not every browser supports all 3 formats. The most widely used is *MP4*.
 
   example --> *6_Graphics_Multimedia/Part_10/index.html*
+
    ```
       <body>
         <h1>Play videos</h1>
@@ -2472,6 +2543,7 @@ Currently 3 video formats are supported: *MP4*, *WebM*, *OGG*. However, not ever
 If you want to be sure that the browser plays the video. Can you also offer all 3 formats, then other types can be specified.
 
   example --> *6_Graphics_Multimedia/Part_11/index.html*
+
    ```
       <body>
         <h1>Play videos</h1>
@@ -2504,6 +2576,7 @@ HTML attributes for the \<video> element
 It is also possible to play a video via YouTube. Works only on live server.
 
   example --> *6_Graphics_Multimedia/Part_12/index.html*
+
    ```
       <body>
           <figure>
@@ -2525,6 +2598,7 @@ It is also possible to play a video via YouTube. Works only on live server.
 In principle the `<audio>` element works, also here there are 3 formats: *MP3*, *OGG* and *WAV* which can be played without any additional software. All web browsers can handle the *MP3* format.
 
   example --> *6_Graphics_Multimedia/Part_13/index.html*
+
    ```
       <body>
         <h1>Play audio</h1>
@@ -2568,6 +2642,7 @@ It is possible to include videos, audio files and images in an HTML document wit
 With this element it is possible to embed something in an HTML document. In practice it often happens that this element is used to embed other HTML document.
 
   example --> *6_Graphics_Multimedia/Part_14/index.html*
+
    ```
       <body>
         <h1>use iframe</h1>
@@ -2629,6 +2704,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
  The HTML attribute `name` should be used for an identifier for each input field, because this is needed by the script (JavaScript, PHP) when processing the data in order to access the entered data. The `size` -attribute specifies the display length in characters and `maxlength` the actual allowed character length.
 
   example --> *7_Forms/Part_1/index.html*
+
    ```
     <h1>Single line text field</h1>
     <form>
@@ -2643,6 +2719,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
  A password field is not encrypted and serves only as a protection against screen tampering. The entered password is transmitted over the Internet in clear text via HTTP protocol without encryption. For encrypted communication between the web browser and the web server, the HTTPS protocol must be used, and the web server must support this protocol.
 
   example --> *7_Forms/Part_2/index.html*
+
    ```
     <h1>Text field for password</h1>
     <form>
@@ -2657,6 +2734,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
  If a text field with multiple lines is needed for messages, comments, feedback or similar, `<textarea> ... </textarea>` is used. The number of displayed lines is specified with the `rows` attribute and the number of characters per line with `cols`. By default, the text is automatically wrapped at the end in the next line. The wrap happens only visually and is not sent when the data is sent. This can be changed with the `wrap` attribute. If the default setting `wrap="soft"` is changed to `wrap="hard"`, the text is no longer wrapped automatically.
 
   example --> *7_Forms/Part_3/index.html*
+
    ```
     <h1>Multiline input field</h1>
     <form>
@@ -2673,6 +2751,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
  A selection list or dropdown list is displayed with `<select> ... </select>`. The individual selection options are indicated with `<option> ... </option>`.
 
   example --> *7_Forms/Part_4/index.html*
+
    ```
     <h1>Dropdown and selection lists</h1>
     <form>
@@ -2716,6 +2795,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
  Radio buttons are also provided with the input element. For this purpose `<input type="radio">` is specified. Each radio button should be provided with the `name` attribute. Radio buttons with the same name belong to the same group from which the user can select a value. The value is specified with `value`.
 
   example --> *7_Forms/Part_5/index.html*
+  
    ```
     <h1>Radio buttons</h1>
     <form>
