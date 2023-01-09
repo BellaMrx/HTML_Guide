@@ -2628,9 +2628,9 @@ With this element it is possible to embed something in an HTML document. In prac
         </iframe> 
       </body>
    ```
-![Preview](6_Graphics_Multimedia/Images/Preview_6_14.png)
+ ![Preview](6_Graphics_Multimedia/Images/Preview_6_14.png)
 
-When embedding an external HTML document, it may be necessary to restrict certain things for security reasons. Such a restriction is available with the sandbox attribute. When the sandbox attribute is used in the `<iframe>`, it prevents the execution of scripts, links going out of the frame, plug-ins, accessing cookies and submitting forms.
+ When embedding an external HTML document, it may be necessary to restrict certain things for security reasons. Such a restriction is available with the sandbox attribute. When the sandbox attribute is used in the `<iframe>`, it prevents the execution of scripts, links going out of the frame, plug-ins, accessing cookies and submitting forms.
 
 - More information about [sandbox](https://www.w3schools.com/tags/att_iframe_sandbox.asp).
 
@@ -2687,4 +2687,5 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
         Enter name: <input type="text" name="aName" size="30" maxlength="40">
     </form>
    ```
+ ![Preview](7_Forms/Images/Preview_7_1.PNG)
 
