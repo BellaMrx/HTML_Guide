@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML form</title>
+    <style>
+        input:invalid {
+            background: lightcoral;
+        }
+        
+        input:valid {
+            background: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>New input types (HTML5)</h1>
+    <form>
+        <p>
+            Select color (type="color")
+            <input type="color" name="favcolor" value="#FF0000" /><br /><br /> 
+            Enter date (type="date")
+            <input type="date" name="mydate" value="2022-11-12" min="2022-01-01" max="2022-12-30" /><br /><br /> 
+            Enter time (type="time")
+            <input type="time" name="mytime" value="15:15" min="08:00" max="17:00" /><br /><br /> 
+            Enter date and time (type="datetime")
+            <input type="datetime-local" name="mydtime" value="2022-11-12T15:30" /><br /><br /> 
+            Enter month and week (type="month", type="week")
+            <input type="month" name="mymonth" value="2022-01" />
+            <input type="week" name="myweek" value="2022-01" /><br /><br /> 
+            Enter search (type="search")
+            <input type="search" name="mysearch" value="Search Keyword" /><br /><br /> 
+            Enter e-mail address (type="email")
+            <input type="email" name="myemail" multiple requried /><br /><br /> 
+            Enter URL (type="url")
+            <input type="url" name="myurl" /><br /><br /> 
+            Enter phone number (type="tel")
+            <input type="tel" name="mytel" pattern="\+\+[0-9\-]" /><br /><br /> 
+            Enter number (type="number")
+            <input type="number" name="mynum" min="0" max="100" value="50" /><br /><br /> 
+            Set value (type="range")
+            <input type="range" name="mynum2" value="5" min="1" max="10" step="1" /><br /><br />
+        </p>
+    </form>
+
+    Adjust slider:
+    <input type="range" id="ival" value="50" />
+    <output id="oval" for="ival">50</output>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function synchOutput(ev) {
+                document.getElementById("oval").value = ev.target.value;
+            }
+            document.getElementById("ival").addEventListener("input", synchOutput);
+        });
+    </script>
+</body>
+
+</html>

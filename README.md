@@ -2939,9 +2939,208 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 
 
 ## 7.3. Special types of input fields
+ In HTML there are several field types for better input control by the web browser, e.g. to specify certain types of data or ranges of values. All new input fields are annotated with the `<input>` tag and the corresponding `type` attribute.
+
+
+ Types of `<input>` elements for the HTML attribute `type`
+| HTML notation          | Explanation          				 |
+| ---------------------- | ----------------------------- |
+| `type="color"`         | Color selection               |
+| `type="date"`          | Date selection                |
+| `type="datetime"`      | date and time selection       |
+| `type="datetime-local"`| local date and time selection |
+| `type="email"`         | e-mail address                |
+| `type="month"`         | month selection               |
+| `type="number"`        | Number field                  |
+| `type="range"`         | slider                        |
+| `type="search"`        | Search input field            |
+| `type="tel"`           | phone number                  |
+| `type="time"`          | Time selection                |
+| `type="url"`           | URL input field               |
+| `type="week"`          | Week selection                |
+
+### **\<input type="color">**
+ With `<input type="color">` the user can select a color value via a color selection dialog. If the value is to be preset then the attribute `value` must be used.
+  
+  example --> *7_Forms/Part_12/index.html*
+
+   ```
+    <h1>New input types (HTML5)</h1>
+    <form>
+        <p>
+            Select color (type="color")
+            <input type="color" name="favcolor" value="#FF0000" /><br /><br />
+        </p>
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_12_1.PNG)
+
+
+### **\<input type="date">**
+ Here it is possible to select a date.
+  
+  example --> *7_Forms/Part_12/index.html*
+
+   ```
+    <h1>New input types (HTML5)</h1>
+    <form>
+        <p>
+            Enter date (type="date")
+            <input type="date" name="mydate" value="2021-11-12" min="2021-01-01" max="2022-12-30" /><br /><br /> 
+        </p>
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_12_2.PNG)
+
+
+### **\<input type="time">**
+ This can be used to specify a time in 24 hour format. If the field is to be preset then the value value is used.
+  
+  example --> *7_Forms/Part_12/index.html*
+
+   ```
+    <h1>New input types (HTML5)</h1>
+    <form>
+        <p>
+            Enter time (type="time")
+            <input type="time" name="mytime" value="15:15" min="08:00" max="17:00" /><br /><br /> 
+        </p>
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_12_3.PNG)
+
+
+### **\<input type="month"> and \<input type="week">**
+ This creates an input field for specifying the month and week.
+
+  example --> *7_Forms/Part_12/index.html*
+
+   ```
+    <h1>New input types (HTML5)</h1>
+    <form>
+        <p>
+            Enter month and week (type="month", type="week")
+            <input type="month" name="mymonth" value="2018-01" />
+            <input type="week" name="myweek" value="2018-01" /><br /><br />
+        </p>
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_12_4.PNG)
+
+
+### **\<input type="search">**
+ This can be used to create an input field for a search.
+
+  example --> *7_Forms/Part_12/index.html*
+
+   ```
+    <h1>New input types (HTML5)</h1>
+    <form>
+        <p>
+            Enter search (type="search")
+            <input type="search" name="mysearch" value="Search Keyword" /><br /><br />
+        </p>
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_12_5.PNG)
+
+
+### **\<input type="email">**
+ This defines an input field for email addresses. The web browser checks if the email address has a valid format. The `required` attribute should also be specified, otherwise an empty field may be sent to the web server. With the attribute `multiple` it is possible to specify more than one email address. The individual email addresses are separated by commas.
+
+  example --> *7_Forms/Part_12/index.html*
+
+   ```
+    <h1>New input types (HTML5)</h1>
+    <form>
+        <p>
+            Enter e-mail address (type="email")
+            <input type="email" name="myemail" multiple requried /><br /><br /> 
+        </p>
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_12_6.PNG)
+
+
+### **\<input type="url">**
+ This creates an input field for web addresses.
+
+  example --> *7_Forms/Part_12/index.html*
+
+   ```
+    <h1>New input types (HTML5)</h1>
+    <form>
+        <p>
+            Enter URL (type="url")
+            <input type="url" name="myurl" /><br /><br />
+        </p>
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_12_7.PNG)
+
+
+### **\<input type="tel">**
+ This creates an input field for a phone number.
+
+  example --> *7_Forms/Part_12/index.html*
+
+   ```
+    <h1>New input types (HTML5)</h1>
+    <form>
+        <p>
+            Enter phone number (type="tel")
+            <input type="tel" name="mytel" pattern="\+\+[0-9\-]" /><br /><br /> 
+        </p>
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_12_8.PNG)
+
+ More information about [HTML5-pattern](https://html5pattern.com).
+
+
+### **\<input type="number">**
+ 
+  example --> *7_Forms/Part_12/index.html*
+
+   ```
+    <h1>New input types (HTML5)</h1>
+    <form>
+        <p>
+            Enter number (type="number")
+            <input type="number" name="mynum" min="0" max="100" value="50" /><br /><br />
+        </p>
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_12_9.PNG)
+
+
+### **\<input type="range">**
+ Used to create a slider. The HTML element `<output>` can be used for the output of values or the result of a calculation and is therefore the opposite of `<input>`. Without JavaScript, updating the output element is not possible.
+
+  example --> *7_Forms/Part_12/index.html*
+
+   ```
+    <h1>New input types (HTML5)</h1>
+    Adjust slider:
+    <input type="range" id="ival" value="50" />
+    <output id="oval" for="ival">50</output>
 
 
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function synchOutput(ev) {
+                document.getElementById("oval").value = ev.target.value;
+            }
+            document.getElementById("ival").addEventListener("input", synchOutput);
+        });
+    </script>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_12_10.PNG)
+
+## Links
 
 
-### Thanks for reading. I hope you enjoyed it. On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about HTML and web development. Or check out my [GitHub](https://github.com/BellaMrx) account.
+### Thanks for reading. I hope you enjoyed it. 
+ On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about HTML and web development. 
+ Or check out my [GitHub](https://github.com/BellaMrx) profile.
