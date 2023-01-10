@@ -48,6 +48,7 @@
     - 7.1. Define an area for forms
     - 7.2. The HTML input fields for forms
     - 7.3. Special types of input fields
+    - 7.4. Send form data with PHP
 
 --------------------------------------------------------------------------------------------
 
@@ -3137,6 +3138,71 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
     </script>
    ```
  ![Preview](7_Forms/Images/Preview_7_12_10.PNG)
+
+
+ More HTML attributes for input fields
+| attribute     | Explanation         								              |
+| ------------- | ------------------------------------------------- |
+| `autofocus`   | Once the web page is loaded, the input field gets the focus and data can be entered. The attribute is a stand-alone attribute. Correctly, only one element in a form should contain this attribute. |
+| `autocomplete`| This allows you to enable autocompletion with the value on (= default value) and disable it with the value off. |
+| `list`        | As value you pass the id attribute of a datalist element with predefined options for autocompletion. |
+| `max`, `min`  | This allows you to set the minimum or maximum value for an input field. |
+| `multiple`    | With the Boolean attribute you can allow the user to enter more than one value. This attribute works with `type="file"` and `type="email"`. |
+| `pattern`     | This allows you to define a regular expression as a search pattern, which must match the contents of the input field. |
+| `placeholder` | This allows you to define a simple text as a placeholder that will be displayed as long as the input field is empty. It makes sense that this is a hint or help with regard to what the user should enter here (e.g. your email address in the case of a text input field for an email).|
+| `required`    | With this standalone attribute you specify that this input field has to be must be filled in before it can be submitted. |
+| `step`        | This is used to specify the value of the step size (interval) with which the control field can be changed. |
+| `disabled`    | This stand-alone attribute allows you to disable an input field so that it cannot be selected and is grayed out. |
+| `readonly`    | If you use this standalone attribute, it is not possible to change the input element. The input field is read-only. |
+
+
+### **`autofocus`**
+  example --> *7_Forms/Part_13/index.html*
+
+   ```
+    <h1>autofocus</h1>
+    <form>
+      Text 1 <input type="text" autofocus><br>
+      Text 2 <input type="text"><br>
+      Text 3 <input type="text">
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_13.PNG)
+
+
+### **`list`**
+  example --> *7_Forms/Part_14/index.html*
+
+   ```
+    <h1>list and datalist</h1>
+    <form>
+      Title <input list="mylist" name="titel"><br>
+      <datalist id="mylist">
+        <option value="Mr.">
+        <option value="Mrs.">
+        <option value="Professor">
+      </datalist>
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_14.PNG)
+
+
+### **`placeholder`**
+  example --> *7_Forms/Part_15/index.html*
+
+   ```
+    <h1>placeholder</h1>
+    <form>
+      User <input type="text" placeholder="Username"><br>
+      Password <input type="password" placeholder="Password"><br>
+    </form>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_15.PNG)
+
+
+## 7.4. Send form data with PHP
+
+
 
 ## Links
 
