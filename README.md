@@ -3259,29 +3259,29 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 
 
  **GET**
- With this HTTP request method, the web browser appends the form data to the address specified with the HTML action attribute with a ? -character at the end as a query string.
+ * With this HTTP request method, the web browser appends the form data to the address specified with the HTML action attribute with a ? -character at the end as a query string.
  The GET method is used in practice more for small amounts of data, such as a search query. If the amount of data is more extensive or the GET parameters should not be visible in readable form in the URL, the POST method should be used.
 
 
  **POST**
- The post method (method="post") is usually used for larger amounts of text. When requesting content, the data is transferred from the form in a data block of name-value pairs. An advantage is that the length of the data is usually unlimited. Uploading files is only possible with the POST method.
+ * The post method (method="post") is usually used for larger amounts of text. When requesting content, the data is transferred from the form in a data block of name-value pairs. An advantage is that the length of the data is usually unlimited. Uploading files is only possible with the POST method.
 
 
 ----------------------------------------------------------------------------------------------
 
 # 8. Useful websites about HTML
- [Google](https://www.google.com/)
- [HTML Dog](https://www.htmldog.com/) - HTML Tutorials
- [W3school](https://www.w3schools.com/) - W3Schools is optimized for learning, testing, and training
- [Mmdn](https://developer.mozilla.org/en-US/docs/Web/HTML) - All About HTML
- [HTML.com](https://html.com/) - HTML For Beginners
- [HTML5up](https://html5up.net/) - Templates
- [FreeHTMLt.co](https://freehtml5.co/) - Templates
- [GitHub](https://github.com/) 
+ * [Google](https://www.google.com/)
+ * [HTML Dog](https://www.htmldog.com/) - HTML Tutorials
+ * [W3school](https://www.w3schools.com/) - W3Schools is optimized for learning, testing, and training
+ * [Mmdn](https://developer.mozilla.org/en-US/docs/Web/HTML) - All About HTML
+ * [HTML.com](https://html.com/) - HTML For Beginners
+ * [HTML5up](https://html5up.net/) - Templates
+ * [FreeHTMLt.co](https://freehtml5.co/) - Templates
+ * [GitHub](https://github.com/) 
 
 
 ------------------------------------------------------------------------------------------
 
-### Thanks for reading. I hope you enjoyed it. 
- On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about HTML and web development. 
- Or check out my [GitHub](https://github.com/BellaMrx) profile.
+### Thanks for reading. I hope you enjoyed it or at least learned something. 
+ * On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about HTML and web development. 
+ * Or check out my [GitHub](https://github.com/BellaMrx) profile.
