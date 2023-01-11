@@ -48,7 +48,8 @@
     - 7.1. Define an area for forms
     - 7.2. The HTML input fields for forms
     - 7.3. Special types of input fields
-    - 7.4. Send form data with PHP
+    - 7.4. Interactive HTML elements
+    - 7.5. Send form data with PHP
 
 --------------------------------------------------------------------------------------------
 
@@ -3200,7 +3201,50 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
  ![Preview](7_Forms/Images/Preview_7_15.PNG)
 
 
-## 7.4. Send form data with PHP
+## 7.4. Interactive HTML elements
+ Interactive elements can be changed and adjusted by visitors, or interacted with in other ways.
+
+### **\<details> and \<summary>**
+ The details element can be used to expand and collapse page content. This can be helpful to avoid overwhelming the visitor with too much details and information right away. The visitor can click on a summary element to expand or collapse the information. The `open` attribute specifies that the content is already expanded when the web page is loaded, by default the details are collapsed. 
+
+  example --> *7_Forms/Part_16/index.html*
+
+   ```
+    <h1>details and summary</h1>
+	  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+      <details>
+	  <summary>More informationen</summary>
+	  <blockquote>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</blockquote>
+	  </details>
+	  <details open>
+	  <summary>Further information</summary>
+	    <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+       </ul>
+	  </details>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_16_1.PNG)
+ ![Preview](7_Forms/Images/Preview_7_16_2.PNG)
+
+
+### **\<dialog>**
+ Dialog boxes were and are usually displayed using div elements. This is also possible with \<dialog>. The dialog element only becomes useful when used with JavaScript (`onclick="document.getElementById('dialog1').close()"`).
+
+  example --> *7_Forms/Part_17/index.html*
+
+   ```
+	  <dialog id="dialog1" open>
+	    <p>End dialog?<br>
+		  <input type="button" value="Close" onclick="document.getElementById('dialog1').close()">
+		  </p>
+	  </dialog>
+   ```
+ ![Preview](7_Forms/Images/Preview_7_17.PNG)
+
+
+## 7.5. Send form data with PHP
 
 
 
