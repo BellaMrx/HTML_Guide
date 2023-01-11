@@ -1,6 +1,6 @@
 # HTML Guide
 
- Detailed guide about HTML (all basics for HTML) + templates.
+ Detailed guide about HTML5 (all basics for HTML) + templates.
 
  The code examples in the guide can be found in the listed folders.
 
@@ -50,6 +50,7 @@
     - 7.3. Special types of input fields
     - 7.4. Interactive HTML elements
     - 7.5. Send form data with PHP
+8. Useful websites about HTML
 
 --------------------------------------------------------------------------------------------
 
@@ -3235,21 +3236,51 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
   example --> *7_Forms/Part_17/index.html*
 
    ```
-	  <dialog id="dialog1" open>
-	    <p>End dialog?<br>
-		  <input type="button" value="Close" onclick="document.getElementById('dialog1').close()">
-		  </p>
-	  </dialog>
+    <dialog id="dialog1" open>
+      <p>End dialog?<br>
+      <input type="button" value="Close" onclick="document.getElementById('dialog1').close()">
+      </p>
+    </dialog>
    ```
  ![Preview](7_Forms/Images/Preview_7_17.PNG)
 
 
 ## 7.5. Send form data with PHP
+ This is just an example of how data from an HTML form, entered in a web browser, gets to the ad server and is processed there. I will not go into detail about PHP here. To do this, you use a simple form mailer in PHP.
+
+### Transferring the data from the web browser for further processing
+ When a user fills out the input fields of a form and then submits it, the data is transferred to an application on the web server for further processing. Which application this is is specified with the `action` attribute in the `<form>` element. In practice, this is a script (usually in PHP) that is able to process the form data transferred by the web browser.
+
+ The data in this HTML form is sent to a PHP script named `form-mail.php`. The web browser composes an HTTP request from the input in the form (`GET http://address.com/script.php HTTP/1.1`). There are several HTTP request methods, of which **GET** and **POST** are the most important.
+
+  example --> *7_Forms/Part_18*
+
+ ![Preview](7_Forms/Images/Preview_7_18.PNG)
 
 
+ **GET**
+ With this HTTP request method, the web browser appends the form data to the address specified with the HTML action attribute with a ? -character at the end as a query string.
+ The GET method is used in practice more for small amounts of data, such as a search query. If the amount of data is more extensive or the GET parameters should not be visible in readable form in the URL, the POST method should be used.
 
-## Links
 
+ **POST**
+ The post method (method="post") is usually used for larger amounts of text. When requesting content, the data is transferred from the form in a data block of name-value pairs. An advantage is that the length of the data is usually unlimited. Uploading files is only possible with the POST method.
+
+
+----------------------------------------------------------------------------------------------
+
+# 8. Useful websites about HTML
+ [Google](https://www.google.com/)
+ [HTML Dog](https://www.htmldog.com/) - HTML Tutorials
+ [W3school](https://www.w3schools.com/) - W3Schools is optimized for learning, testing, and training
+ [Mmdn](https://developer.mozilla.org/en-US/docs/Web/HTML) - All About HTML
+ [HTML.com](https://html.com/) - HTML For Beginners
+ [HTML5up](https://html5up.net/) - Templates
+ [FreeHTMLt.co](https://freehtml5.co/) - Templates
+ [GitHub](https://github.com/) 
+
+
+------------------------------------------------------------------------------------------
 
 ### Thanks for reading. I hope you enjoyed it. 
  On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about HTML and web development. 

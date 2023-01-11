@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>HTML forms</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <h1>A simple form mailer</h1>
+    <form id="myForm" method="post" action="form-mail.php">
+        <fieldset>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Your name" required />
+                <label id="error1"></label>
+            </div>
+            <div>
+                <label for="mail">Email:</label>
+                <input type="email" name="mail" id="mail" placeholder="Email address" required />
+                <label for="mail" id="error2"></label>
+            </div>
+            <div>
+                <label for="message">Your message:</label>
+                <textarea name="message" id="message" placeholder="Enter message here ..." rows="8" required></textarea>
+                <label for="message" id="error3"></label>
+            </div>
+            <div>
+                <input name="submit" type="submit" value="Submit" />
+                <input name="Reset" type="reset" value="Reset" />
+            </div>
+            <br />
+            <div>
+                <label for="dsgvo" id="error4">DSGVO Consent:</label>
+                <input type="checkbox" id="dsgvo" name="dsgvo" required />
+                <label>This website may store the information submitted for the purpose of answering my request. (<a href="#" target="_blank"
+              >Privacy policy</a
+            >).</label
+          >
+        </div>
+      </fieldset>
+    </form>
+
+    <script src="myscript.js"></script>
+  </body>
+</html>
