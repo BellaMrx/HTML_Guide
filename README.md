@@ -3289,9 +3289,10 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
  **HTML** forms only the basic structure of websites, which is extended and modified by other technologies such as **CSS** and **JavaScript**. **CSS** is used to control presentation, formatting, and layout. **JavaScript** is used to control the behavior of various elements.
 
 
- Thanks for reading. I hope you enjoyed it or at least learned something.
-
-
  On my Twitter account [@bella_mrx](https://twitter.com/bella_mrx) you can find more useful stuff about HTML and web development. 
 
  Or check out my [GitHub](https://github.com/BellaMrx) profile.
+
+
+ Thanks for reading. 
+ I hope you enjoyed it or at least learned something.
