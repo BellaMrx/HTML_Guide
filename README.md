@@ -3286,6 +3286,8 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 
  The guide is an overview that a WebDeveloper should know. But there is more to know and also always new about HTML.
 
+ An overview of all HTML elements and their attributes can be found here [HTML Cheat Sheets](https://github.com/BellaMrx/HTML_Cheat_Sheets).
+
  **HTML** forms only the basic structure of websites, which is extended and modified by other technologies such as **CSS** and **JavaScript**. **CSS** is used to control presentation, formatting, and layout. **JavaScript** is used to control the behavior of various elements.
 
 
