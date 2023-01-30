@@ -3282,7 +3282,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ------------------------------------------------------------------------------------------
 
 
-### The end
+### The End
 
  The guide is an overview that a WebDeveloper should know. But there is more to know and also always new about HTML.
 
