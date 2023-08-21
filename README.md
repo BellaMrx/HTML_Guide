@@ -177,7 +177,7 @@
 
 ## 1.5. Create and view a simple web page
   1. open an editor (for the beginning a simple editor is enough), and create a new empty document.
-  2. enter HTML code into the editor, example --> *1_IntroductionToHTML/Part_1/index.html*
+  2. enter HTML code into the editor,  [Examples](https://github.com/BellaMrx/HTML_Guide/blob/main/1_IntroductionToHTML/Part_1/index.html) --> *1_IntroductionToHTML/Part_1/index.html*
   3. save HTML code, it is recommended to create a new directory for it. When saving the file, make sure that the file is saved with the file extension *.html*. As encoding *UTF-8* is always good, you can also use *ANSI* for the time being.
   4. The HTML file can now be opened with a browser, usually it is enough to double-click the file and the standard browser opens and displays the file.
 
@@ -205,8 +205,7 @@
   - between `<h2>` and `</h2>` there is a 2nd order heading
   - between `<p>` and `</p>` there is a normal paragraph
   
-  example --> *2_StructureOfaHTMLdocument/Part_1/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/2_StructureOfaHTMLdocument/Part_1/index.html) --> *2_StructureOfaHTMLdocument/Part_1/index.html*
    ```
     <!doctype html>
     <html>
@@ -234,8 +233,7 @@ Most HTML elements can be nested and contain other HTML elements, creating a hie
   - Complex HTML documents contain a lot of nesting.
   - It is important to avoid incorrect nesting, otherwise the web page can be displayed incorrectly and it becomes very confusing.
 
-  example --> *2_StructureOfaHTMLdocument/Part_2/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/2_StructureOfaHTMLdocument/Part_2/index.html) --> *2_StructureOfaHTMLdocument/Part_2/index.html*
    ```
     <!doctype html>
     <html>
@@ -257,8 +255,7 @@ Most HTML elements can be nested and contain other HTML elements, creating a hie
   - the `<a>...</a>` element defines a hyperlink to another page, at `href` you specify the URL to navigate to 
   - the standalone tag `<img>` can be used to display images, `src` specifies the location of the image, alt specifies the alternative text if the image cannot be displayed
 
-  example --> *2_StructureOfaHTMLdocument/Part_3/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/2_StructureOfaHTMLdocument/Part_3/index.html) --> *2_StructureOfaHTMLdocument/Part_3/index.html*
    ```
     <!doctype html>
     <html>
@@ -361,8 +358,7 @@ The complete explanations for each tag will be given in the next chapters, these
 ## 3.2. The title element 
  A title should be used in each HTML document, which is displayed in the browser header. Only one title element can be used per HTML document. The title element can be skipped, but the web page will not be considered valid. The title element serves the user e.g. if the page is saved as a bookmark, then the title is displayed as a name suggestion. And most importantly, the title has a high importance in search engines, because it is what the user sees first in the search engine when the pages are listed. 
  
-  example --> *3_TheHeader/Part_1/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/3_TheHeader/Part_1/index.html) --> *3_TheHeader/Part_1/index.html*
    ```
     <head>
       <meta charset="UTF-8">
@@ -375,8 +371,7 @@ The complete explanations for each tag will be given in the next chapters, these
 ## 3.3. The base element
 The base-element specifies a base URL or base target for all relative URLs in an HTML document. By defining such a base URL, a relative or absolute address to the file can be used in the document as if it were located directly on the same host or computer. Can be used only once in the HTML document.
 
-  example --> *3_TheHeader/Part_2/index.html*  (source [w3school](https://www.w3schools.com/tags/tag_base.asp) )
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/3_TheHeader/Part_2/index.html) --> *3_TheHeader/Part_2/index.html*  (source [w3school](https://www.w3schools.com/tags/tag_base.asp) )
    ```
       <head>
         <base href="https://www.w3schools.com/" target="_blank">
@@ -396,8 +391,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ## 3.4. The link element
  The link element is a stand-alone tag that may be used multiple times in the HTML document. In practice, it is often used to include an external CSS file, and other files. The relationship between the HTML document and the external document is specified with the HTML attribute `rel`.
  
-  example --> *3_TheHeader/Part_3/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/3_TheHeader/Part_3/index.html) --> *3_TheHeader/Part_3/index.html*
    ```
     <head>
       <title>Logical linking with link</title>
@@ -432,8 +426,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ## 3.5. The style element
  This element can be used to include style information (CSS) within the HTML document.
  
-  example --> *3_TheHeader/Part_4/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/3_TheHeader/Part_4/index.html) --> *3_TheHeader/Part_4/index.html*
    ```
     <head>
       <style type="text/css">
@@ -460,8 +453,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ## 3.6. The script element
  This element is used to include scripts in a document. The script can either be included directly in the HTML document between `<script>...</script>`, or an external script with the src attribute.
 
-  example --> *3_TheHeader/Part_5/indexA.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/3_TheHeader/Part_5/indexA.html) --> *3_TheHeader/Part_5/indexA.html*
    ```
     <head>
       <title>Use the script element</title>
@@ -474,8 +466,8 @@ The base-element specifies a base URL or base target for all relative URLs in an
     </head>
    ```
 
-  example --> *3_TheHeader/Part_5/indexB.html* --> external script
 
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/3_TheHeader/Part_5/indexB.html) --> *3_TheHeader/Part_5/indexB.html* --> external script
    ```
     <head>
       <title>Use the script element</title>
@@ -512,8 +504,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
  
  - The `http-equiv` specification is for the web browser to communicate with, but web servers don't actually parse HTML documents, so it's up to the browser who processes the specification.
 
-  example --> *3_TheHeader/Part_6/indexA.html* 
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/3_TheHeader/Part_6/indexA.html) --> *3_TheHeader/Part_6/indexA.html* 
    ```
     <head>
       <meta http-equiv="refresh" content="5">
@@ -522,8 +513,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
      
  - This specification should be used if the web page was not created in English to be able to display special characters.
 
-  example --> *3_TheHeader/Part_6/indexB.html* 
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/3_TheHeader/Part_6/indexB.html) --> *3_TheHeader/Part_6/indexB.html* 
    ```
     <head>
       <meta charset="UTF-8">
@@ -615,8 +605,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - mainly serve to give meaning to the content, especially helpful for developers, search engines and screen readers
   - the content is divided into topic-related sections, helpful when creating individual chapters or subchapters
   
-  example --> *4_TheBody/Part_1/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_1/index.html) --> *4_TheBody/Part_1/index.html*
    ```
       <body>
         <section>
@@ -639,8 +628,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - should be used to summarize content in a self-contained topic-specific block
   - is relatively similar to `<section>`, however `<article>` should be used for self-contained sections, such as news item
 
-  example --> *4_TheBody/Part_2/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_2/index.html) --> *4_TheBody/Part_2/index.html*
    ```
       <body>
       <h1>My blog</h1>
@@ -662,11 +650,11 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - can usually supplement or extend content with additional information
   - can be used either for a sidebar or additional information (e.g. citation) within an `<article>` element
 
-  example --> *4_TheBody/Part_3/indexB.html*
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_3/indexA.html) --> *4_TheBody/Part_3/indexB.html*
+
   ![Preview](4_TheBody/Images/Preview_4_3B.PNG)
 
-  example --> *4_TheBody/Part_3/indexA.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_3/indexB.html) --> *4_TheBody/Part_3/indexA.html*
    ```
       <body>
       <h1>My blog</h1>
@@ -697,8 +685,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - this can be used to split navigation elements into blocks e.g. for the main navigation or a list of links for a sitemap
   - should be used when whole blocks of links are needed
 
-  example --> *4_TheBody/Part_4/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_4/index.html) --> *4_TheBody/Part_4/index.html*
    ```
       <body>
       <nav>
@@ -757,8 +744,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ### **\<h1> - \<h6>**
   - is used for headings, this element is used to define the content structure of a document
 
-  example --> *4_TheBody/Part_5/indexA.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_5/indexA.html) --> *4_TheBody/Part_5/indexA.html*
    ```
       <body>
       <h1>My blog</h1>
@@ -776,7 +762,8 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - Outline: is the name for the structure of the document
 	 - [HTML5 Outliner](https://h5o.github.io) 
 	 - [Validation check](https://validator.w3.org/nu/#textarea)
-  example --> *4_TheBody/Part_5/indexB.html*
+
+ [Examples](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_5/indexB.html) --> *4_TheBody/Part_5/indexB.html*
 
   ![Preview](4_TheBody/Images/Preview_4_5B.PNG)
 
@@ -785,8 +772,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
  - in the `<header>` can be other elements, but to nest another `<header>` in it is not optimal, but can be used several times in the document, the `<header>` does not have to be the first element 
  - `<footer>` does not have to be the last element in the document, it usually contains legal information, legal notice, contact information, no other element can be used inside the `<footer>`
 
-  example --> *4_TheBody/Part_6/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_6/index.html) --> *4_TheBody/Part_6/index.html*
    ```
       <body>
       <header>
@@ -815,8 +801,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ### **\<address>** 
   - should be used exclusively for contact information about the author, it is best to use it in the `<footer>` element
 
-  example --> *4_TheBody/Part_7/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_7/index.html) --> *4_TheBody/Part_7/index.html*
    ```
       <body>
       <header>
@@ -877,8 +862,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - images, videoss or audios or other text markup can also be used within them
   - cannot be used within the *p elements* other group elements, headings or section elements
 
-  example --> *4_TheBody/Part_8/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_8/index.html) --> *4_TheBody/Part_8/index.html*
    ```
       <h2>HTML News</h2>
       <article>
@@ -896,8 +880,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ### **\<br>**
   - is needed to force a line break
 
-  example --> *4_TheBody/Part_9/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_9/index.html) --> *4_TheBody/Part_9/index.html*
    ```
       <address>
       Rick Sample<br>
@@ -922,8 +905,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ### **\<hr>**
   - this creates a thematic separation, e.g. to separate a content more clearly from each other
 
-  example --> *4_TheBody/Part_10/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_10/index.html) --> *4_TheBody/Part_10/index.html*
    ```
       <article>
         <h3>New HTML elements</h3>
@@ -948,8 +930,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - here usually a text is quoted from another source.
   - the `<blockquote>` contains a `cite` attribute, this indicates the source of the quote, but unfortunately it is not yet visible in the web browser and therefore the source should be added to the web page additionally
 
-  example --> *4_TheBody/Part_11/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_11/index.html) --> *4_TheBody/Part_11/index.html*
    ```
       <article>
           <h3>New HTML elements</h3>
@@ -973,11 +954,11 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the div element should only be used if there is no suitable HTML element, it is better to use semantic HTML e.g. header, nav, section, article, footer
   - can be used several times in the document
 
-  example --> *4_TheBody/Part_12/indexB.html*
+  [Example](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_12/indexB.html) --> *4_TheBody/Part_12/indexB.html*
+
   ![Preview](4_TheBody/Images/Preview_4_12B.PNG)
 
-  example --> *4_TheBody/Part_12/indexA.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_12/indexA.html) --> *4_TheBody/Part_12/indexA.html*
    ```
       <body>
           <div class="header">
@@ -1012,8 +993,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - usually behaves like a div element, but should be used only once in the document
   - is not a section element (`<section>`) but a pure grouping element
   
-  example --> *4_TheBody/Part_13/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_13/index.html) --> *4_TheBody/Part_13/index.html*
    ```
       <body>
       <header>
@@ -1043,8 +1023,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the `figure` element is used when content such as images, text, lists, tables or other HTML elements should stand out from the usual continuous text
   - for an additional optional caption `figcaption` is used
 
-  example --> *4_TheBody/Part_14/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_14/index.html) --> *4_TheBody/Part_14/index.html*
    ```
       <article>
           <h3>figure and figcaption in use</h3>
@@ -1063,8 +1042,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - Web browsers usually display these bullets with bullet points 
   - lists can be nested
 
-  example --> *4_TheBody/Part_15/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_15/index.html) --> *4_TheBody/Part_15/index.html*
    ```
       <article>
           <h2>Unordered bulleted list with ul</h2>
@@ -1084,8 +1062,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - they are numbered lists, in which the individual `<li>` elements are automaitsch numbered
   - lists can be nested
 
-  example --> *4_TheBody/Part_15/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_15/index.html) --> *4_TheBody/Part_15/index.html*
    ```
     <article>
         <h2>Numbered enumeration list with ol</h2>
@@ -1102,8 +1079,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 
 * It is possible to reverse the numbering with HTML attribute `reversed`, then the numbering will be displayed in descending order.
 
-  example --> *4_TheBody/Part_15/index.html* 
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_15/index.html) --> *4_TheBody/Part_15/index.html* 
    ```
     <article>
       <h2>Invert numbered enumeration list</h2>
@@ -1121,8 +1097,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 * with the HTML attribute `start` the start value of the first `<li>` element, the following numberings are increased by 1
 * within the `<li>` element it is also possible with the HTML attribute `value`
 
-  example --> *4_TheBody/Part_15/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_15/index.html) --> *4_TheBody/Part_15/index.html*
    ```
       <article>
         <h2>Change enumeration list numbering</h2>
@@ -1141,8 +1116,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - with this, description lists are created
   - often used for glossaries, listing of special metadata and values
 
-  example --> *4_TheBody/Part_15/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_15/index.html) --> *4_TheBody/Part_15/index.html*
    ```
     <article>
         <h2>Description lists with dl, dt and dd</h2>
@@ -1168,8 +1142,8 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - e.g. the screenreader does not recognize by the ID whether it is a navigation bar on the web page with `<div id="nav">` but only so `<nav>` 
 
 ### HTML document without precise structure
-  - example --> *4_TheBody/Part_16/index.html*
 
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_16/index.html) --> *4_TheBody/Part_16/index.html*
    ```
       <body>
       <h1>My blog</h1>
@@ -1203,8 +1177,8 @@ The base-element specifies a base URL or base target for all relative URLs in an
   ![Preview](4_TheBody/Images/Preview_4_16.PNG)
 
 ### Generic structuring with \<div>
-  - example --> *4_TheBody/Part_17/indexB.html* 
 
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_17/indexB.html) --> *4_TheBody/Part_17/indexB.html* 
    ```
       <body>
         <div id="header">
@@ -1247,8 +1221,8 @@ The base-element specifies a base URL or base target for all relative URLs in an
    ```
 ![Preview](4_TheBody/Images/Preview_4_17B.PNG)
 
-  - example --> *4_TheBody/Part_17/indexA.html* 
 
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_17/indexA.html) --> *4_TheBody/Part_17/indexA.html* 
    ```
       <body>
       <div>
@@ -1292,8 +1266,8 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ![Preview](4_TheBody/Images/Preview_4_17A.PNG)
 
 ### semantically structured web pages
-  - example --> *4_TheBody/Part_18/index.html* 
 
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_18/index.html) --> *4_TheBody/Part_18/index.html* 
    ```
       <body>
           <header>
@@ -1375,8 +1349,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - with `<abbr>` abbreviations or acronyms can be displayed 
   - it is also useful to use the HTML attribute `title`, this helps e.g. translation systems or screen readers and also search engines, it shows the full meaning of the abbreviation as soon as you scroll over it
 
-  example --> *4_TheBody/Part_19/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html*
    ```
       <article>
           <h2>Abbreviations with abbr</h2>
@@ -1388,8 +1361,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ### **\<cite>**
   - if the title of a book, movie, painting, song, etc. is to be displayed, `cite` can be used
 
-  example --> *4_TheBody/Part_19/index.html* 
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html* 
    ```
     <article>
         <h2>Working title with cite</h2>
@@ -1406,8 +1378,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - if several lines of computer code are to be formatted, `code` should be used between `pre`.
   - for `<` in code `&lt;` is used and `&gt;` for `>`, this is so that the HTML document can distinguish between code and code-text
 
-  example --> *4_TheBody/Part_19/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html*
    ```
       <article>
       <h2>Computer code with <code>code</code></h2>
@@ -1434,8 +1405,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the kbd element (keyboard) is used to mark continuous text as keyboard input
   - `samp` is used for the screen output of programs
 
-  example --> *4_TheBody/Part_19/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html*
    ```
     <article>
         <h2>Keyboard input with kdb and program output with samp</h2>
@@ -1451,8 +1421,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ### **\<dfn>**
   - this marks a definition
 
-  example --> *4_TheBody/Part_19/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html*
    ```
     <article>
         <h2>Definition/Term with dfn</h2>
@@ -1466,8 +1435,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - with the var element the text can be marked as a variable
   - this variable can be part of an application, a mathematical expression or identifier of a variable in a programming language
 
-  example --> *4_TheBody/Part_19/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html*
    ```
       <article>
           <h2>Variables with var</h2>
@@ -1481,8 +1449,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - to change the direction the HTML attribute `dir` must be used, with `rtl` the text runs from right to left and with `ltr` from left to right
   - with the `bdi` -element (bi-directional isolation) the borders of the text direction change can be marked more exactly with a unicode-capable web browser
 
-  example --> *4_TheBody/Part_19/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html*
    ```
       <article>
           <h2>Change text direction with bdo and bdi</h2>
@@ -1500,8 +1467,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - with `<i>` the text is also displayed in italics, it should be used for special technical terms, a thought, scientific names or foreign words
   - with `<b>` the text is also displayed in bold, should be used for meaningful names or keywords
 
-  example --> *4_TheBody/Part_19/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html*
    ```
     <article>
         <h2>Emphasize text (em, strong, b and i)</h2>
@@ -1518,8 +1484,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - works only if the content is created dynamically
   - this is only for highlighting, to change the background color it is better to use `<span>` and then style with CSS
 
-  example --> *4_TheBody/Part_19/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html*
    ```
       <article>
           <h2>mark text with mark</h2>
@@ -1539,8 +1504,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ### **\<q>**
   - the `<q>` element is used when something is to be quoted in the middle of the text or when a spoken text is to be marked
 
-  example --> *4_TheBody/Part_19/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html*
    ```
     <article>
         <h2>Quoting continuous text with q</h2>
@@ -1555,8 +1519,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the web browser usually presents the `<u>` element with an underline
   - the `<s>` element (s = strike-through) is used to indicate that a text is outdated or incorrect, the browser will display the text as crossed out
 
-  example --> *4_TheBody/Part_19/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html*
    ```
     <article>
         <h2>Underline or strike through text with s and u</h2>
@@ -1572,8 +1535,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the `<del>` element (del = delete) is used when a content edit of a text is marked as deleted or revised 
   - the `<ins>` element (ins = insert) is the counterpart to the `<del>` element, and is used when something new is added to a document 
 
-  example --> *4_TheBody/Part_19/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html*
    ```
     <article>
         <h2>mark changes with del and ins</h2>
@@ -1588,8 +1550,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the `<sub>` element (sub = subscript) is used to make the text deeper
   - the `<sup>` element (sub = superscript) is used to superscript the text
 
-  example --> *4_TheBody/Part_19/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html*
    ```
     <article>
       <h2>High or low points with sub and sup</h2>
@@ -1608,8 +1569,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - it is e.g. easier for a script in blog articles to extract the date from the element
   - it is also advantageous when searching in search engines for articles of a certain time period
 
-  example --> *4_TheBody/Part_19/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html*
    ```
     <header>
         <h2>Date and time with time</h2>
@@ -1622,8 +1582,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the `<small>` element is used to display words or text passages in lowercase.
   - e.g. for copyrights, license information, legal notices
 
-  example --> *4_TheBody/Part_19/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html*
    ```
     <article>
       <header>
@@ -1638,8 +1597,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ### **\<ruby>, \<rp> and \<rt>**
   - is an annotation system in which the text with annotations appears in one line
 
-  example --> *4_TheBody/Part_19/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html*
    ```
     <article>
       <h2>The elements ruby, rt und rp</h2>
@@ -1657,8 +1615,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the `<span>` element can mark up single text passages in the middle of the text with CSS
   - also quite helpful is this element for JavaScript
 
-  example --> *4_TheBody/Part_19/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/4_TheBody/Part_19/index.html) --> *4_TheBody/Part_19/index.html*
    ```
     <article>
         <h2>The span element</h2>
@@ -1730,8 +1687,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the table headings are displayed between `<th> ... </th>` (th = table heading), can be used like `<td>`, but the text is displayed bold
   - the web browser displays the table without formatting, height and width usually adapts to the content
 
-  example --> *5_Tables_Hyperlinks/Part_1/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/5_Tables_Hyperlinks/Part_1/index.html) --> *5_Tables_Hyperlinks/Part_1/index.html*
    ```
     <h1>Browser statistics November 2021 - 2022</h1>
     <table>
@@ -1771,7 +1727,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the numeric value specifies the number of cells to be merged
   - the `scope` attribute specifies whether the table heading should apply to a column (scope="col") or a row (scope="row")
 
-  - summarize columns - example --> *5_Tables_Hyperlinks/Part_2/indexA.html* 
+  - summarize columns -  [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/5_Tables_Hyperlinks/Part_2/indexA.html) --> *5_Tables_Hyperlinks/Part_2/indexA.html* 
 
    ```
       <h1>Daily planning</h1>
@@ -1802,7 +1758,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
    ```
 ![Preview](5_Tables_Hyperlinks/Images/Preview_5_2A.PNG)
 
-  - summarize lines - example --> *5_Tables_Hyperlinks/Part_2/indexB.html*
+  - summarize lines -  [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/5_Tables_Hyperlinks/Part_2/indexB.html) --> *5_Tables_Hyperlinks/Part_2/indexB.html*
 
    ```
       <table>
@@ -1839,8 +1795,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ### **Structure tables with \<thead>, \<tbody> and \<tfoot>**
   - the table header is displayed between `<thead> ... </thead>` (thead = table head)
 
-  example --> *5_Tables_Hyperlinks/Part_3/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/5_Tables_Hyperlinks/Part_3/index.html) --> *5_Tables_Hyperlinks/Part_3/index.html*
    ```
     <thead>
         <tr>
@@ -1887,8 +1842,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - the elements `<colgroup>` (colgroup = column group) and `<col>` are used to divide single columns into semantic and logical areas
   - to combine several elements in one `col` element, the attribute `span` is used with specification of a value for the number of columns
 
-  example --> *5_Tables_Hyperlinks/Part_4/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/5_Tables_Hyperlinks/Part_4/index.html) --> *5_Tables_Hyperlinks/Part_4/index.html*
    ```
       <table>
         <colgroup>
@@ -1905,8 +1859,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 
   - **\<caption>**
 
-  example --> *5_Tables_Hyperlinks/Part_5/indexA.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/5_Tables_Hyperlinks/Part_5/indexA.html) --> *5_Tables_Hyperlinks/Part_5/indexA.html*
    ```
       <h1>Browser statistics 2021 - 2022</h1>
       <table>
@@ -1925,8 +1878,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 
   - further labels can be added with the HTML elements `details` and `summary`
 
-  example --> *5_Tables_Hyperlinks/Part_5/indexA.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/5_Tables_Hyperlinks/Part_5/indexB.html) --> *5_Tables_Hyperlinks/Part_5/indexB.html*
    ```
       <h1>Browser statistics 2021 - 2022</h1>
       <table>
@@ -1951,8 +1903,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 
   - **\<figcaption>**
 
-  example --> *5_Tables_Hyperlinks/Part_5/indexC.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/5_Tables_Hyperlinks/Part_5/indexC.html) --> *5_Tables_Hyperlinks/Part_5/indexC.html*
    ```
       <figure>
           <table>
@@ -1991,8 +1942,8 @@ The base-element specifies a base URL or base target for all relative URLs in an
 
   ![Preview](5_Tables_Hyperlinks/Images/folder_structure.png)
 
-  example --> *5_Tables_Hyperlinks/Part_6/index.html*
 
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/5_Tables_Hyperlinks/Part_6/index.html) --> *5_Tables_Hyperlinks/Part_6/index.html*
    ```
       <nav>
         Blog |
@@ -2003,8 +1954,8 @@ The base-element specifies a base URL or base target for all relative URLs in an
    ```
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_6.PNG)
 
-  example --> *5_Tables_Hyperlinks/Part_6/sites/links.html*
 
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/5_Tables_Hyperlinks/Part_6/sites/links.html) --> *5_Tables_Hyperlinks/Part_6/sites/links.html*
    ```
       <nav>
         <a href="../index.html">Blog</a> |
@@ -2015,9 +1966,10 @@ The base-element specifies a base URL or base target for all relative URLs in an
    ```
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_6_links.PNG)
 
-### **Links to other external websites** 
-  example --> *5_Tables_Hyperlinks/Part_7/index.html*
 
+### **Links to other external websites** 
+
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/5_Tables_Hyperlinks/Part_7/index.html) --> *5_Tables_Hyperlinks/Part_7/index.html*
    ```
       <h3>Related links</h3>
       <nav>
@@ -2031,6 +1983,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
       </nav>
    ```
   ![Preview](5_Tables_Hyperlinks/Images/Preview_5_7.PNG)
+
 
 ## 5.2.1. The HTML attributes for the \<a> element
 
@@ -2060,8 +2013,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - The specification of an email address is often obligatory, but this also means that unsolicited commercial emails can be expected, as web crawlers scan the web pages for email addresses. There is a way around this: 1. display the email address as a graphic, but this has the disadvantage that screen readers cannot read the email. 2. obfuscate the email with JavaScript [for more info: click here](http://alistapart.com/article/gracefulemailobfuscation). 3. the [reCAPTCHA](http://google.com/recaptcha/intro/index.html) module of Google
   - When specifying the email address on the website, it is important to observe the legal requirements.
 
-  example --> *5_Tables_Hyperlinks/Part_8/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/5_Tables_Hyperlinks/Part_8/index.html) --> *5_Tables_Hyperlinks/Part_8/index.html*
    ```
       <footer>
         <a href="mailto:example@email.com">Send Email</a>
@@ -2073,8 +2025,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 	- if links are set to other types of documents not used on the web (e.g. Word, Excel, PDF), it depends on the web browser how it is displayed
   - it is also important to always inform the user what is behind a link
 
-  example --> *5_Tables_Hyperlinks/Part_9/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/5_Tables_Hyperlinks/Part_9/index.html) --> *5_Tables_Hyperlinks/Part_9/index.html*
    ```
       <body>
         <h1>Reference to other content types</h1>
@@ -2089,8 +2040,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - with the attribute download the browser is instructed to offer the file for download, importantly the user must be informed about what is being downloaded 
   - old web browsers do not support the download attribute
 
-  example --> *5_Tables_Hyperlinks/Part_10/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/5_Tables_Hyperlinks/Part_10/index.html) --> *5_Tables_Hyperlinks/Part_10/index.html*
    ```
       <body body>
         <h1>Reference to other content types</h1>
@@ -2139,8 +2089,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 	- to get to a certain paragraph can be annoying on large web pages if you have to scroll too much
 	- therefore you can set anchors, with an `id` and with `#` you can call the section then 
 
-  example --> *5_Tables_Hyperlinks/Part_11/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/5_Tables_Hyperlinks/Part_11/index.html) --> *5_Tables_Hyperlinks/Part_11/index.html*
    ```
       <body>
         <h1 id="top">Contents</h1>
@@ -2190,8 +2139,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ## 6.1. Embedding images with \<img>
  Images can be included on a web page using the `<img>` element (img = image), after which there is no line break if `<img>` is used in the text. The attributes `src` and `alt` should be present at least. The `src` attribute indicates where the web browser will find the image file. The `alt` attribute gives an alternative description of the image file, this should be short (75-125 characters) describing what is in the image. This is useful if the image file cannot be loaded or for screen readers and also search engines. When creating web pages, the images should be placed in an extra directory (usually named "Images"). The `title` attribute can be used to display additional information when the user touches the image with the mouse.
 
-  example --> *6_Graphics_Multimedia/Part_1/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/6_Graphics_Multimedia/Part_1/index.html) --> *6_Graphics_Multimedia/Part_1/index.html*
    ```
       <h1>Beautiful world</h1>
       <p>
@@ -2208,8 +2156,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
   - to scale the display size of images, `width` and `height` can be used, if the image is a bit too large
   - scaling with `width` and `height` is possible, but if possible the image should be adjusted to the correct size with an image editing program, on the one hand the data volume is reduced and the risk that the images are displayed distorted is eliminated
 
-  example --> *6_Graphics_Multimedia/Part_2/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/6_Graphics_Multimedia/Part_2/index.html) --> *6_Graphics_Multimedia/Part_2/index.html*
    ```
      <img src="Images/flower_1920.jpg" alt="Purple flower" width="480" height="360">
    ``` 
@@ -2217,8 +2164,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ### **\<figure> and \<figcaption>**
   - with `<figure>` and `<figcaption>` it is possible to create separate captions
 
-  example --> *6_Graphics_Multimedia/Part_2/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/6_Graphics_Multimedia/Part_2/index.html) --> *6_Graphics_Multimedia/Part_2/index.html*
    ```
       <h1>Purple flower</h1>
       <figure>
@@ -2255,10 +2201,10 @@ The base-element specifies a base URL or base target for all relative URLs in an
 | `<map>`    		| Area for the reference sensitive graphic            |
 | `<area>`    	| This defines a clickable area in the image          |
 
-  example --> *6_Graphics_Multimedia/Part_3/index.html*
 
  In this example, in a rectangular graphic with 200 x 200 pixels, four rectangular reference-sensitive areas with 100 x 100 pixels have been defined. First the graphic popart.jpg is inserted into the HTML document. The value `#mood` is used as the anchor name in the `usemap` attribute. The reference sensitive area is introduced with the `map` element and the name of the image map (name="mood"). Between `<map>` and `</map>` the coordinates for the references are specified with the `area` element.
 
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/6_Graphics_Multimedia/Part_3/index.html) --> *6_Graphics_Multimedia/Part_3/index.html*
    ```
       <h1>What mood are you in?</h1>
       <p>Select a color according to your mood:</p>
@@ -2349,8 +2295,7 @@ Pixel coordinates with a graphics program [Online Image Map Editor](http://masch
 ## 6.3. Load suitable images with \<picture>
  The picture element allows to provide a suitable picture for all display sizes. Each source element in the `<picture>` element contains a query (media query) with the HTML attribute `media`, specifications such as viewport width, viewport height and alignment are queried. The sources of `<source>` are read from top to bottom. If the viewport is at least 1024 pixels (`min-width:1024px`), the image is loaded with 1024 pixels. If the viewport is at least 640 pixels, the image is loaded with 640 pixels.
 
-  example --> *6_Graphics_Multimedia/Part_4/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/6_Graphics_Multimedia/Part_4/index.html) --> *6_Graphics_Multimedia/Part_4/index.html*
    ```
       <picture> 
         <source media="(min-width: 1024px)" srcset="Images/Image_1024.jpg">
@@ -2380,8 +2325,7 @@ large display
 ## 6.4. Use icons
  These icons are called favicons, these are good for recognition on the website. Favicons can be created with any image editing software. But also on the web there are online tools with which icons can be created e.g. [favicon.io](https://favicon.io/) . Favicons should be saved in `.ico` format. If another file format is used, the MIME type should be specified (e.g. PNG format: `type="image.png"`). The size of a favicon is usually `16x16` or `32x32` pixels. Additionally icons can be used for mobile devices e.g. IPhone or IPad the value `apple-icon-touch` is specified at `rel`.
 
-  example --> *6_Graphics_Multimedia/Part_5/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/6_Graphics_Multimedia/Part_5/index.html) --> *6_Graphics_Multimedia/Part_5/index.html*
    ```
       <head>
         <title>Add icon for the website</title>
@@ -2404,8 +2348,7 @@ large display
  The SVG is in XML syntax and therefore platform independent, so it can be created in PHP, dynamically modified with JavaScript or formatted with CSS. SVGs are used for e.g. cartographies, illustrations like logos, icons, scientific diagrams, program flow charts, technical drawings or visualization of graphs.
  The quality of the SVG graphic always remains the same even if the `width` and `height` attributes are used to scale the size of the display.
 
-  example --> *6_Graphics_Multimedia/Part_6/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/6_Graphics_Multimedia/Part_6/index.html) --> *6_Graphics_Multimedia/Part_6/index.html*
    ```
       <h1>SVG as graphic reference</h1>
       <p>
@@ -2424,8 +2367,7 @@ Editors for SVG graphics editing:
 ### **Integrate SVG directly into the web page with \<svg>**
  It is possible to embed the SVG directly into the HTML document. The SVG syntax with the SVG element is noted between `<svg> ... </svg>` is noted. SVG itself offers different tags e.g. for circles, ellipses, rectangles, polygons, lines, elements for paths, texts and animations.
 
-  example --> *6_Graphics_Multimedia/Part_7/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/6_Graphics_Multimedia/Part_7/index.html) --> *6_Graphics_Multimedia/Part_7/index.html*
    ```
       <h1>Embed SVG graphics directly</h1>
       <p>
@@ -2470,8 +2412,7 @@ Editors for SVG graphics editing:
 ### **Mathematical formulas with MathML**
 Mathematical formulas can be integrated directly into a web page using MathML (Mathematical Markup Language). The MathML tags are noted between `<math> ... </math>`. Unfortunately not yet supported by all browsers, but the problem can be solved with the help of [MathJax](http://www.mathjax.org).
 
-  example --> *6_Graphics_Multimedia/Part_8/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/6_Graphics_Multimedia/Part_8/index.html) --> *6_Graphics_Multimedia/Part_8/index.html*
    ```
       <head>
         <meta charset="UTF-8">
@@ -2504,8 +2445,7 @@ More on the topic at [W3C](https://www.w3.org/TR/MathML3/).
 Is nothing more than a white area on which something can be drawn with the help of JavaScript.
   - In the introductory `<canvas>` tag, the `id` is specified with , `width` and `height` determine the size of the drawing area. The `id` is particularly important in order to be able to access the `<canvas>` element later with JavaScript.
 
-  example --> *6_Graphics_Multimedia/Part_9/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/6_Graphics_Multimedia/Part_9/index.html) --> *6_Graphics_Multimedia/Part_9/index.html*
    ```
       <head>
         <meta charset="UTF-8">
@@ -2535,8 +2475,7 @@ On my GitHub account you can also find a few examples about canvas:
 With the `<video>` element it is possible to play a video in the web browser without a special extension. All modern browsers support this element.
 Currently 3 video formats are supported: *MP4*, *WebM*, *OGG*. However, not every browser supports all 3 formats. The most widely used is *MP4*.
 
-  example --> *6_Graphics_Multimedia/Part_10/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/6_Graphics_Multimedia/Part_10/index.html) --> *6_Graphics_Multimedia/Part_10/index.html*
    ```
       <body>
         <h1>Play videos</h1>
@@ -2549,8 +2488,7 @@ Currently 3 video formats are supported: *MP4*, *WebM*, *OGG*. However, not ever
 
 If you want to be sure that the browser plays the video. Can you also offer all 3 formats, then other types can be specified.
 
-  example --> *6_Graphics_Multimedia/Part_11/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/6_Graphics_Multimedia/Part_11/index.html) --> *6_Graphics_Multimedia/Part_11/index.html*
    ```
       <body>
         <h1>Play videos</h1>
@@ -2582,8 +2520,7 @@ HTML attributes for the \<video> element
 
 It is also possible to play a video via YouTube. Works only on live server.
 
-  example --> *6_Graphics_Multimedia/Part_12/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/6_Graphics_Multimedia/Part_12/index.html) --> *6_Graphics_Multimedia/Part_12/index.html*
    ```
       <body>
           <figure>
@@ -2604,8 +2541,7 @@ It is also possible to play a video via YouTube. Works only on live server.
 ## 6.8. Play audio files with the HTML element \<audio>
 In principle the `<audio>` element works, also here there are 3 formats: *MP3*, *OGG* and *WAV* which can be played without any additional software. All web browsers can handle the *MP3* format.
 
-  example --> *6_Graphics_Multimedia/Part_13/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/6_Graphics_Multimedia/Part_13/index.html) --> *6_Graphics_Multimedia/Part_13/index.html*
    ```
       <body>
         <h1>Play audio</h1>
@@ -2648,8 +2584,7 @@ It is possible to include videos, audio files and images in an HTML document wit
 ### The \<iframe> element
 With this element it is possible to embed something in an HTML document. In practice it often happens that this element is used to embed other HTML document.
 
-  example --> *6_Graphics_Multimedia/Part_14/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/6_Graphics_Multimedia/Part_14/index.html) --> *6_Graphics_Multimedia/Part_14/index.html*
    ```
       <body>
         <h1>use iframe</h1>
@@ -2710,8 +2645,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 
  The HTML attribute `name` should be used for an identifier for each input field, because this is needed by the script (JavaScript, PHP) when processing the data in order to access the entered data. The `size` -attribute specifies the display length in characters and `maxlength` the actual allowed character length.
 
-  example --> *7_Forms/Part_1/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_1/index.html) --> *7_Forms/Part_1/index.html*
    ```
     <h1>Single line text field</h1>
     <form>
@@ -2725,8 +2659,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
  To create a one-line text field for passwords you need `type="password"`, this will display the entered characters as stars or dots.
  A password field is not encrypted and serves only as a protection against screen tampering. The entered password is transmitted over the Internet in clear text via HTTP protocol without encryption. For encrypted communication between the web browser and the web server, the HTTPS protocol must be used, and the web server must support this protocol.
 
-  example --> *7_Forms/Part_2/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_2/index.html) --> *7_Forms/Part_2/index.html*
    ```
     <h1>Text field for password</h1>
     <form>
@@ -2740,8 +2673,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **A multiline text input field with \<textarea>**
  If a text field with multiple lines is needed for messages, comments, feedback or similar, `<textarea> ... </textarea>` is used. The number of displayed lines is specified with the `rows` attribute and the number of characters per line with `cols`. By default, the text is automatically wrapped at the end in the next line. The wrap happens only visually and is not sent when the data is sent. This can be changed with the `wrap` attribute. If the default setting `wrap="soft"` is changed to `wrap="hard"`, the text is no longer wrapped automatically.
 
-  example --> *7_Forms/Part_3/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_3/index.html) --> *7_Forms/Part_3/index.html*
    ```
     <h1>Multiline input field</h1>
     <form>
@@ -2757,8 +2689,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **A selection list or dropdown list with \<select>**
  A selection list or dropdown list is displayed with `<select> ... </select>`. The individual selection options are indicated with `<option> ... </option>`.
 
-  example --> *7_Forms/Part_4/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_4/index.html) --> *7_Forms/Part_4/index.html*
    ```
     <h1>Dropdown and selection lists</h1>
     <form>
@@ -2801,8 +2732,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **Create a group of radio buttons with \<input type="radio">**
  Radio buttons are also provided with the input element. For this purpose `<input type="radio">` is specified. Each radio button should be provided with the `name` attribute. Radio buttons with the same name belong to the same group from which the user can select a value. The value is specified with `value`.
 
-  example --> *7_Forms/Part_5/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_5/index.html) --> *7_Forms/Part_5/index.html*
    ```
     <h1>Radio buttons</h1>
     <form>
@@ -2820,8 +2750,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **Add a text label with \<label>**
  Between \<label> ... \</label> a simple text label without special formatting can be used. The label element can be used to simplify the operation of other elements, e.g. radio buttons or checkboxes. The `for` attribute makes it easier for the user to make a selection when clicking, since the word is also clickable.
  
-  example --> *7_Forms/Part_6/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_6/index.html) --> *7_Forms/Part_6/index.html*
    ```
     <h1>Radio buttons with label</h1>
     <form>
@@ -2842,8 +2771,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **Use checkboxes with \<input type="checkbox">**
  Checkboxes are also displayed with the input element if `type="checkbox"` is used. Here, too, a `name` should always be specified and the `value` is used to specify the value that is transferred to the web server when the form is submitted.
   
-  example --> *7_Forms/Part_7/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_7/index.html) --> *7_Forms/Part_7/index.html*
    ```
     <h1>Checkboxesn</h1>
     <form>
@@ -2866,8 +2794,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
  If not only the filename of the selected file is to be determined, but the entire file or the contents of the file, `method="post"` and `enctype="multipart/formdata"` must be used with the form element.
  With the `accept` attribute it is possible to upload only certain file types.
   
-  example --> *7_Forms/Part_8/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_8/index.html) --> *7_Forms/Part_8/index.html*
    ```
     <h1>File upload</h1>
     <form method="post" enctype="multipart/form-data">
@@ -2882,8 +2809,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **Different buttons**
  Buttons can be displayed with the button element (\<button> ... \</button>). Or with the input element and `type="reset"` or `type="submit"`. With `reset` the contents of the form fields within the form are reset to the initial value. The `submit` button submits the form and sends the entered data to the URL specified with the `action` attribute in the form element.
   
-  example --> *7_Forms/Part_9/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_9/index.html) --> *7_Forms/Part_9/index.html*
    ```
     <h1>Buttons</h1>
     <form>
@@ -2902,8 +2828,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 
 ### **Form fields outside the form element**
   
-  example --> *7_Forms/Part_10/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_10/index.html) --> *7_Forms/Part_10/index.html*
    ```
     <h1>Use form elements outside form</h1>
     <form id="formular1" method="post" action="">
@@ -2927,8 +2852,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
  It is possible to set up multiple submit buttons for a form in order to submit the form with different URLs. For this purpose, two new attributes for input fields of type `submit` and `image` have been added with `formaction` and `formmethod`, which override the attributes `action` and `method` in the opening form element if they have been noted there.
  The `formaction` specifies the URL that will be called when the submit button is pressed and to which the form data should be submitted. `formmethod` is the HTTP request method that should be used to send the data to the server for processing, i.e. either GET or POST.
   
-  example --> *7_Forms/Part_11/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_11/index.html) --> *7_Forms/Part_11/index.html*
    ```
     <h1>Multiple submit buttons</h1>
     <form>
@@ -2965,8 +2889,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **\<input type="color">**
  With `<input type="color">` the user can select a color value via a color selection dialog. If the value is to be preset then the attribute `value` must be used.
   
-  example --> *7_Forms/Part_12/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_12/index.html) --> *7_Forms/Part_12/index.html*
    ```
     <h1>New input types (HTML5)</h1>
     <form>
@@ -2982,8 +2905,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **\<input type="date">**
  Here it is possible to select a date.
   
-  example --> *7_Forms/Part_12/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_12/index.html) --> *7_Forms/Part_12/index.html*
    ```
     <h1>New input types (HTML5)</h1>
     <form>
@@ -2999,8 +2921,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **\<input type="time">**
  This can be used to specify a time in 24 hour format. If the field is to be preset then the value value is used.
   
-  example --> *7_Forms/Part_12/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_12/index.html) --> *7_Forms/Part_12/index.html*
    ```
     <h1>New input types (HTML5)</h1>
     <form>
@@ -3016,8 +2937,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **\<input type="month"> and \<input type="week">**
  This creates an input field for specifying the month and week.
 
-  example --> *7_Forms/Part_12/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_12/index.html) --> *7_Forms/Part_12/index.html*
    ```
     <h1>New input types (HTML5)</h1>
     <form>
@@ -3034,8 +2954,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **\<input type="search">**
  This can be used to create an input field for a search.
 
-  example --> *7_Forms/Part_12/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_12/index.html) --> *7_Forms/Part_12/index.html*
    ```
     <h1>New input types (HTML5)</h1>
     <form>
@@ -3051,8 +2970,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **\<input type="email">**
  This defines an input field for email addresses. The web browser checks if the email address has a valid format. The `required` attribute should also be specified, otherwise an empty field may be sent to the web server. With the attribute `multiple` it is possible to specify more than one email address. The individual email addresses are separated by commas.
 
-  example --> *7_Forms/Part_12/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_12/index.html) --> *7_Forms/Part_12/index.html*
    ```
     <h1>New input types (HTML5)</h1>
     <form>
@@ -3068,8 +2986,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **\<input type="url">**
  This creates an input field for web addresses.
 
-  example --> *7_Forms/Part_12/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_12/index.html) --> *7_Forms/Part_12/index.html*
    ```
     <h1>New input types (HTML5)</h1>
     <form>
@@ -3085,8 +3002,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **\<input type="tel">**
  This creates an input field for a phone number.
 
-  example --> *7_Forms/Part_12/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_12/index.html) --> *7_Forms/Part_12/index.html*
    ```
     <h1>New input types (HTML5)</h1>
     <form>
@@ -3103,8 +3019,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 
 ### **\<input type="number">**
  
-  example --> *7_Forms/Part_12/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_12/index.html) --> *7_Forms/Part_12/index.html*
    ```
     <h1>New input types (HTML5)</h1>
     <form>
@@ -3120,8 +3035,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **\<input type="range">**
  Used to create a slider. The HTML element `<output>` can be used for the output of values or the result of a calculation and is therefore the opposite of `<input>`. Without JavaScript, updating the output element is not possible.
 
-  example --> *7_Forms/Part_12/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_12/index.html) --> *7_Forms/Part_12/index.html*
    ```
     <h1>New input types (HTML5)</h1>
     Adjust slider:
@@ -3159,8 +3073,8 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 
 
 ### **`autofocus`**
-  example --> *7_Forms/Part_13/index.html*
 
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_13/index.html) --> *7_Forms/Part_13/index.html*
    ```
     <h1>autofocus</h1>
     <form>
@@ -3173,8 +3087,8 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 
 
 ### **`list`**
-  example --> *7_Forms/Part_14/index.html*
 
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_14/index.html) --> *7_Forms/Part_14/index.html*
    ```
     <h1>list and datalist</h1>
     <form>
@@ -3190,8 +3104,8 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 
 
 ### **`placeholder`**
-  example --> *7_Forms/Part_15/index.html*
 
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_15/index.html) --> *7_Forms/Part_15/index.html*
    ```
     <h1>placeholder</h1>
     <form>
@@ -3208,8 +3122,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **\<details> and \<summary>**
  The details element can be used to expand and collapse page content. This can be helpful to avoid overwhelming the visitor with too much details and information right away. The visitor can click on a summary element to expand or collapse the information. The `open` attribute specifies that the content is already expanded when the web page is loaded, by default the details are collapsed. 
 
-  example --> *7_Forms/Part_16/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_16/index.html) --> *7_Forms/Part_16/index.html*
    ```
     <h1>details and summary</h1>
 	  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
@@ -3233,8 +3146,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 ### **\<dialog>**
  Dialog boxes were and are usually displayed using div elements. This is also possible with \<dialog>. The dialog element only becomes useful when used with JavaScript (`onclick="document.getElementById('dialog1').close()"`).
 
-  example --> *7_Forms/Part_17/index.html*
-
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/7_Forms/Part_17/index.html) --> *7_Forms/Part_17/index.html*
    ```
     <dialog id="dialog1" open>
       <p>End dialog?<br>
@@ -3253,7 +3165,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
 
  The data in this HTML form is sent to a PHP script named `form-mail.php`. The web browser composes an HTTP request from the input in the form (`GET http://address.com/script.php HTTP/1.1`). There are several HTTP request methods, of which **GET** and **POST** are the most important.
 
-  example --> *7_Forms/Part_18*
+ [Examples](https://github.com/BellaMrx/HTML_Guide/tree/main/7_Forms/Part_18) --> *7_Forms/Part_18*
 
  ![Preview](7_Forms/Images/Preview_7_18.PNG)
 
