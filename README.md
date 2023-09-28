@@ -1,6 +1,6 @@
 # HTML Guide
 
- Detailed guide about HTML5 (all basics for HTML) + templates.
+ Detailed guide about HTML5 (all basics for HTML).
 
  The code examples in the guide can be found in the listed folders.
 
