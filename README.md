@@ -233,7 +233,7 @@ Most HTML elements can be nested and contain other HTML elements, creating a hie
   - Complex HTML documents contain a lot of nesting.
   - It is important to avoid incorrect nesting, otherwise the web page can be displayed incorrectly and it becomes very confusing.
 
- [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/2_StructureOfaHTMLdocument/Part_2/index.html) --> *2_StructureOfaHTMLdocument/Part_2/index.html*
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/2_StructureOfaHTMLdocument/Part_2) --> *2_StructureOfaHTMLdocument/Part_2/index.html*
    ```
     <!doctype html>
     <html>
@@ -303,7 +303,7 @@ Most HTML elements can be nested and contain other HTML elements, creating a hie
 ### **\<html> ... \</html>**
   - informs the web browser that there is HTML code present
   - it encloses all other elements in the HTML code (except `<!doctype html>`)
-  - there you can also specify the language `lang="en "` (very helpful for accessibility)
+  - there you can also specify the language `lang="en"` (very helpful for accessibility)
 
 ### **\<head> ... \</head>**
   - here information is given which is evaluated by the web browser and search engines e.g. scripts, stylesheets, meta information with information about the HTML document.  
