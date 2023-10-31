@@ -318,7 +318,7 @@ Most HTML elements can be nested and contain other HTML elements, creating a hie
 
 # 3. The header data of an HTML document
 ## 3.1. The HTML elements for the header
- Between `<head>` and `</head>` different HTML elements can be inserted, with which the contents and the representation can be controlled. Relationships between the web browser and other pages or documents can also be established there. The content in the header (except **title**) is not displayed in the browser. The **head** element must follow directly after the open **html** element. The only specification in the **head** area that should always be made is the **title** element.. 
+ Between `<head>` and `</head>` different HTML elements can be inserted, with which the contents and the representation can be controlled. Relationships between the web browser and other pages or documents can also be established there. The content in the header (except **title**) is not displayed in the browser. The **head** element must follow directly after the open **html** element. The only specification in the **head** area that should always be made is the **title** element.
 
 | HTML element            | Explanation                                                           |
 |------------------------ | --------------------------------------------------------------------- |
@@ -358,7 +358,7 @@ The complete explanations for each tag will be given in the next chapters, these
 ## 3.2. The title element 
  A title should be used in each HTML document, which is displayed in the browser header. Only one title element can be used per HTML document. The title element can be skipped, but the web page will not be considered valid. The title element serves the user e.g. if the page is saved as a bookmark, then the title is displayed as a name suggestion. And most importantly, the title has a high importance in search engines, because it is what the user sees first in the search engine when the pages are listed. 
  
- [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/3_TheHeader/Part_1/index.html) --> *3_TheHeader/Part_1/index.html*
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/3_TheHeader/Part_1) --> *3_TheHeader/Part_1/index.html*
    ```
     <head>
       <meta charset="UTF-8">
@@ -371,7 +371,7 @@ The complete explanations for each tag will be given in the next chapters, these
 ## 3.3. The base element
 The base-element specifies a base URL or base target for all relative URLs in an HTML document. By defining such a base URL, a relative or absolute address to the file can be used in the document as if it were located directly on the same host or computer. Can be used only once in the HTML document.
 
- [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/3_TheHeader/Part_2/index.html) --> *3_TheHeader/Part_2/index.html*  (source [w3school](https://www.w3schools.com/tags/tag_base.asp) )
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/3_TheHeader/Part_2) --> *3_TheHeader/Part_2/index.html*  (source [w3school](https://www.w3schools.com/tags/tag_base.asp) )
    ```
       <head>
         <base href="https://www.w3schools.com/" target="_blank">
@@ -391,7 +391,7 @@ The base-element specifies a base URL or base target for all relative URLs in an
 ## 3.4. The link element
  The link element is a stand-alone tag that may be used multiple times in the HTML document. In practice, it is often used to include an external CSS file, and other files. The relationship between the HTML document and the external document is specified with the HTML attribute `rel`.
  
- [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/3_TheHeader/Part_3/index.html) --> *3_TheHeader/Part_3/index.html*
+ [Complete Code](https://github.com/BellaMrx/HTML_Guide/blob/main/3_TheHeader/Part_3) --> *3_TheHeader/Part_3/index.html*
    ```
     <head>
       <title>Logical linking with link</title>
