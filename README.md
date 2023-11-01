@@ -2498,10 +2498,10 @@ If you want to be sure that the browser plays the video. Can you also offer all 
       </body>
    ```
 
-HTML attributes for the \<video> element 
+HTML attributes for the \<video> element: 
 | attribute   | Explanation         								              |
 | ----------- | ------------------------------------------------- |
-| `autoplay`  | The video file will be played automatically when the web page has finished loading. has been loaded |
+| `autoplay`  | The video file will be played automatically when the web page has finished loading. |
 | `controls`  | Displays a bar with control functions such as Play, Pause, etc, with which the user can control the video file |
 | `height`    | With this you specify the height of the video to be displayed |
 | `loop`      | If the video file has finished playing, it will be played again with this attribute |
