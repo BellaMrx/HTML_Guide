@@ -2695,7 +2695,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
     <form>
         <p>
         Example 1:<br />
-        <select name="thema1">
+        <select name="topic1">
           <option value="val1">HTML</option>
           <option value="val2" selected>CSS</option>
           <option value="val3">JavaScript</option>
@@ -2704,7 +2704,7 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
         </p>
         <p>
         Example 2:<br />
-        <select multiple name="thema2" size="4">
+        <select multiple name="topic2" size="4">
           <option value="val5">HTML</option>
           <option value="val6" selected>CSS</option>
           <option value="val7">JavaScript</option>
@@ -2713,12 +2713,12 @@ HTML forms are mostly used for e.g. contact forms, surveys, registrations on a w
         </p>
         <p>
         Example 3:<br />
-        <select multiple name="thema3" size="6">
-          <optgroup label="Gruppe 1">
+        <select multiple name="topic3" size="6">
+          <optgroup label="Group 1">
             <option value="val9">HTML</option>
             <option value="val10">CSS</option>
           </optgroup>
-          <optgroup label="Gruppe 2">
+          <optgroup label="Group 2">
             <option value="val11">JavaScript</option>
             <option value="val12">React</option>
           </optgroup>
